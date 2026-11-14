@@ -199,11 +199,11 @@ function headerHtml() {
 }
 
 // ---------- экраны ----------
-function feedHtml() {
+function feedHtml(opts = {}) {
   if (S.mode === "places") {
     const xs = placeItems().filter((p) => !S.kinds.size || S.kinds.has(p.placeKind))
       .sort((a, b) => (HOME_AREA.test(b.area) ? 1 : 0) - (HOME_AREA.test(a.area) ? 1 : 0));
-    return `<div class="feed"><div class="grid">${xs.map((p, i) => `<button class="tile" style="animation-delay:${Math.min(i, 8) * 30}ms" data-act="open" data-v="${esc(p.id)}">
+    return `<div class="feed"><div class="grid ${opts.tiles ? "in" : ""}">${xs.map((p, i) => `<button class="tile" style="animation-delay:${Math.min(i, 8) * 30}ms" data-act="open" data-v="${esc(p.id)}">
       ${ph(p, "", 420)}${stickers(p)[0] || ""}${S.plan[p.id] ? `<span class="heart">${IC.heart(14)}</span>` : ""}
       <span class="t"><b>${esc(p.title)}</b><span>${esc(p.area)}</span>${p.hours ? `<span class="h">${esc(p.hours)}</span>` : ""}</span></button>`).join("")}</div></div>`;
   }
@@ -273,14 +273,19 @@ function detailHtml() {
       <button class="rb l ${inPlan ? "like" : ""}" data-act="toggle" data-v="${esc(e.id)}" aria-label="${inPlan ? "Убрать из плана" : "Хочу"}">${IC.heart(24)}</button>
     </div></div>`;
 }
+function weekends() {
+  const w1 = weekendRange(), t = todayIso();
+  const sat2 = dt(w1[0]).getDay() === 0 ? addDays(t, 6) : addDays(w1[0], 7);
+  return [w1, [sat2, addDays(sat2, 1)]];
+}
 function datesHtml() {
-  const d = S.draft, t = todayIso();
+  const d = S.draft, t = todayIso(), [w1, w2] = weekends();
   const days = [];
   for (let i = 0; i < 28; i++) days.push(addDays(t, i));
   const pills = days.map((s, i) => {
     const wd = dt(s).getDay();
     const on = s === d.a || s === d.b, mid = d.a && d.b && s > d.a && s < d.b;
-    return `<button class="dp ${on ? "on" : mid ? "mid" : ""} ${wd === 5 || wd === 6 || wd === 0 ? "wk" : ""} ${wd === 1 && i ? "gap" : ""}" data-act="day" data-v="${s}"><span>${WD[wd]}</span><b>${dt(s).getDate()}</b></button>`;
+    return `<button class="dp ${on ? "on" : mid ? "mid" : ""} ${wd === 6 || wd === 0 ? "wk" : ""} ${wd === 1 && i ? "gap" : ""}" data-act="day" data-v="${s}"><span>${WD[wd]}</span><b>${dt(s).getDate()}</b></button>`;
   }).join("");
   const b = d.b || d.a;
   const list = inRange(d.a, b, d.ru);
@@ -289,6 +294,10 @@ function datesHtml() {
   const n = list.filter((e) => !d.cats.size || d.cats.has(e.category)).length;
   return `<div class="scrim" data-act="sheetclose"></div>
     <section class="sheet" id="sheet" aria-label="Даты и категории"><span class="handle"></span>
+      <div class="presets">
+        <button class="chip ${d.a === w1[0] && (d.b || d.a) === w1[1] ? "on" : ""}" data-act="preset" data-v="0">Эти выходные</button>
+        <button class="chip ${d.a === w2[0] && (d.b || d.a) === w2[1] ? "on" : ""}" data-act="preset" data-v="1">Следующие</button>
+      </div>
       <div class="days" id="days">${pills}</div>
       <div class="chips">
         ${cats.map((c) => `<button class="chip ${d.cats.has(c) ? "on" : ""}" data-act="dcat" data-v="${c}">${CAT[c]}<i>${counts[c]}</i></button>`).join("")}
@@ -304,16 +313,34 @@ function datesHtml() {
 function render(opts = {}) {
   const app = $("#app");
   if (!S.loaded) { app.innerHTML = '<div class="loading">…</div>'; return; }
-  app.innerHTML = (S.tab === "feed" ? headerHtml() + feedHtml() : planHtml()) + tabsHtml() +
+  // запоминаем прокрутку, чтобы перерисовка не откидывала на «сегодня»
+  const keep = {
+    chips: $(".hdr .chips") ? $(".hdr .chips").scrollLeft : 0,
+    days: $(".days") ? $(".days").scrollLeft : null,
+    sheet: $(".sheet") ? $(".sheet").scrollTop : 0,
+    detail: $(".detail") ? $(".detail").scrollTop : 0,
+  };
+  const sheetWas = S.sheetShown, detailWas = S.detailShown;
+  app.innerHTML = (S.tab === "feed" ? headerHtml() + feedHtml(opts) : planHtml()) + tabsHtml() +
     (S.sheet === "dates" ? datesHtml() : "") + (S.detail ? detailHtml() : "");
+  S.sheetShown = S.sheet === "dates"; S.detailShown = !!S.detail;
+  // листы появляются с анимацией только при открытии, не при каждом выборе внутри
+  if (sheetWas && S.sheetShown) { const a = $("#sheet"), b = $(".scrim"); a && a.classList.add("static"); b && b.classList.add("static"); }
+  if (detailWas && S.detailShown) { const d = $("#detail"); d && d.classList.add("static"); }
+  const ch = $(".hdr .chips"); if (ch) ch.scrollLeft = keep.chips;
+  const sh = $(".sheet"); if (sh && sheetWas) sh.scrollTop = keep.sheet;
+  const dt_ = $(".detail"); if (dt_ && detailWas) dt_.scrollTop = keep.detail;
+  const dd = $(".days");
+  if (dd) {
+    if (sheetWas && keep.days !== null && opts.scrollDays === false) dd.scrollLeft = keep.days;
+    else { const on = $(".dp.on"); if (on) dd.scrollLeft = Math.max(0, on.offsetLeft - (dd.clientWidth - on.offsetWidth) / 2); }
+  }
   if (opts.enter) { const c = $(".card.top"); c && c.classList.add(opts.enter); }
   if (opts.bump) { const b = $("#badge"); b && b.classList.add("bump"); }
-  if (S.sheet === "dates" && opts.scrollDays !== false) { const on = $(".dp.on"); on && on.scrollIntoView({ inline: "center", block: "nearest" }); }
   bindStack(); bindPlanRows(); bindDetail();
   if (tg && tg.BackButton) (S.detail || S.sheet) ? tg.BackButton.show() : tg.BackButton.hide();
   save();
 }
-
 // ---------- действия ----------
 function snapshot(e) {
   const date = e.kind === "place" ? null : dayOf(e);
@@ -376,8 +403,8 @@ function exportIcs() {
 document.addEventListener("click", (ev) => {
   const t = ev.target.closest("[data-act]"); if (!t) return;
   const a = t.dataset.act, v = t.dataset.v;
-  if (a === "mode") { if (S.mode !== v) { S.mode = v; haptic("select"); render(); } return; }
-  if (a === "cat") { v ? (S.cats.has(v) ? S.cats.delete(v) : S.cats.add(v)) : S.cats.clear(); S.top = null; haptic("select"); return render(); }
+  if (a === "mode") { if (S.mode !== v) { S.mode = v; haptic("select"); render({ tiles: true }); } return; }
+  if (a === "cat") { v ? (S.cats.has(v) ? S.cats.delete(v) : S.cats.add(v)) : S.cats.clear(); S.top = null; haptic("select"); return render({ enter: "enter" }); }
   if (a === "kind") { v ? (S.kinds.has(v) ? S.kinds.delete(v) : S.kinds.add(v)) : S.kinds.clear(); haptic("select"); return render(); }
   if (a === "tab") { S.tab = v; S.detail = null; haptic("select"); window.scrollTo(0, 0); return render(); }
   if (a === "like") return swipeTop(true);
@@ -400,6 +427,7 @@ document.addEventListener("click", (ev) => {
     else S.draft.b = v;
     haptic("select"); return render({ scrollDays: false });
   }
+  if (a === "preset") { const w = weekends()[+v]; S.draft.a = w[0]; S.draft.b = w[1]; haptic("select"); return render({ scrollDays: true }); }
   if (a === "dcat") { S.draft.cats.has(v) ? S.draft.cats.delete(v) : S.draft.cats.add(v); haptic("select"); return render({ scrollDays: false }); }
   if (a === "dru") { S.draft.ru = !S.draft.ru; haptic("select"); return render({ scrollDays: false }); }
   if (a === "apply") return applyDraft(false);
@@ -470,9 +498,9 @@ async function boot() {
     fetch("data/events.json" + bust).then((r) => r.json()),
     fetch("data/places.json" + bust).then((r) => r.json()).catch(() => ({ places: [] })),
   ]);
-  S.events = (ev.events || []).map((e) => ({ ...e, category: CAT[e.category] ? e.category : "other", tags: (e.tags || []).map(noEmoji) }));
+  S.events = (ev.events || []).map((e) => ({ ...e, title: noEmoji(e.title), category: CAT[e.category] ? e.category : "other", tags: (e.tags || []).map(noEmoji) }));
   S.places = pl.places || [];
   S.loaded = true;
-  render({ enter: "enter" });
+  render({ enter: "enter", tiles: true });
 }
 boot().catch((e) => { $("#app").innerHTML = `<div class="loading">Не удалось загрузить: ${esc(e.message)}</div>`; });
