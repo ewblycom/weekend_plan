@@ -28,7 +28,8 @@
    "url": "https://www.kudyznudy.cz/aktivity/bowling-billiard-dejvice",
    "map": "Bowling Billiard Dejvice, Bílá 6, Praha 6",
    "site": "https://www.bowling.cz",
-   "image": "https://cdn.kudyznudy.cz/files/61/61ddec46-8d45-4add-aadb-a5360cc97fc0.jpg?v=20261008060802"
+   "image": "https://cdn.kudyznudy.cz/files/61/61ddec46-8d45-4add-aadb-a5360cc97fc0.jpg?v=20261008060802",
+   "hours": "13:00–24:00"
   },
   {
    "name": "Absolutní Bowling",
@@ -93,7 +94,8 @@
    "map": "Kreativní zebra Vinohrady",
    "site": "https://www.kreativnizebra.cz",
    "booking": "https://kreativni-zebra.reservio.com",
-   "image": "https://cdn.kudyznudy.cz/files/14/14f58d96-61a2-4e2c-9e0b-54cbcbd02469.jpg?v=20261007052611"
+   "image": "https://cdn.kudyznudy.cz/files/14/14f58d96-61a2-4e2c-9e0b-54cbcbd02469.jpg?v=20261007052611",
+   "hours": "10:00–20:00"
   },
   {
    "name": "ArtMoment",
@@ -190,7 +192,8 @@
    "map": "Another World VR Praha Holešovice",
    "image": "https://cdn.kudyznudy.cz/files/7e/7eac1696-e9e1-4252-98d3-af08626bb054.webp?v=20261019055515",
    "site": "https://another-world.cz",
-   "booking": "https://prague.another-world.com/buy"
+   "booking": "https://prague.another-world.com/buy",
+   "hours": "12:00–21:00"
   }
  ]
 }
