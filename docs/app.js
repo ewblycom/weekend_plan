@@ -11,7 +11,7 @@ if (tg) {
 const CAT = {
   concert: "Концерты", theater: "Театр", show: "Шоу и стендап", workshop: "Мастер-классы",
   market: "Ярмарки", food: "Гастро", exhibition: "Выставки", festival: "Фестивали",
-  active: "Активный отдых", sport: "Спорт", other: "Другое",
+  active: "Активный отдых", sport: "Спорт", kids: "Детям", tour: "Экскурсии", other: "Другое",
 };
 const KIND = {
   bowling: "Боулинг", billiard: "Бильярд", escape: "Квест-комнаты", lasergame: "Лазертаг",
@@ -19,7 +19,7 @@ const KIND = {
 };
 const LANG = { ru: "Русский", cs: "Чешский", en: "English" };
 const SOURCE = { "prague.eu": "prague.eu", kudyznudy: "Kudy z nudy", tickettailor: "Ticket Tailor", telegram: "Telegram", places: "Подборка мест", goout: "GoOut", luma: "Luma", vinegret: "Vinegret" };
-const SORTS = [["best", "Лучшее"], ["cheap", "Дешевле"], ["pricey", "Дороже"], ["date", "По дате"]];
+const MODES = [["events", "Мероприятия"], ["places", "Места"]];
 const RSORTS = [["best", "Лучшее"], ["cheap", "Дешевле"], ["pricey", "Дороже"], ["near", "Ближе"]];
 
 const S = {
@@ -28,8 +28,9 @@ const S = {
   sel: { a: null, b: null },           // выбранные даты в календаре
   cal: { y: 0, m: 0 },
   from: null, to: null,
-  cats: new Set(), pick: [], filters: { free: false, ru: false },
-  sort: "best", kind: "all", cat: null, pool: [], vote: {}, round: 1,   // vote: id → true / false
+  mode: "events",                      // events — разовые мероприятия, places — места на любой день
+  cats: new Set(), pick: [], filters: { ru: false },
+  pool: [], vote: {}, round: 1,        // vote: id → true / false
   choice: null,                        // выбранное событие (id)
   plans: loadJson("plans", {}), planId: null,
   rest: { status: "idle", items: [], sort: "best", vote: {}, round: 1, choice: null },
@@ -50,6 +51,48 @@ function syncCloud() {
   } catch {}
 }
 
+// Текущий выбор (даты, тип, категории, отметки) — чтобы при новом заходе продолжить с того же места
+const SESSION_KEYS = ["step", "from", "to", "mode", "pick", "choice", "planId"];
+function saveSession() {
+  if (S.step === "dates" && !S.from) return clearSession();
+  const o = {};
+  SESSION_KEYS.forEach((k) => (o[k] = S[k]));
+  o.step = ["spin", "rest"].includes(S.step) ? (S.step === "rest" ? "r2" : "cats") : S.step;
+  o.cats = [...S.cats];
+  o.ru = S.filters.ru;
+  o.vote = Object.keys(S.vote).filter((k) => S.vote[k] !== undefined).reduce((a, k) => ((a[k] = S.vote[k] ? 1 : 0), a), {});
+  const v = JSON.stringify(o);
+  try { localStorage.setItem("session", v); } catch {}
+  try { if (tg && tg.CloudStorage && v.length < 4000) tg.CloudStorage.setItem("session", v); } catch {}
+}
+function clearSession() {
+  try { localStorage.removeItem("session"); } catch {}
+  try { tg && tg.CloudStorage && tg.CloudStorage.removeItem("session"); } catch {}
+}
+function applySession(o) {
+  if (!o || !o.from || o.to < todayIso()) return false;          // прошедшие выходные не восстанавливаем
+  SESSION_KEYS.forEach((k) => o[k] !== undefined && (S[k] = o[k]));
+  S.mode = o.mode === "places" ? "places" : "events";
+  S.cats = new Set(o.cats || []); S.filters.ru = !!o.ru;
+  S.sel = { a: S.from, b: S.to };
+  S.vote = {}; Object.entries(o.vote || {}).forEach(([k, v]) => (S.vote[k] = !!v));
+  if (["r1", "r2"].includes(S.step)) {
+    if (!S.pick || !S.pick.length) S.step = "cats";
+    else S.pool = sortList(inRange().filter((e) => S.pick.includes(groupOf(e))));
+  }
+  if (S.step === "done" && !S.plans[S.planId || S.choice]) S.step = "cats";
+  const d = dt(S.from); S.cal = { y: d.getFullYear(), m: d.getMonth() };
+  return true;
+}
+function restoreSession() {
+  if (applySession(loadJson("session", null))) return;
+  try {
+    tg && tg.CloudStorage && tg.CloudStorage.getItem("session", (e, v) => {
+      if (!e && v && S.step === "dates" && !S.from) { try { if (applySession(JSON.parse(v))) render(); } catch {} }
+    });
+  } catch {}
+}
+
 // ---------- утилиты ----------
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -62,7 +105,9 @@ const fmtLong = (s) => dt(s).toLocaleDateString("ru-RU", { weekday: "long", day:
 const fmtRange = (a, b) => (a === b ? fmtShort(a) : `${fmtShort(a)} — ${fmtShort(b)}`);
 const slotsIn = (e, a, b) => (e.slots || []).filter((x) => x.date >= a && x.date <= b);
 const overlaps = (e, a, b) => {
-  if (e.slots && e.slots.length) return slotsIn(e, a, b).length > 0;
+  // Список сеансов считаем полным, только если он доходит до конца выбранных дат;
+  // иначе сайт показал лишь первые даты — тогда судим по началу и концу события.
+  if (e.slots && e.slots.length && (slotsIn(e, a, b).length || e.slots.some((x) => x.date >= b))) return slotsIn(e, a, b).length > 0;
   return !e.start || (e.start <= b && (e.end || e.start) >= a);
 };
 const open = (url) => (url.startsWith("mailto:") ? (location.href = url) : tg && tg.openLink ? tg.openLink(url) : window.open(url, "_blank"));
@@ -123,8 +168,13 @@ function placesAsEvents() {
   }));
 }
 function inRange() {
-  const all = [...S.events, ...placesAsEvents()].filter((e) => overlaps(e, S.from, S.to));
-  return all.filter((e) => (!S.filters.free || e.free) && (!S.filters.ru || e.lang === "ru"));
+  if (S.mode === "places") return placesAsEvents();
+  return S.events.filter((e) => overlaps(e, S.from, S.to) && (!S.filters.ru || e.lang === "ru"));
+}
+const groups = () => (S.mode === "places" ? KIND : CAT);
+const groupOf = (e) => (e.kind === "place" ? e.placeKind : e.category);
+function counts() {
+  const c = {}; inRange().forEach((e) => { const g = groupOf(e); if (groups()[g]) c[g] = (c[g] || 0) + 1; }); return c;
 }
 // Актуальность: сначала то, что бывает только в эти дни, потом то, что идёт неделями, в конце — места на любой день
 function tier(e) {
@@ -135,29 +185,17 @@ function tier(e) {
   if (days <= 21) return 1;                                 // идёт пару недель
   return 2;                                                 // выставка на месяцы
 }
-const priceKey = (e) => (e.free ? 0 : e.price_from ?? null);
-function sortList(list, mode) {
-  const cmpPrice = (x, y, dir) => {
-    const a = priceKey(x), b = priceKey(y);
-    if (a == null && b == null) return y.score - x.score;
-    if (a == null) return 1; if (b == null) return -1;
-    return dir * (a - b) || y.score - x.score;
-  };
-  const a = [...list];
-  const t = (x, y) => tier(x) - tier(y);
-  if (mode === "best") return a.sort((x, y) => t(x, y) || y.score - x.score);
-  if (mode === "date") a.sort((x, y) => (x.start || "9").localeCompare(y.start || "9") || y.score - x.score);
-  else if (mode === "cheap") a.sort((x, y) => cmpPrice(x, y, 1));
-  else if (mode === "pricey") a.sort((x, y) => cmpPrice(x, y, -1));
-  else a.sort((x, y) => y.score - x.score);
-  return a;
+// Порядок: сначала то, что бывает только в эти дни, внутри — по дате и времени, затем по оценке
+function sortList(list) {
+  const t0 = (e) => ((e.slots && slotsIn(e, S.from, S.to)[0]) || {}).date || e.start || "9";
+  return [...list].sort((x, y) => tier(x) - tier(y) || (tier(x) === 0 ? t0(x).localeCompare(t0(y)) : 0) || y.score - x.score);
 }
 
 // ---------- шапка-«поиск» ----------
 function renderSearch() {
   const rows = [];
   if (S.from) rows.push(["dates", "Даты", fmtRange(S.from, S.to)]);
-  if (S.pick.length && !["dates", "cats", "spin"].includes(S.step)) rows.push(["cats", "Категория", catLabel()]);
+  if (S.pick.length && !["dates", "cats", "spin"].includes(S.step)) rows.push(["cats", S.mode === "places" ? "Что" : "Категория", catLabel()]);
   const ch = S.choice && eventOf(S.choice);
   if (ch && ["rest", "done"].includes(S.step)) rows.push(["r2", "Событие", ch.title]);
   const dn = S.rest.choice && S.rest.items.find((i) => i.id === S.rest.choice);
@@ -219,7 +257,7 @@ function pickDay(s) {
 }
 function applyDates(a, b) {
   S.from = a; S.to = b; S.sel = { a, b };
-  S.pick = []; S.vote = {}; S.choice = null; S.rest = freshRest();
+  S.pick = []; S.cats.clear(); S.vote = {}; S.choice = null; S.rest = freshRest();
   S.step = "cats"; haptic("select"); render(); window.scrollTo({ top: 0, behavior: "smooth" });
 }
 function weekendRange() {
@@ -232,23 +270,24 @@ function weekendRange() {
 
 // ---------- экран 2: категории ----------
 function catLabel() {
-  const names = S.pick.map((c) => CAT[c]);
+  const names = S.pick.map((c) => groups()[c]);
   return names.length > 2 ? `${names.slice(0, 2).join(", ")} и ещё ${names.length - 2}` : names.join(", ");
 }
-function viewCats() {
-  const list = inRange();
-  const counts = {};
-  list.forEach((e) => { if (CAT[e.category]) counts[e.category] = (counts[e.category] || 0) + 1; });
-  const cats = Object.keys(CAT).filter((c) => counts[c]);
-  return `<h1 class="title">Что хочется?</h1>
-    <p class="lead">Отметьте одну или несколько категорий — покажем всё по ним.</p>
-    <div class="chips">${cats.map((c) => `<button class="chip ${S.cats.has(c) ? "on" : ""}" data-cat="${c}">${CAT[c]}<i>${counts[c]}</i></button>`).join("") || '<p class="muted">В эти даты ничего не найдено. Выберите другие даты.</p>'}</div>
-    <div class="row-label"><b>Цена</b></div>
-    <div class="seg glass">${[[false, "Любая"], [true, "Бесплатно"]].map(([v, l]) => `<button class="${S.filters.free === v ? "on" : ""}" data-filter="free:${v}">${l}</button>`).join("")}</div>
-    <div class="row-label"><b>Язык</b></div>
-    <div class="seg glass">${[[false, "Любой"], [true, "Русский"]].map(([v, l]) => `<button class="${S.filters.ru === v ? "on" : ""}" data-filter="ru:${v}">${l}</button>`).join("")}</div>`;
+function modeBar() {
+  return `<div class="seg glass mode">${MODES.map(([k, l]) => `<button class="${S.mode === k ? "on" : ""}" data-mode="${k}">${l}</button>`).join("")}</div>`;
 }
-function availCats() { return Object.keys(CAT).filter((c) => inRange().some((e) => e.category === c)); }
+function viewCats() {
+  const c = counts();
+  const cats = Object.keys(groups()).filter((k) => c[k]);
+  const ev = S.mode === "events";
+  return `${modeBar()}
+    <h1 class="title">${ev ? "Что хочется?" : "Куда сходить?"}</h1>
+    <p class="lead">${ev ? "Мероприятия в выбранные даты. Отметьте одну или несколько категорий." : "Места, куда можно прийти в любой день. Отметьте, что интересно."}</p>
+    <div class="chips">${cats.map((k) => `<button class="chip ${S.cats.has(k) ? "on" : ""}" data-cat="${k}">${groups()[k]}<i>${c[k]}</i></button>`).join("") || '<p class="muted">В эти даты ничего не найдено. Выберите другие даты.</p>'}</div>
+    ${ev ? `<div class="row-label"><b>Язык</b></div>
+    <div class="seg glass">${[[false, "Любой"], [true, "Русский"]].map(([v, l]) => `<button class="${S.filters.ru === v ? "on" : ""}" data-filter="ru:${v}">${l}</button>`).join("")}</div>` : ""}`;
+}
+function availCats() { const c = counts(); return Object.keys(groups()).filter((k) => c[k]); }
 function dockCats() {
   const avail = availCats();
   const n = avail.filter((c) => S.cats.has(c)).length;
@@ -258,13 +297,18 @@ function dockCats() {
   </div>`;
 }
 function openList(cats) {
-  S.pick = cats; S.vote = {}; S.round = 1; S.kind = "all";
-  S.pool = sortList(inRange().filter((e) => cats.includes(e.category)), S.sort);
+  S.pick = cats; S.vote = {}; S.round = 1;
+  S.pool = sortList(inRange().filter((e) => cats.includes(groupOf(e))));
   S.step = "r1"; render(); window.scrollTo({ top: 0, behavior: "smooth" });
 }
 function showChosen() {
   const chosen = availCats().filter((c) => S.cats.has(c));
   if (chosen.length) { haptic("select"); openList(chosen); }
+}
+function setMode(m) {
+  if (S.mode === m) return;
+  S.mode = m; S.cats.clear(); S.pick = []; S.vote = {}; S.choice = null;
+  S.step = "cats"; haptic("select"); render(); window.scrollTo(0, 0);
 }
 
 // ---------- экран 2б: рулетка ----------
@@ -277,7 +321,7 @@ function startSpin() {
   labels.push(final);
   S.step = "spin"; S.pick = []; render();
   const reel = $("reel"); if (!reel) return;
-  reel.innerHTML = labels.map((c) => `<div>${esc(CAT[c])}</div>`).join("");
+  reel.innerHTML = labels.map((c) => `<div>${esc(groups()[c])}</div>`).join("");
   void reel.offsetHeight;
   reel.style.transform = `translateY(${-(labels.length - 2) * 72}px)`;
   haptic("select");
@@ -326,24 +370,19 @@ function eventCard(e, mode) {
 function sortBar(current, opts, attr) {
   return `<div class="seg glass" style="margin-bottom:12px">${opts.map(([k, l]) => `<button class="${current === k ? "on" : ""}" data-${attr}="${k}">${l}</button>`).join("")}</div>`;
 }
+const TIER_TITLE = ["Только в эти дни", "Идёт ещё пару недель", "Идёт долго — можно и позже"];
 function viewRound1() {
-  const list = sortList(S.pool, S.sort);
-  const events = list.filter((e) => e.kind !== "place");
-  const places = list.filter((e) => e.kind === "place");
-  const kinds = [...new Set(places.map((e) => e.placeKind).filter((k) => KIND[k]))];
-  if (S.kind !== "all" && !kinds.includes(S.kind)) S.kind = "all";
-  const shown = S.kind === "all" ? places : places.filter((e) => e.placeKind === S.kind);
-  const placesBlock = places.length ? `
-    <h2 class="section">${events.length ? "Или на любой день" : "Места на любой день"}</h2>
-    ${kinds.length > 1 ? `<div class="chips small">${[["all", "Все"], ...kinds.map((k) => [k, KIND[k]])].map(([k, l]) =>
-      `<button class="chip ${S.kind === k ? "on" : ""}" data-kind="${k}">${l}<i>${k === "all" ? places.length : places.filter((e) => e.placeKind === k).length}</i></button>`).join("")}</div>` : ""}
-    <div class="list">${shown.map((e) => eventCard(e, "r1")).join("")}</div>` : "";
-  return `<h1 class="title">${esc(catLabel())}</h1>
-    <p class="lead">Сначала то, что бывает только в эти дни. Отметьте, что нравится, — потом выберем одно.</p>
-    ${events.length ? sortBar(S.sort, SORTS, "sort") : ""}
-    <div class="list">${events.map((e) => eventCard(e, "r1")).join("")}</div>
-    ${placesBlock}
-    ${!events.length && !places.length ? '<p class="muted empty">Ничего не нашлось</p>' : ""}`;
+  const list = sortList(S.pool);
+  let body;
+  if (S.mode === "places") body = `<div class="list">${list.map((e) => eventCard(e, "r1")).join("")}</div>`;
+  else body = [0, 1, 2].map((t) => {
+    const xs = list.filter((e) => tier(e) === t);
+    return xs.length ? `<h2 class="section">${TIER_TITLE[t]}<i class="count">${xs.length}</i></h2><div class="list">${xs.map((e) => eventCard(e, "r1")).join("")}</div>` : "";
+  }).join("");
+  return `${modeBar()}
+    <h1 class="title">${esc(catLabel())}</h1>
+    <p class="lead">${S.mode === "places" ? "Отметьте, что нравится, — потом выберем одно." : "Сначала то, что потом уже не застать. Отметьте, что нравится, — потом выберем одно."}</p>
+    ${list.length ? body : '<p class="muted empty">Ничего не нашлось</p>'}`;
 }
 function dockRound1() {
   const n = Object.values(S.vote).filter(Boolean).length;
@@ -514,6 +553,7 @@ function render() {
   if (keep) window.scrollTo(0, y);
   dock.innerHTML = dk;
   if (tg && tg.BackButton) { S.step === "dates" ? tg.BackButton.hide() : tg.BackButton.show(); }
+  saveSession();
 }
 function goBack(to) {
   if (to === "dates") { S.step = "dates"; S.sel = { a: S.from, b: S.to }; }
@@ -543,10 +583,9 @@ document.addEventListener("click", (ev) => {
   if (ds.plan) { S.planId = ds.plan; S.choice = ds.plan; const p = S.plans[ds.plan]; S.from = S.from || p.date; S.to = S.to || p.date; S.rest = freshRest(); if (p.dinner) S.rest.choice = p.dinner.id, S.rest.items = [{ id: p.dinner.id, name: p.dinner.name }]; S.step = "done"; return render(); }
   if (ds.cat) { S.cats.has(ds.cat) ? S.cats.delete(ds.cat) : S.cats.add(ds.cat); haptic("select"); return render(); }
   if (ds.filter) { const [k, v] = ds.filter.split(":"); S.filters[k] = v === "true"; S.cats.clear(); return render(); }
+  if (ds.mode) return setMode(ds.mode);
   if (ds.show) return showChosen();
   if (ds.spin) return startSpin();
-  if (ds.sort) { S.sort = ds.sort; return render(); }
-  if (ds.kind) { S.kind = ds.kind; haptic("select"); return render(); }
   if (ds.vote) { const k = ds.vote.lastIndexOf(":"), id = ds.vote.slice(0, k), want = ds.vote.slice(k + 1) === "1"; if (S.step === "r2") { return want ? chooseEvent(id) : (S.vote[id] = false, render()); } S.vote[id] = S.vote[id] === want ? undefined : want; haptic("select"); return render(); }
   if (ds.next === "r2") { S.step = "r2"; render(); return window.scrollTo(0, 0); }
   if (ds.more) { const el = $("more-" + ds.more); if (el) { el.hidden = !el.hidden; t.textContent = el.hidden ? "Подробнее" : "Свернуть"; } return; }
@@ -557,7 +596,7 @@ document.addEventListener("click", (ev) => {
   if (ds.skip) { S.step = "done"; render(); return window.scrollTo(0, 0); }
   if (ds.ics) return downloadIcs(ds.ics);
   if (ds.gcal !== undefined) return gcal(S.planId || S.choice, Number(ds.gcal));
-  if (ds.restart) { S.step = "dates"; S.sel = { a: null, b: null }; S.from = S.to = null; S.pick = []; S.planId = null; S.choice = null; S.vote = {}; S.rest = freshRest(); render(); return window.scrollTo(0, 0); }
+  if (ds.restart) { S.step = "dates"; S.sel = { a: null, b: null }; S.from = S.to = null; S.pick = []; S.cats.clear(); S.planId = null; S.choice = null; S.vote = {}; S.rest = freshRest(); clearSession(); render(); return window.scrollTo(0, 0); }
 });
 document.addEventListener("change", (ev) => {
   const t = ev.target, p = S.plans[S.planId || S.choice]; if (!p) return;
@@ -575,10 +614,11 @@ async function load() {
     fetch("data/events.json" + bust).then((r) => r.json()),
     fetch("data/places.json" + bust).then((r) => r.json()).catch(() => ({ places: [] })),
   ]);
-  S.events = (ev.events || []).map((e) => ({ ...e, tags: (e.tags || []).map(noEmoji) }));
+  S.events = (ev.events || []).map((e) => ({ ...e, category: CAT[e.category] ? e.category : "other", tags: (e.tags || []).map(noEmoji) }));
   S.places = pl.places || [];
   S.weekend = ev.weekend;
   const n = new Date(); S.cal = { y: n.getFullYear(), m: n.getMonth() };
+  restoreSession();
   render(); syncCloud();
 }
 load().catch((e) => { $("view").innerHTML = `<p class="muted empty">Не удалось загрузить данные: ${esc(e.message)}</p>`; });

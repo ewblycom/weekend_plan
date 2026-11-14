@@ -6,8 +6,11 @@
 """
 from __future__ import annotations
 
+import json
 import logging
 import re
+import time
+from pathlib import Path
 from urllib.parse import urljoin
 
 from datetime import date, timedelta
@@ -40,6 +43,23 @@ THEATER_LABELS = {
 }
 DETAIL_HREF = re.compile(r"/cs/akce/[^/?#]+/?$")
 NOISE = {"sdílet", "oblíbené", "nahoru", "filtry", "zobrazit 20 dalších"}
+
+
+CACHE = Path(__file__).resolve().parents[2] / "data" / "cache" / "prague_eu.json"
+REFRESH_DAYS = 7
+PAUSE = 10   # секунд между страницами событий
+
+
+def load_cache() -> dict:
+    try:
+        return json.loads(CACHE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def save_cache(data: dict) -> None:
+    CACHE.parent.mkdir(parents=True, exist_ok=True)
+    CACHE.write_text(json.dumps(data, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
 
 
 def listing_url(slug: str) -> str:
@@ -130,7 +150,7 @@ def parse_detail(html: str) -> dict:
 
 
 def collect(fetcher, max_per_category: int = 40, today: date | None = None,
-            horizon_days: int = 21, max_details: int = 320) -> list[Event]:
+            horizon_days: int = 21, max_details: int = 60) -> list[Event]:
     today = today or date.today()
     out: list[Event] = []
     for slug, cat in CATEGORIES.items():
@@ -140,23 +160,35 @@ def collect(fetcher, max_per_category: int = 40, today: date | None = None,
         items = parse_listing(html, cat)[:max_per_category]
         log.info("prague.eu/%s: %d событий", slug, len(items))
         out.extend(items)
-    # Страницы событий открываем только для ближайших дат: оттуда берём сеансы и прямые ссылки
+    # Страницы событий открываем только для ближайших дат: оттуда берём сеансы и прямые ссылки.
+    # Щадящий режим: каждую страницу открываем один раз и запоминаем (кэш в репозитории),
+    # повторно — не чаще раза в REFRESH_DAYS; за запуск не больше max_details страниц с паузой PAUSE.
+    cache = load_cache()
     near = [e for e in out if overlaps(e.start, e.end, today, today + timedelta(days=horizon_days))]
-    seen: set[str] = set()
-    for ev in sorted(near, key=lambda e: e.start or date.max):
-        if ev.url in seen or len(seen) >= max_details:
+    fresh = lambda u: u in cache and cache[u]["fetched"] >= (today - timedelta(days=REFRESH_DAYS)).isoformat()
+    todo, seen = [], set()
+    for ev in sorted(near, key=lambda e: (e.url in cache, e.start or date.max)):   # сначала ни разу не открытые
+        if ev.url not in seen and not fresh(ev.url):
+            seen.add(ev.url); todo.append(ev.url)
+    for i, url in enumerate(todo[:max_details]):
+        if i:
+            time.sleep(PAUSE)
+        page = fetcher.get(url)
+        if page:
+            cache[url] = {"fetched": today.isoformat(), **parse_detail(page)}
+    log.info("prague.eu: открыто страниц %d, из кэша %d", min(len(todo), max_details), len({e.url for e in near}) - len(todo))
+    for ev in near:
+        d = cache.get(ev.url)
+        if not d:
             continue
-        seen.add(ev.url)
-        page = fetcher.get(ev.url)
-        if not page:
-            continue
-        d = parse_detail(page)
-        d["slots"] = [x for x in d["slots"] if x["date"] >= today.isoformat()]   # прошедшие сеансы не нужны
-        ev.slots, ev.booking, ev.link = d["slots"], d["booking"], d["link"]
+        ev.slots = [x for x in d["slots"] if x["date"] >= today.isoformat()]   # прошедшие сеансы не нужны
+        ev.booking, ev.link = d["booking"], d["link"]
         ev.description = ev.description or d["description"]
-        if d["slots"] and not ev.time:
-            times = {x["time"] for x in d["slots"]}
+        if ev.slots and not ev.time:
+            times = {x["time"] for x in ev.slots}
             ev.time = times.pop() if len(times) == 1 else None
+    keep = {e.url for e in out}
+    save_cache({u: v for u, v in cache.items() if u in keep})   # прошедшие события из кэша убираем
     # одно событие встречается в нескольких категориях — переносим найденное на дубли
     by_url = {e.url: e for e in near if e.slots or e.booking or e.link}
     for e in out:
