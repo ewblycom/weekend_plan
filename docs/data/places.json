@@ -26,7 +26,9 @@
    "area": "Praha 6 — Dejvice",
    "note": "6 дорожек AMF, 2 стола для пула, карамболь, дартс, аэрохоккей.",
    "url": "https://www.kudyznudy.cz/aktivity/bowling-billiard-dejvice",
-   "map": "Bowling Billiard Dejvice, Bílá 6, Praha 6"
+   "map": "Bowling Billiard Dejvice, Bílá 6, Praha 6",
+   "site": "https://www.bowling.cz",
+   "image": "https://cdn.kudyznudy.cz/files/61/61ddec46-8d45-4add-aadb-a5360cc97fc0.jpg?v=20261008060802"
   },
   {
    "name": "Absolutní Bowling",
@@ -34,7 +36,8 @@
    "area": "Praha 7 — Holešovice",
    "note": "4 полноразмерные дорожки, 3 бильярда, 2 стола для пинг-понга, настольный футбол. У метро Nádraží Holešovice.",
    "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
-   "map": "Absolutní Bowling Praha Holešovice"
+   "map": "Absolutní Bowling Praha Holešovice",
+   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158"
   },
   {
    "name": "Bowling Celnice",
@@ -42,7 +45,8 @@
    "area": "Praha 1 — центр",
    "note": "8 дорожек AMF, некурящий зал, бильярд, дартс.",
    "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
-   "map": "Bowling Celnice Praha"
+   "map": "Bowling Celnice Praha",
+   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158"
   },
   {
    "name": "Victoria Bowling",
@@ -50,7 +54,8 @@
    "area": "Praha 3 — Žižkov",
    "note": "Для любителей, а не рекордов: играете и выигрываете шоты.",
    "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
-   "map": "Victoria Bowling Žižkov Praha"
+   "map": "Victoria Bowling Žižkov Praha",
+   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158"
   },
   {
    "name": "Laser game 3D + бильярд Harlequin",
@@ -66,7 +71,10 @@
    "area": "Praha 1 и Praha 5 (Wonderland, Staropramenná 12)",
    "note": "Сюжетные эскейп-румы, есть хоррор-комната из мирового топ-10.",
    "url": "https://www.kudyznudy.cz/aktivity/the-chamber-escape-game-praha",
-   "map": "The Chamber Escape Game Praha"
+   "map": "The Chamber Escape Game Praha",
+   "site": "https://thechamber.cz/kontakty/",
+   "booking": "https://www.chamberbooking.eu/reservation/index/4",
+   "image": "https://cdn.kudyznudy.cz/files/5b/5b7c1c9c-4aeb-4a55-95b9-c2534da908cd.jpg?v=20261005065301"
   },
   {
    "name": "Marina Art — Art rande",
@@ -82,7 +90,10 @@
    "area": "Praha 2 — Vinohrady / Harfa",
    "note": "Роспись керамики (кружки, тарелки); обжиг включён. Нужна бронь на каждого, даже если человек не рисует.",
    "url": "https://www.kudyznudy.cz/aktivity/kreativni-zebra-keramicka-dilna-v-centru-prahy",
-   "map": "Kreativní zebra Vinohrady"
+   "map": "Kreativní zebra Vinohrady",
+   "site": "https://www.kreativnizebra.cz",
+   "booking": "https://kreativni-zebra.reservio.com",
+   "image": "https://cdn.kudyznudy.cz/files/14/14f58d96-61a2-4e2c-9e0b-54cbcbd02469.jpg?v=20261007052611"
   },
   {
    "name": "ArtMoment",
@@ -98,7 +109,10 @@
    "area": "Praha 1 — Národní třída",
    "note": "Разовые воркшопы: роспись по шёлку, мозаика, переплёт книг.",
    "url": "https://www.kudyznudy.cz/aktivity/kurzy-kresby-malby-kurzy-olej-akryl",
-   "map": "Atelier ŠUM Praha"
+   "map": "Atelier ŠUM Praha",
+   "site": "https://www.kurzyuzuzy.cz/spolupracujeme/",
+   "booking": "https://www.kurzyuzuzy.cz/prihlasky/",
+   "image": "https://cdn.kudyznudy.cz/files/78/7804f44c-adde-44b6-a7fe-17fd7026d611.jpg?v=20241010053346"
   },
   {
    "name": "Скалодром — базовый курс",
@@ -172,7 +186,9 @@
    "note": "VR-арена для 2–15 игроков, подходит для свидания.",
    "url": "https://www.kudyznudy.cz/aktivity/another-world-virtualni-realita-v-srdci-prazskych",
    "map": "Another World VR Praha Holešovice",
-   "image": "https://cdn.kudyznudy.cz/files/7e/7eac1696-e9e1-4252-98d3-af08626bb054.webp?v=20261019055515"
+   "image": "https://cdn.kudyznudy.cz/files/7e/7eac1696-e9e1-4252-98d3-af08626bb054.webp?v=20261019055515",
+   "site": "https://another-world.cz",
+   "booking": "https://prague.another-world.com/buy"
   }
  ]
 }
