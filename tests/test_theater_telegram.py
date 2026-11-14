@@ -130,3 +130,14 @@ def test_prague_eu_detail_slots_and_tickets():
     assert d["link"] == "https://www.napradle.cz"
     assert [x["date"] for x in d["slots"]] == ["2026-11-13", "2026-11-14", "2026-11-17"]
     assert d["slots"][0]["time"] == "19:00"
+
+
+def test_prague_eu_detail_inside_header():
+    html = """<html><body><header class="site"><a href="https://prague.eu/cs/">menu</a></header>
+    <main><header class="event-head"><h1>Chance Liga — zápasy AC Sparta Praha</h1>
+    <a href="https://www.sparta.cz/cs/vstupenky">vstupenky</a></header>
+    <section><h2>datum a čas</h2><table><tr><th>22. 11. 2026, 15:00</th></tr><tr><th>6. 12. 2026, 17:00</th></tr></table></section></main>
+    <footer><a href="https://www.facebook.com/praguecitytourism/">fb</a></footer></body></html>"""
+    d = prague_eu.parse_detail(html)
+    assert d["booking"] == "https://www.sparta.cz/cs/vstupenky"
+    assert [(x["date"], x["time"]) for x in d["slots"]] == [("2026-11-22", "15:00"), ("2026-12-06", "17:00")]

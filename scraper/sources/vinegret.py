@@ -82,10 +82,18 @@ def collect(fetcher, max_articles: int = 25) -> list[Event]:
         if html:
             links.extend(u for u in links_from(html) if u not in links)
     log.info("vinegret: %d статей-кандидатов", len(links))
-    out = []
+    out, loaded, afisha = [], 0, 0
     for url in links[:max_articles]:
         page = fetcher.get(url)
-        ev = parse_article(page, url, today) if page else None
+        if not page:
+            continue
+        loaded += 1
+        if "Афиша" in page:
+            afisha += 1
+        ev = parse_article(page, url, today)
         if ev:
             out.append(ev)
+    if not out:
+        # диагностика попадёт в errors в events.json
+        raise RuntimeError(f"ссылок {len(links)}, загружено {loaded}, рубрика «Афиша» {afisha}, с датой в Праге 0")
     return out

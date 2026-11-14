@@ -63,6 +63,9 @@ def parse_detail(html: str, url: str) -> Event | None:
     raw = ld.get("startDate") or ""
     time = raw[11:16] if len(raw) >= 16 and raw[11:16] != "00:00" else None
     text = b["text"]
+    if not time:   # «Health + VOWWS - zítra 19:00 - ARCHA+ - GoOut»
+        m = re.search(r"\b(\d{1,2}:\d{2})\b", meta(soup, "og:title") or "")
+        time = m.group(1) if m else None
     if not start:
         start, end, time = parse_range(text)
     venue = jsonld_venue(ld) if ld else None

@@ -13,7 +13,7 @@ from urllib.parse import urljoin
 from datetime import date, timedelta
 
 from ..dates import NUMERIC_RANGE, overlaps, parse_range
-from ..extract import page_basics, soup_of
+from ..extract import external_links, meta, soup_of
 from ..models import Event
 
 log = logging.getLogger(__name__)
@@ -105,8 +105,12 @@ SLOT = re.compile(r"(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4}),\s*(\d{1,2}:\d{2})")
 
 def parse_detail(html: str) -> dict:
     """Страница события: все сеансы из блока «datum a čas», ссылка на билеты и сайт площадки."""
-    b = page_basics(html)
-    text = b["text"]
+    # Не используем page_basics: на prague.eu даты и кнопка «vstupenky» лежат внутри <header>,
+    # который общий разбор вырезает как шапку сайта.
+    soup = soup_of(html)
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    text = soup.get_text("\n", strip=True)
     low = text.lower()
     i = low.find("datum a čas")
     block = text[i:i + 3000] if i >= 0 else ""
@@ -119,7 +123,9 @@ def parse_detail(html: str) -> dict:
         if key not in seen:
             seen.add(key)
             slots.append({"date": key[0], "time": key[1]})
-    return {"slots": slots, "booking": b["booking"], "link": b["site"], "description": b["description"]}
+    site, booking = external_links(soup)
+    return {"slots": slots, "booking": booking, "link": site,
+            "description": meta(soup, "og:description") or meta(soup, "description")}
 
 
 def collect(fetcher, max_per_category: int = 40, today: date | None = None,

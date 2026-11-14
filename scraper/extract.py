@@ -56,11 +56,16 @@ def jsonld_venue(ev: dict) -> str | None:
         addr = loc.get("address")
         if isinstance(addr, dict):
             addr = ", ".join(filter(None, [addr.get("streetAddress"), addr.get("addressLocality")]))
-        return ", ".join(filter(None, [name, addr if isinstance(addr, str) else None])) or None
+        parts = []
+        for x in [name, *(addr.split(", ") if isinstance(addr, str) else [])]:
+            x = (x or "").strip()
+            if x and x not in parts and x != "Hlavní město Praha":
+                parts.append(x)
+        return ", ".join(parts) or None
     return loc if isinstance(loc, str) else None
 
 
-def visible_text(soup: BeautifulSoup, limit: int = 6000) -> str:
+def visible_text(soup: BeautifulSoup, limit: int = 20000) -> str:
     for tag in soup(["script", "style", "noscript", "nav", "footer", "header"]):
         tag.decompose()
     text = soup.get_text("\n", strip=True)

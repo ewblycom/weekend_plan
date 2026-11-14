@@ -35,8 +35,8 @@ def merge(events: list[Event]) -> list[Event]:
         for f in ("venue", "time", "description", "image", "category", "end", "free", "price_from", "city", "link", "booking"):
             if getattr(cur, f) in (None, "") and getattr(ev, f) not in (None, ""):
                 setattr(cur, f, getattr(ev, f))
-        if ev.lang == "ru":
-            cur.lang = "ru"
+        if ev.lang == "ru" and not ev.source.startswith(("telegram", "vinegret")):
+            cur.lang = "ru"   # пересказ чешского события в русском канале не делает его русскоязычным
         if ev.slots and not cur.slots:
             cur.slots = ev.slots
     return list(by_key.values())
