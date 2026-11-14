@@ -1,0 +1,31 @@
+name: Daily events scrape
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # каждый день ~5:17/6:17 по Праге (cron в UTC)
+  workflow_dispatch: {}      # кнопка «Run workflow» для ручного запуска
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Scrape
+        run: python -m scraper.run
+      - name: Commit data
+        run: |
+          git config user.name "events-bot"
+          git config user.email "events-bot@users.noreply.github.com"
+          git add docs/data/events.json
+          git diff --cached --quiet || git commit -m "data: события на $(date +%F)"
+          git push
