@@ -84,6 +84,16 @@ def ru_span(value: str, today: date):
     return parse_range(value, today)
 
 
+BG_URL = re.compile(r"background-image:\s*url\(['\"]?([^'\")]+)")
+
+
+def _post_image(msg) -> str | None:
+    """Первое фото поста из веб-превью (у t.me/s оно в style=background-image)."""
+    el = msg.select_one(".tgme_widget_message_photo_wrap, .tgme_widget_message_video_thumb, .link_preview_image")
+    m = BG_URL.search(el.get("style", "")) if el else None
+    return m.group(1) if m else None
+
+
 def _clock(value: str | None) -> str | None:
     m = re.search(r"(\d{1,2}:\d{2})(?:\s*[-–—]\s*(\d{1,2}:\d{2}))?", value or "")
     return None if not m else (f"{m[1]}—{m[2]}" if m[2] else m[1])
@@ -124,6 +134,7 @@ def parse_cesko_event(html: str, url: str, today: date, hint: str = "") -> Event
     desc = meta(soup, "og:description") or meta(soup, "description") or ""
     return Event(
         source="telegram:the_cesko", url=url, title=title[:140], start=start, end=end,
+        image=meta(soup, "og:image"),
         time=_clock(fields.get("Время")), venue=_short_venue(venue_raw) if venue_raw else None,
         category=guess_category(title + " " + desc), description=desc[:400], lang="ru",
         free=free, price_from=price)
@@ -256,6 +267,7 @@ def parse_channel(html: str, channel: str, today: date | None = None,
             end=end,
             time=clock or _clock(text),
             venue=_short_venue(place.group(1)) if place else None,
+            image=_post_image(msg),
             category=guess_category(text),
             description=text[:600],
             lang="ru",

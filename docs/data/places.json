@@ -2,18 +2,169 @@
  "checked_at": "2026-11-14",
  "note": "Постоянные места для активного вечера. Цены — как были указаны на источнике в день проверки, могут измениться.",
  "places": [
-  {"name": "Bowling Smíchov & Garage Billiards", "kind": "bowling", "area": "Praha 5 — Smíchov", "note": "Боулинг от 259 Kč за дорожку, бильярд 9ft от 199 Kč, дартс. Ближе всего к Бранику.", "url": "https://www.firmy.cz/sluzby/Vzdelavani-a-volny-cas/Zabava-a-zazitky/kraj-praha", "map": "Bowling Smíchov Garage Billiards Praha"},
-  {"name": "FUN ARENA Chodov", "kind": "escape", "area": "Praha 11 — Chodov", "note": "Эскейп-рум The Clinic (от 1 000 Kč), Robot Fight. Недалеко от Праги 4.", "url": "https://www.firmy.cz/sluzby/Vzdelavani-a-volny-cas/Zabava-a-zazitky/kraj-praha", "map": "FUN ARENA Chodov Praha"},
-  {"name": "Bowling & Billiard Dejvice", "kind": "bowling", "area": "Praha 6 — Dejvice", "note": "6 дорожек AMF, 2 стола для пула, карамболь, дартс, аэрохоккей.", "url": "https://www.kudyznudy.cz/aktivity/bowling-billiard-dejvice", "map": "Bowling Billiard Dejvice, Bílá 6, Praha 6"},
-  {"name": "Absolutní Bowling", "kind": "bowling", "area": "Praha 7 — Holešovice", "note": "4 полноразмерные дорожки, 3 бильярда, 2 стола для пинг-понга, настольный футбол. У метро Nádraží Holešovice.", "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas", "map": "Absolutní Bowling Praha Holešovice"},
-  {"name": "Bowling Celnice", "kind": "bowling", "area": "Praha 1 — центр", "note": "8 дорожек AMF, некурящий зал, бильярд, дартс.", "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas", "map": "Bowling Celnice Praha"},
-  {"name": "Victoria Bowling", "kind": "bowling", "area": "Praha 3 — Žižkov", "note": "Для любителей, а не рекордов: играете и выигрываете шоты.", "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas", "map": "Victoria Bowling Žižkov Praha"},
-  {"name": "Laser game 3D + бильярд Harlequin", "kind": "lasergame", "area": "Praha", "note": "Арена лазертага 320 м², под ней бильярдный клуб Harlequin: 15 столов, пинг-понг, дартс, ресторан. Можно совместить за один вечер.", "url": "https://www.slevomat.cz/akce/2216138-laser-game-v-nejmodernejsi-3d-arene-az-pro-8-osob", "map": "Harlequin billiard Praha"},
-  {"name": "The Chamber Escape Games", "kind": "escape", "area": "Praha 1 и Praha 5 (Wonderland, Staropramenná 12)", "note": "Сюжетные эскейп-румы, есть хоррор-комната из мирового топ-10.", "url": "https://www.kudyznudy.cz/aktivity/the-chamber-escape-game-praha", "map": "The Chamber Escape Game Praha"},
-  {"name": "Marina Art — Art rande", "kind": "workshop", "area": "Praha 8 — Karlín", "note": "Мастер-класс по рисованию для двоих (несколько техник), есть формат с дегустацией 6 вин.", "url": "https://www.slevomat.cz/praha/zabava-a-volny-cas/kurzy-workshopy/kurzy-malovani-kresleni", "map": "Marina Art Karlín Praha"},
-  {"name": "Kreativní zebra", "kind": "workshop", "area": "Praha 2 — Vinohrady / Harfa", "note": "Роспись керамики (кружки, тарелки); обжиг включён. Нужна бронь на каждого, даже если человек не рисует.", "url": "https://www.kudyznudy.cz/aktivity/kreativni-zebra-keramicka-dilna-v-centru-prahy", "map": "Kreativní zebra Vinohrady"},
-  {"name": "ArtMoment", "kind": "workshop", "area": "Praha 7 — Holešovice", "note": "Вечер интерактивного рисования.", "url": "https://www.slevomat.cz/podniky/praha/zabava-a-volny-cas/kurzy-workshopy/kurzy-malovani-kresleni", "map": "ArtMoment Praha Holešovice"},
-  {"name": "Atelier ŠUM", "kind": "workshop", "area": "Praha 1 — Národní třída", "note": "Разовые воркшопы: роспись по шёлку, мозаика, переплёт книг.", "url": "https://www.kudyznudy.cz/aktivity/kurzy-kresby-malby-kurzy-olej-akryl", "map": "Atelier ŠUM Praha"},
-  {"name": "Скалодром — базовый курс", "kind": "sport", "area": "Praha 10 — Strašnice и др.", "note": "Курс лазания на искусственной стене для 1–2 человек.", "url": "https://www.slevomat.cz/praha/zabava-a-volny-cas/kurzy-workshopy?page=4", "map": "lezecká stěna Strašnice Praha"}
+  {
+   "name": "Bowling Smíchov & Garage Billiards",
+   "kind": "bowling",
+   "area": "Praha 5 — Smíchov",
+   "note": "Боулинг от 259 Kč за дорожку, бильярд 9ft от 199 Kč, дартс. Ближе всего к Бранику.",
+   "url": "https://www.firmy.cz/sluzby/Vzdelavani-a-volny-cas/Zabava-a-zazitky/kraj-praha",
+   "map": "Bowling Smíchov Garage Billiards Praha"
+  },
+  {
+   "name": "FUN ARENA Chodov",
+   "kind": "escape",
+   "area": "Praha 11 — Chodov",
+   "note": "Эскейп-рум The Clinic (от 1 000 Kč), Robot Fight. Недалеко от Праги 4.",
+   "url": "https://www.firmy.cz/sluzby/Vzdelavani-a-volny-cas/Zabava-a-zazitky/kraj-praha",
+   "map": "FUN ARENA Chodov Praha"
+  },
+  {
+   "name": "Bowling & Billiard Dejvice",
+   "kind": "bowling",
+   "area": "Praha 6 — Dejvice",
+   "note": "6 дорожек AMF, 2 стола для пула, карамболь, дартс, аэрохоккей.",
+   "url": "https://www.kudyznudy.cz/aktivity/bowling-billiard-dejvice",
+   "map": "Bowling Billiard Dejvice, Bílá 6, Praha 6"
+  },
+  {
+   "name": "Absolutní Bowling",
+   "kind": "bowling",
+   "area": "Praha 7 — Holešovice",
+   "note": "4 полноразмерные дорожки, 3 бильярда, 2 стола для пинг-понга, настольный футбол. У метро Nádraží Holešovice.",
+   "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
+   "map": "Absolutní Bowling Praha Holešovice"
+  },
+  {
+   "name": "Bowling Celnice",
+   "kind": "bowling",
+   "area": "Praha 1 — центр",
+   "note": "8 дорожек AMF, некурящий зал, бильярд, дартс.",
+   "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
+   "map": "Bowling Celnice Praha"
+  },
+  {
+   "name": "Victoria Bowling",
+   "kind": "bowling",
+   "area": "Praha 3 — Žižkov",
+   "note": "Для любителей, а не рекордов: играете и выигрываете шоты.",
+   "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
+   "map": "Victoria Bowling Žižkov Praha"
+  },
+  {
+   "name": "Laser game 3D + бильярд Harlequin",
+   "kind": "lasergame",
+   "area": "Praha 10 — Vršovice",
+   "note": "Арена лазертага 320 м², под ней бильярдный клуб Harlequin: 15 столов, пинг-понг, дартс, ресторан. Можно совместить за один вечер.",
+   "url": "https://www.slevomat.cz/akce/2216138-laser-game-v-nejmodernejsi-3d-arene-az-pro-8-osob",
+   "map": "Laser game Harlequin, Oblouková 1254/6, Praha 10"
+  },
+  {
+   "name": "The Chamber Escape Games",
+   "kind": "escape",
+   "area": "Praha 1 и Praha 5 (Wonderland, Staropramenná 12)",
+   "note": "Сюжетные эскейп-румы, есть хоррор-комната из мирового топ-10.",
+   "url": "https://www.kudyznudy.cz/aktivity/the-chamber-escape-game-praha",
+   "map": "The Chamber Escape Game Praha"
+  },
+  {
+   "name": "Marina Art — Art rande",
+   "kind": "workshop",
+   "area": "Praha 8 — Karlín",
+   "note": "Мастер-класс по рисованию для двоих (несколько техник), есть формат с дегустацией 6 вин.",
+   "url": "https://www.slevomat.cz/praha/zabava-a-volny-cas/kurzy-workshopy/kurzy-malovani-kresleni",
+   "map": "Marina Art Karlín Praha"
+  },
+  {
+   "name": "Kreativní zebra",
+   "kind": "workshop",
+   "area": "Praha 2 — Vinohrady / Harfa",
+   "note": "Роспись керамики (кружки, тарелки); обжиг включён. Нужна бронь на каждого, даже если человек не рисует.",
+   "url": "https://www.kudyznudy.cz/aktivity/kreativni-zebra-keramicka-dilna-v-centru-prahy",
+   "map": "Kreativní zebra Vinohrady"
+  },
+  {
+   "name": "ArtMoment",
+   "kind": "workshop",
+   "area": "Praha 7 — Holešovice",
+   "note": "Вечер интерактивного рисования.",
+   "url": "https://www.slevomat.cz/podniky/praha/zabava-a-volny-cas/kurzy-workshopy/kurzy-malovani-kresleni",
+   "map": "ArtMoment Praha Holešovice"
+  },
+  {
+   "name": "Atelier ŠUM",
+   "kind": "workshop",
+   "area": "Praha 1 — Národní třída",
+   "note": "Разовые воркшопы: роспись по шёлку, мозаика, переплёт книг.",
+   "url": "https://www.kudyznudy.cz/aktivity/kurzy-kresby-malby-kurzy-olej-akryl",
+   "map": "Atelier ŠUM Praha"
+  },
+  {
+   "name": "Скалодром — базовый курс",
+   "kind": "sport",
+   "area": "Praha 10 — Strašnice и др.",
+   "note": "Курс лазания на искусственной стене для 1–2 человек.",
+   "url": "https://www.slevomat.cz/praha/zabava-a-volny-cas/kurzy-workshopy?page=4",
+   "map": "lezecká stěna Strašnice Praha"
+  },
+  {
+   "name": "Mercuria Laser Game Braník",
+   "kind": "lasergame",
+   "area": "Praha 4 — Braník",
+   "note": "Лазертаг рядом с домом: две арены и бар.",
+   "url": "https://www.slevomat.cz/podnik/90819-mercuria-laser-game",
+   "map": "Mercuria Laser Game, Údolní 212/1, Praha 4"
+  },
+  {
+   "name": "Galaxy Laser Game",
+   "kind": "lasergame",
+   "area": "Praha 8 — Bohnice",
+   "note": "Арена 420 м², бар, бесплатная парковка.",
+   "url": "https://www.kudyznudy.cz/aktivity/akcni-galaxy-laser-game",
+   "map": "Galaxy Laser Game, Bohnická 320/40, Praha 8"
+  },
+  {
+   "name": "Kart Centrum Prague Indoor Radotín",
+   "kind": "karting",
+   "area": "Praha 5 — Radotín",
+   "note": "Самая длинная крытая трасса картинга в Европе: 1300 м, 55 поворотов. Ресторан, открыто до полуночи.",
+   "url": "https://prague.eu/cs/objevujte/kart-centrum-prague-indoor-radotin/",
+   "map": "Kart Centrum Radotín Praha",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:420/q:70/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13080551/106989209-1573283086169485-5984202441192596254-o.jpg@webp"
+  },
+  {
+   "name": "Praga Arena",
+   "kind": "karting",
+   "area": "Praha 9 — Horní Počernice",
+   "note": "Картинг-холл 17 000 м², трасса до 930 м, меняется раз в три месяца. Ресторан с видом на трассу.",
+   "url": "https://prague.eu/cs/objevujte/praga-arena/",
+   "map": "Praga Arena Horní Počernice",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:420/q:70/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13080558/53544475-2254117444609481-6822001464555077632-o-e1733488601555.jpg@webp"
+  },
+  {
+   "name": "CMKarting Zličín",
+   "kind": "karting",
+   "area": "Praha 5 — Zličín",
+   "note": "Крытый электрокартинг на трёхуровневой трассе, есть двухместные карты — можно вдвоём.",
+   "url": "https://www.slevomat.cz/podnik/109523-cmkarting",
+   "map": "CMKarting, Ringhofferova 115/1, Praha"
+  },
+  {
+   "name": "Zero Latency Prague",
+   "kind": "vr",
+   "area": "Praha 1 — Černá labuť",
+   "note": "Free-roam VR-арена до 8 игроков, игры 15–30 минут, бар. Лучше бронировать заранее.",
+   "url": "https://prague.eu/cs/objevujte/zero-latency-prague/",
+   "map": "Zero Latency Prague Černá labuť",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:420/q:70/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/06120844/Engineerium-Game-Image-Whale-scaled-1-e1733483471901.jpg@webp"
+  },
+  {
+   "name": "Another World VR",
+   "kind": "vr",
+   "area": "Praha 7 — Holešovice",
+   "note": "VR-арена для 2–15 игроков, подходит для свидания.",
+   "url": "https://www.kudyznudy.cz/aktivity/another-world-virtualni-realita-v-srdci-prazskych",
+   "map": "Another World VR Praha Holešovice",
+   "image": "https://cdn.kudyznudy.cz/files/7e/7eac1696-e9e1-4252-98d3-af08626bb054.webp?v=20261019055515"
+  }
  ]
 }

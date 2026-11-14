@@ -245,3 +245,19 @@ input[type=date], input[type=time] {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
 #dock .stack { margin-top: 0; }
+
+
+/* ---------- превью-картинки карточек ---------- */
+.card .ph { position: relative; margin: -16px -16px 12px; height: 132px; border-radius: var(--r-lg) var(--r-lg) 0 0; overflow: hidden;
+  background: linear-gradient(135deg, var(--ph1, #5e9cff), var(--ph2, #a78bfa)); }
+.card .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.card .ph span { position: absolute; left: 14px; bottom: 10px; color: #fff; font: 650 20px/1.1 var(--font);
+  letter-spacing: -.01em; text-shadow: 0 1px 8px rgba(0,0,0,.25); }
+.card .ph img + span { display: none; }
+.ph-concert { --ph1: #ff6b8b; --ph2: #8b5cf6; } .ph-theater { --ph1: #c2410c; --ph2: #7c2d12; }
+.ph-show { --ph1: #f59e0b; --ph2: #ef4444; } .ph-workshop { --ph1: #10b981; --ph2: #0ea5e9; }
+.ph-market { --ph1: #f97316; --ph2: #eab308; } .ph-food { --ph1: #ea580c; --ph2: #b91c1c; }
+.ph-exhibition { --ph1: #64748b; --ph2: #0f172a; } .ph-festival { --ph1: #ec4899; --ph2: #f59e0b; }
+.ph-active { --ph1: #06b6d4; --ph2: #2563eb; } .ph-sport { --ph1: #22c55e; --ph2: #15803d; }
+h2.section { font: var(--t-h); margin: 26px 2px 10px; }
+.chips.small .chip { padding: 7px 12px; font-size: 14px; }

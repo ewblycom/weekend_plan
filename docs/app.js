@@ -13,6 +13,10 @@ const CAT = {
   market: "Ярмарки", food: "Гастро", exhibition: "Выставки", festival: "Фестивали",
   active: "Активный отдых", sport: "Спорт", other: "Другое",
 };
+const KIND = {
+  bowling: "Боулинг", billiard: "Бильярд", escape: "Квест-комнаты", lasergame: "Лазертаг",
+  karting: "Картинг", vr: "VR", workshop: "Мастерские", sport: "Скалодром",
+};
 const LANG = { ru: "Русский", cs: "Чешский", en: "English" };
 const SOURCE = { "prague.eu": "prague.eu", kudyznudy: "Kudy z nudy", tickettailor: "Ticket Tailor", telegram: "Telegram", places: "Подборка мест" };
 const SORTS = [["best", "Лучшее"], ["cheap", "Дешевле"], ["pricey", "Дороже"], ["date", "По дате"]];
@@ -25,7 +29,7 @@ const S = {
   cal: { y: 0, m: 0 },
   from: null, to: null,
   cats: new Set(), pick: [], filters: { free: false, ru: false },
-  sort: "best", cat: null, pool: [], vote: {}, round: 1,   // vote: id → true / false
+  sort: "best", kind: "all", cat: null, pool: [], vote: {}, round: 1,   // vote: id → true / false
   choice: null,                        // выбранное событие (id)
   plans: loadJson("plans", {}), planId: null,
   rest: { status: "idle", items: [], sort: "best", vote: {}, round: 1, choice: null },
@@ -71,19 +75,42 @@ function when(e) {
   if (e.time) s += `, ${e.time}`;
   return (e.date_uncertain ? "≈ " : "") + s;
 }
+// Картинки: превью ~420 px в webp, грузятся только при прокрутке до карточки
+function thumb(url) {
+  if (!url) return "";
+  if (url.includes("imgproxy.cdn.praguecitytourism.city")) return url.replace(/\/w:\d+\//, "/w:420/").replace(/\/q:\d+\//, "/q:70/");
+  if (url.includes("tickettailorassets.com")) return url.replace(/w_\d+/, "w_420");
+  return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=420&h=240&fit=cover&output=webp&q=70`;
+}
+function photo(e) {
+  const label = e.kind === "place" ? (KIND[e.placeKind] || CAT[e.category]) : (CAT[e.category] || "");
+  const ph = `<div class="ph ph-${esc(e.category || "other")}"><span>${esc(label)}</span></div>`;
+  if (!e.image) return ph;
+  return `<div class="ph ph-${esc(e.category || "other")}"><img loading="lazy" decoding="async" src="${esc(thumb(e.image))}" data-orig="${esc(e.image)}" alt=""
+    onerror="if(this.dataset.orig&&this.src!==this.dataset.orig){this.src=this.dataset.orig;this.dataset.orig=''}else{this.remove()}"><span>${esc(label)}</span></div>`;
+}
 function priceTag(e) { return e.free ? "Бесплатно" : e.price_from ? `от ${e.price_from.toLocaleString("ru-RU")} Kč` : ""; }
 
 // ---------- данные для рулетки ----------
 function placesAsEvents() {
   return S.places.map((p) => ({
-    id: "place-" + p.name, kind: "place", source: "places", url: p.url, title: p.name, category: "active",
-    venue: p.map || p.name, description: p.note, lang: "cs", score: 5, tags: [p.area].filter(Boolean),
+    id: "place-" + p.name, kind: "place", placeKind: p.kind, source: "places", url: p.url, title: p.name, category: "active",
+    venue: p.map || p.name, description: p.note, image: p.image || null, lang: "cs", score: 5, tags: [p.area].filter(Boolean),
     start: null, end: null, time: null, free: null, price_from: null,
   }));
 }
 function inRange() {
   const all = [...S.events, ...placesAsEvents()].filter((e) => overlaps(e, S.from, S.to));
   return all.filter((e) => (!S.filters.free || e.free) && (!S.filters.ru || e.lang === "ru"));
+}
+// Актуальность: сначала то, что бывает только в эти дни, потом то, что идёт неделями, в конце — места на любой день
+function tier(e) {
+  if (e.kind === "place") return 3;
+  if (!e.start) return 2;                                   // пост без точной даты
+  const days = (Date.parse(e.end || e.start) - Date.parse(e.start)) / 864e5;
+  if (days <= 3) return 0;                                  // разовое или на выходные
+  if (days <= 21) return 1;                                 // идёт пару недель
+  return 2;                                                 // выставка на месяцы
 }
 const priceKey = (e) => (e.free ? 0 : e.price_from ?? null);
 function sortList(list, mode) {
@@ -94,6 +121,8 @@ function sortList(list, mode) {
     return dir * (a - b) || y.score - x.score;
   };
   const a = [...list];
+  const t = (x, y) => tier(x) - tier(y);
+  if (mode === "best") return a.sort((x, y) => t(x, y) || y.score - x.score);
   if (mode === "date") a.sort((x, y) => (x.start || "9").localeCompare(y.start || "9") || y.score - x.score);
   else if (mode === "cheap") a.sort((x, y) => cmpPrice(x, y, 1));
   else if (mode === "pricey") a.sort((x, y) => cmpPrice(x, y, -1));
@@ -206,7 +235,7 @@ function dockCats() {
   </div>`;
 }
 function openList(cats) {
-  S.pick = cats; S.vote = {}; S.round = 1;
+  S.pick = cats; S.vote = {}; S.round = 1; S.kind = "all";
   S.pool = sortList(inRange().filter((e) => cats.includes(e.category)), S.sort);
   S.step = "r1"; render(); window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -248,15 +277,17 @@ function viewSpin() {
 function eventCard(e, mode) {
   const v = S.vote[e.id];
   const tags = [];
-  if (e.lang) tags.push(`<span class="tag lang">${LANG[e.lang] || e.lang}</span>`);
+  if (e.lang && e.kind !== "place") tags.push(`<span class="tag lang">${LANG[e.lang] || e.lang}</span>`);
   const p = priceTag(e); if (p) tags.push(`<span class="tag price">${esc(p)}</span>`);
-  (e.tags || []).map(noEmoji).filter((t) => t && t !== "бесплатно" && t !== "на русском").slice(0, 3).forEach((t) => tags.push(`<span class="tag">${esc(t)}</span>`));
+  (e.kind === "place" ? [] : e.tags || []).map(noEmoji).filter((t) => t && t !== "бесплатно" && t !== "на русском").slice(0, 3).forEach((t) => tags.push(`<span class="tag">${esc(t)}</span>`));
   const long = e.description && e.description.length > 20 ? e.description : "";
   const yes = mode === "r2" ? "Иду" : "Нравится", no = mode === "r2" ? "Не иду" : "Не нравится";
+  const eyebrow = e.kind === "place" ? (KIND[e.placeKind] || CAT[e.category]) : (CAT[e.category] || "");
   return `<article class="card glass ${v === true ? "liked" : ""} ${v === false ? "passed" : ""}">
-    <div class="eyebrow">${esc(CAT[e.category] || "")}</div>
+    ${photo(e)}
+    ${e.image ? `<div class="eyebrow">${esc(eyebrow)}</div>` : ""}
     <h3>${esc(e.title)}</h3>
-    <div class="meta">${esc(when(e))}${e.city ? " · " + esc(e.city) : ""}${e.venue ? " · " + esc(e.venue) : ""}</div>
+    <div class="meta">${e.kind === "place" ? esc((e.tags || [])[0] || "") : esc(when(e)) + (e.city ? " · " + esc(e.city) : "") + (e.venue ? " · " + esc(e.venue) : "")}</div>
     <div class="tags">${tags.join("")}</div>
     ${long ? `<div class="more" id="more-${esc(e.id)}" hidden>${esc(long)}</div>` : ""}
     <div class="links">
@@ -273,10 +304,22 @@ function sortBar(current, opts, attr) {
 }
 function viewRound1() {
   const list = sortList(S.pool, S.sort);
+  const events = list.filter((e) => e.kind !== "place");
+  const places = list.filter((e) => e.kind === "place");
+  const kinds = [...new Set(places.map((e) => e.placeKind).filter((k) => KIND[k]))];
+  if (S.kind !== "all" && !kinds.includes(S.kind)) S.kind = "all";
+  const shown = S.kind === "all" ? places : places.filter((e) => e.placeKind === S.kind);
+  const placesBlock = places.length ? `
+    <h2 class="section">${events.length ? "Или на любой день" : "Места на любой день"}</h2>
+    ${kinds.length > 1 ? `<div class="chips small">${[["all", "Все"], ...kinds.map((k) => [k, KIND[k]])].map(([k, l]) =>
+      `<button class="chip ${S.kind === k ? "on" : ""}" data-kind="${k}">${l}<i>${k === "all" ? places.length : places.filter((e) => e.placeKind === k).length}</i></button>`).join("")}</div>` : ""}
+    <div class="list">${shown.map((e) => eventCard(e, "r1")).join("")}</div>` : "";
   return `<h1 class="title">${esc(catLabel())}</h1>
-    <p class="lead">Отметьте то, что нравится. Потом выберем одно.</p>
-    ${sortBar(S.sort, SORTS, "sort")}
-    <div class="list">${list.map((e) => eventCard(e, "r1")).join("") || '<p class="muted empty">Ничего не нашлось</p>'}</div>`;
+    <p class="lead">Сначала то, что бывает только в эти дни. Отметьте, что нравится, — потом выберем одно.</p>
+    ${events.length ? sortBar(S.sort, SORTS, "sort") : ""}
+    <div class="list">${events.map((e) => eventCard(e, "r1")).join("")}</div>
+    ${placesBlock}
+    ${!events.length && !places.length ? '<p class="muted empty">Ничего не нашлось</p>' : ""}`;
 }
 function dockRound1() {
   const n = Object.values(S.vote).filter(Boolean).length;
@@ -478,6 +521,7 @@ document.addEventListener("click", (ev) => {
   if (ds.show) return showChosen();
   if (ds.spin) return startSpin();
   if (ds.sort) { S.sort = ds.sort; return render(); }
+  if (ds.kind) { S.kind = ds.kind; haptic("select"); return render(); }
   if (ds.vote) { const k = ds.vote.lastIndexOf(":"), id = ds.vote.slice(0, k), want = ds.vote.slice(k + 1) === "1"; if (S.step === "r2") { return want ? chooseEvent(id) : (S.vote[id] = false, render()); } S.vote[id] = S.vote[id] === want ? undefined : want; haptic("select"); return render(); }
   if (ds.next === "r2") { S.step = "r2"; render(); return window.scrollTo(0, 0); }
   if (ds.more) { const el = $("more-" + ds.more); if (el) { el.hidden = !el.hidden; t.textContent = el.hidden ? "Подробнее" : "Свернуть"; } return; }

@@ -97,3 +97,11 @@ def test_cesko_links_and_event_page():
     assert ev.time == "9:00—21:00" and ev.venue == "Westfield Chodov" and ev.free is True
     # событие в Остраве отбрасывается
     assert telegram.parse_cesko_event(page.replace("Westfield Chodov", "Ostrava Arena").replace("пражском ТЦ", "ТЦ в Остраве"), "u", TODAY) is None
+
+
+def test_telegram_post_image():
+    html = """<div class="tgme_widget_message"><a class="tgme_widget_message_photo_wrap" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/abc.jpg')"></a>
+    <div class="tgme_widget_message_text">Концерт в Праге 21 ноября, билеты</div>
+    <a class="tgme_widget_message_date" href="https://t.me/x/5"><time datetime="2026-11-13T10:00:00+00:00"></time></a></div>"""
+    [ev] = telegram.parse_channel(html, "pozor_brno", TODAY)
+    assert ev.image == "https://cdn4.telesco.pe/file/abc.jpg"
