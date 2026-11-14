@@ -24,7 +24,7 @@ const S = {
   sel: { a: null, b: null },           // выбранные даты в календаре
   cal: { y: 0, m: 0 },
   from: null, to: null,
-  cats: new Set(), filters: { free: false, ru: false },
+  cats: new Set(), pick: [], filters: { free: false, ru: false },
   sort: "best", cat: null, pool: [], vote: {}, round: 1,   // vote: id → true / false
   choice: null,                        // выбранное событие (id)
   plans: loadJson("plans", {}), planId: null,
@@ -60,6 +60,8 @@ const overlaps = (e, a, b) => !e.start || (e.start <= b && (e.end || e.start) >=
 const open = (url) => (tg && tg.openLink ? tg.openLink(url) : window.open(url, "_blank"));
 const haptic = (kind) => { try { tg && tg.HapticFeedback && (kind === "select" ? tg.HapticFeedback.selectionChanged() : tg.HapticFeedback.notificationOccurred(kind)); } catch {} };
 const q = (s) => encodeURIComponent(s);
+const TOWN = { "Вена": "Wien", "Мюнхен": "München", "Берлин": "Berlin" };
+const town = (e) => TOWN[e.city] || "Praha";
 const mapUrl = (s) => `https://www.google.com/maps/search/${q(s)}`;
 const dollars = (n) => (n == null ? "" : n === 0 ? "бесплатно" : "$".repeat(n));
 
@@ -103,7 +105,7 @@ function sortList(list, mode) {
 function renderSearch() {
   const rows = [];
   if (S.from) rows.push(["dates", "Даты", fmtRange(S.from, S.to)]);
-  if (S.cat && !["dates", "cats", "spin"].includes(S.step)) rows.push(["cats", "Категория", CAT[S.cat]]);
+  if (S.pick.length && !["dates", "cats", "spin"].includes(S.step)) rows.push(["cats", "Категория", catLabel()]);
   const ch = S.choice && eventOf(S.choice);
   if (ch && ["rest", "done"].includes(S.step)) rows.push(["r2", "Событие", ch.title]);
   const dn = S.rest.choice && S.rest.items.find((i) => i.id === S.rest.choice);
@@ -165,7 +167,7 @@ function pickDay(s) {
 }
 function applyDates(a, b) {
   S.from = a; S.to = b; S.sel = { a, b };
-  S.cat = null; S.vote = {}; S.choice = null; S.rest = freshRest();
+  S.pick = []; S.vote = {}; S.choice = null; S.rest = freshRest();
   S.step = "cats"; haptic("select"); render(); window.scrollTo({ top: 0, behavior: "smooth" });
 }
 function weekendRange() {
@@ -177,35 +179,51 @@ function weekendRange() {
 }
 
 // ---------- экран 2: категории ----------
+function catLabel() {
+  const names = S.pick.map((c) => CAT[c]);
+  return names.length > 2 ? `${names.slice(0, 2).join(", ")} и ещё ${names.length - 2}` : names.join(", ");
+}
 function viewCats() {
   const list = inRange();
   const counts = {};
   list.forEach((e) => { if (CAT[e.category]) counts[e.category] = (counts[e.category] || 0) + 1; });
   const cats = Object.keys(CAT).filter((c) => counts[c]);
   return `<h1 class="title">Что хочется?</h1>
-    <p class="lead">Отметьте несколько категорий — рулетка выберет одну. Если не выбрать ни одной, крутится всё.</p>
+    <p class="lead">Отметьте одну или несколько категорий — покажем всё по ним.</p>
     <div class="chips">${cats.map((c) => `<button class="chip ${S.cats.has(c) ? "on" : ""}" data-cat="${c}">${CAT[c]}<i>${counts[c]}</i></button>`).join("") || '<p class="muted">В эти даты ничего не найдено. Выберите другие даты.</p>'}</div>
     <div class="row-label"><b>Цена</b></div>
     <div class="seg glass">${[[false, "Любая"], [true, "Бесплатно"]].map(([v, l]) => `<button class="${S.filters.free === v ? "on" : ""}" data-filter="free:${v}">${l}</button>`).join("")}</div>
     <div class="row-label"><b>Язык</b></div>
     <div class="seg glass">${[[false, "Любой"], [true, "Русский"]].map(([v, l]) => `<button class="${S.filters.ru === v ? "on" : ""}" data-filter="ru:${v}">${l}</button>`).join("")}</div>`;
 }
+function availCats() { return Object.keys(CAT).filter((c) => inRange().some((e) => e.category === c)); }
 function dockCats() {
-  const has = inRange().some((e) => CAT[e.category]);
-  return `<div class="glass"><button class="btn-primary block" data-spin="1" ${has ? "" : "disabled"}>Запустить</button></div>`;
+  const avail = availCats();
+  const n = avail.filter((c) => S.cats.has(c)).length;
+  return `<div class="glass stack">
+    ${n ? `<button class="btn-primary block" data-show="1">Показать · ${n}</button>` : ""}
+    <button class="${n ? "btn-quiet" : "btn-primary"} block" data-spin="1" ${avail.length ? "" : "disabled"}>Я не знаю, куда хочу</button>
+  </div>`;
+}
+function openList(cats) {
+  S.pick = cats; S.vote = {}; S.round = 1;
+  S.pool = sortList(inRange().filter((e) => cats.includes(e.category)), S.sort);
+  S.step = "r1"; render(); window.scrollTo({ top: 0, behavior: "smooth" });
+}
+function showChosen() {
+  const chosen = availCats().filter((c) => S.cats.has(c));
+  if (chosen.length) { haptic("select"); openList(chosen); }
 }
 
 // ---------- экран 2б: рулетка ----------
 function startSpin() {
-  const avail = Object.keys(CAT).filter((c) => inRange().some((e) => e.category === c));
-  const chosen = avail.filter((c) => S.cats.has(c));
-  const from = chosen.length ? chosen : avail;
+  const from = availCats();   // «не знаю» — крутим все категории, отметки игнорируем
   if (!from.length) return;
   const final = from[Math.floor(Math.random() * from.length)];
   const labels = [];
   for (let i = 0; i < 26; i++) labels.push(from[Math.floor(Math.random() * from.length)]);
   labels.push(final);
-  S.step = "spin"; S.cat = null; render();
+  S.step = "spin"; S.pick = []; render();
   const reel = $("reel"); if (!reel) return;
   reel.innerHTML = labels.map((c) => `<div>${esc(CAT[c])}</div>`).join("");
   void reel.offsetHeight;
@@ -216,9 +234,7 @@ function startSpin() {
     if (done) return; done = true;
     haptic("success");
     setTimeout(() => {
-      S.cat = final; S.vote = {}; S.round = 1;
-      S.pool = sortList(inRange().filter((e) => e.category === final), S.sort);
-      S.step = "r1"; render(); window.scrollTo({ top: 0, behavior: "smooth" });
+      openList([final]);
     }, 650);
   };
   reel.addEventListener("transitionend", finish, { once: true });
@@ -240,7 +256,7 @@ function eventCard(e, mode) {
   return `<article class="card glass ${v === true ? "liked" : ""} ${v === false ? "passed" : ""}">
     <div class="eyebrow">${esc(CAT[e.category] || "")}</div>
     <h3>${esc(e.title)}</h3>
-    <div class="meta">${esc(when(e))}${e.venue ? " · " + esc(e.venue) : ""}</div>
+    <div class="meta">${esc(when(e))}${e.city ? " · " + esc(e.city) : ""}${e.venue ? " · " + esc(e.venue) : ""}</div>
     <div class="tags">${tags.join("")}</div>
     ${long ? `<div class="more" id="more-${esc(e.id)}" hidden>${esc(long)}</div>` : ""}
     <div class="links">
@@ -257,7 +273,7 @@ function sortBar(current, opts, attr) {
 }
 function viewRound1() {
   const list = sortList(S.pool, S.sort);
-  return `<h1 class="title">${esc(CAT[S.cat])}</h1>
+  return `<h1 class="title">${esc(catLabel())}</h1>
     <p class="lead">Отметьте то, что нравится. Потом выберем одно.</p>
     ${sortBar(S.sort, SORTS, "sort")}
     <div class="list">${list.map((e) => eventCard(e, "r1")).join("") || '<p class="muted empty">Ничего не нашлось</p>'}</div>`;
@@ -304,7 +320,7 @@ async function loadRestaurants() {
   if (!Places.enabled()) { r.status = "nokey"; return render(); }
   r.status = "loading"; render();
   try {
-    const res = await Places.near(e.venue);
+    const res = await Places.near(e.venue, town(e));
     if (S.rest !== r) return;
     r.all = res.items; r.status = "ok";
   } catch (err) { if (S.rest !== r) return; r.status = "error"; r.msg = err.message; }
@@ -338,10 +354,10 @@ function viewRest() {
   const head = savedBanner() + `<h1 class="title">Где поесть</h1><p class="lead">Рестораны в 15 минутах пешком от «${esc(e.venue || e.title)}».</p>`;
   if (r.status === "loading" || r.status === "idle") return head + `<div class="list"><div class="skeleton"></div><div class="skeleton"></div></div>`;
   if (r.status === "novenue") return head + `<p class="muted">У события нет точного адреса, поэтому рестораны рядом найти не получится.</p>`;
-  if (r.status === "nokey") return head + `<p class="muted">Ключ Google Places не подключён (см. README), поэтому рестораны с рейтингами недоступны.</p><div class="stack"><button class="btn block" data-open="${esc(mapUrl("restaurace u " + (e.venue || e.title) + ", Praha"))}">Открыть рестораны в Google Maps</button></div>`;
+  if (r.status === "nokey") return head + `<p class="muted">Ключ Google Places не подключён (см. README), поэтому рестораны с рейтингами недоступны.</p><div class="stack"><button class="btn block" data-open="${esc(mapUrl("restaurace u " + (e.venue || e.title) + ", " + town(e)))}">Открыть рестораны в Google Maps</button></div>`;
   if (r.status === "error") {
     const why = { cap: "Достигнут дневной лимит запросов.", nogeo: "Не удалось найти это место на карте." }[r.msg] || "Не получилось загрузить рестораны. Проверьте ключ и его ограничения в Google Cloud.";
-    return head + `<p class="muted">${esc(why)}</p><div class="stack"><button class="btn block" data-open="${esc(mapUrl("restaurace u " + (e.venue || e.title) + ", Praha"))}">Открыть в Google Maps</button></div>`;
+    return head + `<p class="muted">${esc(why)}</p><div class="stack"><button class="btn block" data-open="${esc(mapUrl("restaurace u " + (e.venue || e.title) + ", " + town(e)))}">Открыть в Google Maps</button></div>`;
   }
   const list = restList();
   if (r.round === 2) {
@@ -379,7 +395,7 @@ function chooseDinner(id) {
 function icsItems(p) {
   const e = p.event;
   const items = [{ uid: p.id, title: e.title, date: p.date, time: p.time, minutes: p.minutes || 120,
-    location: [e.venue, "Praha"].filter(Boolean).join(", "), description: CAT[e.category] || "", url: e.url }];
+    location: [e.venue, town(e)].filter(Boolean).join(", "), description: CAT[e.category] || "", url: e.url }];
   if (p.dinner) items.push({ uid: p.id + "-dinner", title: "Ужин: " + p.dinner.name, date: p.dinner.date || p.date,
     time: p.dinner.time || "19:00", minutes: 90, location: p.dinner.address || p.dinner.name, description: "К событию: " + e.title, url: p.dinner.url });
   return items;
@@ -459,6 +475,7 @@ document.addEventListener("click", (ev) => {
   if (ds.plan) { S.planId = ds.plan; S.choice = ds.plan; const p = S.plans[ds.plan]; S.from = S.from || p.date; S.to = S.to || p.date; S.rest = freshRest(); if (p.dinner) S.rest.choice = p.dinner.id, S.rest.items = [{ id: p.dinner.id, name: p.dinner.name }]; S.step = "done"; return render(); }
   if (ds.cat) { S.cats.has(ds.cat) ? S.cats.delete(ds.cat) : S.cats.add(ds.cat); haptic("select"); return render(); }
   if (ds.filter) { const [k, v] = ds.filter.split(":"); S.filters[k] = v === "true"; S.cats.clear(); return render(); }
+  if (ds.show) return showChosen();
   if (ds.spin) return startSpin();
   if (ds.sort) { S.sort = ds.sort; return render(); }
   if (ds.vote) { const k = ds.vote.lastIndexOf(":"), id = ds.vote.slice(0, k), want = ds.vote.slice(k + 1) === "1"; if (S.step === "r2") { return want ? chooseEvent(id) : (S.vote[id] = false, render()); } S.vote[id] = S.vote[id] === want ? undefined : want; haptic("select"); return render(); }
@@ -471,7 +488,7 @@ document.addEventListener("click", (ev) => {
   if (ds.skip) { S.step = "done"; render(); return window.scrollTo(0, 0); }
   if (ds.ics) return downloadIcs(ds.ics);
   if (ds.gcal !== undefined) return gcal(S.planId || S.choice, Number(ds.gcal));
-  if (ds.restart) { S.step = "dates"; S.sel = { a: null, b: null }; S.from = S.to = S.cat = null; S.planId = null; S.choice = null; S.vote = {}; S.rest = freshRest(); render(); return window.scrollTo(0, 0); }
+  if (ds.restart) { S.step = "dates"; S.sel = { a: null, b: null }; S.from = S.to = null; S.pick = []; S.planId = null; S.choice = null; S.vote = {}; S.rest = freshRest(); render(); return window.scrollTo(0, 0); }
 });
 document.addEventListener("change", (ev) => {
   const t = ev.target, p = S.plans[S.planId || S.choice]; if (!p) return;

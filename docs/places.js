@@ -39,14 +39,14 @@
     return 2 * R * Math.asin(Math.sqrt(h));
   };
 
-  async function near(venue) {
-    const ck = "gp:" + venue;
+  async function near(venue, town = "Praha") {
+    const ck = "gp:" + venue + "|" + town;
     try { const c = sessionStorage.getItem(ck); if (c) return JSON.parse(c); } catch {}
 
     // 1) координаты площадки
     const g = await call("places:searchText", {
-      textQuery: `${venue}, Praha`, languageCode: "cs", regionCode: "CZ", maxResultCount: 1,
-      locationBias: { circle: { center: { latitude: 50.0755, longitude: 14.4378 }, radius: 30000 } },
+      textQuery: `${venue}, ${town}`, languageCode: "cs", maxResultCount: 1,
+      ...(town === "Praha" ? { regionCode: "CZ", locationBias: { circle: { center: { latitude: 50.0755, longitude: 14.4378 }, radius: 30000 } } } : {}),
     }, "places.location,places.displayName");
     const spot = g.places && g.places[0];
     if (!spot) throw new Error("nogeo");

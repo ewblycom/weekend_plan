@@ -32,7 +32,7 @@ def merge(events: list[Event]) -> list[Event]:
         if cur is None:
             by_key[ev.key] = ev
             continue
-        for f in ("venue", "time", "description", "image", "category", "end", "free", "price_from"):
+        for f in ("venue", "time", "description", "image", "category", "end", "free", "price_from", "city"):
             if getattr(cur, f) in (None, "") and getattr(ev, f) not in (None, ""):
                 setattr(cur, f, getattr(ev, f))
         if ev.lang == "ru":

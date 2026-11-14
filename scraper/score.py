@@ -32,6 +32,9 @@ def score_event(ev: Event, weekend: tuple[date, date]) -> Event:
     if _has(blob, config.NEAR_HOME):
         s += 0.5
         tags.append("рядом с домом")
+    if ev.city and ev.city != config.HOME_CITY:
+        s -= 1.0              # другой город — это поездка, не просто вечер
+        tags.append(f"поездка: {ev.city}")
     if ev.free:
         s += 0.3
         tags.append("бесплатно")

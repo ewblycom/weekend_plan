@@ -17,6 +17,7 @@ class Event:
     end: date | None = None     # для многодневных (ярмарки, выставки)
     time: str | None = None     # "19:00" или "10:00—18:00"
     venue: str | None = None
+    city: str | None = None     # None — Прага; иначе Вена / Мюнхен / Берлин
     category: str | None = None  # нормализованная: market/exhibition/concert/workshop/food/festival/show/other
     description: str | None = None
     image: str | None = None
