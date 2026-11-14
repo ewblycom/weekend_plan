@@ -1,16 +1,20 @@
 {
- "generated_at": "2026-11-14T10:30:08+00:00",
+ "generated_at": "2026-11-14T10:44:32+00:00",
  "weekend": {
   "from": "2026-11-13",
   "to": "2026-11-15"
  },
  "counts": {
   "tickettailor": 7,
-  "prague.eu": 181,
+  "prague.eu": 188,
   "telegram": 5,
-  "kudyznudy": 25
+  "kudyznudy": 25,
+  "luma": 8,
+  "goout": 14
  },
- "errors": {},
+ "errors": {
+  "vinegret": "0 событий — возможно, изменилась вёрстка сайта"
+ },
  "events": [
   {
    "source": "tickettailor",
@@ -75,7 +79,7 @@
    "city": null,
    "category": "food",
    "description": "Karlínská husa 2026 zve na den plný podzimních chutí, vůní a příjemné atmosféry v srdci Karlína. Karlínské náměstí ožije tradičními husími specialitami, svatomartinským vínem, pestrou nabídkou občerstvení i kulturním programem pro všechny generace. K zakoupení budou gastronomické speciality inspirované podzimní sezonou, sladké dobroty. a výběr vín, která k období sv. Martina patří. Přijďte si užít pohodovou listopadovou neděli plnou dobrého jídla, hudby a setkávání pod širým nebem.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/06/10103846/372043495_885578036556296_5130591882745534819_n.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/06/10103846/372043495_885578036556296_5130591882745534819_n.jpg@webp",
    "lang": "ru",
    "free": null,
    "price_from": null,
@@ -285,7 +289,7 @@
    "city": null,
    "category": "food",
    "description": "Pět výrazných osobností české gastronomie, oceněných v průvodci Gault&Millau 2026, se spojí při kulinářském večeru Dinner of the Year 2026. V sobotu 14. listopadu nabídne pražská restaurace Reason, situovaná v nejvyšším patře budovy Masaryčka, šestichodové degustační menu, na němž se budou podílet Khanh Ta, Jan Horák, Marco Christov, Sabina Keltnerová a Jiří Hrachový. Výjimečný gastronomický zážitek doplní vinné či nealkoholické párování a panoramatický výhled na Prahu.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/10/22131041/Dinner_of_the_year_37.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/10/22131041/Dinner_of_the_year_37.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -447,7 +451,7 @@
    "city": null,
    "category": "food",
    "description": "Degustační slavnost svatomartinských vín a oslava svátku sv. Martina na náplavce Rašínova nábřeží tradičně představuje mladá vína z Moravy i Čech. Svatomartinská vína, první vína nového ročníku, jsou suchá, lehká, svěží a ovocitá. Přestože zrála jen několik týdnů, už nyní vynikají svým osobitým charakterem. Pražská náplavka se 14. listopadu 2026 opět promění v malý vinařský svět, kde se první mladá vína snoubí s vůní pečené husy, křupavého zelí a dalších husích specialit, doplněných hudebním programem, který dotváří jedinečnou atmosféru.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/14142014/naplavka-s-mart-savnosti-2025-34.Crl4hzpm.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/14142014/naplavka-s-mart-savnosti-2025-34.Crl4hzpm.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -473,7 +477,7 @@
    "city": null,
    "category": "food",
    "description": "Vůně pečené husy, první doušky mladého vína a podzimní atmosféra na Letné — to je Letenská husa a košt svatomartinských vín v Národním zemědělském muzeu. Každoroční oblíbená akce zve návštěvníky všech generací na ochutnávky svatomartinských a mladých vín od českých a moravských vinařů, tradiční husí speciality i bohatý doprovodný program inspirovaný lidovými zvyky. Přijďte oslavit svátek sv. Martina v duchu chutí, tradic a dobré nálady.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/29100442/0Q8A9682_-e1769679054945.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/29100442/0Q8A9682_-e1769679054945.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -499,7 +503,7 @@
    "city": null,
    "category": "food",
    "description": "Svatomartinská vína, podzimní atmosféra a jedinečné výhledy na Prahu nabídne Festival vína, který se uskuteční 14. a 15. listopadu 2026 na Svatováclavské vinici a ve Ville Richter pod Pražským hradem. V programu nechybí degustace mladých vín od předních českých vinařů ani příjemné posezení v historickém areálu vinice. Pro případ nepříznivého počasí bude návštěvníkům k dispozici vyhřívaný stan. Vstup je horním vchodem z ulice Na Opyši.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/07/24085842/22-scaled.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/07/24085842/22-scaled.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -1261,6 +1265,37 @@
    "id": "ef7f0142e5e5"
   },
   {
+   "source": "luma",
+   "url": "https://luma.com/0n4nt21i",
+   "title": "THE MINERS × OATLY MORNING RAVE",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "time": "11:00",
+   "venue": "The Miners Coffee Florentinum, The Miners Coffee Florentinum, Hlavní město Praha",
+   "city": null,
+   "category": "concert",
+   "description": "What's happening?\nDJ set by Sam Gittis throughout the event.\nFree recipe lookbooks to take home and recreate your favourite drinks.\nSpecialty coffee, good…",
+   "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/9w/cc499587-6bcc-4075-a5c9-694805431fe9.png",
+   "lang": "en",
+   "free": true,
+   "price_from": null,
+   "link": null,
+   "booking": "https://luma.com/0n4nt21i",
+   "slots": [
+    {
+     "date": "2026-11-14",
+     "time": "11:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 4.3,
+   "tags": [
+    "бесплатно",
+    "только сейчас"
+   ],
+   "id": "5611ff7ecb4f"
+  },
+  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/deset-dvacet-bracha-v-brise/",
    "title": "Deset, dvacet brácha v břiše",
@@ -1410,6 +1445,111 @@
     "только сейчас"
    ],
    "id": "ea5f09bd4e6c"
+  },
+  {
+   "source": "luma",
+   "url": "https://luma.com/phowf8fh",
+   "title": "Afro Foundation • dance class",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": "18:00",
+   "venue": "Nosticova 634, Nosticova 634, Hlavní město Praha",
+   "city": null,
+   "category": "workshop",
+   "description": "Ahoj! Vítej na naší movement session. Afro Foundation je pohybová praxe se dvěma částmi: začínáme pohybem – žádná choreografie, jen naladění se na vlastní…",
+   "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/jx/758d49c0-f930-45b3-a0f2-0fdb51a39510.png",
+   "lang": "cs",
+   "free": null,
+   "price_from": 450,
+   "link": null,
+   "booking": "https://luma.com/phowf8fh",
+   "slots": [
+    {
+     "date": "2026-11-15",
+     "time": "18:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 4.0,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "b3366c70250c"
+  },
+  {
+   "source": "goout",
+   "url": "https://goout.net/cs/health+vowws/szykjiy/",
+   "title": "Health + VOWWS",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": null,
+   "venue": "ARCHA+, Na Poříčí 1047/26, Praha",
+   "city": null,
+   "category": "concert",
+   "description": null,
+   "image": "https://goout.net/i/127/1278055-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 960,
+   "link": "https://archa-plus.cz/cz/",
+   "booking": "https://goout.net/cs/listky/health+vowws/ywvkb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.0,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "d0db75ee225e"
+  },
+  {
+   "source": "goout",
+   "url": "https://goout.net/cs/suffocation+despised-icon+carnifex+gutrectomy/szmyjiy/",
+   "title": "Suffocation + Despised Icon + Carnifex + Gutrectomy",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": null,
+   "venue": "MeetFactory, Ke Sklárně 15, Praha",
+   "city": null,
+   "category": "concert",
+   "description": null,
+   "image": "https://goout.net/i/132/1321535-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 960,
+   "link": "http://www.meetfactory.cz",
+   "booking": "https://goout.net/cs/listky/suffocation+despised-icon+carnifex+gutrectomy/rdwkb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.0,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "bb0af6fc1210"
+  },
+  {
+   "source": "goout",
+   "url": "https://goout.net/cs/desire-and-johnny-jewel+support-mothermary/szcmsky/",
+   "title": "Desire & Johnny Jewel + support: Mothermary",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": null,
+   "venue": "Bike Jesus, ostrov Štvanice 1125, Praha",
+   "city": null,
+   "category": "concert",
+   "description": null,
+   "image": "https://goout.net/i/139/1397524-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 590,
+   "link": "https://bikejesus.com",
+   "booking": "https://goout.net/cs/listky/desire-and-johnny-jewel+support-mothermary/bsomb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.0,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "44ad0526c102"
   },
   {
    "source": "prague.eu",
@@ -1662,6 +1802,67 @@
    "id": "0d5c68b987eb"
   },
   {
+   "source": "luma",
+   "url": "https://luma.com/hntoyd1m",
+   "title": "Unwind & Unwine // Yoga + Social Evening by Bloom Club",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "time": "18:30",
+   "venue": "Coffee Room, Coffee Room, Hlavní město Praha",
+   "city": null,
+   "category": "sport",
+   "description": "UNWIND & UNWINE // Yoga + Social Evening \nby Bloom Club X Coffee Room\n\nAn evening of movement, laughs and connections with amazing people in the business &…",
+   "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/0p/ffd81b70-12ff-4726-9272-215c91fe9fcf.png",
+   "lang": "en",
+   "free": null,
+   "price_from": 350,
+   "link": null,
+   "booking": "https://luma.com/hntoyd1m",
+   "slots": [
+    {
+     "date": "2026-11-26",
+     "time": "18:30"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 3.8,
+   "tags": [
+    "для двоих"
+   ],
+   "id": "529a14635e39"
+  },
+  {
+   "source": "kudyznudy",
+   "url": "https://www.kudyznudy.cz/akce/prazska-sportiada-volejbal",
+   "title": "Pražská Sportiáda – Volejbal",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": "13:00",
+   "venue": "Sportovní hala Lužiny, Bellušova 1877, Praha 13",
+   "city": null,
+   "category": "sport",
+   "description": "Přijďte si vyzkoušet volejbal a užít si s námi odpoledne plné sportu a zábavy! Těšit se můžete na 10 sportovních stanovišť vedených profesionálními volejbalovými trenéry a také na naše ambasadory Báru Hermannovou a Milana Moníka, kteří se zapojí do programu a společné rozcvičky. Buď offline, sportuj!",
+   "image": "https://cdn.kudyznudy.cz/getmedia/19697ccd-98a4-4f23-9d50-25b806f0d714/sportovni-akce-1360-900.jpg.aspx?width=1360&height=900&ext=.jpg",
+   "lang": "cs",
+   "free": true,
+   "price_from": null,
+   "link": "https://www.prazskasportiada.cz",
+   "booking": "https://www.prazskasportiada.cz/events/volejbal-2026",
+   "slots": [
+    {
+     "date": "2026-11-15",
+     "time": "13:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 3.6,
+   "tags": [
+    "бесплатно",
+    "только сейчас"
+   ],
+   "id": "61b22fa699a4"
+  },
+  {
    "source": "kudyznudy",
    "url": "https://www.kudyznudy.cz/akce/svatomartinsky-gastro-vikend-na-zamku-v-naceradci",
    "title": "Svatomartinský gastro víkend na zámku v Načeradci",
@@ -1723,6 +1924,31 @@
    "id": "b047b54f2c0b"
   },
   {
+   "source": "goout",
+   "url": "https://goout.net/cs/festival-alternativa-2026/sziviiy/",
+   "title": "Festival Alternativa 2026",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "time": null,
+   "venue": "Praha – různá místa, Praha",
+   "city": null,
+   "category": "festival",
+   "description": null,
+   "image": "https://goout.net/i/139/1393696-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 400,
+   "link": "https://www.cocuma.cz/company/plg/",
+   "booking": "https://goout.net/cs/listky/festival-alternativa-2026/envkb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 3.5,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "0a26fed8f9ef"
+  },
+  {
    "source": "kudyznudy",
    "url": "https://www.kudyznudy.cz/akce/ryby-a-rybicky-nejvetsi-vystavni-a-prodejni-2",
    "title": "Ryby a rybičky – prodejní akvaristická burza v Praze",
@@ -1754,6 +1980,61 @@
    "id": "99a8279d2cd3"
   },
   {
+   "source": "goout",
+   "url": "https://goout.net/cs/artvr-festival-virtualni-reality-a-imerzniho-umeni/szbqtny/",
+   "title": "ART*VR: Festival virtuální reality a imerzního umění",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": null,
+   "venue": "DOX Centrum současného umění, Poupětova 1, Praha",
+   "city": null,
+   "category": "festival",
+   "description": null,
+   "image": "https://goout.net/i/140/1408604-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 1100,
+   "link": "http://www.dox.cz/cs/",
+   "booking": "https://goout.net/cs/listky/artvr-festival-virtualni-reality-a-imerzniho-umeni/npqob/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 3.5,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "cfa8e34cd2bb"
+  },
+  {
+   "source": "kudyznudy",
+   "url": "https://www.kudyznudy.cz/akce/night-ski-opening",
+   "title": "Slavnostní zahájení lyžování na Monínci 2026 –  Ski Opening 2026",
+   "start": "2026-11-15",
+   "end": "2026-11-16",
+   "time": "09:00",
+   "venue": "Nahoru Resort Monínec, Moninec 7, Sedlec-Prčice",
+   "city": null,
+   "category": "sport",
+   "description": "Odstartujte lyžařskou sezónu jako první v ČR! Už v neděli 15. listopadu otevřeme na Monínci sjezdovku a společně vykroužíme první oblouky sezóny během Ski Opening 2026. Odstartujte lyžařskou sezónu jako první v ČR! Už v neděli 15.",
+   "image": "https://cdn.kudyznudy.cz/files/c8/c8dddd05-1a1c-447d-bf76-05a672f99b1f.jpg?v=20261029212559",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": "https://moninec.nhr.cz",
+   "booking": null,
+   "slots": [
+    {
+     "date": "2026-11-15",
+     "time": "09:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 3.3,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "4583224dea7e"
+  },
+  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/osklive-kacatko/",
    "title": "Ošklivé káčátko",
@@ -1777,6 +2058,36 @@
     "рядом с домом"
    ],
    "id": "3e9863a701e4"
+  },
+  {
+   "source": "luma",
+   "url": "https://luma.com/2bm3fjmw",
+   "title": "294 statečných — 18. 11. 2026 | Divadelní představení",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "time": "19:00",
+   "venue": "K Sokolovně 201/8, K Sokolovně 201/8, Hlavní město Praha",
+   "city": null,
+   "category": "theater",
+   "description": "Amatérské divadlo studentů 4. ročníku Waldorfského lycea v Praze.\nHra 294 statečných je historické drama s prvky černého humoru, grotesky a absurdna. Děj se…",
+   "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/ry/80d4689d-20fb-4bc1-8fe5-248c102ad739.png",
+   "lang": "cs",
+   "free": true,
+   "price_from": null,
+   "link": null,
+   "booking": "https://luma.com/2bm3fjmw",
+   "slots": [
+    {
+     "date": "2026-11-18",
+     "time": "19:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 3.1,
+   "tags": [
+    "бесплатно"
+   ],
+   "id": "fd651e606485"
   },
   {
    "source": "prague.eu",
@@ -1885,6 +2196,29 @@
     "только сейчас"
    ],
    "id": "1d56d69048d4"
+  },
+  {
+   "source": "goout",
+   "url": "https://goout.net/cs/zuzane-navarove-do-nebes/szumdny/",
+   "title": "Zuzaně Navarové do nebes",
+   "start": "2026-11-16",
+   "end": "2026-11-16",
+   "time": null,
+   "venue": "Nová Spirála, Výstaviště 170 00, Praha",
+   "city": null,
+   "category": "concert",
+   "description": null,
+   "image": "https://goout.net/i/139/1398472-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 1290,
+   "link": "https://novaspirala.cz/",
+   "booking": "https://goout.net/cs/listky/zuzane-navarove-do-nebes/sqdob/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 3.0,
+   "tags": [],
+   "id": "74d0507ffe16"
   },
   {
    "source": "prague.eu",
@@ -2346,6 +2680,36 @@
    "id": "a3f14baa3d83"
   },
   {
+   "source": "luma",
+   "url": "https://luma.com/6t99eejx",
+   "title": "RUN&RAVE 💚 PRAHA (host)",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": "09:00",
+   "venue": "Radlická kulturní sportovna, Radlická kulturní sportovna, Hlavní město Praha",
+   "city": null,
+   "category": "sport",
+   "description": "RUN&RAVE na Radlické! 💚🏃‍♀️️se speciálním hostem\nNaše oblíbená Radlická je zpět aneb sobotní dopoledne, které nechceš zaspat!!! Pojď si s námi dát ranní běh,…",
+   "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/28/072acc57-d3fb-4877-85e4-bc19b3783990.png",
+   "lang": "cs",
+   "free": true,
+   "price_from": null,
+   "link": null,
+   "booking": "https://luma.com/6t99eejx",
+   "slots": [
+    {
+     "date": "2026-11-21",
+     "time": "09:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 2.6,
+   "tags": [
+    "бесплатно"
+   ],
+   "id": "dadbf6dbf16d"
+  },
+  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/farmarsky-trh-hermanak/",
    "title": "Farmářský trh Heřmaňák",
@@ -2494,6 +2858,31 @@
    "id": "775cd00a8f9a"
   },
   {
+   "source": "goout",
+   "url": "https://goout.net/cs/leftfield/szfvvmy/",
+   "title": "Leftfield",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "time": null,
+   "venue": "Roxy, Dlouhá 731/33, Praha",
+   "city": null,
+   "category": "other",
+   "description": null,
+   "image": "https://goout.net/i/140/1405627-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 995,
+   "link": "http://www.roxy.cz/",
+   "booking": "https://goout.net/cs/listky/leftfield/cuxnb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 2.5,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "df0a3c33fb81"
+  },
+  {
    "source": "kudyznudy",
    "url": "https://www.kudyznudy.cz/akce/tanecni-predstaveni-maya-tanecniho-souboru-pop-bal",
    "title": "Maya – představení tanečního souboru Pop Balet",
@@ -2523,6 +2912,31 @@
     "только сейчас"
    ],
    "id": "90aa16f2b135"
+  },
+  {
+   "source": "goout",
+   "url": "https://goout.net/cs/ellephoria-festival-krasy/szouamy/",
+   "title": "ELLEphoria festival krásy",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": null,
+   "venue": "Cubex Centrum Praha, Na Strži 2097/63, Praha",
+   "city": null,
+   "category": "other",
+   "description": null,
+   "image": "https://goout.net/i/140/1402396-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 3490,
+   "link": "http://www.cubexcentrum.cz/",
+   "booking": "https://goout.net/cs/listky/ellephoria-festival-krasy/ipinb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 2.5,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "19b1329911c9"
   },
   {
    "source": "prague.eu",
@@ -2617,6 +3031,29 @@
    "id": "dcc7e3957144"
   },
   {
+   "source": "goout",
+   "url": "https://goout.net/cs/freedom-37-festival-rocku-s-prazskym-vyberem-barou-basikovou-a-dalsimi/szhyumy/",
+   "title": "Freedom 37 Festival rocku s Pražským výběrem, Bárou Basikovou a dalšími",
+   "start": "2026-11-17",
+   "end": "2026-11-17",
+   "time": null,
+   "venue": "Lucerna Music Bar, Vodičkova 36, Praha",
+   "city": null,
+   "category": "festival",
+   "description": null,
+   "image": "https://goout.net/i/140/1408661-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 790,
+   "link": "http://www.musicbar.cz/",
+   "booking": "https://goout.net/cs/listky/freedom-37-festival-rocku-s-prazskym-vyberem-barou-basikovou-a-dalsimi/wkxnb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 2.5,
+   "tags": [],
+   "id": "193005a84dae"
+  },
+  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/festival-francouzskeho-filmu/",
    "title": "Festival francouzského filmu",
@@ -2638,6 +3075,36 @@
    "score": 2.5,
    "tags": [],
    "id": "b62156ae04f4"
+  },
+  {
+   "source": "luma",
+   "url": "https://luma.com/x2kxel85",
+   "title": "FUN & GAMES 🎲",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "time": "18:30",
+   "venue": "Nerd Alert, Nerd Alert, Hlavní město Praha",
+   "city": null,
+   "category": "active",
+   "description": "Přijď si zahrát deskovky a potkat fajn lidi.\nJeden večer. Nové tváře. Deskovky .A možná i nové přátelství. To je Friendship Flavour FUN &GAMES.\n\nCo tě čeká?\n🎲…",
+   "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/p3/f7c8ba0e-8bb0-4101-b96e-1faea16c0208.png",
+   "lang": "cs",
+   "free": null,
+   "price_from": 250,
+   "link": null,
+   "booking": "https://luma.com/x2kxel85",
+   "slots": [
+    {
+     "date": "2026-11-19",
+     "time": "18:30"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 2.5,
+   "tags": [
+    "для двоих"
+   ],
+   "id": "6309ffe88aaa"
   },
   {
    "source": "prague.eu",
@@ -2919,35 +3386,78 @@
    "id": "917f1c9b4528"
   },
   {
-   "source": "kudyznudy",
-   "url": "https://www.kudyznudy.cz/akce/prazska-sportiada-volejbal",
-   "title": "Pražská Sportiáda – Volejbal",
-   "start": "2026-11-15",
-   "end": "2026-11-15",
-   "time": "13:00",
-   "venue": "Sportovní hala Lužiny, Bellušova 1877, Praha 13",
+   "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/cesko-belgie/",
+   "title": "Česko—Belgie",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "time": "17:45",
+   "venue": "Sportovní hala Královka",
    "city": null,
    "category": "sport",
-   "description": "Přijďte si vyzkoušet volejbal a užít si s námi odpoledne plné sportu a zábavy! Těšit se můžete na 10 sportovních stanovišť vedených profesionálními volejbalovými trenéry a také na naše ambasadory Báru Hermannovou a Milana Moníka, kteří se zapojí do programu a společné rozcvičky. Buď offline, sportuj!",
-   "image": "https://cdn.kudyznudy.cz/getmedia/19697ccd-98a4-4f23-9d50-25b806f0d714/sportovni-akce-1360-900.jpg.aspx?width=1360&height=900&ext=.jpg",
+   "description": null,
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/04092323/gallery-02.webp@webp",
    "lang": "cs",
-   "free": true,
+   "free": null,
    "price_from": null,
-   "link": "https://www.prazskasportiada.cz",
-   "booking": "https://www.prazskasportiada.cz/events/volejbal-2026",
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 2.3,
+   "tags": [],
+   "id": "ce0011fb2bc1"
+  },
+  {
+   "source": "luma",
+   "url": "https://luma.com/8m1ha79f",
+   "title": "SAUNA&RAVE 🧖🏼‍♀️ vol.3",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "time": "10:00",
+   "venue": "Sauna Central - Praha, Sauna Central - Praha, Hlavní město Praha",
+   "city": null,
+   "category": "sport",
+   "description": "SAUNA&RAVE opět v Prazee! 🔥🧖‍♀️\nHorko, ledová lázeň a basy, co ti rozvibrují tělo. Přijď vypnout od všedních dnů, zažít saunování s nečekanou dynamikou a…",
+   "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/84/56916402-9073-453d-ad13-64e3229ed93e.png",
+   "lang": "cs",
+   "free": null,
+   "price_from": 360,
+   "link": null,
+   "booking": "https://luma.com/8m1ha79f",
    "slots": [
     {
-     "date": "2026-11-15",
-     "time": "13:00"
+     "date": "2026-11-29",
+     "time": "10:00"
     }
    ],
    "date_uncertain": false,
    "score": 2.3,
-   "tags": [
-    "бесплатно",
-    "только сейчас"
-   ],
-   "id": "61b22fa699a4"
+   "tags": [],
+   "id": "31f352fa591d"
+  },
+  {
+   "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/mistrovstvi-sveta-v-nohejbalu/",
+   "title": "Mistrovství světa v nohejbalu",
+   "start": "2026-12-03",
+   "end": "2026-12-06",
+   "time": null,
+   "venue": "2 místa konání",
+   "city": null,
+   "category": "sport",
+   "description": null,
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/04/27132446/informace_foto_2026.png@webp",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 2.3,
+   "tags": [],
+   "id": "bae7fdd1c14e"
   },
   {
    "source": "prague.eu",
@@ -3109,34 +3619,27 @@
    "id": "980380a776ec"
   },
   {
-   "source": "kudyznudy",
-   "url": "https://www.kudyznudy.cz/akce/night-ski-opening",
-   "title": "Slavnostní zahájení lyžování na Monínci 2026 –  Ski Opening 2026",
-   "start": "2026-11-15",
-   "end": "2026-11-16",
-   "time": "09:00",
-   "venue": "Nahoru Resort Monínec, Moninec 7, Sedlec-Prčice",
+   "source": "goout",
+   "url": "https://goout.net/cs/micro-praha-festival-2026/szikimy/",
+   "title": "Micro Praha Festival 2026",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "time": null,
+   "venue": "Fantova budova Hlavního nádraží, Wilsonova 300/8, Praha",
    "city": null,
-   "category": "sport",
-   "description": "Odstartujte lyžařskou sezónu jako první v ČR! Už v neděli 15. listopadu otevřeme na Monínci sjezdovku a společně vykroužíme první oblouky sezóny během Ski Opening 2026. Odstartujte lyžařskou sezónu jako první v ČR! Už v neděli 15.",
-   "image": "https://cdn.kudyznudy.cz/files/c8/c8dddd05-1a1c-447d-bf76-05a672f99b1f.jpg?v=20261029212559",
+   "category": "exhibition",
+   "description": null,
+   "image": "https://goout.net/i/140/1403369-383.jpg",
    "lang": "cs",
    "free": null,
-   "price_from": null,
-   "link": "https://moninec.nhr.cz",
-   "booking": null,
-   "slots": [
-    {
-     "date": "2026-11-15",
-     "time": "09:00"
-    }
-   ],
+   "price_from": 999,
+   "link": "https://www.micropraha.com",
+   "booking": "https://goout.net/cs/listky/micro-praha-festival-2026/gpnnb/",
+   "slots": [],
    "date_uncertain": false,
    "score": 2.0,
-   "tags": [
-    "только сейчас"
-   ],
-   "id": "4583224dea7e"
+   "tags": [],
+   "id": "12f4e8bc8be1"
   },
   {
    "source": "kudyznudy",
@@ -3266,6 +3769,34 @@
    "id": "f5069451c7a8"
   },
   {
+   "source": "luma",
+   "url": "https://luma.com/gxqx4651",
+   "title": "Share a slice Offline",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "time": "18:30",
+   "venue": "Pizzeria Da Pietro, Pizzeria Da Pietro, Hlavní město Praha",
+   "city": null,
+   "category": "other",
+   "description": "Přijď ochutnat pořádnou italskou pizzu a poznat nové lidi (bez telefonu)!\nTentokrát se potkáme v pizzerii Da Pietro, kde u jednoho stolu společně ochutnáme…",
+   "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/bd/34e7c3c0-2270-449c-b46e-56df5a9505cc.png",
+   "lang": "cs",
+   "free": null,
+   "price_from": 730,
+   "link": null,
+   "booking": "https://luma.com/gxqx4651",
+   "slots": [
+    {
+     "date": "2026-11-23",
+     "time": "18:30"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 1.5,
+   "tags": [],
+   "id": "bb0e604d4968"
+  },
+  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/frida/",
    "title": "Frida",
@@ -3336,6 +3867,29 @@
    "score": 1.5,
    "tags": [],
    "id": "0d7b157b7493"
+  },
+  {
+   "source": "goout",
+   "url": "https://goout.net/cs/2-aile-arasnda/szffuoy/",
+   "title": "2 Aile Arasında",
+   "start": "2026-12-03",
+   "end": "2026-12-03",
+   "time": null,
+   "venue": "Cinema City Flora, Vinohradská 151, Praha",
+   "city": null,
+   "category": "other",
+   "description": null,
+   "image": "https://goout.net/i/141/1410692-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 350,
+   "link": "http://www.cinemacity.cz/Flora",
+   "booking": "https://goout.net/cs/listky/2-aile-arasnda/khnpb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 1.5,
+   "tags": [],
+   "id": "d164b17f05bd"
   },
   {
    "source": "prague.eu",
@@ -3798,7 +4352,7 @@
    "city": null,
    "category": "food",
    "description": "RestaurantWeek® je svátkem všech milovníků dobrého jídla a jednou z největších a nejoblíbenějších kulinářských akcí na světě. Koná se v duchu #RespectFood. Díky systému předběžných rezervací s výběrem menu nepřijde během festivalu nazmar ani drobeček. Posláním festivalu je představit a propagovat autentickou českou restaurační scénu. Během této výjimečné gastronomické události otevírají špičkové pražské restaurace své dveře široké veřejnosti a nabízejí speciální degustační menu za zvýhodněné ceny. Tématem této edice jsou sezónní chutě podzimu, které se promítnou do menu plných dýní, lesních plodů, zvěřiny, regionálních surovin i oblíbených lanýžů. Ochutnejte kreativní kuchyni talentovaných šéfkuchařů, objevte nové podniky i známé gastronomické adresy a dopřejte si kulinářský zážitek, který je běžně dostupný jen při výjimečných příležitostech. RestaurantWeek® je ideální příležitostí vyrazit za chutěmi světa, podpořit lokální gastronomii a zažít město trochu jinak — skrze jeho nejlepší talíře.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/06111811/dock3.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/06111811/dock3.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3991,6 +4545,221 @@
   },
   {
    "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/extraliga-ledniho-hokeje-zapasy-hc-sparta-praha-v-o2-arene/",
+   "title": "Tipsport Extraliga ledního hokeje — zápasy HC Sparta Praha",
+   "start": "2026-09-22",
+   "end": "2027-01-08",
+   "time": "18:30",
+   "venue": "Sportovní hala Fortuna",
+   "city": null,
+   "category": "sport",
+   "description": null,
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13053612/o2-arena.jpg@webp",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 0.8,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "3a5b5f5bbc3d"
+  },
+  {
+   "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/euroliga-zen-zapasy-zvvz-usk-praha/",
+   "title": "Euroliga žen, zápasy ZVVZ USK Praha",
+   "start": "2026-10-14",
+   "end": "2026-11-25",
+   "time": "19:00",
+   "venue": "Sportovní hala Královka",
+   "city": null,
+   "category": "sport",
+   "description": null,
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/08105741/471284098_10160929591361526_8333668913147322200_n.jpg@webp",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 0.8,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "3f24052f8a58"
+  },
+  {
+   "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/chance-liga-zapasy-sk-slavia-praha/",
+   "title": "Chance Liga — zápasy SK Slavia Praha",
+   "start": "2026-10-17",
+   "end": "2027-04-17",
+   "time": "15:00",
+   "venue": "Fortuna Arena (SK Slavia Praha)",
+   "city": null,
+   "category": "sport",
+   "description": null,
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/01122820/tribuna-sever-derby-praha-je-nase.jpg@webp",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 0.8,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "0cd3b0e623f3"
+  },
+  {
+   "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/chance-liga-zapasy-ac-sparta-praha/",
+   "title": "Chance Liga — zápasy AC Sparta Praha",
+   "start": "2026-10-25",
+   "end": "2027-04-24",
+   "time": "15:00",
+   "venue": "epet Arena — AC Sparta Praha",
+   "city": null,
+   "category": "sport",
+   "description": null,
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13053619/epet02.jpg@webp",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 0.8,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "6b7d95f6c675"
+  },
+  {
+   "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/kluziste-na-letne/",
+   "title": "Kluziště na Letné",
+   "start": "2026-11-14",
+   "end": "2027-03-07",
+   "time": null,
+   "venue": "Letenská pláň",
+   "city": null,
+   "category": "sport",
+   "description": null,
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/19102112/brusle2-1.jpg@webp",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 0.8,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "9796d5615c0a"
+  },
+  {
+   "source": "kudyznudy",
+   "url": "https://www.kudyznudy.cz/akce/kluziste-na-letenske-plani",
+   "title": "Kluziště na Letné – největší ledová plocha v Praze",
+   "start": "2026-11-14",
+   "end": "2027-03-07",
+   "time": "09:00",
+   "venue": "Kluziště Praha (Ice-Tec Solution), Kluziště na Letenské pláni, Praha 7",
+   "city": null,
+   "category": "sport",
+   "description": "Oblíbené bruslení na Letenské pláni se opět vrací. I letos se můžete těšit na velmi oblíbené veřejné kluziště na Letné. Kluziště o rozměrech 43x 25 metrů bude otevřené od 14. listopadu 2026 do konce března 2027.",
+   "image": "https://cdn.kudyznudy.cz/files/2f/2fc6fa50-83cc-4334-ba42-904b7a6e11dd.jpg?v=20261106200316",
+   "lang": "cs",
+   "free": null,
+   "price_from": 120,
+   "link": "https://kluzistepraha.cz/nabidka-kluzist/kluziste-letna/",
+   "booking": null,
+   "slots": [
+    {
+     "date": "2026-11-14",
+     "time": "09:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 0.8,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "f701ab8b4898"
+  },
+  {
+   "source": "kudyznudy",
+   "url": "https://www.kudyznudy.cz/akce/brusleni-na-skolnim-zimnim-stadionu-bronzova-na-lu",
+   "title": "Bruslení na školním zimním stadionu Bronzová na Lužinách v Praze",
+   "start": "2026-11-14",
+   "end": "2027-02-28",
+   "time": "09:00",
+   "venue": "Školní zimní stadion Bronzová Lužiny, Bronzová 1387/37, Praha 5",
+   "city": null,
+   "category": "sport",
+   "description": "Veřejné bruslení na Školním zimním stadionu Bronzová na Lužinách (ulice U Jezera, kousíček od stanice metra Luka) je otevřené od 14. listopadu 2026. Stadion je dlouhý 62 metrů se šířkou 26 metrů. Na stadionu jsou k dispozici 2 malé šatny každá pro cca 30 lidí a jedna velká šatna pro cca 60 osob.",
+   "image": "https://cdn.kudyznudy.cz/files/d4/d4487e52-d88c-4a1b-a5f1-93fc25d1f031.jpg?v=20261014215202",
+   "lang": "cs",
+   "free": null,
+   "price_from": 70,
+   "link": "https://www.praha13.cz/skolni-zimni-stadion-bronzova/",
+   "booking": null,
+   "slots": [
+    {
+     "date": "2026-11-14",
+     "time": "09:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 0.8,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "a9fd712ec133"
+  },
+  {
+   "source": "kudyznudy",
+   "url": "https://www.kudyznudy.cz/akce/mobilni-kluziste-v-neratovicich",
+   "title": "Mobilní kluziště v Neratovicích",
+   "start": "2026-11-15",
+   "end": "2027-03-07",
+   "time": "09:00",
+   "venue": "Město Neratovice, Kojetická 1028, Neratovice",
+   "city": null,
+   "category": "sport",
+   "description": "V Neratovicích se na podzim 2026 otevře nové mobilní kluziště, které dočasně nahradí uzavřený zimní stadion. Nově vzniklá ledová plocha má mít rozměry 30 x 18 metrů a v provozu by měla být až do začátku března 2027. Nové mobilní kluziště vznikne u Duhového hřiště v Neratovicích.",
+   "image": "https://cdn.kudyznudy.cz/files/0e/0ef2caff-fb86-4b49-9bc7-f25b33e9c5d7.jpg?v=20261113140621",
+   "lang": "cs",
+   "free": null,
+   "price_from": 80,
+   "link": "https://www.neratovice.cz/",
+   "booking": null,
+   "slots": [
+    {
+     "date": "2026-11-15",
+     "time": "09:00"
+    }
+   ],
+   "date_uncertain": false,
+   "score": 0.8,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "654e6eba163f"
+  },
+  {
+   "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/betonova-pohadka/",
    "title": "Betonová pohádka",
    "start": "2026-11-22",
@@ -4036,6 +4805,31 @@
     "идёт долго"
    ],
    "id": "fa6bc1686592"
+  },
+  {
+   "source": "goout",
+   "url": "https://goout.net/cs/lumia-gallery/szakohy/",
+   "title": "Lumia Gallery",
+   "start": "2026-03-16",
+   "end": "2027-06-30",
+   "time": null,
+   "venue": "Galerie audiovizuálního umění, Celetná 596/15, Praha",
+   "city": null,
+   "category": "exhibition",
+   "description": null,
+   "image": "https://goout.net/i/136/1361540-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 870,
+   "link": "https://www.cocuma.cz/company/plg/",
+   "booking": "https://goout.net/cs/listky/lumia-gallery/ypjkb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 0.5,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "1cceb212b799"
   },
   {
    "source": "prague.eu",
@@ -4869,6 +5663,31 @@
    "id": "61748c452b04"
   },
   {
+   "source": "goout",
+   "url": "https://goout.net/cs/anna-jagellonska-1503-1547-kralovna-na-prahu-nove-doby/szxfely/",
+   "title": "Anna Jagellonská (1503-1547). Královna na prahu nové doby",
+   "start": "2026-10-23",
+   "end": "2027-03-28",
+   "time": null,
+   "venue": "Valdštejnská jízdárna, Valdštejnská 3, Praha",
+   "city": null,
+   "category": "other",
+   "description": null,
+   "image": "https://goout.net/i/139/1398482-383.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": 270,
+   "link": "https://www.ngprague.cz/budova/valdstejnska-jizdarna/",
+   "booking": "https://goout.net/cs/listky/anna-jagellonska-1503-1547-kralovna-na-prahu-nove-doby/bqumb/",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 0.0,
+   "tags": [
+    "идёт долго"
+   ],
+   "id": "3224b3073245"
+  },
+  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/jaroslav-cermak-myty-evropske-reality/",
    "title": "Jaroslav Čermák — Mýty evropské reality",
@@ -5025,94 +5844,29 @@
    "id": "8a23ab36651e"
   },
   {
-   "source": "kudyznudy",
-   "url": "https://www.kudyznudy.cz/akce/kluziste-na-letenske-plani",
-   "title": "Kluziště na Letné – největší ledová plocha v Praze",
-   "start": "2026-11-14",
-   "end": "2027-03-07",
-   "time": "09:00",
-   "venue": "Kluziště Praha (Ice-Tec Solution), Kluziště na Letenské pláni, Praha 7",
+   "source": "goout",
+   "url": "https://goout.net/cs/silenstvi-vol-4/szfbuoy/",
+   "title": "Šílenství vol. 4",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "time": null,
+   "venue": "Malostranská beseda, Malostranské náměstí 21, Praha",
    "city": null,
-   "category": "sport",
-   "description": "Oblíbené bruslení na Letenské pláni se opět vrací. I letos se můžete těšit na velmi oblíbené veřejné kluziště na Letné. Kluziště o rozměrech 43x 25 metrů bude otevřené od 14. listopadu 2026 do konce března 2027.",
-   "image": "https://cdn.kudyznudy.cz/files/2f/2fc6fa50-83cc-4334-ba42-904b7a6e11dd.jpg?v=20261106200316",
+   "category": "concert",
+   "description": null,
+   "image": "https://goout.net/i/136/1360018-383.jpg",
    "lang": "cs",
    "free": null,
-   "price_from": 120,
-   "link": "https://kluzistepraha.cz/nabidka-kluzist/kluziste-letna/",
-   "booking": null,
-   "slots": [
-    {
-     "date": "2026-11-14",
-     "time": "09:00"
-    }
-   ],
+   "price_from": 350,
+   "link": "https://www.malostranska-beseda.cz/",
+   "booking": "https://goout.net/cs/listky/silenstvi-vol-4/xdnpb/",
+   "slots": [],
    "date_uncertain": false,
-   "score": -0.5,
+   "score": -1.0,
    "tags": [
-    "идёт долго"
+    "туристический центр"
    ],
-   "id": "f701ab8b4898"
-  },
-  {
-   "source": "kudyznudy",
-   "url": "https://www.kudyznudy.cz/akce/brusleni-na-skolnim-zimnim-stadionu-bronzova-na-lu",
-   "title": "Bruslení na školním zimním stadionu Bronzová na Lužinách v Praze",
-   "start": "2026-11-14",
-   "end": "2027-02-28",
-   "time": "09:00",
-   "venue": "Školní zimní stadion Bronzová Lužiny, Bronzová 1387/37, Praha 5",
-   "city": null,
-   "category": "sport",
-   "description": "Veřejné bruslení na Školním zimním stadionu Bronzová na Lužinách (ulice U Jezera, kousíček od stanice metra Luka) je otevřené od 14. listopadu 2026. Stadion je dlouhý 62 metrů se šířkou 26 metrů. Na stadionu jsou k dispozici 2 malé šatny každá pro cca 30 lidí a jedna velká šatna pro cca 60 osob.",
-   "image": "https://cdn.kudyznudy.cz/files/d4/d4487e52-d88c-4a1b-a5f1-93fc25d1f031.jpg?v=20261014215202",
-   "lang": "cs",
-   "free": null,
-   "price_from": 70,
-   "link": "https://www.praha13.cz/skolni-zimni-stadion-bronzova/",
-   "booking": null,
-   "slots": [
-    {
-     "date": "2026-11-14",
-     "time": "09:00"
-    }
-   ],
-   "date_uncertain": false,
-   "score": -0.5,
-   "tags": [
-    "идёт долго"
-   ],
-   "id": "a9fd712ec133"
-  },
-  {
-   "source": "kudyznudy",
-   "url": "https://www.kudyznudy.cz/akce/mobilni-kluziste-v-neratovicich",
-   "title": "Mobilní kluziště v Neratovicích",
-   "start": "2026-11-15",
-   "end": "2027-03-07",
-   "time": "09:00",
-   "venue": "Město Neratovice, Kojetická 1028, Neratovice",
-   "city": null,
-   "category": "sport",
-   "description": "V Neratovicích se na podzim 2026 otevře nové mobilní kluziště, které dočasně nahradí uzavřený zimní stadion. Nově vzniklá ledová plocha má mít rozměry 30 x 18 metrů a v provozu by měla být až do začátku března 2027. Nové mobilní kluziště vznikne u Duhového hřiště v Neratovicích.",
-   "image": "https://cdn.kudyznudy.cz/files/0e/0ef2caff-fb86-4b49-9bc7-f25b33e9c5d7.jpg?v=20261113140621",
-   "lang": "cs",
-   "free": null,
-   "price_from": 80,
-   "link": "https://www.neratovice.cz/",
-   "booking": null,
-   "slots": [
-    {
-     "date": "2026-11-15",
-     "time": "09:00"
-    }
-   ],
-   "date_uncertain": false,
-   "score": -0.5,
-   "tags": [
-    "идёт долго"
-   ],
-   "id": "654e6eba163f"
+   "id": "0683cec29d15"
   },
   {
    "source": "prague.eu",
