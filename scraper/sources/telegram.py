@@ -94,6 +94,15 @@ def _post_image(msg) -> str | None:
     return m.group(1) if m else None
 
 
+def _post_link(el) -> str | None:
+    """Ссылка на регистрацию/билеты из текста поста (не на другие Telegram-каналы)."""
+    for a in el.find_all("a", href=True):
+        h = a["href"]
+        if h.startswith("http") and "t.me/" not in h and "telegram" not in h:
+            return h
+    return None
+
+
 def _clock(value: str | None) -> str | None:
     m = re.search(r"(\d{1,2}:\d{2})(?:\s*[-–—]\s*(\d{1,2}:\d{2}))?", value or "")
     return None if not m else (f"{m[1]}—{m[2]}" if m[2] else m[1])
@@ -131,12 +140,15 @@ def parse_cesko_event(html: str, url: str, today: date, hint: str = "") -> Event
         return None
     price_src = " ".join(fields.get(k, "") for k in ("Вход", "Цена", "Стоимость", "Билеты"))
     free, price = detect_price(price_src) if price_src else (None, None)
+    site = fields.get("Сайт") or fields.get("Билеты") or ""
+    m_url = re.search(r"https?://\S+", site)
     desc = meta(soup, "og:description") or meta(soup, "description") or ""
     return Event(
         source="telegram:the_cesko", url=url, title=title[:140], start=start, end=end,
         image=meta(soup, "og:image"),
         time=_clock(fields.get("Время")), venue=_short_venue(venue_raw) if venue_raw else None,
         category=guess_category(title + " " + desc), description=desc[:400], lang="ru",
+        booking=m_url.group(0).rstrip(".,;") if m_url else None,
         free=free, price_from=price)
 
 
@@ -268,6 +280,7 @@ def parse_channel(html: str, channel: str, today: date | None = None,
             time=clock or _clock(text),
             venue=_short_venue(place.group(1)) if place else None,
             image=_post_image(msg),
+            booking=_post_link(text_el),
             category=guess_category(text),
             description=text[:600],
             lang="ru",

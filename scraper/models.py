@@ -24,6 +24,9 @@ class Event:
     lang: str = "cs"            # cs / ru / en
     free: bool | None = None
     price_from: int | None = None   # CZK, «от»; None — цена неизвестна
+    link: str | None = None         # сайт самого места/события (не агрегатора)
+    booking: str | None = None      # бронь / билеты
+    slots: list[dict] = field(default_factory=list)   # [{"date": "2026-11-21", "time": "19:00"}]
     date_uncertain: bool = False
     score: float = 0.0
     tags: list[str] = field(default_factory=list)

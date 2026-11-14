@@ -8,7 +8,9 @@
    "area": "Praha 5 — Smíchov",
    "note": "Боулинг от 259 Kč за дорожку, бильярд 9ft от 199 Kč, дартс. Ближе всего к Бранику.",
    "url": "https://www.firmy.cz/sluzby/Vzdelavani-a-volny-cas/Zabava-a-zazitky/kraj-praha",
-   "map": "Bowling Smíchov Garage Billiards Praha"
+   "map": "Bowling Smíchov, Na Bělidle 407/25, Praha 5",
+   "site": "https://www.bowlingsmichov.cz/",
+   "manual": true
   },
   {
    "name": "FUN ARENA Chodov",
@@ -120,7 +122,10 @@
    "area": "Praha 8 — Bohnice",
    "note": "Арена 420 м², бар, бесплатная парковка.",
    "url": "https://www.kudyznudy.cz/aktivity/akcni-galaxy-laser-game",
-   "map": "Galaxy Laser Game, Bohnická 320/40, Praha 8"
+   "map": "Galaxy Laser Game, Bohnická 320/40, Praha 8",
+   "site": "https://www.lasergamegalaxy.cz/",
+   "booking": "https://rezervace.lasergamegalaxy.cz/",
+   "manual": true
   },
   {
    "name": "Kart Centrum Prague Indoor Radotín",
@@ -144,9 +149,11 @@
    "name": "CMKarting Zličín",
    "kind": "karting",
    "area": "Praha 5 — Zličín",
-   "note": "Крытый электрокартинг на трёхуровневой трассе, есть двухместные карты — можно вдвоём.",
+   "note": "Крытый электрокартинг на трёхуровневой трассе, есть двухместные карты — можно вдвоём. Онлайн-бронь открывается за 72 часа.",
    "url": "https://www.slevomat.cz/podnik/109523-cmkarting",
-   "map": "CMKarting, Ringhofferova 115/1, Praha"
+   "map": "CMKarting, Ringhofferova 115/1, Praha",
+   "site": "https://cmkarting.cz/",
+   "manual": true
   },
   {
    "name": "Zero Latency Prague",
@@ -154,8 +161,9 @@
    "area": "Praha 1 — Černá labuť",
    "note": "Free-roam VR-арена до 8 игроков, игры 15–30 минут, бар. Лучше бронировать заранее.",
    "url": "https://prague.eu/cs/objevujte/zero-latency-prague/",
-   "map": "Zero Latency Prague Černá labuť",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:420/q:70/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/06120844/Engineerium-Game-Image-Whale-scaled-1-e1733483471901.jpg@webp"
+   "map": "Zero Latency Prague, Na Poříčí 25, Praha 1",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:420/q:70/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/06120844/Engineerium-Game-Image-Whale-scaled-1-e1733483471901.jpg@webp",
+   "booking": "mailto:rezervace@zerolatencyprague.cz"
   },
   {
    "name": "Another World VR",

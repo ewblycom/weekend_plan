@@ -89,13 +89,14 @@ def parse_detail(html: str, url: str, fallback_start: date | None = None,
         venue = region.group(1).strip()
 
     free, price = detect_price(text[:4000])
+    raw = ld.get("startDate") or ""
+    slots = [{"date": start.isoformat(), "time": raw[11:16]}] if start and len(raw) >= 16 and raw[11:16] != "00:00" else []
     return Event(
         source="kudyznudy",
         url=url,
         title=ld.get("name") or basics["title"] or url.rsplit("/", 1)[-1],
         start=start,
         end=end,
-        time=time,
         venue=venue,
         category=category,
         description=basics["description"],
@@ -103,6 +104,10 @@ def parse_detail(html: str, url: str, fallback_start: date | None = None,
         free=free,
         price_from=price,
         date_uncertain=uncertain,
+        link=basics["site"],
+        booking=basics["booking"],
+        slots=slots,
+        time=time or (slots[0]["time"] if slots else None),
     )
 
 

@@ -16,7 +16,7 @@ from .dates import overlaps, upcoming_weekend
 from .http import Fetcher
 from .models import Event
 from .score import score_event
-from .sources import kudyznudy, prague_eu, telegram, tickettailor
+from .sources import kudyznudy, places, prague_eu, telegram, tickettailor
 
 log = logging.getLogger("scraper")
 OUT = Path(__file__).resolve().parent.parent / "docs" / "data" / "events.json"
@@ -32,11 +32,13 @@ def merge(events: list[Event]) -> list[Event]:
         if cur is None:
             by_key[ev.key] = ev
             continue
-        for f in ("venue", "time", "description", "image", "category", "end", "free", "price_from", "city"):
+        for f in ("venue", "time", "description", "image", "category", "end", "free", "price_from", "city", "link", "booking"):
             if getattr(cur, f) in (None, "") and getattr(ev, f) not in (None, ""):
                 setattr(cur, f, getattr(ev, f))
         if ev.lang == "ru":
             cur.lang = "ru"
+        if ev.slots and not cur.slots:
+            cur.slots = ev.slots
     return list(by_key.values())
 
 
@@ -74,7 +76,7 @@ def main(argv: list[str] | None = None) -> int:
     weekend = upcoming_weekend(today)
     fetcher = Fetcher()
     jobs = {
-        "prague.eu": lambda: prague_eu.collect(fetcher),
+        "prague.eu": lambda: prague_eu.collect(fetcher, today=today, horizon_days=config.HORIZON_DAYS),
         "kudyznudy": lambda: kudyznudy.collect(fetcher, weekend),
         "tickettailor": lambda: tickettailor.collect(fetcher, config.TICKETTAILOR_ORGANIZERS),
         "telegram": lambda: telegram.collect(fetcher, config.TELEGRAM_CHANNELS),
@@ -95,6 +97,13 @@ def main(argv: list[str] | None = None) -> int:
         except Exception as e:  # один сломанный источник не должен ронять весь сбор
             log.exception("%s упал", name)
             errors[name] = f"{type(e).__name__}: {e}"
+
+    if not args.only or "places" in only:
+        try:
+            places.enrich(fetcher)
+        except Exception as e:  # ссылки на места — не критично
+            log.exception("places упал")
+            errors["places"] = f"{type(e).__name__}: {e}"
 
     data = build(collected, today, errors)
     args.out.parent.mkdir(parents=True, exist_ok=True)

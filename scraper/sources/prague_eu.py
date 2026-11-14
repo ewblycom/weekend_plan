@@ -10,8 +10,10 @@ import logging
 import re
 from urllib.parse import urljoin
 
-from ..dates import NUMERIC_RANGE, parse_range
-from ..extract import soup_of
+from datetime import date, timedelta
+
+from ..dates import NUMERIC_RANGE, overlaps, parse_range
+from ..extract import page_basics, soup_of
 from ..models import Event
 
 log = logging.getLogger(__name__)
@@ -97,7 +99,31 @@ def parse_listing(html: str, category: str) -> list[Event]:
     return events
 
 
-def collect(fetcher, max_per_category: int = 40) -> list[Event]:
+SLOT = re.compile(r"(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4}),\s*(\d{1,2}:\d{2})")
+
+
+def parse_detail(html: str) -> dict:
+    """Страница события: все сеансы из блока «datum a čas», ссылка на билеты и сайт площадки."""
+    b = page_basics(html)
+    text = b["text"]
+    low = text.lower()
+    i = low.find("datum a čas")
+    block = text[i:i + 3000] if i >= 0 else ""
+    slots, seen = [], set()
+    for d, m, y, t in SLOT.findall(block):
+        try:
+            key = (date(int(y), int(m), int(d)).isoformat(), t if len(t) == 5 else "0" + t)
+        except ValueError:
+            continue
+        if key not in seen:
+            seen.add(key)
+            slots.append({"date": key[0], "time": key[1]})
+    return {"slots": slots, "booking": b["booking"], "link": b["site"], "description": b["description"]}
+
+
+def collect(fetcher, max_per_category: int = 40, today: date | None = None,
+            horizon_days: int = 21, max_details: int = 150) -> list[Event]:
+    today = today or date.today()
     out: list[Event] = []
     for slug, cat in CATEGORIES.items():
         html = fetcher.get(listing_url(slug))
@@ -106,4 +132,26 @@ def collect(fetcher, max_per_category: int = 40) -> list[Event]:
         items = parse_listing(html, cat)[:max_per_category]
         log.info("prague.eu/%s: %d событий", slug, len(items))
         out.extend(items)
+    # Страницы событий открываем только для ближайших дат: оттуда берём сеансы и прямые ссылки
+    near = [e for e in out if overlaps(e.start, e.end, today, today + timedelta(days=horizon_days))]
+    seen: set[str] = set()
+    for ev in near:
+        if ev.url in seen or len(seen) >= max_details:
+            continue
+        seen.add(ev.url)
+        page = fetcher.get(ev.url)
+        if not page:
+            continue
+        d = parse_detail(page)
+        ev.slots, ev.booking, ev.link = d["slots"], d["booking"], d["link"]
+        ev.description = ev.description or d["description"]
+        if d["slots"] and not ev.time:
+            times = {x["time"] for x in d["slots"]}
+            ev.time = times.pop() if len(times) == 1 else None
+    # одно событие встречается в нескольких категориях — переносим найденное на дубли
+    by_url = {e.url: e for e in near if e.slots or e.booking or e.link}
+    for e in out:
+        src = by_url.get(e.url)
+        if src and src is not e:
+            e.slots, e.booking, e.link = src.slots, src.booking, src.link
     return out

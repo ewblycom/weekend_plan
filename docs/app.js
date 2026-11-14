@@ -60,8 +60,12 @@ const dt = (s) => new Date(s + "T12:00:00");
 const fmtShort = (s) => dt(s).toLocaleDateString("ru-RU", { day: "numeric", month: "short" }).replace(".", "");
 const fmtLong = (s) => dt(s).toLocaleDateString("ru-RU", { weekday: "long", day: "numeric", month: "long" });
 const fmtRange = (a, b) => (a === b ? fmtShort(a) : `${fmtShort(a)} — ${fmtShort(b)}`);
-const overlaps = (e, a, b) => !e.start || (e.start <= b && (e.end || e.start) >= a);
-const open = (url) => (tg && tg.openLink ? tg.openLink(url) : window.open(url, "_blank"));
+const slotsIn = (e, a, b) => (e.slots || []).filter((x) => x.date >= a && x.date <= b);
+const overlaps = (e, a, b) => {
+  if (e.slots && e.slots.length) return slotsIn(e, a, b).length > 0;
+  return !e.start || (e.start <= b && (e.end || e.start) >= a);
+};
+const open = (url) => (url.startsWith("mailto:") ? (location.href = url) : tg && tg.openLink ? tg.openLink(url) : window.open(url, "_blank"));
 const haptic = (kind) => { try { tg && tg.HapticFeedback && (kind === "select" ? tg.HapticFeedback.selectionChanged() : tg.HapticFeedback.notificationOccurred(kind)); } catch {} };
 const q = (s) => encodeURIComponent(s);
 const TOWN = { "Вена": "Wien", "Мюнхен": "München", "Берлин": "Berlin" };
@@ -89,13 +93,28 @@ function photo(e) {
   return `<div class="ph ph-${esc(e.category || "other")}"><img loading="lazy" decoding="async" src="${esc(thumb(e.image))}" data-orig="${esc(e.image)}" alt=""
     onerror="if(this.dataset.orig&&this.src!==this.dataset.orig){this.src=this.dataset.orig;this.dataset.orig=''}else{this.remove()}"><span>${esc(label)}</span></div>`;
 }
+const WD = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
+function slotLine(e) {
+  const xs = slotsIn(e, S.from, S.to);
+  if (!xs.length) return "";
+  const fmt = (x) => { const d = new Date(x.date + "T12:00"); return `${WD[d.getDay()]} ${d.getDate()}.${d.getMonth() + 1} · ${x.time}`; };
+  return `<div class="slots">${xs.slice(0, 6).map((x) => `<span>${esc(fmt(x))}</span>`).join("")}${xs.length > 6 ? `<span>ещё ${xs.length - 6}</span>` : ""}</div>`;
+}
+function actionLinks(e) {
+  const out = [];
+  const isTickets = e.kind !== "place" && e.booking && !/rezerv|reserv|booking/i.test(e.booking);
+  if (e.booking) out.push(`<button class="btn-quiet" data-open="${esc(e.booking)}">${e.booking.startsWith("mailto:") ? "Написать для брони" : isTickets ? "Билеты" : "Забронировать"}</button>`);
+  if (e.link) out.push(`<button class="btn-quiet" data-open="${esc(e.link)}">Сайт</button>`);
+  if (!out.length || e.source === "tickettailor") out.push(`<button class="btn-quiet" data-open="${esc(e.url)}">${e.source === "tickettailor" ? "Билеты" : "Источник"}</button>`);
+  return out.join("");
+}
 function priceTag(e) { return e.free ? "Бесплатно" : e.price_from ? `от ${e.price_from.toLocaleString("ru-RU")} Kč` : ""; }
 
 // ---------- данные для рулетки ----------
 function placesAsEvents() {
   return S.places.map((p) => ({
     id: "place-" + p.name, kind: "place", placeKind: p.kind, source: "places", url: p.url, title: p.name, category: "active",
-    venue: p.map || p.name, description: p.note, image: p.image || null, lang: "cs", score: 5, tags: [p.area].filter(Boolean),
+    venue: p.map || p.name, description: p.note, image: p.image || null, link: p.site || null, booking: p.booking || null, lang: "cs", score: 5, tags: [p.area].filter(Boolean),
     start: null, end: null, time: null, free: null, price_from: null,
   }));
 }
@@ -288,11 +307,12 @@ function eventCard(e, mode) {
     ${e.image ? `<div class="eyebrow">${esc(eyebrow)}</div>` : ""}
     <h3>${esc(e.title)}</h3>
     <div class="meta">${e.kind === "place" ? esc((e.tags || [])[0] || "") : esc(when(e)) + (e.city ? " · " + esc(e.city) : "") + (e.venue ? " · " + esc(e.venue) : "")}</div>
+    ${slotLine(e)}
     <div class="tags">${tags.join("")}</div>
     ${long ? `<div class="more" id="more-${esc(e.id)}" hidden>${esc(long)}</div>` : ""}
     <div class="links">
       ${long ? `<button class="btn-quiet" data-more="${esc(e.id)}">Подробнее</button>` : ""}
-      <button class="btn-quiet" data-open="${esc(e.url)}">Источник</button>
+      ${actionLinks(e)}
     </div>
     <div class="pair">
       <button class="btn ${v === false ? "on" : ""}" data-vote="${esc(e.id)}:0">${no}</button>
@@ -348,7 +368,8 @@ function planDate(e) {
 function chooseEvent(id) {
   const e = eventOf(id); if (!e) return;
   S.choice = id;
-  S.plans[id] = { id, event: e, date: planDate(e), time: startTime(e), minutes: 120, dinner: null };
+  const first = slotsIn(e, S.from, S.to)[0];
+  S.plans[id] = { id, event: e, date: first ? first.date : planDate(e), time: first ? first.time : startTime(e), minutes: 120, dinner: null };
   savePlans();
   S.rest = freshRest(); S.step = "rest"; render(); haptic("success");
   window.scrollTo({ top: 0 });

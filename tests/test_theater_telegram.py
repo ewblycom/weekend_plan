@@ -105,3 +105,28 @@ def test_telegram_post_image():
     <a class="tgme_widget_message_date" href="https://t.me/x/5"><time datetime="2026-11-13T10:00:00+00:00"></time></a></div>"""
     [ev] = telegram.parse_channel(html, "pozor_brno", TODAY)
     assert ev.image == "https://cdn4.telesco.pe/file/abc.jpg"
+
+
+# ---------- прямые ссылки и сеансы ----------
+from scraper.extract import external_links, soup_of
+from scraper.sources import prague_eu
+
+
+def test_external_links_skip_aggregators():
+    html = """<main><a href="https://www.kudyznudy.cz/x">x</a><a href="https://www.facebook.com/jazzdock">fb</a>
+    <a href="https://rezervace.lasergamegalaxy.cz/">Rezervace</a><a href="https://www.lasergamegalaxy.cz/">web</a></main>"""
+    assert external_links(soup_of(html)) == ("https://www.lasergamegalaxy.cz/", "https://rezervace.lasergamegalaxy.cz/")
+    html2 = '<main><a href="https://www.jazzdock.cz/cs/koncert/groove-dock-36">Groove Dock</a></main>'
+    assert external_links(soup_of(html2)) == (None, "https://www.jazzdock.cz/cs/koncert/groove-dock-36")
+
+
+def test_prague_eu_detail_slots_and_tickets():
+    html = """<html><body><main><h1>I and You</h1><a href="https://goout.net/cs/listky/i-and-you/joolb/">vstupenky</a>
+    <a href="https://prague.eu/cs/objevujte/divadlo-na-pradle/">Divadlo Na Prádle</a>
+    <section><h2>datum a čas</h2><table><tr><th>13. 11. 2026, 19:00</th></tr><tr><th>14. 11. 2026, 19:00</th></tr>
+    <tr><th>17. 11. 2026, 19:00</th></tr></table></section><a href="https://www.napradle.cz">napradle.cz</a></main></body></html>"""
+    d = prague_eu.parse_detail(html)
+    assert d["booking"] == "https://goout.net/cs/listky/i-and-you/joolb/"
+    assert d["link"] == "https://www.napradle.cz"
+    assert [x["date"] for x in d["slots"]] == ["2026-11-13", "2026-11-14", "2026-11-17"]
+    assert d["slots"][0]["time"] == "19:00"

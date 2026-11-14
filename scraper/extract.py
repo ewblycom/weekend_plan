@@ -67,6 +67,34 @@ def visible_text(soup: BeautifulSoup, limit: int = 6000) -> str:
     return text[:limit]
 
 
+SKIP_HOSTS = ("kudyznudy.cz", "prague.eu", "praguecitytourism", "czechtourism", "visitczechia", "praha.eu",
+              "facebook.com", "instagram.com", "twitter.com", "x.com", "youtube.com", "tiktok.com", "linkedin.com",
+              "pinterest.", "google.", "mapy.cz", "apple.com", "sharethis", "cdn.", "storage.googleapis.com", "t.me",
+              "telegram", "seznam.cz", "wa.me", "mailto:", "tel:")
+BOOKING_WORDS = re.compile(
+    r"rezerv|booking|reservio|vstupenk|v?stupenky|l[ií]stk|ticket|goout|smsticket|eventim|colosseum|"
+    r"predprodej|předprodej|luma\.com|eventbrite|kupvstupenku|/koncert/|/program|/event", re.I)
+
+
+def external_links(soup: BeautifulSoup) -> tuple[str | None, str | None]:
+    """(сайт, бронь/билеты) — первые внешние ссылки страницы, без соцсетей и самого агрегатора."""
+    site = booking = None
+    for a in soup.find_all("a", href=True):
+        href = a["href"].strip()
+        if not href.startswith("http") or any(h in href.lower() for h in SKIP_HOSTS):
+            continue
+        if re.search(r"\.(jpe?g|png|webp|pdf)(\?|$)", href, re.I):
+            continue
+        label = a.get_text(" ", strip=True)
+        if booking is None and (BOOKING_WORDS.search(href) or BOOKING_WORDS.search(label)):
+            booking = href
+        elif site is None:
+            site = href
+        if site and booking:
+            break
+    return site, booking
+
+
 def page_basics(html: str) -> dict:
     """Минимум, который есть почти на любой странице события."""
     soup = soup_of(html)
@@ -77,5 +105,6 @@ def page_basics(html: str) -> dict:
         "image": meta(soup, "og:image"),
         "jsonld": events[0] if events else None,
     }
-    data["text"] = visible_text(soup)
+    data["text"] = visible_text(soup)          # убирает шапку/подвал — ниже ссылки только из содержимого
+    data["site"], data["booking"] = external_links(soup)
     return data

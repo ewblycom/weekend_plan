@@ -261,3 +261,6 @@ input[type=date], input[type=time] {
 .ph-active { --ph1: #06b6d4; --ph2: #2563eb; } .ph-sport { --ph1: #22c55e; --ph2: #15803d; }
 h2.section { font: var(--t-h); margin: 26px 2px 10px; }
 .chips.small .chip { padding: 7px 12px; font-size: 14px; }
+
+.card .slots { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 2px; }
+.card .slots span { font: 600 13px/1 var(--font); padding: 7px 10px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); }
