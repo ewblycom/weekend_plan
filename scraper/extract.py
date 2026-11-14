@@ -70,7 +70,8 @@ def visible_text(soup: BeautifulSoup, limit: int = 6000) -> str:
 SKIP_HOSTS = ("kudyznudy.cz", "prague.eu", "praguecitytourism", "czechtourism", "visitczechia", "praha.eu",
               "facebook.com", "instagram.com", "twitter.com", "x.com", "youtube.com", "tiktok.com", "linkedin.com",
               "pinterest.", "google.", "mapy.cz", "apple.com", "sharethis", "cdn.", "storage.googleapis.com", "t.me",
-              "telegram", "seznam.cz", "wa.me", "mailto:", "tel:")
+              "telegram", "seznam.cz", "vinegret.cz", "wa.me", "mailto:", "tel:")
+NOT_SITE = ("goout.net", "luma.com", "lu.ma", "ticketportal", "ticketmaster", "eventim")   # годятся только как «билеты»
 BOOKING_WORDS = re.compile(
     r"rezerv|booking|reservio|vstupenk|v?stupenky|l[ií]stk|ticket|goout|smsticket|eventim|colosseum|"
     r"predprodej|předprodej|luma\.com|eventbrite|kupvstupenku|/koncert/|/program|/event", re.I)
@@ -88,7 +89,7 @@ def external_links(soup: BeautifulSoup) -> tuple[str | None, str | None]:
         label = a.get_text(" ", strip=True)
         if booking is None and (BOOKING_WORDS.search(href) or BOOKING_WORDS.search(label)):
             booking = href
-        elif site is None:
+        elif site is None and not any(h in href.lower() for h in NOT_SITE):
             site = href
         if site and booking:
             break

@@ -16,7 +16,7 @@ from .dates import overlaps, upcoming_weekend
 from .http import Fetcher
 from .models import Event
 from .score import score_event
-from .sources import kudyznudy, places, prague_eu, telegram, tickettailor
+from .sources import goout, kudyznudy, luma, places, prague_eu, telegram, tickettailor, vinegret
 
 log = logging.getLogger("scraper")
 OUT = Path(__file__).resolve().parent.parent / "docs" / "data" / "events.json"
@@ -80,6 +80,9 @@ def main(argv: list[str] | None = None) -> int:
         "kudyznudy": lambda: kudyznudy.collect(fetcher, weekend),
         "tickettailor": lambda: tickettailor.collect(fetcher, config.TICKETTAILOR_ORGANIZERS),
         "telegram": lambda: telegram.collect(fetcher, config.TELEGRAM_CHANNELS),
+        "luma": lambda: luma.collect(fetcher),
+        "vinegret": lambda: vinegret.collect(fetcher),
+        "goout": lambda: goout.collect(fetcher),
     }
     only = set(args.only.split(",")) if args.only else set(jobs)
 

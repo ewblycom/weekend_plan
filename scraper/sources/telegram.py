@@ -258,7 +258,7 @@ def parse_channel(html: str, channel: str, today: date | None = None,
         if "▪" in text and "ПРАГА" in text.upper():
             out.extend(parse_pozor_digest(text, ch, post_url, today))
             continue
-        if "Афиша:" in text or CESKO_EVENT.search(text):
+        if "Афиша:" in text or CESKO_EVENT.search(text) or "vinegret.cz/" in text:
             continue  # афиша The Česko без дат: события берём со своих страниц (см. collect)
         structured = bool(STRUCT_DATE.search(text) and STRUCT_PLACE.search(text))
         if not structured and any(w in text.lower() for w in config.NOT_EVENT):

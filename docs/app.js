@@ -18,7 +18,7 @@ const KIND = {
   karting: "Картинг", vr: "VR", workshop: "Мастерские", sport: "Скалодром",
 };
 const LANG = { ru: "Русский", cs: "Чешский", en: "English" };
-const SOURCE = { "prague.eu": "prague.eu", kudyznudy: "Kudy z nudy", tickettailor: "Ticket Tailor", telegram: "Telegram", places: "Подборка мест" };
+const SOURCE = { "prague.eu": "prague.eu", kudyznudy: "Kudy z nudy", tickettailor: "Ticket Tailor", telegram: "Telegram", places: "Подборка мест", goout: "GoOut", luma: "Luma", vinegret: "Vinegret" };
 const SORTS = [["best", "Лучшее"], ["cheap", "Дешевле"], ["pricey", "Дороже"], ["date", "По дате"]];
 const RSORTS = [["best", "Лучшее"], ["cheap", "Дешевле"], ["pricey", "Дороже"], ["near", "Ближе"]];
 

@@ -11,7 +11,7 @@ TICKETTAILOR_ORGANIZERS = ["spotlightproduction"]
 # Это новостные каналы — парсер берёт из них только афишные посты с датой (czech_info убран: там только новости и реклама).
 # Добавьте сюда каналы, которые читаете сами, —
 # например афишу Праги или Vinegret, — когда узнаете их точные @username.
-TELEGRAM_CHANNELS = ["pozor_brno", "the_cesko"]
+TELEGRAM_CHANNELS = ["pozor_brno", "the_cesko", "vinegret_cz"]
 
 # Туристический центр — сильно опускаем в выдаче
 TOURIST_MARKERS = [
@@ -37,7 +37,7 @@ NEAR_HOME = ["braník", "podolí", "krč", "modřany", "nusle", "michle", "lhotk
 
 CATEGORY_WEIGHT = {
     "concert": 3.0, "show": 3.0, "theater": 2.8, "workshop": 3.0, "market": 2.5, "food": 2.5,
-    "festival": 2.5, "exhibition": 2.0, "other": 1.5, "sport": 1.0, "history": 0.5,
+    "festival": 2.5, "exhibition": 2.0, "other": 1.5, "sport": 2.3, "history": 0.5,
     "tour": -1.0, "kids": -3.0, None: 1.0,
 }
 

@@ -28,6 +28,7 @@ CATEGORIES = {
     "festivaly-oslavy": "festival",
     "predstaveni": "show",
     "akce": "other",
+    "sport": "sport",
     "trendy-a-tipy": "other",
 }
 # подкатегории театра на prague.eu (строка над заголовком карточки) → наша категория
