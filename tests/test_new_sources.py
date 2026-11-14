@@ -52,3 +52,15 @@ def test_place_hours_from_own_site():
     html = "<html><body><h2>Otevírací doba</h2><p>Po–Ne 10:00–22:00</p></body></html>"
     assert opening_hours(html) == "10:00–22:00"
     assert opening_hours("<html><body>Provozní doba: 9.30 - 21.00</body></html>") == "09:30–21:00"
+
+
+def test_place_site_discovery():
+    from scraper.sources.places import name_tokens, pick_site, search_results
+    assert name_tokens("Absolutní Bowling") == ["absolutni"]
+    assert name_tokens("Mercuria Laser Game Braník") == ["mercuria", "branik"]
+    html = ('<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.firmy.cz%2Fdetail%2F1">f</a>'
+            '<a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.absolutnibowling.cz%2Fcenik">o</a>')
+    links = search_results(html)
+    assert links[1] == "https://www.absolutnibowling.cz/cenik"
+    assert pick_site("Absolutní Bowling", links) == "https://www.absolutnibowling.cz/"
+    assert pick_site("Absolutní Bowling", ["https://www.facebook.com/absolutnibowling", "https://other.cz/"]) is None
