@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-14T10:44:32+00:00",
+ "generated_at": "2026-11-14T11:00:28+00:00",
  "weekend": {
   "from": "2026-11-13",
   "to": "2026-11-15"
  },
  "counts": {
   "tickettailor": 7,
-  "prague.eu": 188,
   "telegram": 5,
+  "prague.eu": 188,
   "kudyznudy": 25,
   "luma": 8,
   "goout": 14
  },
  "errors": {
-  "vinegret": "0 событий — возможно, изменилась вёрстка сайта"
+  "vinegret": "RuntimeError: ссылок 6, загружено 0, рубрика «Афиша» 0, с датой в Праге 0"
  },
  "events": [
   {
@@ -23,7 +23,7 @@
    "start": "2026-11-18",
    "end": "2026-11-18",
    "time": "19:00",
-   "venue": "Rock Cafe, Rock Cafe",
+   "venue": "Rock Cafe",
    "city": null,
    "category": "show",
    "description": "Дмитрий Романов — один из самых узнаваемых русскоязычных стендап-комиков и один из первых участников Stand Up на ТНТ. Его также знают по про",
@@ -43,65 +43,13 @@
    "id": "3c58a04e173d"
   },
   {
-   "source": "prague.eu",
-   "url": "https://prague.eu/cs/akce/tyden-svobody/",
-   "title": "Týden svobody",
-   "start": "2026-11-11",
-   "end": "2026-11-17",
-   "time": null,
-   "venue": "Praha — různá místa",
-   "city": null,
-   "category": "festival",
-   "description": "Spolek Díky, že můžem opět přidává k oslavám 17. listopadu na Národní třídě doprovodný program Týden svobody. Divadla, výstavy, besedy, debaty, workshopy, venkovní instalace, projekce i program pro děti. Týden zahájí slavnostní předávání Cen Jana Opletala 11. 11. a vyvrcholí 17. listopadu na Národní třídě. Výrazným tématem programu bude také 90. výročí narození Václava Havla, které připomenou filmové projekce a divadelní představení včetně Havel77: Here We Go Again? v Rock Café.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/03130134/Korzo-Narodni-2024_svicky©Kamila-Shibalova-1.jpg@webp",
-   "lang": "ru",
-   "free": null,
-   "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
-   "date_uncertain": false,
-   "score": 7.0,
-   "tags": [
-    "на русском",
-    "для двоих"
-   ],
-   "id": "1dbf70b074b8"
-  },
-  {
-   "source": "prague.eu",
-   "url": "https://prague.eu/cs/akce/karlinska-husa/",
-   "title": "Karlínská husa",
-   "start": "2026-11-15",
-   "end": "2026-11-15",
-   "time": "11:00—18:00",
-   "venue": "Karlínské náměstí",
-   "city": null,
-   "category": "food",
-   "description": "Karlínská husa 2026 zve na den plný podzimních chutí, vůní a příjemné atmosféry v srdci Karlína. Karlínské náměstí ožije tradičními husími specialitami, svatomartinským vínem, pestrou nabídkou občerstvení i kulturním programem pro všechny generace. K zakoupení budou gastronomické speciality inspirované podzimní sezonou, sladké dobroty. a výběr vín, která k období sv. Martina patří. Přijďte si užít pohodovou listopadovou neděli plnou dobrého jídla, hudby a setkávání pod širým nebem.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/06/10103846/372043495_885578036556296_5130591882745534819_n.jpg@webp",
-   "lang": "ru",
-   "free": null,
-   "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
-   "date_uncertain": false,
-   "score": 6.5,
-   "tags": [
-    "на русском",
-    "только сейчас"
-   ],
-   "id": "da2dafcbf7a4"
-  },
-  {
    "source": "tickettailor",
    "url": "https://www.tickettailor.com/events/spotlightproduction/2474467",
    "title": "Дмитрий Романов в Мюнхене. Стендап-концерт «Новые главы»",
    "start": "2026-11-19",
    "end": "2026-11-19",
    "time": "19:00",
-   "venue": "The Jungle Comedy Club, The Jungle Comedy Club",
+   "venue": "The Jungle Comedy Club",
    "city": "Мюнхен",
    "category": "show",
    "description": "Дмитрий Романов — один из самых узнаваемых русскоязычных стендап-комиков и один из первых участников Stand Up на ТНТ. Его также знают по про",
@@ -155,7 +103,7 @@
    "start": "2026-11-19",
    "end": "2026-11-19",
    "time": null,
-   "venue": "Image Theatre, Image Theatre",
+   "venue": "Image Theatre",
    "city": null,
    "category": "concert",
    "description": "Анна Виленская — музыковед, лектор и популяризатор классической и современной музыки. Она умеет говорить о сложном просто, увлекательно и с ",
@@ -289,12 +237,12 @@
    "city": null,
    "category": "food",
    "description": "Pět výrazných osobností české gastronomie, oceněných v průvodci Gault&Millau 2026, se spojí při kulinářském večeru Dinner of the Year 2026. V sobotu 14. listopadu nabídne pražská restaurace Reason, situovaná v nejvyšším patře budovy Masaryčka, šestichodové degustační menu, na němž se budou podílet Khanh Ta, Jan Horák, Marco Christov, Sabina Keltnerová a Jiří Hrachový. Výjimečný gastronomický zážitek doplní vinné či nealkoholické párování a panoramatický výhled na Prahu.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/10/22131041/Dinner_of_the_year_37.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/10/22131041/Dinner_of_the_year_37.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://gault-millau.attendu.com/event/a729bc5924b1e699e7142cc0/?p=6ab2213cb0392bd2433d6378&lang=cs",
+   "booking": "https://gault-millau.attendu.com/event/a729bc5924b1e699e7142cc0/?p=6ab2213cb0392bd2433d6378&lang=cs",
    "slots": [],
    "date_uncertain": false,
    "score": 5.5,
@@ -320,8 +268,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://fok.cz/popukani",
+   "booking": "https://fok.cz/popukani",
    "slots": [],
    "date_uncertain": false,
    "score": 5.5,
@@ -372,8 +320,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://sportovnihalafortuna.cz",
+   "booking": "https://www.livenation.cz/event/placebo-prague-tickets-edp1655974",
    "slots": [],
    "date_uncertain": false,
    "score": 5.5,
@@ -398,8 +346,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.musicbar.cz",
+   "booking": "https://www.livenation.cz/event/mammoth-prague-tickets-edp1646679",
    "slots": [],
    "date_uncertain": false,
    "score": 5.5,
@@ -451,11 +399,11 @@
    "city": null,
    "category": "food",
    "description": "Degustační slavnost svatomartinských vín a oslava svátku sv. Martina na náplavce Rašínova nábřeží tradičně představuje mladá vína z Moravy i Čech. Svatomartinská vína, první vína nového ročníku, jsou suchá, lehká, svěží a ovocitá. Přestože zrála jen několik týdnů, už nyní vynikají svým osobitým charakterem. Pražská náplavka se 14. listopadu 2026 opět promění v malý vinařský svět, kde se první mladá vína snoubí s vůní pečené husy, křupavého zelí a dalších husích specialit, doplněných hudebním programem, který dotváří jedinečnou atmosféru.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/14142014/naplavka-s-mart-savnosti-2025-34.Crl4hzpm.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/14142014/naplavka-s-mart-savnosti-2025-34.Crl4hzpm.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.svatomartinskeslavnosti.cz/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -477,11 +425,11 @@
    "city": null,
    "category": "food",
    "description": "Vůně pečené husy, první doušky mladého vína a podzimní atmosféra na Letné — to je Letenská husa a košt svatomartinských vín v Národním zemědělském muzeu. Každoroční oblíbená akce zve návštěvníky všech generací na ochutnávky svatomartinských a mladých vín od českých a moravských vinařů, tradiční husí speciality i bohatý doprovodný program inspirovaný lidovými zvyky. Přijďte oslavit svátek sv. Martina v duchu chutí, tradic a dobré nálady.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/29100442/0Q8A9682_-e1769679054945.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/29100442/0Q8A9682_-e1769679054945.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.nzm.cz/aktualne-v-muzeu/akce/letenska-husa-a-kost-svatomartinskeho-vina7",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -503,11 +451,11 @@
    "city": null,
    "category": "food",
    "description": "Svatomartinská vína, podzimní atmosféra a jedinečné výhledy na Prahu nabídne Festival vína, který se uskuteční 14. a 15. listopadu 2026 na Svatováclavské vinici a ve Ville Richter pod Pražským hradem. V programu nechybí degustace mladých vín od předních českých vinařů ani příjemné posezení v historickém areálu vinice. Pro případ nepříznivého počasí bude návštěvníkům k dispozici vyhřívaný stan. Vstup je horním vchodem z ulice Na Opyši.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/07/24085842/22-scaled.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/07/24085842/22-scaled.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.villarichter.cz/svaty-martin-na-vinici/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -618,7 +566,7 @@
    "start": "2026-11-18",
    "end": "2026-11-18",
    "time": null,
-   "venue": "VHS Wiener Urania, VHS Wiener Urania",
+   "venue": "VHS Wiener Urania",
    "city": "Вена",
    "category": "concert",
    "description": "Анна Виленская — музыковед, лектор и популяризатор классической и современной музыки. Она умеет говорить о сложном просто, увлекательно и с ",
@@ -644,7 +592,7 @@
    "start": "2026-11-20",
    "end": "2026-11-20",
    "time": null,
-   "venue": "Kulturzentrum Trudering, Kulturzentrum Trudering",
+   "venue": "Kulturzentrum Trudering",
    "city": "Мюнхен",
    "category": "concert",
    "description": "Анна Виленская — музыковед, лектор и популяризатор классической и современной музыки. Она умеет говорить о сложном просто, увлекательно и с ",
@@ -670,7 +618,7 @@
    "start": "2026-11-23",
    "end": "2026-11-23",
    "time": null,
-   "venue": "Ko3 Coworking (Saal OG), Ko3 Coworking (Saal OG)",
+   "venue": "Ko3 Coworking (Saal OG)",
    "city": "Берлин",
    "category": "concert",
    "description": "Анна Виленская — музыковед, лектор и популяризатор классической и современной музыки. Она умеет говорить о сложном просто, увлекательно и с ",
@@ -704,8 +652,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://fok.cz/drazdanska-filharmonie",
+   "booking": "https://fok.cz/drazdanska-filharmonie",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -729,8 +677,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://praguesounds.cz/cs/event/kojey-radical-7uPKhP",
+   "booking": "https://praguesounds.enigoo.cz/app/tickets/events/10",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -754,8 +702,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.rudolfinum.cz",
+   "booking": "https://www.ceskafilharmonie.cz/event/38860-ceska-filharmonie-koncert-pro-svobodu-a-demokracii/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -779,8 +727,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://fok.cz/zenaty-bach",
+   "booking": "https://fok.cz/zenaty-bach",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -804,8 +752,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://cargogallery.cz/",
+   "booking": "https://www.livenation.cz/event/edis-uk-and-europe-tour-2026-prague-tickets-edp1671278",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -829,8 +777,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://praguesounds.cz/cs/event/paul-hillier-theatre-of-voices-6aGvb0",
+   "booking": "https://praguesounds.enigoo.cz/app/tickets/events/6",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -854,8 +802,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://cafevlese.cz",
+   "booking": "https://goout.net/cs/narvan%2Bsupport-zlo-z-jihu/szxilmy/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -879,8 +827,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://praguesounds.cz/cs/event/steve-reich-90-4HUsSU",
+   "booking": "https://praguesounds.enigoo.cz/app/tickets/events/2",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -904,8 +852,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://praguesounds.cz/cs/event/samara-joy-7ChY5q",
+   "booking": "https://praguesounds.enigoo.cz/app/tickets/events/3",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -929,8 +877,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.obecnidum.cz/program/slavnostni-koncert-festival-songs-of-europe-praha-2026/",
+   "booking": "https://goout.net/cs/slavnostni-koncert-festival-songs-of-europe-praha-2026/szeirhy/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -954,8 +902,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://praguesounds.cz/cs/event/max-cooper-6tl7JL",
+   "booking": "https://praguesounds.enigoo.cz/app/tickets/events/4",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -979,8 +927,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://archa-plus.cz/cz/program/detail/755/2026-11-21-arlo-parks",
+   "booking": "https://www.ticketmaster.cz/artist/arlo-parks-tickets/1013762?brand=cz_livenation",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1004,8 +952,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.o2arena.cz/events/pitbull-im-back/",
+   "booking": "https://www.livenation.cz/event/pitbull-i-m-back--prague-tickets-edp1651357",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1029,8 +977,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://praguesounds.cz/cs/event/anoushka-shankar-72YCGw",
+   "booking": "https://praguesounds.enigoo.cz/app/tickets/events/5",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1054,8 +1002,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.o2arena.cz/events/the-prodigy/",
+   "booking": "https://www.livenation.cz/event/the-prodigy-prague-tickets-edp1663140",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1079,8 +1027,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://fok.cz/bach-houslove-sonaty",
+   "booking": "https://fok.cz/bach-houslove-sonaty",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1104,8 +1052,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.jazzdock.cz/cs/koncert/gerald-clayton-trio-usa-2",
+   "booking": "https://www.jazzdock.cz/cs/koncert/gerald-clayton-trio-usa-2",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1129,8 +1077,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.mlp.cz/cz/akce/zemlinskeho-kvarteto-les-smyccu-4-koncert/3001",
+   "booking": "https://goout.net/cs/zemlinsky-quartet/pzwbnrf/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1154,8 +1102,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://fok.cz/hron-gerhardt",
+   "booking": "https://fok.cz/hron-gerhardt",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1179,8 +1127,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.mlp.cz/cz/akce/clarinet-factory/8872",
+   "booking": "https://www.mlp.cz/cz/ticketing/12795",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1204,8 +1152,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.narodni-divadlo.cz/cs/predstaveni/mahler-schonberg-zemlinsky-cNezfoEyQEa_f0Yz1Sypng?t=2026-11-26-19-00",
+   "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/mahler-schonberg-zemlinsky-cNezfoEyQEa_f0Yz1Sypng?t=2026-11-26-19-00",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1229,8 +1177,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://fource.cz/cs/events/nieve-ella-26/",
+   "booking": "https://fource.cz/cs/events/nieve-ella-26/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1254,8 +1202,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.jazzdock.cz/cs/koncert/terne-chave-29",
+   "booking": "https://www.jazzdock.cz/cs/koncert/terne-chave-29",
    "slots": [],
    "date_uncertain": false,
    "score": 4.5,
@@ -1271,7 +1219,7 @@
    "start": "2026-11-14",
    "end": "2026-11-14",
    "time": "11:00",
-   "venue": "The Miners Coffee Florentinum, The Miners Coffee Florentinum, Hlavní město Praha",
+   "venue": "The Miners Coffee Florentinum",
    "city": null,
    "category": "concert",
    "description": "What's happening?\nDJ set by Sam Gittis throughout the event.\nFree recipe lookbooks to take home and recreate your favourite drinks.\nSpecialty coffee, good…",
@@ -1306,12 +1254,12 @@
    "city": null,
    "category": "theater",
    "description": "Hravý, laskavý a poučný příběh o zázračné cestě na svět, která otevírá dětskou fantazii, odpovídá na zvídavé otázky a ukazuje, že i čekání může být jedno velké dobrodružství.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/04/09134940/Desetdvacet-bracha-v-brise-scaled.avif@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/04/09134940/Desetdvacet-bracha-v-brise-scaled.avif",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://praha-vysehrad.cz/cs/program/deset-dvacet-bracha-v-brise:252/",
+   "booking": "https://praha-vysehrad.cz/cs/program/deset-dvacet-bracha-v-brise:252/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.3,
@@ -1336,8 +1284,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.alternativa-festival.cz/program",
+   "booking": "https://goout.net/cs/festival-alternativa-2026/sziviiy/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.0,
@@ -1361,8 +1309,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://dny.ai/",
+   "booking": "https://dny.ai/program",
    "slots": [],
    "date_uncertain": false,
    "score": 4.0,
@@ -1386,8 +1334,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://praguesounds.cz/cs/uvod",
+   "booking": "https://praguesounds.enigoo.cz/app/tickets/events",
    "slots": [],
    "date_uncertain": false,
    "score": 4.0,
@@ -1411,8 +1359,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.3kino.cz/",
+   "booking": "https://www.3kino.cz/program/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.0,
@@ -1420,6 +1368,31 @@
     "для двоих"
    ],
    "id": "ff7743bee513"
+  },
+  {
+   "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/tyden-svobody/",
+   "title": "Týden svobody",
+   "start": "2026-11-11",
+   "end": "2026-11-17",
+   "time": null,
+   "venue": "Praha — různá místa",
+   "city": null,
+   "category": "festival",
+   "description": "Spolek Díky, že můžem opět přidává k oslavám 17. listopadu na Národní třídě doprovodný program Týden svobody. Divadla, výstavy, besedy, debaty, workshopy, venkovní instalace, projekce i program pro děti. Týden zahájí slavnostní předávání Cen Jana Opletala 11. 11. a vyvrcholí 17. listopadu na Národní třídě. Výrazným tématem programu bude také 90. výročí narození Václava Havla, které připomenou filmové projekce a divadelní představení včetně Havel77: Here We Go Again? v Rock Café.",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/03130134/Korzo-Narodni-2024_svicky©Kamila-Shibalova-1.jpg@webp",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": "https://www.tydensvobody.cz",
+   "booking": "https://www.tydensvobody.cz/program/?kraj=PHA",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.0,
+   "tags": [
+    "для двоих"
+   ],
+   "id": "1dbf70b074b8"
   },
   {
    "source": "prague.eu",
@@ -1436,8 +1409,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://fource.cz/cs/events/esdeekid-26/",
+   "booking": "https://fource.cz/cs/events/esdeekid-26/",
    "slots": [],
    "date_uncertain": false,
    "score": 4.0,
@@ -1453,7 +1426,7 @@
    "start": "2026-11-15",
    "end": "2026-11-15",
    "time": "18:00",
-   "venue": "Nosticova 634, Nosticova 634, Hlavní město Praha",
+   "venue": "Nosticova 634",
    "city": null,
    "category": "workshop",
    "description": "Ahoj! Vítej na naší movement session. Afro Foundation je pohybová praxe se dvěma částmi: začínáme pohybem – žádná choreografie, jen naladění se na vlastní…",
@@ -1566,8 +1539,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.korzonarodni.cz/",
+   "booking": "https://www.korzonarodni.cz/cs/program",
    "slots": [],
    "date_uncertain": false,
    "score": 4.0,
@@ -1591,9 +1564,22 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.ypsilonka.cz",
+   "booking": "https://www.ypsilonka.cz/repertoar/hrajeme/17-listopad-v-ypsilonce",
+   "slots": [
+    {
+     "date": "2026-11-17",
+     "time": "16:00"
+    },
+    {
+     "date": "2026-11-17",
+     "time": "17:00"
+    },
+    {
+     "date": "2026-11-17",
+     "time": "18:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 4.0,
    "tags": [
@@ -1616,7 +1602,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://piknik.apetitonline.cz/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -1641,7 +1627,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.mintmarket.cz/cs/trh/praha-53",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -1666,7 +1652,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.muzeumprahy.cz/vystavy-a-akce/vanoce-vanoce-stromecek-sviti",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -1691,7 +1677,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.meatspace.cz/prostory/wpp-campus/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -1716,7 +1702,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://navystavisti.cz/udalosti/hrncirske-a-remeslne-trhy/?termin=5&program=154",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -1741,7 +1727,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.muzeumprahy.cz/vystavy-a-akce/vanoce-vanoce-mikulas-nadeluje",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -1762,13 +1748,26 @@
    "city": null,
    "category": "theater",
    "description": "Světová premiéra brilantního sóla Daniela Kvašňovského ukazuje současnou klaunérii, nový cirkus a fyzické divadlo v jejich nejčistší podobě.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/07/22153445/RFnp3owpwXLOOTEa.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/07/22153445/RFnp3owpwXLOOTEa.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.jatka78.cz/cs/inscenace/les-choix-tremblants-cirkus-nevkus",
+   "booking": "https://www.jatka78.cz/cs/inscenace/les-choix-tremblants-cirkus-nevkus",
+   "slots": [
+    {
+     "date": "2026-11-13",
+     "time": "19:30"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "15:00"
+    },
+    {
+     "date": "2026-11-15",
+     "time": "15:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 3.8,
    "tags": [
@@ -1787,12 +1786,12 @@
    "city": null,
    "category": "theater",
    "description": "Polopravdivý příběh o pravdivé pravdě, o mysliteli, který svou vírou v pravdu dokázal nemožné.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/08/12123813/7a8f42af-janhus_7451.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/08/12123813/7a8f42af-janhus_7451.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://zdjc.cz/cs/program/pan-hus-aneb-tenkrat-v-kostnici/",
+   "booking": "https://zdjc.cz/cs/program/pan-hus-aneb-tenkrat-v-kostnici/",
    "slots": [],
    "date_uncertain": false,
    "score": 3.8,
@@ -1808,7 +1807,7 @@
    "start": "2026-11-26",
    "end": "2026-11-26",
    "time": "18:30",
-   "venue": "Coffee Room, Coffee Room, Hlavní město Praha",
+   "venue": "Coffee Room",
    "city": null,
    "category": "sport",
    "description": "UNWIND & UNWINE // Yoga + Social Evening \nby Bloom Club X Coffee Room\n\nAn evening of movement, laughs and connections with amazing people in the business &…",
@@ -1949,6 +1948,31 @@
    "id": "0a26fed8f9ef"
   },
   {
+   "source": "prague.eu",
+   "url": "https://prague.eu/cs/akce/karlinska-husa/",
+   "title": "Karlínská husa",
+   "start": "2026-11-15",
+   "end": "2026-11-15",
+   "time": "11:00—18:00",
+   "venue": "Karlínské náměstí",
+   "city": null,
+   "category": "food",
+   "description": "Karlínská husa 2026 zve na den plný podzimních chutí, vůní a příjemné atmosféry v srdci Karlína. Karlínské náměstí ožije tradičními husími specialitami, svatomartinským vínem, pestrou nabídkou občerstvení i kulturním programem pro všechny generace. K zakoupení budou gastronomické speciality inspirované podzimní sezonou, sladké dobroty. a výběr vín, která k období sv. Martina patří. Přijďte si užít pohodovou listopadovou neděli plnou dobrého jídla, hudby a setkávání pod širým nebem.",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/06/10103846/372043495_885578036556296_5130591882745534819_n.jpg",
+   "lang": "cs",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 3.5,
+   "tags": [
+    "только сейчас"
+   ],
+   "id": "da2dafcbf7a4"
+  },
+  {
    "source": "kudyznudy",
    "url": "https://www.kudyznudy.cz/akce/ryby-a-rybicky-nejvetsi-vystavni-a-prodejni-2",
    "title": "Ryby a rybičky – prodejní akvaristická burza v Praze",
@@ -2045,7 +2069,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/16125220/osklive-kacatko.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/16125220/osklive-kacatko.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2066,7 +2090,7 @@
    "start": "2026-11-18",
    "end": "2026-11-18",
    "time": "19:00",
-   "venue": "K Sokolovně 201/8, K Sokolovně 201/8, Hlavní město Praha",
+   "venue": "K Sokolovně 201/8",
    "city": null,
    "category": "theater",
    "description": "Amatérské divadlo studentů 4. ročníku Waldorfského lycea v Praze.\nHra 294 statečných je historické drama s prvky černého humoru, grotesky a absurdna. Děj se…",
@@ -2104,9 +2128,42 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.redutajazzclub.cz/artists-cs/the-golden-voice-a-celebration-of-tony-bennett",
+   "booking": "https://www.redutajazzclub.cz/artists-cs/the-golden-voice-a-celebration-of-tony-bennett",
+   "slots": [
+    {
+     "date": "2026-05-28",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-06-19",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-06-30",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-07-31",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-08-15",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-09-19",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-08",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "19:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 3.0,
    "tags": [
@@ -2130,9 +2187,58 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.redutajazzclub.cz/artists-cs/ray-charles-lee",
+   "booking": "https://www.redutajazzclub.cz/artists-cs/ray-charles-lee",
+   "slots": [
+    {
+     "date": "2026-07-10",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-08-01",
+     "time": "21:15"
+    },
+    {
+     "date": "2026-08-14",
+     "time": "21:15"
+    },
+    {
+     "date": "2026-08-28",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-09-11",
+     "time": "21:15"
+    },
+    {
+     "date": "2026-09-18",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-09-27",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-10",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-16",
+     "time": "21:15"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "21:15"
+    },
+    {
+     "date": "2026-11-20",
+     "time": "21:15"
+    },
+    {
+     "date": "2026-11-24",
+     "time": "19:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 3.0,
    "tags": [
@@ -2156,9 +2262,18 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.jazzrepublic.cz",
+   "booking": "https://www.jazzrepublic.cz/cz/program",
+   "slots": [
+    {
+     "date": "2026-10-29",
+     "time": "20:00"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "20:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 3.0,
    "tags": [
@@ -2235,8 +2350,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.o2arena.cz/events/the-kid-laroi-a-perfect-world-tour/",
+   "booking": "https://www.livenation.cz/event/the-kid-laroi-a-perfect-world-tour-prague-tickets-edp1652233?gad_source=1&gad_campaignid=23215104880&gclid=EAIaIQobChMI7r_mq5H5kgMVCZWDBx3B9wEsEAAYASAAEgLjq_D_BwE",
    "slots": [],
    "date_uncertain": false,
    "score": 3.0,
@@ -2258,8 +2373,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.muzeumprahy.cz",
+   "booking": "https://eshop.muzeumprahy.cz/ticket/detail/16072",
    "slots": [],
    "date_uncertain": false,
    "score": 3.0,
@@ -2283,7 +2398,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://cs.wikipedia.org/wiki/Praha-Bran%C3%ADk_(n%C3%A1dra%C5%BE%C3%AD)",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -2308,8 +2423,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.dpp.cz/spolecnost/aktuality/detail/66_3256-kalendar-akci-2026",
+   "booking": "https://www.dpp.cz/zabava-a-zazitky/historie-dpp/muzeum-mhd",
    "slots": [],
    "date_uncertain": false,
    "score": 3.0,
@@ -2333,8 +2448,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.nm.cz/navstivte-nas/program/akce/mikulas-v-narodopisnem-muzeu1",
+   "booking": "https://www.nm.cz/navstivte-nas/program/akce/mikulas-v-narodopisnem-muzeu1",
    "slots": [],
    "date_uncertain": false,
    "score": 3.0,
@@ -2358,8 +2473,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.zoopraha.cz",
+   "booking": "https://www.zoopraha.cz/navsteva/program/week.listevents/2026/11/12/-",
    "slots": [],
    "date_uncertain": false,
    "score": 3.0,
@@ -2383,7 +2498,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://sopmsh.estranky.cz/clanky/co-se-chysta/vanoce-na-kampe-----2026.html",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -2408,9 +2523,18 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://vstupenky.staracistirna.cz/ticket/detail/1621",
+   "booking": "https://vstupenky.staracistirna.cz/ticket/detail/4582",
+   "slots": [
+    {
+     "date": "2026-12-05",
+     "time": "11:00"
+    },
+    {
+     "date": "2026-12-05",
+     "time": "18:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 3.0,
    "tags": [
@@ -2433,8 +2557,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.certinacertovce.cz/",
+   "booking": "https://www.certinacertovce.cz/event-details/certi-na-certovce-2026-2",
    "slots": [],
    "date_uncertain": false,
    "score": 3.0,
@@ -2454,13 +2578,142 @@
    "city": null,
    "category": "theater",
    "description": "Zavřete oči. Otevřete oči. Co vidíte? Neuvěřitelné, že? A teď znovu. Zavřete oči. Mrk. Otevřete oči. A teď? Jak je to možné? Jak jsme to dokázali? Nešálí vás zrak? Byl tam les, a najednou tam není. Byli tam dva herci, a najednou je jich tam dvacet. Teď jsem seděl/a v hledišti, a najednou tančím na jevišti. Co se to se mnou děje? Mrkli jste okem. To je ono.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/01/28142212/677d752cd01c0f1c27bdc8d1_o46D6rgSvugvrye0.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/01/28142212/677d752cd01c0f1c27bdc8d1_o46D6rgSvugvrye0.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.azyl78.cz/program/okamzik",
+   "booking": "https://www.azyl78.cz/program/okamzik",
+   "slots": [
+    {
+     "date": "2026-10-13",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-14",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-15",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-17",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-17",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-18",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-20",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-21",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-23",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-24",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-24",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-25",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-27",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-28",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-29",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-30",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-31",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-31",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-01",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-11-03",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-04",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-05",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-06",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-07",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-11-07",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-08",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-11-10",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-11",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-12",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-13",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "14:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 2.8,
    "tags": [
@@ -2480,13 +2733,22 @@
    "city": null,
    "category": "theater",
    "description": "Swing je muzika, v níž se žije štěstí.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/21095934/0t9a1029-fotodusandostal-swingsevrac-18-10-2022-scaled.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/21095934/0t9a1029-fotodusandostal-swingsevrac-18-10-2022-scaled.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "http://www.ypsilonka.cz/program-a-nakup/swing-se-vraci-neboli-o-stesti",
+   "booking": "https://www.ypsilonka.cz/repertoar/hrajeme/swing-se-vraci-neboli-o-stesti",
+   "slots": [
+    {
+     "date": "2026-10-19",
+     "time": "19:30"
+    },
+    {
+     "date": "2026-11-15",
+     "time": "17:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 2.8,
    "tags": [
@@ -2506,13 +2768,22 @@
    "city": null,
    "category": "theater",
    "description": "Zbystři smysly pro nesmysly. Někdo se zjeví, někdo proběhne, někdo něco zašpitá, zašeptá, zašplouchá a něco zmizí. Spí ryba ve stoje? Umí pavoučí žena vylézt po žebříku? Dovede bubnovat upírek? Pojďte se nechat unášet tím, co se kolem vás děje.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/07125949/1131e88c-2715-4b9d-b67e-bdc9894d85e1.jpeg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/07125949/1131e88c-2715-4b9d-b67e-bdc9894d85e1.jpeg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.minor.cz/repertoar/tramtarie",
+   "booking": "https://www.minor.cz/repertoar/tramtarie",
+   "slots": [
+    {
+     "date": "2026-10-31",
+     "time": "15:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "15:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 2.8,
    "tags": [],
@@ -2529,13 +2800,26 @@
    "city": null,
    "category": "theater",
    "description": "Strhující životní příběh české lékařky Vlasty Kalálové-di Lotti s Beátou Kaňokovou v hlavní roli.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/01/07141214/doktorka-z-domu-trubacu-orez-1767049245.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/01/07141214/doktorka-z-domu-trubacu-orez-1767049245.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.mestskadivadlaprazska.cz/inscenace/2260/doktorka-z-domu-trubacu/",
+   "booking": "https://www.mestskadivadlaprazska.cz/inscenace/2260/doktorka-z-domu-trubacu/",
+   "slots": [
+    {
+     "date": "2026-10-31",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-17",
+     "time": "19:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 2.8,
    "tags": [],
@@ -2552,7 +2836,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/04143249/IANDYOUPSCPOSTERFINAL.jpg-m.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/04143249/IANDYOUPSCPOSTERFINAL.jpg-m.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2575,7 +2859,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/08/21112232/RRFF4robrXYNnP3E.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/08/21112232/RRFF4robrXYNnP3E.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2598,7 +2882,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/06/23163110/Narodni_divadlo_v_lozi_opona_2.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/06/23163110/Narodni_divadlo_v_lozi_opona_2.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2621,7 +2905,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/08/25111645/58-max-1200x1200-1.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/08/25111645/58-max-1200x1200-1.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2644,7 +2928,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13051055/franz-kavka-7-1920x1280-1.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13051055/franz-kavka-7-1920x1280-1.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2667,7 +2951,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/08/10093729/IMG_5810v-scaled-1.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/08/10093729/IMG_5810v-scaled-1.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2686,7 +2970,7 @@
    "start": "2026-11-21",
    "end": "2026-11-21",
    "time": "09:00",
-   "venue": "Radlická kulturní sportovna, Radlická kulturní sportovna, Hlavní město Praha",
+   "venue": "Radlická kulturní sportovna",
    "city": null,
    "category": "sport",
    "description": "RUN&RAVE na Radlické! 💚🏃‍♀️️se speciálním hostem\nNaše oblíbená Radlická je zpět aneb sobotní dopoledne, které nechceš zaspat!!! Pojď si s námi dát ranní běh,…",
@@ -2724,9 +3008,154 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.farmarsketrziste.cz/trh/hermanak",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-02-07",
+     "time": "09:00"
+    },
+    {
+     "date": "2026-02-14",
+     "time": "09:00"
+    },
+    {
+     "date": "2026-02-21",
+     "time": "09:00"
+    },
+    {
+     "date": "2026-02-28",
+     "time": "09:00"
+    },
+    {
+     "date": "2026-03-07",
+     "time": "09:00"
+    },
+    {
+     "date": "2026-03-14",
+     "time": "09:00"
+    },
+    {
+     "date": "2026-03-21",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-04-11",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-04-18",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-05-02",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-05-09",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-05-16",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-05-23",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-06-06",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-06-13",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-06-20",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-07-11",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-07-18",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-08-01",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-08-08",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-08-15",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-08-22",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-09-05",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-09-12",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-09-19",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-10-03",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-10-10",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-10-17",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-10-24",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-11-07",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-11-28",
+     "time": "08:30"
+    },
+    {
+     "date": "2026-12-05",
+     "time": "09:00"
+    },
+    {
+     "date": "2026-12-12",
+     "time": "09:00"
+    },
+    {
+     "date": "2026-12-19",
+     "time": "09:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 2.5,
    "tags": [
@@ -2750,8 +3179,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://vecnanadeje.org",
+   "booking": "https://vecnanadeje.org/vstupenky/",
    "slots": [],
    "date_uncertain": false,
    "score": 2.5,
@@ -2776,9 +3205,78 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.holesovickatrznice.cz/hala-22",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-11-03",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-04",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-05",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-06",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-07",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-09",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-10",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-11",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-12",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-13",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-16",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-17",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-18",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-19",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-20",
+     "time": "07:30"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "07:30"
+    }
+   ],
    "date_uncertain": false,
    "score": 2.5,
    "tags": [],
@@ -2799,8 +3297,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.artvr.cz/program",
+   "booking": "https://www.artvr.cz/prakticke-informace#vstupenky",
    "slots": [],
    "date_uncertain": false,
    "score": 2.5,
@@ -2889,7 +3387,7 @@
    "start": "2026-11-15",
    "end": "2026-11-15",
    "time": "19:00",
-   "venue": "Divadlo Na Fidlovačce , Křesomyslova 625/4, Praha 4",
+   "venue": "Divadlo Na Fidlovačce, Křesomyslova 625/4, Praha 4",
    "city": null,
    "category": null,
    "description": "Ve měnícím se světle Mayi každý pohyb vytváří novou vrstvu iluze a očekávání. Představení zkoumá proměnlivost identity skrze neustálou změnu oděvů, které odrážejí masky, jež nás formují i klamou. Když každý kus zapadne na své místo, vyvstává otázka: stáváme se více sami sebou, nebo méně?",
@@ -2953,8 +3451,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.vlada.cz/cz/urad-vlady/dalsi-objekty/lichtenstejnsky-palac-3690",
+   "booking": "https://www.mezipatra.cz/en/program/tickets-venues.html",
    "slots": [],
    "date_uncertain": false,
    "score": 2.5,
@@ -2976,7 +3474,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://festivalsvobody.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -2999,7 +3497,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.sametoveposviceni.cz/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3022,7 +3520,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.cssauk.cz/na%C5%A1e-aktivity/17-listopad",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3068,7 +3566,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.festivalff.cz/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3083,7 +3581,7 @@
    "start": "2026-11-19",
    "end": "2026-11-19",
    "time": "18:30",
-   "venue": "Nerd Alert, Nerd Alert, Hlavní město Praha",
+   "venue": "Nerd Alert",
    "city": null,
    "category": "active",
    "description": "Přijď si zahrát deskovky a potkat fajn lidi.\nJeden večer. Nové tváře. Deskovky .A možná i nové přátelství. To je Friendship Flavour FUN &GAMES.\n\nCo tě čeká?\n🎲…",
@@ -3121,8 +3619,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.theater.cz/",
+   "booking": "https://www.theater.cz/program/",
    "slots": [],
    "date_uncertain": false,
    "score": 2.5,
@@ -3144,8 +3642,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.dsaprague.org/",
+   "booking": "https://goout.net/cs/dsa-vanocni-charitativni-trh/szcptny/",
    "slots": [],
    "date_uncertain": false,
    "score": 2.5,
@@ -3167,8 +3665,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://navystavisti.cz/udalosti/krampus-show-2026/?termin=558&program=154",
+   "booking": "https://navystavisti.cz/udalosti/krampus-show-2026/?termin=558&program=154",
    "slots": [],
    "date_uncertain": false,
    "score": 2.5,
@@ -3190,7 +3688,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://kinoatlaspraha.cz/?tag=96",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3213,7 +3711,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.biooko.net",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3236,7 +3734,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.mittelcinemafest.cz/cs/uvod#program",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3259,9 +3757,22 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.bayern.de/staatskanzlei/bayern-in-prag/",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-11-27",
+     "time": "16:00"
+    },
+    {
+     "date": "2026-11-28",
+     "time": "12:00"
+    },
+    {
+     "date": "2026-11-29",
+     "time": "12:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 2.5,
    "tags": [],
@@ -3308,7 +3819,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.sherpafest.cz/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3331,7 +3842,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://chvalskyzamek.cz/udalost/5042/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3354,7 +3865,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://navystavisti.cz/udalosti/mikulas-prahy-7/?termin=620&program=154",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3377,7 +3888,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.lapelicula.cz/#program",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3396,7 +3907,7 @@
    "city": null,
    "category": "sport",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/04092323/gallery-02.webp@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/04092323/gallery-02.webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3415,7 +3926,7 @@
    "start": "2026-11-29",
    "end": "2026-11-29",
    "time": "10:00",
-   "venue": "Sauna Central - Praha, Sauna Central - Praha, Hlavní město Praha",
+   "venue": "Sauna Central - Praha",
    "city": null,
    "category": "sport",
    "description": "SAUNA&RAVE opět v Prazee! 🔥🧖‍♀️\nHorko, ledová lázeň a basy, co ti rozvibrují tělo. Přijď vypnout od všedních dnů, zažít saunování s nečekanou dynamikou a…",
@@ -3447,7 +3958,7 @@
    "city": null,
    "category": "sport",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/04/27132446/informace_foto_2026.png@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/04/27132446/informace_foto_2026.png",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3474,7 +3985,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.designmuseumprague.com",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3500,7 +4011,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "http://adventure.pokelandia.cz/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3686,9 +4197,142 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.trhynakulataku.cz/",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-07-28",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-07-31",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-04",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-07",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-11",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-14",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-18",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-21",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-25",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-28",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-01",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-04",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-08",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-11",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-15",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-18",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-22",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-25",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-29",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-02",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-06",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-09",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-13",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-16",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-20",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-23",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-27",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-30",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-03",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-06",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-10",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-13",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-20",
+     "time": "08:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.5,
    "tags": [
@@ -3712,9 +4356,22 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.hdk.cz/repertoar/le-magnifique-1",
+   "booking": "https://www.hdk.cz/repertoar/le-magnifique-1",
+   "slots": [
+    {
+     "date": "2026-10-19",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-09",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-16",
+     "time": "19:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.5,
    "tags": [
@@ -3775,7 +4432,7 @@
    "start": "2026-11-23",
    "end": "2026-11-23",
    "time": "18:30",
-   "venue": "Pizzeria Da Pietro, Pizzeria Da Pietro, Hlavní město Praha",
+   "venue": "Pizzeria Da Pietro",
    "city": null,
    "category": "other",
    "description": "Přijď ochutnat pořádnou italskou pizzu a poznat nové lidi (bez telefonu)!\nTentokrát se potkáme v pizzerii Da Pietro, kde u jednoho stolu společně ochutnáme…",
@@ -3834,7 +4491,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://cs.wikipedia.org/wiki/Anděl_(Praha)",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -3902,13 +4559,46 @@
    "city": null,
    "category": "theater",
    "description": "Co všechno se může přihodit ve svatební den? Mozartova komická opera Figarova svatba se vrací do Stavovského divadla v netradiční režii Barbory Horákové Joly.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13052705/1693771348-figarova-svatba-img-7624.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13052705/1693771348-figarova-svatba-img-7624.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.narodni-divadlo.cz/cs/predstaveni/figarova-svatba-120338206",
+   "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/figarova-svatba-120338206",
+   "slots": [
+    {
+     "date": "2026-06-17",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-09-25",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-02",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-17",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-10-25",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-01",
+     "time": "19:00"
+    },
+    {
+     "date": "2026-11-15",
+     "time": "19:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.3,
    "tags": [
@@ -3927,7 +4617,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/13115341/dsc5238.c53d5c18b8e754106f6f32235280ef06.webp@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/13115341/dsc5238.c53d5c18b8e754106f6f32235280ef06.webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3952,7 +4642,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/05/07115703/95461a60-promo.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/05/07115703/95461a60-promo.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3977,7 +4667,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/31085035/KIV0112-1920x1280-1-1.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/31085035/KIV0112-1920x1280-1-1.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4002,7 +4692,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/07/02115849/Patrik_Petra_Milon-1536x1024-2-1757322822.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/07/02115849/Patrik_Petra_Milon-1536x1024-2-1757322822.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4027,7 +4717,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13060126/71-max-1200x1200-1.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13060126/71-max-1200x1200-1.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4052,7 +4742,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/07/14134103/AT_2747_nahled.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/07/14134103/AT_2747_nahled.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4077,7 +4767,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/04/09100339/kik-1827-scaled.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/04/09100339/kik-1827-scaled.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4102,13 +4792,22 @@
    "city": null,
    "category": "theater",
    "description": "Dva herci, jedno jeviště (nebo někdy také dvorek divadla) a hrrr na ně! Husitská výprava může začít!",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/05/11154847/aa1ea9c6-promo.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/05/11154847/aa1ea9c6-promo.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "http://www.3dcompany.cz",
+   "booking": "https://zdjc.cz/cs/program/hrrr-na-ne/",
+   "slots": [
+    {
+     "date": "2026-10-10",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-11-15",
+     "time": "14:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.3,
    "tags": [
@@ -4127,13 +4826,22 @@
    "city": null,
    "category": "theater",
    "description": "Řehoř Samsa pracoval, živil rodiče a sestru a jednoho dne už ho to přestalo bavit.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13060231/e1-27.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13060231/e1-27.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "http://www.ypsilonka.cz/program-a-nakup/promena-aneb-rehor-uz-toho-ma-dost",
+   "booking": "https://www.ypsilonka.cz/repertoar/hrajeme/promena-aneb-rehor-uz-toho-ma-dost",
+   "slots": [
+    {
+     "date": "2026-10-13",
+     "time": "19:30"
+    },
+    {
+     "date": "2026-11-16",
+     "time": "19:30"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.3,
    "tags": [
@@ -4152,13 +4860,22 @@
    "city": null,
    "category": "theater",
    "description": "Výprava světem fantazie pro všechny, kteří odmítají vyrůst.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/02123648/AT_9237_nahled.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/02123648/AT_9237_nahled.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.mestskadivadlaprazska.cz/inscenace/1340/petr-pan/",
+   "booking": "https://www.mestskadivadlaprazska.cz/inscenace/1340/petr-pan/",
+   "slots": [
+    {
+     "date": "2026-10-17",
+     "time": "15:00"
+    },
+    {
+     "date": "2026-11-15",
+     "time": "15:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.3,
    "tags": [
@@ -4177,7 +4894,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/07/10103008/unnamed.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/07/10103008/unnamed.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4202,13 +4919,34 @@
    "city": null,
    "category": "theater",
    "description": "Déjà Vu Cabaret Show Italia oživuje svět Guida Continiho v podmanivé kabaretní show plné třpytu, elegance, pokušení a nezapomenutelných žen. Italia — z filmového plátna na jeviště. Inspirováno ikonickým filmem Nine.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/09/08084645/Moodovka.png@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/09/08084645/Moodovka.png",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://dejavucabaret.show/",
+   "booking": "https://linktr.ee/dejavu.cabaret",
+   "slots": [
+    {
+     "date": "2026-10-26",
+     "time": "19:30"
+    },
+    {
+     "date": "2026-10-31",
+     "time": "19:30"
+    },
+    {
+     "date": "2026-11-05",
+     "time": "19:30"
+    },
+    {
+     "date": "2026-11-12",
+     "time": "19:30"
+    },
+    {
+     "date": "2026-11-17",
+     "time": "19:30"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.3,
    "tags": [
@@ -4227,7 +4965,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/11/04145826/9a43bafc-1611-4247-a78c-e1be088d2106.webp@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/11/04145826/9a43bafc-1611-4247-a78c-e1be088d2106.webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4256,9 +4994,22 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.pragoclub.cz/kontakt/",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-04-04",
+     "time": "10:00"
+    },
+    {
+     "date": "2026-10-31",
+     "time": "10:00"
+    },
+    {
+     "date": "2026-11-28",
+     "time": "10:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.0,
    "tags": [
@@ -4281,9 +5032,110 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.farmarsketrziste.cz",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-07-04",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-07-11",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-07-18",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-07-25",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-01",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-08",
+     "time": "00:00"
+    },
+    {
+     "date": "2026-08-15",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-22",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-08-29",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-05",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-12",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-19",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-26",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-03",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-10",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-17",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-24",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-31",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-07",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-28",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-05",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-12",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-19",
+     "time": "08:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.0,
    "tags": [
@@ -4306,9 +5158,74 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.farmarske-trhy.cz",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-09-05",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-12",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-19",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-09-26",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-03",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-10",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-17",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-24",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-10-31",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-03",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-28",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-05",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-12",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-19",
+     "time": "08:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.0,
    "tags": [
@@ -4331,8 +5248,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://ctyridny.cz/program-2026/",
+   "booking": "https://goout.net/cs/4%2B4-dny-v-pohybu/ozrbkig/events/",
    "slots": [],
    "date_uncertain": false,
    "score": 1.0,
@@ -4352,12 +5269,12 @@
    "city": null,
    "category": "food",
    "description": "RestaurantWeek® je svátkem všech milovníků dobrého jídla a jednou z největších a nejoblíbenějších kulinářských akcí na světě. Koná se v duchu #RespectFood. Díky systému předběžných rezervací s výběrem menu nepřijde během festivalu nazmar ani drobeček. Posláním festivalu je představit a propagovat autentickou českou restaurační scénu. Během této výjimečné gastronomické události otevírají špičkové pražské restaurace své dveře široké veřejnosti a nabízejí speciální degustační menu za zvýhodněné ceny. Tématem této edice jsou sezónní chutě podzimu, které se promítnou do menu plných dýní, lesních plodů, zvěřiny, regionálních surovin i oblíbených lanýžů. Ochutnejte kreativní kuchyni talentovaných šéfkuchařů, objevte nové podniky i známé gastronomické adresy a dopřejte si kulinářský zážitek, který je běžně dostupný jen při výjimečných příležitostech. RestaurantWeek® je ideální příležitostí vyrazit za chutěmi světa, podpořit lokální gastronomii a zažít město trochu jinak — skrze jeho nejlepší talíře.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/06111811/dock3.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/06111811/dock3.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://restaurant-week.cz/",
+   "booking": "https://restaurant-week.cz/restaurants/festival/restaurant-week?peopleCount=2&location=1-Praha",
    "slots": [],
    "date_uncertain": false,
    "score": 1.0,
@@ -4381,9 +5298,30 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.tonynadmesty.cz/aktualni-rocnik/",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-10-14",
+     "time": "17:00"
+    },
+    {
+     "date": "2026-10-17",
+     "time": "17:00"
+    },
+    {
+     "date": "2026-11-05",
+     "time": "17:00"
+    },
+    {
+     "date": "2026-11-12",
+     "time": "19:30"
+    },
+    {
+     "date": "2026-12-01",
+     "time": "18:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.0,
    "tags": [
@@ -4406,9 +5344,70 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.trhyjirak.cz",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-11-04",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-05",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-06",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-07",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-11",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-12",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-13",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-18",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-19",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-20",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-25",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-26",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-27",
+     "time": "08:00"
+    }
+   ],
    "date_uncertain": false,
    "score": 1.0,
    "tags": [
@@ -4431,7 +5430,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://martinufestival.cz/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4481,7 +5480,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "http://www.vanocnitrhy.cz/namesti-miru",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4506,7 +5505,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "http://www.vanocnitrhy.cz/namesti-republiky",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4531,8 +5530,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://vecnanadeje.org/koncert/stepanka-andelova/",
+   "booking": "https://goout.net/cs/stepanka-andelova/szjkidy/",
    "slots": [],
    "date_uncertain": false,
    "score": 1.0,
@@ -4554,7 +5553,7 @@
    "city": null,
    "category": "sport",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13053612/o2-arena.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13053612/o2-arena.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4579,7 +5578,7 @@
    "city": null,
    "category": "sport",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/08105741/471284098_10160929591361526_8333668913147322200_n.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/08105741/471284098_10160929591361526_8333668913147322200_n.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4604,7 +5603,7 @@
    "city": null,
    "category": "sport",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/01122820/tribuna-sever-derby-praha-je-nase.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/01122820/tribuna-sever-derby-praha-je-nase.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4629,7 +5628,7 @@
    "city": null,
    "category": "sport",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13053619/epet02.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/13053619/epet02.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4654,7 +5653,7 @@
    "city": null,
    "category": "sport",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/19102112/brusle2-1.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/19102112/brusle2-1.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4769,7 +5768,7 @@
    "city": null,
    "category": "theater",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/09/10093627/a1ea8800-d3f8-4627-ae7a-615137fceb97.jpeg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/09/10093627/a1ea8800-d3f8-4627-ae7a-615137fceb97.jpeg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4796,7 +5795,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.muzeumliteratury.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4846,7 +5845,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.ngprague.cz/udalost/4659/ngp-230-let",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4871,7 +5870,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.muzeumprahy.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4896,7 +5895,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.sherlockholmespraha.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4921,7 +5920,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://pragovkagallery.com",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4946,7 +5945,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.dox.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -4971,7 +5970,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.galeriemagnusart.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5021,7 +6020,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.nvvj.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5046,7 +6045,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://huntkastner.com",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5071,7 +6070,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.villapelle.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5096,7 +6095,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.ghmp.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5121,7 +6120,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.galerierudolfinum.cz/cs/vystavy/pripravujeme/crested-macistan-tanya-lukin-linklater-and-duane-linklater/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5146,7 +6145,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.museumkampa.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5171,7 +6170,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.museumkampa.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5196,7 +6195,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.museumkampa.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5221,8 +6220,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.klaster-minoritu.cz",
+   "booking": "https://www.klaster-minoritu.cz/program/detail/pocta-gustavu-klimtovi?name=detail&event_id=765",
    "slots": [],
    "date_uncertain": false,
    "score": 0.5,
@@ -5246,7 +6245,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.spotgallery.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5271,7 +6270,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.rkfpraha.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5296,7 +6295,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://entrancegallery.com",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5321,8 +6320,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.klaster-minoritu.cz",
+   "booking": "https://www.klaster-minoritu.cz/program/detail/handbags-love-letters-of-the-first-czechoslovak-republic?name=detail&event_id=766",
    "slots": [],
    "date_uncertain": false,
    "score": 0.5,
@@ -5346,7 +6345,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.loosovavila.cz/akce/vystava-japonsko-postmoderni-bublina-k6tmg",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5371,7 +6370,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.nkp.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5396,7 +6395,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.galerievaclavaspaly.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5421,7 +6420,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.meetfactory.cz/cs",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5446,7 +6445,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.meetfactory.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5471,7 +6470,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.atelierjosefasudka.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5496,7 +6495,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.clauda.cz/cs",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5521,7 +6520,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.dscgallery.com",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5576,7 +6575,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://koncertprobudoucnost.cz/#program",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5602,7 +6601,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.fotografgallery.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5627,7 +6626,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.fotografgallery.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5652,8 +6651,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "http://www.vanocnivystava.cz/",
+   "booking": "https://www.vanocnivystava.cz/events/",
    "slots": [],
    "date_uncertain": false,
    "score": 0.5,
@@ -5782,8 +6781,8 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.hrad.cz/cs/kultura-na-hrade/stale-expozice-2",
+   "booking": "https://www.hrad.cz/cs/kultura-na-hrade/program/den-otevrenych-dveri-na-prazskem-hrade-7-13890#opening-hours-box",
    "slots": [],
    "date_uncertain": false,
    "score": 0.0,
@@ -5883,9 +6882,66 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.malafronta.cz",
    "booking": null,
-   "slots": [],
+   "slots": [
+    {
+     "date": "2026-11-03",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-05",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-10",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-12",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-17",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-19",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-24",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-11-26",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-01",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-03",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-08",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-10",
+     "time": "00:00"
+    },
+    {
+     "date": "2026-12-15",
+     "time": "08:00"
+    },
+    {
+     "date": "2026-12-17",
+     "time": "08:00"
+    }
+   ],
    "date_uncertain": false,
    "score": -1.5,
    "tags": [
@@ -5910,7 +6966,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://centrumprahy.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5937,7 +6993,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://trhypraha.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5964,7 +7020,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://trhypraha.cz/",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -5987,13 +7043,26 @@
    "city": null,
    "category": "kids",
    "description": "Co se stane, když se někdo pokusí zastavit čas, aby napravil chyby a uchoval lásku? A co všechno může být ztraceno, když touha přeroste v posedlost?",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/06/12132000/Elixir-34-scaled-1.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/06/12132000/Elixir-34-scaled-1.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://spejbl-hurvinek.cz/o-divadle/predstaveni/spejbl-a-elixir-posetilych-myslenek/",
+   "booking": "https://spejbl-hurvinek.cz/o-divadle/predstaveni/spejbl-a-elixir-posetilych-myslenek/",
+   "slots": [
+    {
+     "date": "2026-11-14",
+     "time": "11:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-11-15",
+     "time": "11:00"
+    }
+   ],
    "date_uncertain": false,
    "score": -2.0,
    "tags": [
@@ -6012,12 +7081,12 @@
    "city": null,
    "category": "kids",
    "description": "Maňásková groteska, původem z Anglie.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/01/02105707/BaL-PUNCH-AND-JUDY.jpeg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/01/02105707/BaL-PUNCH-AND-JUDY.jpeg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
+   "link": "https://www.svandovodivadlo.cz/inscenace/755/buchty-a-loutky-punch-a-judy-automat-na-filmy/6532",
+   "booking": "https://www.svandovodivadlo.cz/inscenace/755/buchty-a-loutky-punch-a-judy-automat-na-filmy/6532",
    "slots": [],
    "date_uncertain": false,
    "score": -2.5,
@@ -6037,13 +7106,30 @@
    "city": null,
    "category": "kids",
    "description": "Princezna Majdalenka se omylem dostane do pekla. Kašpárek, vždy připraven přispěchat na pomoc každému, kdo je v nebezpečí, se se svým kamarádem Honzou vydá princeznu osvobodit.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/02/12123612/kasparek-v-pekle-2.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/02/12123612/kasparek-v-pekle-2.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.riseloutek.cz/repertoar/kasparek-v-pekle/",
+   "booking": "https://www.riseloutek.cz/program-2/",
+   "slots": [
+    {
+     "date": "2026-10-25",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-25",
+     "time": "16:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-11-14",
+     "time": "16:00"
+    }
+   ],
    "date_uncertain": false,
    "score": -3.0,
    "tags": [],
@@ -6088,7 +7174,7 @@
    "city": null,
    "category": "kids",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/21135346/03_Halo_Jacicku_2-scaled-1.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/21135346/03_Halo_Jacicku_2-scaled-1.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -6111,7 +7197,7 @@
    "city": null,
    "category": "kids",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/03/04092900/sudicky.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/03/04092900/sudicky.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -6138,7 +7224,7 @@
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
+   "link": "https://www.hrad.cz",
    "booking": null,
    "slots": [],
    "date_uncertain": false,
@@ -6248,7 +7334,7 @@
    "city": null,
    "category": "kids",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/01/05133849/3K-foto1.jpeg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/01/05133849/3K-foto1.jpeg",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -6273,13 +7359,30 @@
    "city": null,
    "category": "kids",
    "description": "Jeníček je nezbedný kluk. Když v lese s Mařenkou sbírá jahody, schválně jí utíká, a tak se stane, že děti zabloudí. Jeníček vyleze na nejvyšší strom a zahlédne světýlko...",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/01/16104058/468732442_10162632927970016_6128407756487864600_n.jpg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/01/16104058/468732442_10162632927970016_6128407756487864600_n.jpg",
    "lang": "cs",
    "free": null,
    "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
+   "link": "https://www.riseloutek.cz/repertoar/pernikova-chaloupka/",
+   "booking": "https://www.riseloutek.cz/program-2/",
+   "slots": [
+    {
+     "date": "2026-10-24",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-10-24",
+     "time": "16:00"
+    },
+    {
+     "date": "2026-11-15",
+     "time": "14:00"
+    },
+    {
+     "date": "2026-11-15",
+     "time": "16:00"
+    }
+   ],
    "date_uncertain": false,
    "score": -4.5,
    "tags": [
@@ -6298,7 +7401,7 @@
    "city": null,
    "category": "kids",
    "description": null,
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/09155544/2fc8ede6-9f40-467d-88ab-c938fe39cc9b.jpeg@webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/09155544/2fc8ede6-9f40-467d-88ab-c938fe39cc9b.jpeg",
    "lang": "cs",
    "free": null,
    "price_from": null,
