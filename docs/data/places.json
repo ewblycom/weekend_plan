@@ -171,7 +171,8 @@
    "url": "https://www.slevomat.cz/podnik/109523-cmkarting",
    "map": "CMKarting, Ringhofferova 115/1, Praha",
    "site": "https://cmkarting.cz/",
-   "manual": true
+   "manual": true,
+   "hours": "10:00–23:00"
   },
   {
    "name": "Zero Latency Prague",
@@ -303,7 +304,8 @@
    "url": "https://www.kudyznudy.cz/aktivity/najada-games",
    "map": "Najada Games, Ondříčkova 2166/14, Praha 3",
    "site": "https://www.kudyznudy.cz/aktivity/najada-games",
-   "manual": true
+   "manual": true,
+   "hours": "12:00–19:00"
   },
   {
    "name": "Deskohub",
@@ -403,7 +405,8 @@
    "url": "https://jdemebruslit.cz/kluzistevysehrad",
    "map": "Kluziště Vyšehrad, 5. května 1640/65, Praha 4",
    "site": "https://jdemebruslit.cz/kluzistevysehrad",
-   "manual": true
+   "manual": true,
+   "hours": "13:00–21:00"
   },
   {
    "name": "Kluziště Letná",
