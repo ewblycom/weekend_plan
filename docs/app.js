@@ -13,7 +13,7 @@ const CAT = {
 };
 const CAT1 = { concert: "Концерт", theater: "Театр", show: "Шоу", workshop: "Мастер-класс", market: "Ярмарка", food: "Гастро",
   exhibition: "Выставка", festival: "Фестиваль", active: "Активное", sport: "Спорт", kids: "Детям", tour: "Экскурсия", other: "Событие" };
-const KIND = { bowling: "Боулинг", lasergame: "Лазертаг", karting: "Картинг", vr: "VR", escape: "Квесты", workshop: "Мастерские", billiard: "Бильярд", sport: "Скалодром" };
+const KIND = { bowling: "Боулинг", lasergame: "Лазертаг", karting: "Картинг", vr: "VR", escape: "Квесты", workshop: "Мастерские", billiard: "Бильярд", sport: "Скалодром", trampoline: "Батуты", pc: "Гейминг", climbing: "Лазание", axe: "Топоры", arcade: "Аркады", skating: "Каток", boardgame: "Настолки", sauna: "Бани" };
 const TOWN = { "Вена": "Wien", "Мюнхен": "München", "Берлин": "Berlin" };
 const HOME_AREA = /Praha 4|Braník/i;
 

@@ -118,7 +118,7 @@
   },
   {
    "name": "Скалодром — базовый курс",
-   "kind": "sport",
+   "kind": "climbing",
    "area": "Praha 10 — Strašnice и др.",
    "note": "Курс лазания на искусственной стене для 1–2 человек.",
    "url": "https://www.slevomat.cz/praha/zabava-a-volny-cas/kurzy-workshopy?page=4",
@@ -194,6 +194,326 @@
    "site": "https://another-world.cz",
    "booking": "https://prague.another-world.com/buy",
    "hours": "12:00–21:00"
+  },
+  {
+   "name": "JumpPark Letňany",
+   "kind": "trampoline",
+   "area": "Praha 9 — Letňany",
+   "note": "Самый большой батутный парк в Чехии: 3000 м², 17 аттракционов, ниндзя-трассы с таймером, две поролоновые ямы.",
+   "url": "https://letnany.jumppark.cz/",
+   "map": "JumpPark Letňany, Veselská 699, Praha",
+   "site": "https://letnany.jumppark.cz/",
+   "manual": true
+  },
+  {
+   "name": "Jump Family Zličín",
+   "kind": "trampoline",
+   "area": "Praha 5 — Zličín",
+   "note": "Батутный парк в торговом центре Zličín, разные зоны для прыжков.",
+   "url": "https://www.jumpfamily.cz/zlicin",
+   "map": "Jump Family Zličín, Ringhofferova 1, Praha 5",
+   "site": "https://www.jumpfamily.cz/zlicin",
+   "manual": true
+  },
+  {
+   "name": "JumpPark Praha — Jarov",
+   "kind": "trampoline",
+   "area": "Praha 3 — Žižkov",
+   "note": "Батутный парк на 700 м², больше 60 батутов и 4 трассы.",
+   "url": null,
+   "map": "JumpPark Praha, Na Jarově 2, Praha 3",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Mercuria Laser Game a Pixel",
+   "kind": "lasergame",
+   "area": "Praha 4 — Michle",
+   "note": "Лазертаг-арена Mercuria у метро Budějovická, рядом с домом.",
+   "url": null,
+   "map": "Mercuria Laser Game a Pixel, Budějovická 409/1, Praha 4",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Mercuria Laser Game Lužiny",
+   "kind": "lasergame",
+   "area": "Praha 13 — Stodůlky",
+   "note": "Арена, виртуальная реальность и аркадные игры в ТЦ Lužiny у метро.",
+   "url": null,
+   "map": "Mercuria Laser Game Lužiny, Archeologická 2256/1, Praha 13",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Laser Tag Prague",
+   "kind": "lasergame",
+   "area": "Praha 10 — Strašnice",
+   "note": "Лазертаг с инфракрасной системой и копиями настоящего оружия.",
+   "url": null,
+   "map": "Laser Tag Prague, Krupská 1749/12, Praha 10",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Esco Laser Game",
+   "kind": "lasergame",
+   "area": "Praha 6 — Vokovice",
+   "note": "Лазертаг у Bořislavka, несколько игровых сред на выбор, онлайн-бронь.",
+   "url": null,
+   "map": "Esco Laser Game, Kladenská 417/7, Praha 6",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Vodafone PLAYzone Arena",
+   "kind": "vr",
+   "area": "Praha 4 — Chodov",
+   "note": "Игровые симуляторы и VR в Westfield Chodov.",
+   "url": null,
+   "map": "Vodafone PLAYzone Arena, Roztylská 2321/19, Praha 4 Westfield Chodov",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "MVP Chill & Gaming space",
+   "kind": "pc",
+   "area": "Praha 1 — Nové Město",
+   "note": "Игровая с PC и PlayStation 5, вход по часам и абонементы.",
+   "url": null,
+   "map": "MVP Chill & Gaming space, Spálená 108/51, Praha 1",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "SkillZone",
+   "kind": "pc",
+   "area": "Praha 3 — Žižkov / Holešovice",
+   "note": "PC-клуб, работает с 2005, есть круглосуточный зал. Бронь по телефону.",
+   "url": "https://skillzone.cz/",
+   "map": "SkillZone Praha",
+   "site": "https://skillzone.cz/",
+   "manual": true
+  },
+  {
+   "name": "Najada Games",
+   "kind": "boardgame",
+   "area": "Praha 3 — Vinohrady",
+   "note": "Игровой зал и магазин: карточные игры (TCG), настолки, турниры по выходным.",
+   "url": "https://www.kudyznudy.cz/aktivity/najada-games",
+   "map": "Najada Games, Ondříčkova 2166/14, Praha 3",
+   "site": "https://www.kudyznudy.cz/aktivity/najada-games",
+   "manual": true
+  },
+  {
+   "name": "Deskohub",
+   "kind": "boardgame",
+   "area": "Praha 8 — Hotel Pulse8",
+   "note": "Настольный бар: больше 100 игр напрокат, напитки и закуски.",
+   "url": "https://www.kudyznudy.cz/aktivity/deskoherni-klub-kazdou-nedeli",
+   "map": "Deskohub Hotel Pulse8, Praha 8",
+   "site": "https://www.kudyznudy.cz/aktivity/deskoherni-klub-kazdou-nedeli",
+   "manual": true
+  },
+  {
+   "name": "Boulder Na Pláni",
+   "kind": "climbing",
+   "area": "Praha 4 — Nusle",
+   "note": "Боулдеринг недалеко от дома.",
+   "url": null,
+   "map": "Boulder Na Pláni, Na Vítězné pláni 1160/1, Praha 4",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Lokal Blok — boulder",
+   "kind": "climbing",
+   "area": "Praha 5 — Smíchov",
+   "note": "Больше 500 м² боулдеринга, внизу ресторан и спорт-бар.",
+   "url": "https://www.lokalblok.cz/lezecka-stena/o-nas",
+   "map": "Lokal Blok, náměstí 14. října 2173/10, Praha 5",
+   "site": "https://www.lokalblok.cz/lezecka-stena/o-nas",
+   "manual": true
+  },
+  {
+   "name": "Boulder Bar",
+   "kind": "climbing",
+   "area": "Praha 7 — Holešovice",
+   "note": "Крупнейший боулдеринг-центр Праги, есть бар.",
+   "url": null,
+   "map": "Boulder Bar, U Výstaviště 11, Praha 7",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Lezecká stěna Třináctka",
+   "kind": "climbing",
+   "area": "Praha 13 — Stodůlky",
+   "note": "Скалодром с боулдерингом на двух этажах.",
+   "url": null,
+   "map": "Lezecká stěna Třináctka, Jeremiášova 2581/2, Praha 13",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "BigWall",
+   "kind": "climbing",
+   "area": "Praha 9 — Vysočany",
+   "note": "Скалодром высотой 20 м и боулдеринг.",
+   "url": null,
+   "map": "Lezecká stěna BigWall, Ocelářská 891/16, Praha 9",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Pinball Museum 1990",
+   "kind": "arcade",
+   "area": "Praha 1 — Václavské nám.",
+   "note": "Музей пинбола, 54 автомата, играть можно самим.",
+   "url": "https://pinballmuseum.cz/",
+   "map": "Pinball Museum 1990, Václavské nám. 808/66, Praha 1",
+   "site": "https://pinballmuseum.cz/",
+   "manual": true
+  },
+  {
+   "name": "Joystick Bar",
+   "kind": "arcade",
+   "area": "Praha 1 — Jindřišská",
+   "note": "Аркадный бар: ретро-автоматы и пинбол, пиво по доступным ценам.",
+   "url": null,
+   "map": "Joystick Bar, Jindřišská 5, Praha 1",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "The House of Axes",
+   "kind": "axe",
+   "area": "Praha 1",
+   "note": "Единственный в Праге зал для метания топоров, от 2 до 30 человек.",
+   "url": "https://prague.eu/cs/objevujte/the-house-of-axes/",
+   "map": "The House of Axes Praha",
+   "site": "https://prague.eu/cs/objevujte/the-house-of-axes/",
+   "manual": true
+  },
+  {
+   "name": "Kluziště Vyšehrad",
+   "kind": "skating",
+   "area": "Praha 4 — Vyšehrad",
+   "note": "Открытый каток, сезон с конца ноября до конца января, в будни с 13:00, в выходные с 9:00 до 21:00.",
+   "url": "https://jdemebruslit.cz/kluzistevysehrad",
+   "map": "Kluziště Vyšehrad, 5. května 1640/65, Praha 4",
+   "site": "https://jdemebruslit.cz/kluzistevysehrad",
+   "manual": true
+  },
+  {
+   "name": "Kluziště Letná",
+   "kind": "skating",
+   "area": "Praha 7 — Letná",
+   "note": "Самый большой открытый каток в Праге. Сезон обычно с середины ноября, даты на этот год уточни.",
+   "url": null,
+   "map": "Kluziště Letná, Milady Horákové, Praha 7",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Terasa Ice Rink",
+   "kind": "skating",
+   "area": "Praha 5 — Smíchov",
+   "note": "Каток 20×10 м на Terasa Smíchov. Сезон начинается в ноябре, даты на этот год уточни.",
+   "url": null,
+   "map": "Terasa Ice Rink, Terasa Smíchov, Praha 5",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Zimní bruslení — Malá sportovní hala",
+   "kind": "skating",
+   "area": "Praha 7 — Výstaviště",
+   "note": "Крытый каток для публики по выходным, с октября 2026 до марта 2027.",
+   "url": "https://www.kudyznudy.cz/akce/brusleni-v-male-sportovni-hale-incheba-na-vystavis",
+   "map": "Malá sportovní hala, Výstaviště, Praha 7",
+   "site": "https://www.kudyznudy.cz/akce/brusleni-v-male-sportovni-hale-incheba-na-vystavis",
+   "manual": true
+  },
+  {
+   "name": "Aquapalace Praha — Мир саун",
+   "kind": "sauna",
+   "area": "Čestlice (за Прагой)",
+   "note": "Крупнейший сауна-мир в Чехии. Проводят «Banya Days» с банщиками, ритуалами и пилингом; даты на 2026 смотри на сайте.",
+   "url": "https://www.aquapalace.cz/en/banya-days",
+   "map": "Aquapalace Praha, Čestlice",
+   "site": "https://www.aquapalace.cz/en/banya-days",
+   "manual": true
+  },
+  {
+   "name": "Sauna Central",
+   "kind": "sauna",
+   "area": "Praha 1 — Nové Město",
+   "note": "Много саун, есть приватный wellness для пар и бар наверху.",
+   "url": null,
+   "map": "Sauna Central, Ve Smečkách 1593/19, Praha 1",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Modrá Zebra",
+   "kind": "sauna",
+   "area": "Praha 4 — Krč",
+   "note": "Общественная сауна рядом с домом.",
+   "url": null,
+   "map": "Modrá Zebra, Branická 397/241, Praha 4",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Chateau St. Havel",
+   "kind": "sauna",
+   "area": "Praha 4 — Krč",
+   "note": "Wellness-отель: приватная сауна или джакузи, можно с ужином на двоих.",
+   "url": null,
+   "map": "Chateau St. Havel, Praha 4 Krč",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Lázně TOM — приватный wellness",
+   "kind": "sauna",
+   "area": "Praha 6 — Vokovice",
+   "note": "Приватная wellness-зона, соляная пещера и инфракрасная сауна на 1–2 человека.",
+   "url": null,
+   "map": "Lázně TOM, Praha Vokovice",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Relax Studio Troja",
+   "kind": "sauna",
+   "area": "Praha 8 — Troja",
+   "note": "Приватная сауна для пар у ботанического сада, музыка и мягкий свет.",
+   "url": "https://www.kudyznudy.cz/aktivity/privatni-sauna",
+   "map": "Relax Studio Troja, Praha 8",
+   "site": "https://www.kudyznudy.cz/aktivity/privatni-sauna",
+   "manual": true
+  },
+  {
+   "name": "Wellness Bohemia",
+   "kind": "sauna",
+   "area": "Praha 13 — Stodůlky",
+   "note": "Wellness-центр с сауной.",
+   "url": null,
+   "map": "Wellness Bohemia, K Vidouli 831/15, Praha 13",
+   "site": null,
+   "manual": true
+  },
+  {
+   "name": "Original Beer Spa",
+   "kind": "sauna",
+   "area": "Praha 1 — Nové Město",
+   "note": "Пивная баня: ванна в дубовой купели, свежее светлое или тёмное Krušovice.",
+   "url": "https://www.visitczechia.com/es-ES/Things-to-Do/Places/Spa-and-Wellness/Beer-and-Wine-Spa/g-prague-original-beer-spa",
+   "map": "Original Beer Spa, Žitná 9/658, Praha 1",
+   "site": "https://www.visitczechia.com/es-ES/Things-to-Do/Places/Spa-and-Wellness/Beer-and-Wine-Spa/g-prague-original-beer-spa",
+   "manual": true
   }
  ]
 }
