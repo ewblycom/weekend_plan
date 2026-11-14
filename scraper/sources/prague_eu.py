@@ -13,7 +13,7 @@ from urllib.parse import urljoin
 from datetime import date, timedelta
 
 from ..dates import NUMERIC_RANGE, overlaps, parse_range
-from ..extract import external_links, meta, soup_of
+from ..extract import external_links, facebook_event, meta, soup_of
 from ..models import Event
 
 log = logging.getLogger(__name__)
@@ -124,12 +124,13 @@ def parse_detail(html: str) -> dict:
             seen.add(key)
             slots.append({"date": key[0], "time": key[1]})
     site, booking = external_links(soup)
+    site = site or facebook_event(soup)
     return {"slots": slots, "booking": booking, "link": site,
             "description": meta(soup, "og:description") or meta(soup, "description")}
 
 
 def collect(fetcher, max_per_category: int = 40, today: date | None = None,
-            horizon_days: int = 21, max_details: int = 150) -> list[Event]:
+            horizon_days: int = 21, max_details: int = 320) -> list[Event]:
     today = today or date.today()
     out: list[Event] = []
     for slug, cat in CATEGORIES.items():
@@ -142,7 +143,7 @@ def collect(fetcher, max_per_category: int = 40, today: date | None = None,
     # Страницы событий открываем только для ближайших дат: оттуда берём сеансы и прямые ссылки
     near = [e for e in out if overlaps(e.start, e.end, today, today + timedelta(days=horizon_days))]
     seen: set[str] = set()
-    for ev in near:
+    for ev in sorted(near, key=lambda e: e.start or date.max):
         if ev.url in seen or len(seen) >= max_details:
             continue
         seen.add(ev.url)
@@ -150,6 +151,7 @@ def collect(fetcher, max_per_category: int = 40, today: date | None = None,
         if not page:
             continue
         d = parse_detail(page)
+        d["slots"] = [x for x in d["slots"] if x["date"] >= today.isoformat()]   # прошедшие сеансы не нужны
         ev.slots, ev.booking, ev.link = d["slots"], d["booking"], d["link"]
         ev.description = ev.description or d["description"]
         if d["slots"] and not ev.time:

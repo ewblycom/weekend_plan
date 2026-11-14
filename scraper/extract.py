@@ -76,6 +76,22 @@ SKIP_HOSTS = ("kudyznudy.cz", "prague.eu", "praguecitytourism", "czechtourism", 
               "facebook.com", "instagram.com", "twitter.com", "x.com", "youtube.com", "tiktok.com", "linkedin.com",
               "pinterest.", "google.", "mapy.cz", "apple.com", "sharethis", "cdn.", "storage.googleapis.com", "t.me",
               "telegram", "seznam.cz", "vinegret.cz", "wa.me", "mailto:", "tel:")
+SHORT_HOSTS = ("x.com", "t.me", "wa.me")      # короткие домены сравниваем по хосту целиком, а не по подстроке
+
+
+def _skipped(href: str) -> bool:
+    from urllib.parse import urlparse
+    low = href.lower()
+    host = (urlparse(low).netloc or "").removeprefix("www.")
+    for h in SKIP_HOSTS:
+        if h in SHORT_HOSTS:
+            if host == h or host.endswith("." + h):
+                return True
+        elif h in low:
+            return True
+    return False
+
+
 NOT_SITE = ("goout.net", "luma.com", "lu.ma", "ticketportal", "ticketmaster", "eventim")   # годятся только как «билеты»
 BOOKING_WORDS = re.compile(
     r"rezerv|booking|reservio|vstupenk|v?stupenky|l[ií]stk|ticket|goout|smsticket|eventim|colosseum|"
@@ -87,7 +103,7 @@ def external_links(soup: BeautifulSoup) -> tuple[str | None, str | None]:
     site = booking = None
     for a in soup.find_all("a", href=True):
         href = a["href"].strip()
-        if not href.startswith("http") or any(h in href.lower() for h in SKIP_HOSTS):
+        if not href.startswith("http") or _skipped(href):
             continue
         if re.search(r"\.(jpe?g|png|webp|pdf)(\?|$)", href, re.I):
             continue
@@ -113,4 +129,28 @@ def page_basics(html: str) -> dict:
     }
     data["text"] = visible_text(soup)          # убирает шапку/подвал — ниже ссылки только из содержимого
     data["site"], data["booking"] = external_links(soup)
+    data["site"] = data["site"] or web_from_text(data["text"]) or facebook_event(soup)
     return data
+
+
+def facebook_event(soup: BeautifulSoup) -> str | None:
+    """Запасной вариант: страница события на Facebook, если у события нет другого сайта."""
+    for a in soup.find_all("a", href=True):
+        href = a["href"].strip()
+        if re.match(r"https?://(www\.)?facebook\.com/events/\d+", href):
+            return href.split("?")[0]
+    return None
+
+
+WEB_LINE = re.compile(r"Web:\s*((?:https?://)?(?:www\.)?[a-z0-9][a-z0-9.-]+\.[a-z]{2,}(?:/\S*)?)", re.I)
+
+
+def web_from_text(text: str) -> str | None:
+    """Kudy z nudy пишет сайт места обычным текстом «Web: www.example.cz» — берём его, если нет ссылки."""
+    for m in WEB_LINE.finditer(text):
+        url = m.group(1).rstrip(".,;)")
+        if not url.startswith("http"):
+            url = "https://" + url
+        if not _skipped(url):
+            return url
+    return None

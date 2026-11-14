@@ -9,10 +9,31 @@ import json
 import logging
 from pathlib import Path
 
-from ..extract import page_basics
+import re
+
+from ..extract import page_basics, soup_of
 
 log = logging.getLogger(__name__)
 FILE = Path(__file__).resolve().parents[2] / "docs" / "data" / "places.json"
+
+
+RANGE = re.compile(r"(\d{1,2})[:.](\d{2})\s*[—–-]\s*(\d{1,2})[:.](\d{2})")
+
+
+def opening_hours(html: str) -> str | None:
+    """Первый диапазон времени после «otevírací doba / opening hours» на странице места, напр. «10:00–22:00»."""
+    soup = soup_of(html)
+    for tag in soup(["script", "style", "noscript"]):
+        tag.decompose()
+    text = soup.get_text(" ", strip=True)
+    m = re.search(r"otevírací doba|opening hours", text, re.I)
+    if not m:
+        return None
+    r = RANGE.search(text[m.end():m.end() + 200])
+    if not r:
+        return None
+    a, b, c, d = r.groups()
+    return f"{int(a):02d}:{b}–{int(c):02d}:{d}"
 
 
 def enrich(fetcher, path: Path = FILE) -> int:
@@ -30,6 +51,10 @@ def enrich(fetcher, path: Path = FILE) -> int:
             if val and p.get(key) != val:
                 p[key] = val
                 changed += 1
+        hours = opening_hours(html)
+        if hours and p.get("hours") != hours:
+            p["hours"] = hours
+            changed += 1
         if not p.get("image") and b["image"]:
             p["image"] = b["image"]
             changed += 1

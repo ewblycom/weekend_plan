@@ -95,17 +95,21 @@ function photo(e) {
 }
 const WD = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
 function slotLine(e) {
+  if (e.kind === "place" && e.hours) return `<div class="slots"><span>Открыто ${esc(e.hours)}</span></div>`;
   const xs = slotsIn(e, S.from, S.to);
   if (!xs.length) return "";
   const fmt = (x) => { const d = new Date(x.date + "T12:00"); return `${WD[d.getDay()]} ${d.getDate()}.${d.getMonth() + 1} · ${x.time}`; };
   return `<div class="slots">${xs.slice(0, 6).map((x) => `<span>${esc(fmt(x))}</span>`).join("")}${xs.length > 6 ? `<span>ещё ${xs.length - 6}</span>` : ""}</div>`;
+}
+function srcLabel(u) {
+  return /prague\.eu/.test(u || "") ? "Описание на prague.eu" : /kudyznudy/.test(u || "") ? "Описание на Kudy z nudy" : "Источник";
 }
 function actionLinks(e) {
   const out = [];
   const isTickets = e.kind !== "place" && e.booking && !/rezerv|reserv|booking/i.test(e.booking);
   if (e.booking) out.push(`<button class="btn-quiet" data-open="${esc(e.booking)}">${e.booking.startsWith("mailto:") ? "Написать для брони" : isTickets ? "Билеты" : "Забронировать"}</button>`);
   if (e.link) out.push(`<button class="btn-quiet" data-open="${esc(e.link)}">Сайт</button>`);
-  if (!out.length || e.source === "tickettailor") out.push(`<button class="btn-quiet" data-open="${esc(e.url)}">${e.source === "tickettailor" ? "Билеты" : "Источник"}</button>`);
+  if (!out.length || e.source === "tickettailor") out.push(`<button class="btn-quiet" data-open="${esc(e.url)}">${e.source === "tickettailor" ? "Билеты" : srcLabel(e.url)}</button>`);
   return out.join("");
 }
 function priceTag(e) { return e.free ? "Бесплатно" : e.price_from ? `от ${e.price_from.toLocaleString("ru-RU")} Kč` : ""; }
@@ -114,7 +118,7 @@ function priceTag(e) { return e.free ? "Бесплатно" : e.price_from ? `о
 function placesAsEvents() {
   return S.places.map((p) => ({
     id: "place-" + p.name, kind: "place", placeKind: p.kind, source: "places", url: p.url, title: p.name, category: "active",
-    venue: p.map || p.name, description: p.note, image: p.image || null, link: p.site || null, booking: p.booking || null, lang: "cs", score: 5, tags: [p.area].filter(Boolean),
+    venue: p.map || p.name, description: p.note, image: p.image || null, link: p.site || null, booking: p.booking || null, hours: p.hours || null, lang: "cs", score: 5, tags: [p.area].filter(Boolean),
     start: null, end: null, time: null, free: null, price_from: null,
   }));
 }
