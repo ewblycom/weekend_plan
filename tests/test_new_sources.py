@@ -45,3 +45,10 @@ def test_vinegret_afisha_article():
     assert ev.venue == "Janovského 438/2, Praha 7" and ev.lang == "ru"
     news = page.replace('content="Афиша"', 'content="Новости Праги"')
     assert vinegret.parse_article(news, "u", TODAY) is None
+
+
+def test_place_hours_from_own_site():
+    from scraper.sources.places import opening_hours
+    html = "<html><body><h2>Otevírací doba</h2><p>Po–Ne 10:00–22:00</p></body></html>"
+    assert opening_hours(html) == "10:00–22:00"
+    assert opening_hours("<html><body>Provozní doba: 9.30 - 21.00</body></html>") == "09:30–21:00"

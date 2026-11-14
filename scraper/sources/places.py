@@ -26,7 +26,7 @@ def opening_hours(html: str) -> str | None:
     for tag in soup(["script", "style", "noscript"]):
         tag.decompose()
     text = soup.get_text(" ", strip=True)
-    m = re.search(r"otevírací doba|opening hours", text, re.I)
+    m = re.search(r"otevírací doba|otevírací hodiny|provozní doba|opening hours|open daily|открыто", text, re.I)
     if not m:
         return None
     r = RANGE.search(text[m.end():m.end() + 200])
@@ -41,22 +41,30 @@ def enrich(fetcher, path: Path = FILE) -> int:
     changed = 0
     for p in data.get("places", []):
         url = p.get("url") or ""
-        if p.get("manual") or not any(h in url for h in ("prague.eu", "kudyznudy.cz")):
+        listing = any(h in url for h in ("prague.eu", "kudyznudy.cz"))
+        manual = bool(p.get("manual"))
+        if manual:
+            # вручную внесённые места: ссылки не трогаем, подтягиваем только часы работы с их собственного сайта
+            src = p.get("site") or ""
+        else:
+            src = url if listing else ""
+        if not src:
             continue
-        html = fetcher.get(url)
+        html = fetcher.get(src)
         if not html:
             continue
-        b = page_basics(html)
-        for key, val in (("site", b["site"]), ("booking", b["booking"])):
-            if val and p.get(key) != val:
-                p[key] = val
+        if not manual:
+            b = page_basics(html)
+            for key, val in (("site", b["site"]), ("booking", b["booking"])):
+                if val and p.get(key) != val:
+                    p[key] = val
+                    changed += 1
+            if not p.get("image") and b["image"]:
+                p["image"] = b["image"]
                 changed += 1
         hours = opening_hours(html)
-        if hours and p.get("hours") != hours:
+        if hours and not p.get("hours_fixed") and p.get("hours") != hours:
             p["hours"] = hours
-            changed += 1
-        if not p.get("image") and b["image"]:
-            p["image"] = b["image"]
             changed += 1
     if changed:
         path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
