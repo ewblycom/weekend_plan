@@ -53,15 +53,15 @@ def enrich(fetcher, path: Path = FILE) -> int:
         html = fetcher.get(src)
         if not html:
             continue
+        b = page_basics(html)
+        if not p.get("image") and b["image"]:
+            p["image"] = b["image"]
+            changed += 1
         if not manual:
-            b = page_basics(html)
             for key, val in (("site", b["site"]), ("booking", b["booking"])):
                 if val and p.get(key) != val:
                     p[key] = val
                     changed += 1
-            if not p.get("image") and b["image"]:
-                p["image"] = b["image"]
-                changed += 1
         hours = opening_hours(html)
         if hours and not p.get("hours_fixed") and p.get("hours") != hours:
             p["hours"] = hours

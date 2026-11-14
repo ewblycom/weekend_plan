@@ -18,7 +18,8 @@
    "area": "Praha 11 — Chodov",
    "note": "Эскейп-рум The Clinic (от 1 000 Kč), Robot Fight. Недалеко от Праги 4.",
    "url": "https://www.firmy.cz/sluzby/Vzdelavani-a-volny-cas/Zabava-a-zazitky/kraj-praha",
-   "map": "FUN ARENA Chodov Praha"
+   "map": "FUN ARENA Chodov Praha",
+   "site": "https://www.funarena.cz/cz/"
   },
   {
    "name": "Bowling & Billiard Dejvice",
@@ -38,7 +39,8 @@
    "note": "4 полноразмерные дорожки, 3 бильярда, 2 стола для пинг-понга, настольный футбол. У метро Nádraží Holešovice.",
    "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
    "map": "Absolutní Bowling Praha Holešovice",
-   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158"
+   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158",
+   "site": "http://www.absolutnibowling.cz/"
   },
   {
    "name": "Bowling Celnice",
@@ -47,7 +49,8 @@
    "note": "8 дорожек AMF, некурящий зал, бильярд, дартс.",
    "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
    "map": "Bowling Celnice Praha",
-   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158"
+   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158",
+   "site": "https://bowling.cz/bowling-celnice"
   },
   {
    "name": "Victoria Bowling",
@@ -56,7 +59,8 @@
    "note": "Для любителей, а не рекордов: играете и выигрываете шоты.",
    "url": "https://www.kudyznudy.cz/aktuality/chcete-si-zahrat-bowling-v-praze-vyberte-si-z-nas",
    "map": "Victoria Bowling Žižkov Praha",
-   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158"
+   "image": "https://cdn.kudyznudy.cz/files/5e/5e48c933-6dcd-48fc-a7ca-79c089d673a2.jpg?v=20200827015158",
+   "site": "https://victoria-bowling-bar.cz/"
   },
   {
    "name": "Laser game 3D + бильярд Harlequin",
@@ -64,7 +68,8 @@
    "area": "Praha 10 — Vršovice",
    "note": "Арена лазертага 320 м², под ней бильярдный клуб Harlequin: 15 столов, пинг-понг, дартс, ресторан. Можно совместить за один вечер.",
    "url": "https://www.slevomat.cz/akce/2216138-laser-game-v-nejmodernejsi-3d-arene-az-pro-8-osob",
-   "map": "Laser game Harlequin, Oblouková 1254/6, Praha 10"
+   "map": "Laser game Harlequin, Oblouková 1254/6, Praha 10",
+   "site": "https://lasergameharlequin.cz"
   },
   {
    "name": "The Chamber Escape Games",
@@ -130,7 +135,8 @@
    "area": "Praha 4 — Braník",
    "note": "Лазертаг рядом с домом: две арены и бар.",
    "url": "https://www.slevomat.cz/podnik/90819-mercuria-laser-game",
-   "map": "Mercuria Laser Game, Údolní 212/1, Praha 4"
+   "map": "Mercuria Laser Game, Údolní 212/1, Praha 4",
+   "site": "https://mercurialaser.cz"
   },
   {
    "name": "Galaxy Laser Game",
@@ -182,7 +188,8 @@
    "url": "https://prague.eu/cs/objevujte/zero-latency-prague/",
    "map": "Zero Latency Prague, Na Poříčí 25, Praha 1",
    "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:420/q:70/plain/https://pct-wp-prod.storage.googleapis.com/2024/07/06120844/Engineerium-Game-Image-Whale-scaled-1-e1733483471901.jpg@webp",
-   "booking": "mailto:rezervace@zerolatencyprague.cz"
+   "booking": "mailto:rezervace@zerolatencyprague.cz",
+   "site": "https://zerolatencyprague.cz/en/"
   },
   {
    "name": "Another World VR",
@@ -223,7 +230,7 @@
    "note": "Батутный парк на 700 м², больше 60 батутов и 4 трассы.",
    "url": null,
    "map": "JumpPark Praha, Na Jarově 2, Praha 3",
-   "site": null,
+   "site": "https://jarov.jumppark.cz/",
    "manual": true
   },
   {
@@ -233,7 +240,7 @@
    "note": "Лазертаг-арена Mercuria у метро Budějovická, рядом с домом.",
    "url": null,
    "map": "Mercuria Laser Game a Pixel, Budějovická 409/1, Praha 4",
-   "site": null,
+   "site": "https://mercurialaser.cz",
    "manual": true
   },
   {
@@ -243,7 +250,7 @@
    "note": "Арена, виртуальная реальность и аркадные игры в ТЦ Lužiny у метро.",
    "url": null,
    "map": "Mercuria Laser Game Lužiny, Archeologická 2256/1, Praha 13",
-   "site": null,
+   "site": "https://mercurialaser.cz",
    "manual": true
   },
   {
@@ -253,7 +260,7 @@
    "note": "Лазертаг с инфракрасной системой и копиями настоящего оружия.",
    "url": null,
    "map": "Laser Tag Prague, Krupská 1749/12, Praha 10",
-   "site": null,
+   "site": "https://lasertagprague.cz",
    "manual": true
   },
   {
@@ -263,7 +270,7 @@
    "note": "Лазертаг у Bořislavka, несколько игровых сред на выбор, онлайн-бронь.",
    "url": null,
    "map": "Esco Laser Game, Kladenská 417/7, Praha 6",
-   "site": null,
+   "site": "https://escolasergame.cz",
    "manual": true
   },
   {
@@ -273,7 +280,7 @@
    "note": "Игровые симуляторы и VR в Westfield Chodov.",
    "url": null,
    "map": "Vodafone PLAYzone Arena, Roztylská 2321/19, Praha 4 Westfield Chodov",
-   "site": null,
+   "site": "https://playzonearena.cz",
    "manual": true
   },
   {
@@ -283,7 +290,7 @@
    "note": "Игровая с PC и PlayStation 5, вход по часам и абонементы.",
    "url": null,
    "map": "MVP Chill & Gaming space, Spálená 108/51, Praha 1",
-   "site": null,
+   "site": "https://mvpesports.cz/prague",
    "manual": true
   },
   {
@@ -324,7 +331,7 @@
    "note": "Боулдеринг недалеко от дома.",
    "url": null,
    "map": "Boulder Na Pláni, Na Vítězné pláni 1160/1, Praha 4",
-   "site": null,
+   "site": "https://bouldernaplani.cz",
    "manual": true
   },
   {
@@ -344,7 +351,7 @@
    "note": "Крупнейший боулдеринг-центр Праги, есть бар.",
    "url": null,
    "map": "Boulder Bar, U Výstaviště 11, Praha 7",
-   "site": null,
+   "site": "https://holesovice.jungle.cz",
    "manual": true
   },
   {
@@ -354,7 +361,7 @@
    "note": "Скалодром с боулдерингом на двух этажах.",
    "url": null,
    "map": "Lezecká stěna Třináctka, Jeremiášova 2581/2, Praha 13",
-   "site": null,
+   "site": "https://stenatrinactka.cz",
    "manual": true
   },
   {
@@ -364,7 +371,7 @@
    "note": "Скалодром высотой 20 м и боулдеринг.",
    "url": null,
    "map": "Lezecká stěna BigWall, Ocelářská 891/16, Praha 9",
-   "site": null,
+   "site": "https://big-wall.cz",
    "manual": true
   },
   {
@@ -384,7 +391,7 @@
    "note": "Аркадный бар: ретро-автоматы и пинбол, пиво по доступным ценам.",
    "url": null,
    "map": "Joystick Bar, Jindřišská 5, Praha 1",
-   "site": null,
+   "site": "https://joystickbar.cz",
    "manual": true
   },
   {
@@ -415,7 +422,7 @@
    "note": "Самый большой открытый каток в Праге. Сезон обычно с середины ноября, даты на этот год уточни.",
    "url": null,
    "map": "Kluziště Letná, Milady Horákové, Praha 7",
-   "site": null,
+   "site": "https://praha7.cz/kluziste-26",
    "manual": true
   },
   {
@@ -425,7 +432,7 @@
    "note": "Каток 20×10 м на Terasa Smíchov. Сезон начинается в ноябре, даты на этот год уточни.",
    "url": null,
    "map": "Terasa Ice Rink, Terasa Smíchov, Praha 5",
-   "site": null,
+   "site": "https://terasasmichov.cz/",
    "manual": true
   },
   {
@@ -455,7 +462,7 @@
    "note": "Много саун, есть приватный wellness для пар и бар наверху.",
    "url": null,
    "map": "Sauna Central, Ve Smečkách 1593/19, Praha 1",
-   "site": null,
+   "site": "https://saunacentral.cz",
    "manual": true
   },
   {
@@ -475,7 +482,7 @@
    "note": "Wellness-отель: приватная сауна или джакузи, можно с ужином на двоих.",
    "url": null,
    "map": "Chateau St. Havel, Praha 4 Krč",
-   "site": null,
+   "site": "https://chateauhotel.cz",
    "manual": true
   },
   {
@@ -485,7 +492,7 @@
    "note": "Приватная wellness-зона, соляная пещера и инфракрасная сауна на 1–2 человека.",
    "url": null,
    "map": "Lázně TOM, Praha Vokovice",
-   "site": null,
+   "site": "https://privatnilaznetom.cz",
    "manual": true
   },
   {
@@ -505,7 +512,7 @@
    "note": "Wellness-центр с сауной.",
    "url": null,
    "map": "Wellness Bohemia, K Vidouli 831/15, Praha 13",
-   "site": null,
+   "site": "https://bohemiawellness.cz",
    "manual": true
   },
   {

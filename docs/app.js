@@ -176,7 +176,8 @@ function ph(e, cls = "", w = 800) {
   const d = e.kind !== "place" && dayOf(e);
   const num = d ? `<span class="num">${dt(d).getDate()}</span>` : "";
   const img = e.image ? `<img loading="lazy" decoding="async" draggable="false" src="${esc(thumb(e.image, w))}" data-orig="${esc(e.image)}" alt="" onerror="if(this.dataset.orig&&this.src!==this.dataset.orig){this.src=this.dataset.orig;this.dataset.orig=''}else{this.remove()}">` : "";
-  return `<div class="ph ${cls}">${num}${img}</div>`;
+  const word = !e.image && e.kind === "place" ? `<span class="phk">${esc(KIND[e.placeKind] || "")}</span>` : "";
+  return `<div class="ph ${cls}">${num}${word}${img}</div>`;
 }
 function stickers(e) {
   const out = [];
