@@ -216,7 +216,7 @@ h1 { margin: 0; font: 700 30px/32px var(--sans); letter-spacing: -.02em; }
 .detail .x { position: fixed; z-index: 3; top: calc(16px + env(safe-area-inset-top)); width: 44px; height: 44px; border-radius: 999px; display: grid; place-items: center;
   margin-left: calc(min(480px, 100vw) - 60px); }
 .detail .stks { top: calc(16px + env(safe-area-inset-top)); right: 76px; }
-.detail .sh { position: relative; margin-top: -32px; border-radius: var(--r-card) var(--r-card) 0 0; background: var(--paper); padding: var(--s5) var(--edge) calc(110px + env(safe-area-inset-bottom)); min-height: 50dvh; }
+.detail .sh { position: relative; margin-top: -32px; border-radius: var(--r-card) var(--r-card) 0 0; background: var(--paper); padding: var(--s5) var(--edge) var(--s4); min-height: 50dvh; }
 .detail .meta { font-size: 15px; }
 .slots { margin-top: var(--s5); display: flex; gap: var(--s2); flex-wrap: wrap; }
 .slot { height: 44px; padding: 0 14px; display: inline-flex; align-items: center; gap: 8px; border-radius: 12px; background: var(--paper-2); font-weight: 600; font-size: 15px; }
@@ -224,7 +224,8 @@ h1 { margin: 0; font: 700 30px/32px var(--sans); letter-spacing: -.02em; }
 .slot.on { background: var(--ink); color: var(--on-ink); }
 .desc { margin-top: var(--s5); color: var(--ink-2); font-size: 15px; line-height: 21px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
 .desc.open { -webkit-line-clamp: unset; }
-.dact { position: fixed; z-index: 3; bottom: calc(24px + env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); width: min(440px, calc(100% - 40px)); display: flex; gap: 10px; }
+.dact { position: sticky; z-index: 3; bottom: 0; margin: 0 auto; width: min(440px, calc(100% - 40px)); display: flex; gap: 10px;
+  padding: var(--s3) 0 calc(var(--s4) + env(safe-area-inset-bottom)); background: linear-gradient(to top, var(--paper) 72%, transparent); }
 .dact .btn { height: 56px; }
 .dact .btn.sq { width: 56px; padding: 0; flex: none; }
 .dact .rb.l { width: 56px; height: 56px; flex: none; }
