@@ -67,13 +67,6 @@
 "link": "https://huntkastner.com",
 "slots": []
 },
-"https://prague.eu/cs/akce/adam-stech-postmoderni-bublina-japonska-architektura-80-let/": {
-"booking": null,
-"description": "Nahlédněte do fascinujícího světa japonských architektonických snílků na výstavě kurátora, autora fotografií a historika architektury Adama Štěcha. Vítejte v éře, kdy se Japonsko řítilo do technologicky a esteticky neuvěřitelné budoucnosti!",
-"fetched": "2026-11-14",
-"link": "https://www.loosovavila.cz/akce/vystava-japonsko-postmoderni-bublina-k6tmg",
-"slots": []
-},
 "https://prague.eu/cs/akce/adventni-trhy-na-chvalske-tvrzi/": {
 "booking": null,
 "description": "První adventní neděli ožije areál Chvalské tvrze tradičními adventními trhy plnými řemeslných výrobků, vánočních dobrot a sváteční atmosféry. Návštěvníky čeká kulturní program, tvořivé dílny pro děti, rozsvícení vánočního stromu i setkání s tajemnými Luciemi, které podle lidových tradic dohlížejí na pořádek v adventním čase.",
@@ -93,13 +86,6 @@
 "description": "Alternativa 2026 zve na 34. ročník mezinárodního festivalu experimentální a nekonvenční hudby, který se uskuteční ve dvou podzimních víkendech, 30. až 31. října a 13. až 14. listopadu, na několika pražských scénách. Program nabídne odvážné přístupy ke zvuku napříč žánry, generacemi i kontinenty, vystoupení výrazných osobností současné hudební scény i unikátní projekty na pomezí improvizace, elektroniky a zvukového umění. Chybět nebudou ani vzácné návraty, mimo jiné americké hudebnice Grouper. Alternativa patří k nejdéle kontinuálně pořádaným pražským hudebním festivalům a od počátku 90. let představuje objevnou alternativu k mainstreamovým dramaturgiím. Letošní koncerty se odehrají mimo jiné v kostele sv. Šimona a Judy, prostoru ARCHA+ a Petrohradské.",
 "fetched": "2026-11-14",
 "link": "https://www.alternativa-festival.cz/program",
-"slots": []
-},
-"https://prague.eu/cs/akce/andros/": {
-"booking": null,
-"description": "Mužské tělo v současném středoevropském umění.  To jediné, co má současná západní společnost k dispozici, je torzo. Torzo žitého světa, v němž se ztratil jeden sdílený smysl, i torzo jedince, který může po své komplexitě leda toužit, protože ho od ní neustále vzdaluje jazyk i zastávané sociální role. Mužství se dnes tato neúplnost týká zcela nepochybně. Revize zavedených šablon a rozvolnění rigidních genderových rolí totiž v posledních dekádách zesílilo diskuse o povaze maskulinity a nutně vede i k existenciálním otázkám. Kdo je to vlastně muž? A co ho určuje?   Výstavní projekt ANDROS sleduje, jak se k těmto otázkám staví současné středoevropské umění při zobrazování mužského těla. Hmotná složka genderové identity, která po staletí slouží jako klasické výtvarné téma, se totiž v současné tvorbě stává i projekční plochou pro pochyby, hledání a opětovné ustavování mužského tvaru.  Kolektivní výstava ANDROS téma sleduje v širším regionálním kontextu a vedle domácích děl představuje také práce umělců z Německa, Rakouska a zemí Visegrádu. Pozice kurátora se ujal spisovatel Vratislav Maňák, který jejím prostřednictvím rozpracovává a posouvá koncepty představené v knize S Wittgensteinem v gay sauně (2026).",
-"fetched": "2026-11-14",
-"link": "https://www.dox.cz",
 "slots": []
 },
 "https://prague.eu/cs/akce/arlo-parks/": {
@@ -1162,25 +1148,11 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/hedy-lamarr-zena-mnoha-tvari/": {
-"booking": null,
-"description": "Hedy Lamarr byla výjimečná osobnost: všestranná, inteligentní, kreativní, proslulá jako „nejkrásnější žena světa“. Narodila se v roce 1914 ve Vídni do židovské rodiny jako Hedwig Kiesler. Usilovala o uznání pro svůj intelekt, nikoli pro svůj vzhled. Vdala se šestkrát a měla tři děti. Na lesk Hollywoodu pohlížela s odstupem. Raději se věnovala svému vynalézavému duchu a během druhé světové války vyvinula tajný komunikační systém, který připravil půdu pro vývoj dnešních technologií jako jsou GPS, Wi-Fi nebo Bluetooth. Uznání se jí za to dostalo až mnohem později. Zemřela v roce 2000 a byla pohřbena ve svém milovaném rodném městě Vídni.  Výstava mapuje etapy života Hedy Lamarr včetně jejích stop v Praze. Život této výjimečné ženy by se dnes pravděpodobně odvíjel jinak. Výstava tak navazuje na aktuální debaty o Female Empowerment, hnutí #MeToo a síle neustále překonávat sama sebe.",
-"fetched": "2026-11-14",
-"link": "https://www.rkfpraha.cz",
-"slots": []
-},
 "https://prague.eu/cs/akce/historia-naturalis/": {
 "booking": null,
 "description": "Jak se v průběhu staletí proměňoval pohled člověka na svět rostlin a zvířat? Výstava Historia naturalis v Galerii Klementinum vás provede staletími přírodovědného poznání prostřednictvím vzácných rukopisů, inkunábulí a starých tisků z 15.–18. století, které uchovává Národní knihovna ČR. Výstava je rozdělena do tematických celků, které sledují jednotlivé oblasti přírodovědného poznání – botaniku, zoologii, mykologii, entomologii či pomologii – a zároveň ukazuje, jak se jejich vnímání a popis v průběhu času proměňovaly.",
 "fetched": "2026-11-14",
 "link": "https://www.nkp.cz",
-"slots": []
-},
-"https://prague.eu/cs/akce/hnusny-ceskoslovensky-brutalismus-1960-1989/": {
-"booking": null,
-"description": "Brutalistická architektura a design od 60. do 80. let 20. století zanechaly v pražských ulicích nesmazatelnou stopu. Mnoho z těchto stop však v posledních letech nenávratně mizí. Výstava v Design Museu Prague tyto fragmenty zachraňuje a vypráví jejich příběh dříve, než se promění v prach.  Součástí výstavy je například Fantom Transgasu, vzácný dekorativní prvek ze schodiště legendárního komplexu Transgasu, který byl zbourán v roce 2019. Dnes je to jeden z mála dochovaných fragmentů budovy, která definovala pražský brutalismus. K vidění bude i unikátní betonové křeslo navržené Olbramem Zoubkem z 70. let 20. století pro dnes již neexistující kavárnu U Zlatého hada.",
-"fetched": "2026-11-14",
-"link": "https://www.designmuseumprague.com",
 "slots": []
 },
 "https://prague.eu/cs/akce/hrncirske-a-remeslne-trhy/": {
@@ -1526,13 +1498,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/loutkove-komnaty-divadla-bratri-formanu-a-jejich-pratel/": {
-"booking": null,
-"description": "Řezbované loutky, mechanické objekty, hravé vynálezy, malované kulisy a časem zkrásnělé dekorace. To vše jsou malé divadelní zázraky vytvořené šikovnýma rukama, které vás nepustí po celou výstavu.  Spatříte tu krásu hravé imaginace, kterou lidé obdivují napříč Evropou. Divadlo bratří Formanů s přáteli se svým kočovným světem putují po všech koutech světa. Zde je pozvání jednoho z autorů:  „Řemeslné mistrovství, představivost, tvořivost, vyprávěné i tušené příběhy, výtvarná jedinečnost a krása je to, co nás přitahuje. Vstoupit do Imaginária znamená nechat se okouzlit světem nakažlivých snílků a probudit v sobě chuť vyprávět, hrát si, dívat se a tvořit.“ Matěj Forman",
-"fetched": "2026-11-14",
-"link": "https://www.muzeumprahy.cz",
-"slots": []
-},
 "https://prague.eu/cs/akce/mahler-schonberg-zemlinsky/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/mahler-schonberg-zemlinsky-cNezfoEyQEa_f0Yz1Sypng?t=2026-11-26-19-00",
 "description": "Koncert vás přenese do jedné z nejslavnějších kapitol historie Nového německého divadla (dnešní Státní opery), jehož operní soubor vedl v letech 1911—1927 skladatel a dirigent Alexander Zemlinsky. Během svého pražského působení nastudoval šedesát operních titulů a řídil stovky filharmonických koncertů, na nichž významné místo zaujímala díla dvou klíčových osobností hudební moderny, Gustava Mahlera a Arnolda Schönberga.",
@@ -1625,13 +1590,6 @@
 "link": "https://www.dsaprague.org/",
 "slots": []
 },
-"https://prague.eu/cs/akce/mikulas-medek-jan-koblasa-zakazu-navzdory/": {
-"booking": null,
-"description": "Výstava Zákazu navzdory přibližuje prostřednictvím snímků Jiřího Hampla a děl Mikuláše Medka a Jana Koblasy z let 1959–1963 jejich legendární expozici uskutečněnou v srpnu roku 1963 v Teplicích – v zámecké jízdárně, v tehdejší výstavní síni Klementa Gottwalda. Ve vývoji československého moderního umění poválečné doby představovala mimořádnou a zlomovou událost. Nebývalou už proto, že se přes předchozí zákazy nečekaně konala, a to díky štěstěně tzv. milostivého léta, které zásluhou Čestmíra Císaře, tajemníka ÚV KSČ s odpovědností za oblast masmédií, školství, kultury i mezinárodních vztahů, rozvolnilo od dubna do poloviny září 1963 ideologická nařízení státu. Poprvé se tak umělcům podařilo představit široké veřejnosti existenciálně zaměřené abstraktní práce stíhané výhrůžkami komunistického režimu. Velkolepou, myšlenkově koncentrovanou instalací obrazů a soch s odvahou ťali spolu s kurátory Věrou Linhartovou a Františkem Šmejkalem do opatrnosti a licoměrnosti zdejších uměleckých poměrů; málokdo si ji proto nechal ujít.",
-"fetched": "2026-11-14",
-"link": "https://www.museumkampa.cz",
-"slots": []
-},
 "https://prague.eu/cs/akce/mikulas-na-kampe/": {
 "booking": null,
 "description": "Mikuláš na Kampě patří k tradičním pražským předvánočním akcím, jejíž součástí je také slavnostní rozsvícení vánočního stromu. Návštěvníky čeká setkání s Mikulášem, anděly a čerty, mikulášská nadílka pro děti i bohatý doprovodný program. V romantickém prostředí ostrova Kampa nebudou chybět vánoční dobroty, tradiční malostranský betlém ani jedinečná adventní atmosféra historické Malé Strany.",
@@ -1695,13 +1653,6 @@
 "description": "Milada Schmidtová Čermáková (1922–2015) patří k nejautentičtějším malířkám středoevropského umění druhé poloviny 20. století. Její tvorba byla za jejího života prakticky neznámá, až v posledních letech začíná být nově zhodnocována a zařazována do domácího i zahraničního kontextu. Reflektovala řadu dodnes zásadních témat a přístupů či pocitů – válečnou úzkost, existenciální pocity člověka vyloučeného mimo komunitu, tvůrčí posedlost, smíření v krajině…",
 "fetched": "2026-11-14",
 "link": "https://www.ghmp.cz",
-"slots": []
-},
-"https://prague.eu/cs/akce/milan-kunc-pop-renaissance/": {
-"booking": null,
-"description": "Milan Kunc patří k výrazným osobnostem umění druhé půlky dvacátého století, jehož dílo je zastoupeno v řadě významných veřejných i soukromých sbírek po celém světě. Již od sedmdesátých let rozvíjí osobitý vizuální jazyk, v němž se prolíná popkulturní estetika, ironie, surrealistická imaginace i citlivá reflexe společenských proměn.  Malba, socha, instalace i performance se v jeho tvorbě stávají prostředkem k pozorování světa, ve kterém se každodennost setkává s absurditou, humor s kritikou a osobní zkušenost s kolektivní pamětí. Kunc propojuje symboly Východu i Západu, vysoké i populární kultury, aniž by je hierarchizoval. Právě tato schopnost spojovat zdánlivě neslučitelné světy činí jeho dílo mimořádně aktuálním i v dnešním geopolitickém a společenském kontextu.",
-"fetched": "2026-11-14",
-"link": "https://www.museumkampa.cz",
 "slots": []
 },
 "https://prague.eu/cs/akce/mint-market-vanoce/": {
@@ -1954,13 +1905,6 @@
 "link": "https://sportovnihalafortuna.cz",
 "slots": []
 },
-"https://prague.eu/cs/akce/pocta-gustavu-klimtovi/": {
-"booking": "https://www.klaster-minoritu.cz/program/detail/pocta-gustavu-klimtovi?name=detail&event_id=765",
-"description": "Objevte svět jednoho z nejvýraznějších umělců vídeňské secese prostřednictvím věrných kopií jeho nejznámějších obrazů v autentické velikosti i barevnosti. Gustav Klimt proslul svými dekorativními obrazy, symbolikou, smyslnými portréty a především svou „zlatou érou“, kdy do svých děl vkládal skutečné plátky zlata.",
-"fetched": "2026-11-14",
-"link": "https://www.klaster-minoritu.cz",
-"slots": []
-},
 "https://prague.eu/cs/akce/pokelandia-adventure/": {
 "booking": null,
 "description": "V přízemí obchodního domu Bílá labuť najdete projekt spojující komunity Pokémon pod jednu střechu.  Prostor nabízí 1. muzeum Pokémon karet na světě - jde o výstavu soukromé sbírky Jana Solfronka. Expozice obsahuje sochy v životní velikosti, průřez edicemi od roku 1998 do současnosti. K vidění je přes 40 setů karet, interaktivní část s originálními gameboyi nebo kvízem, který Pokémon člověku nejlépe sedí. Celým prostorem výstavy se nese také příběh propojený se 2 dobrodružnými hrami.  2. částí celého prostoru je eventová místnost pro turnaje v karetních hrách, pro setkávání a výměny sběratelů, Přednášky, workshopy, semináře. 3. částí je kamenná prodejna Pokémon TCG, plyšáků, figurek, stavebnic a dalšího Pokémon merche.",
@@ -2178,13 +2122,6 @@
 "description": "22. ročník pražského horolezeckého festivalu Sherpafest nabídne půldenní program kombinující promítání filmů a vystoupení inspirativních hostů. Tematicky pokrývá českou i světovou lezeckou historii a zároveň představuje aktuální dění v horském a skalním lezení. Sherpafest je každoročním svátkem horolezců a milovníků hor, kteří se mohou těšit na příběhy z expedic, setkání s výraznými osobnostmi oboru i neformální atmosféru akce, jež si i po více než dvaceti letech zachovává svůj autentický horolezecký charakter.",
 "fetched": "2026-11-14",
 "link": "https://www.sherpafest.cz/",
-"slots": []
-},
-"https://prague.eu/cs/akce/silicon-glitch/": {
-"booking": null,
-"description": "Silicon Glitch vzniká někde mezi světem, který se snaží být dokonale naprogramovaný, a tím, co se naprogramovat nedá.    Rukou, materiálem, náhodou, intuicí nebo jednoduše časem. Věcmi, které nemáme úplně pod kontrolou a které se mohou pokazit, a právě díky tomu dopadnout jinak, než jsme čekali.    Glitch je chyba v systému, krátké vychýlení z očekávaného průběhu. Něco se zadrhne, posune nebo přestane fungovat tak, jak má. Výstava s tímto momentem pracuje jako s místem, kde se otevírá prostor pro experiment a odchylku od toho, co už známe.    Každý z autorů k tomu přistupuje jinak. Módní designérka Šárka Zejdová propojuje experiment, upcycling a DIY principy s osobní zkušeností a rodinnou pamětí. Její současná kolekce věnovaná otci se dotýká i toho, jak si vytváříme vlastní obrazy a teorie světa ve chvíli, kdy začneme pochybovat o systémech kolem nás.",
-"fetched": "2026-11-14",
-"link": null,
 "slots": []
 },
 "https://prague.eu/cs/akce/slavnostni-koncert-festival-songs-of-europe-praha-2026/": {
