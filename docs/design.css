@@ -238,3 +238,9 @@ h1 { margin: 0; font: 700 30px/32px var(--sans); letter-spacing: -.02em; }
 .ph .phk { position: absolute; left: 14px; bottom: 10px; right: 10px; font: 800 22px/1 var(--display); letter-spacing: -.02em; color: var(--hairline); text-transform: uppercase; overflow: hidden; white-space: nowrap; }
 .prow .ph .phk, .card .ph .phk { display: none; }
 .detail .ph.hero .phk { font-size: 40px; left: var(--edge); bottom: var(--s4); }
+
+.taste { margin: var(--s5) 0 var(--s4); padding: var(--s4); border-radius: var(--r-card, 24px); background: var(--paper-2); }
+.taste .tr { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: var(--s3); margin-top: var(--s2); font: 600 14px/1 var(--text, inherit); }
+.taste .tr i { display: block; height: 8px; width: var(--w); min-width: 8px; border-radius: 4px; background: var(--lime); }
+.taste p { margin: var(--s3) 0; font-size: 13px; opacity: .6; }
+.taste .btns { display: flex; gap: var(--s2); flex-wrap: wrap; }

@@ -37,7 +37,7 @@ const S = {
   events: [], places: [], loaded: false,
   from: null, to: null, mode: "events", tab: "feed",
   cats: new Set(), kinds: new Set(), ru: false,
-  decided: {}, history: [], top: null,
+  decided: {}, history: [], top: null, taste: Taste.empty(),
   plan: {}, detail: null, sheet: null, draft: null,
 };
 const $ = (s, r = document) => r.querySelector(s);
@@ -109,6 +109,7 @@ function mergeCloud() {
 function save(skipCloud) {
   const sess = JSON.stringify({ from: S.from, to: S.to, mode: S.mode, cats: [...S.cats], kinds: [...S.kinds], ru: S.ru, decided: S.decided, history: S.history.slice(-30), top: S.top });
   try { localStorage.setItem("s2", sess); localStorage.setItem("plan2", JSON.stringify(S.plan)); } catch {}
+  try { const tj = JSON.stringify(S.taste); localStorage.setItem("taste1", tj); if (!skipCloud) cloudSet("taste1", tj); } catch {}
   if (skipCloud) return;
   cloudSet("s2", JSON.stringify({ from: S.from, to: S.to, mode: S.mode, cats: [...S.cats], kinds: [...S.kinds], ru: S.ru }));
   cloudSavePlan();
@@ -122,10 +123,14 @@ function applySession(o) {
 }
 function restore() {
   S.plan = load("plan2", {});
+  const tt = load("taste1", null); if (tt && tt.f) S.taste = tt;
   if (!applySession(load("s2", null))) { const [a, b] = weekendRange(); S.from = a; S.to = b; }
   try {
     tg && tg.CloudStorage && tg.CloudStorage.getItem("s2", (e, v) => {
       try { if (!e && v && !localStorage.getItem("s2") && applySession(JSON.parse(v))) render(); } catch {}
+    });
+    tg && tg.CloudStorage && tg.CloudStorage.getItem("taste1", (e, v) => {
+      try { if (!e && v && !load("taste1", null)) { S.taste = JSON.parse(v); render(); } } catch {}
     });
   } catch {}
   cloudLoadPlan();
@@ -159,7 +164,13 @@ function inRange(a = S.from, b = S.to, ru = S.ru) { return S.events.filter((e) =
 function deck() {
   const t0 = (e) => dayOf(e) + (timeOf(e) || "99");
   let xs = inRange().filter((e) => (!S.cats.size || S.cats.has(e.category)) && S.decided[e.id] === undefined);
-  xs.sort((x, y) => tier(x) - tier(y) || (tier(x) === 0 ? t0(x).localeCompare(t0(y)) : 0) || y.score - x.score);
+  const rank = (e) => Taste.blend(S.taste, e, e.score);
+  xs.sort((x, y) => tier(x) - tier(y) || (tier(x) === 0 ? t0(x).localeCompare(t0(y)) : 0) || rank(y) - rank(x));
+  // каждая 5-я карточка внутри уровня — из малоизвестной категории, чтобы лента не замыкалась в пузырь
+  if (S.taste.n >= 10) for (let i = 4; i < xs.length; i += 5) {
+    const j = xs.findIndex((e, k) => k > i && tier(e) === tier(xs[i]) && Taste.unexplored(S.taste, e));
+    if (j > i) xs.splice(i, 0, xs.splice(j, 1)[0]);
+  }
   if (S.top) { const i = xs.findIndex((e) => e.id === S.top); if (i > 0) xs.unshift(xs.splice(i, 1)[0]); }
   return xs;
 }
@@ -181,7 +192,9 @@ function ph(e, cls = "", w = 800) {
 }
 function stickers(e) {
   const out = [];
-  if (e.kind === "place") { if (HOME_AREA.test(e.area || "")) out.push('<span class="stk">РЯДОМ С ДОМОМ</span>'); return out; }
+  const likeMe = Taste.confidence(S.taste) >= 0.3 && Taste.score(S.taste, e) >= 0.3;
+  if (e.kind === "place") { if (likeMe) out.push('<span class="stk f">В ТВОЁМ ДУХЕ</span>'); if (HOME_AREA.test(e.area || "")) out.push('<span class="stk">РЯДОМ С ДОМОМ</span>'); return out; }
+  if (likeMe) out.push('<span class="stk f">В ТВОЁМ ДУХЕ</span>');
   if (tier(e) === 0) out.push('<span class="stk">ТОЛЬКО ЭТИ ВЫХОДНЫЕ</span>');
   else if (e.end && e.end <= addDays(S.to, 3)) out.push('<span class="stk">ПОСЛЕДНИЕ ДНИ</span>');
   if (e.free) out.push('<span class="stk w">БЕСПЛАТНО</span>');
@@ -236,7 +249,7 @@ function headerHtml() {
 function feedHtml(opts = {}) {
   if (S.mode === "places") {
     const xs = placeItems().filter((p) => !S.kinds.size || S.kinds.has(p.placeKind))
-      .sort((a, b) => (HOME_AREA.test(b.area) ? 1 : 0) - (HOME_AREA.test(a.area) ? 1 : 0));
+      .sort((a, b) => (HOME_AREA.test(b.area) ? 1 : 0) - (HOME_AREA.test(a.area) ? 1 : 0) || Taste.score(S.taste, b) - Taste.score(S.taste, a));
     return `<div class="feed"><div class="grid ${opts.tiles ? "in" : ""}">${xs.map((p, i) => `<button class="tile" style="animation-delay:${Math.min(i, 8) * 30}ms" data-act="open" data-v="${esc(p.id)}">
       ${ph(p, "", 420)}${stickers(p)[0] || ""}${S.plan[p.id] ? `<span class="heart">${IC.heart(14)}</span>` : ""}
       <span class="t"><b>${esc(p.title)}</b><span>${esc(p.area)}</span>${p.hours ? `<span class="h">${esc(p.hours)}</span>` : ""}</span></button>`).join("")}</div></div>`;
@@ -260,6 +273,16 @@ function planItems() {
   const t = todayIso();
   return Object.values(S.plan).filter((p) => !p.date || p.date >= t).sort((a, b) => (a.date || "9").localeCompare(b.date || "9") || (a.time || "99").localeCompare(b.time || "99"));
 }
+function tasteHtml() {
+  if (S.taste.n < 5) return "";
+  const rows = Taste.top(S.taste).filter((x) => x.aff > 0.05).map((x) => {
+    const name = x.key.startsWith("kind:") ? KIND[x.key.slice(5)] : CAT1[x.key.slice(4)];
+    return name ? `<div class="tr"><span>${esc(name)}</span><i style="--w:${Math.round(Math.min(1, x.aff) * 100)}%"></i></div>` : "";
+  }).join("");
+  if (!rows) return "";
+  return `<section class="taste"><div class="dh"><span class="any">ТВОЙ ВКУС</span></div>${rows}
+    <p>Лента поднимает похожее. Решений учтено: ${S.taste.n}.</p><div class="btns"><button class="btn" data-act="taste-copy">Профиль для парсера</button><button class="btn" data-act="taste-reset">Сбросить</button></div></section>`;
+}
 function planHtml() {
   const xs = planItems();
   const groups = {};
@@ -271,6 +294,7 @@ function planHtml() {
   const body = Object.entries(groups).map(([d, ps]) => `<section class="day"><div class="dh">${d === "any"
     ? '<span class="any">КОГДА УГОДНО</span>' : `<b>${dt(d).getDate()}</b><span>${WDL[dt(d).getDay()]}</span>`}</div>${ps.map(row).join("")}</section>`).join("");
   return `<div class="plan"><div class="hd"><h1>План</h1>${xs.some((p) => p.date) ? `<button class="btn ink" data-act="ics">${IC.cal(18)}<span>В календарь</span></button>` : ""}</div>
+    ${tasteHtml()}
     ${body || `<div class="empty"><div class="big">ПУСТО</div>Свайпни вправо то, что нравится<div class="btns"><button class="btn ink" data-act="tab" data-v="feed">В ленту</button></div></div>`}</div>`;
 }
 function tabsHtml() {
@@ -383,6 +407,7 @@ function snapshot(e) {
 }
 function decide(id, like) {
   S.decided[id] = like ? 1 : 0; S.history.push(id); if (S.top === id) S.top = null;
+  const it = itemById(id); if (it) Taste.record(S.taste, it, !!like);
   if (like) { const e = itemById(id); if (e) S.plan[id] = snapshot(e); haptic("light"); } else haptic("select");
   render({ enter: "enter", bump: like });
 }
@@ -396,6 +421,7 @@ function fly(card, like) {
 function swipeTop(like) { const c = $(".card.top"); if (c) fly(c, like); }
 function undo() {
   const id = S.history.pop(); if (!id) return;
+  const prev = itemById(id); if (prev && S.decided[id] !== undefined) Taste.retract(S.taste, prev, S.decided[id] === 1, Date.now());
   if (S.decided[id] === 1) delete S.plan[id];
   delete S.decided[id]; S.top = id; haptic("select");
   render({ enter: "land" });
@@ -408,8 +434,8 @@ function dice() {
   setTimeout(() => { S.top = pick.id; render({ enter: "land" }); haptic("success"); }, 650);
 }
 function togglePlan(id) {
-  if (S.plan[id]) { delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; haptic("select"); }
-  else { const e = itemById(id); if (e) { S.plan[id] = snapshot(e); S.decided[id] = 1; haptic("light"); } }
+  if (S.plan[id]) { const e = itemById(id); if (e) Taste.retract(S.taste, e, true); delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; haptic("select"); }
+  else { const e = itemById(id); if (e) { S.plan[id] = snapshot(e); if (S.decided[id] === undefined) Taste.record(S.taste, e, true); S.decided[id] = 1; haptic("light"); } }
   render({ bump: !!S.plan[id] });
 }
 function closeDetail() {
@@ -452,6 +478,12 @@ document.addEventListener("click", (ev) => {
   if (a === "url") return openUrl(v);
   if (a === "more") return t.classList.toggle("open");
   if (a === "ics") return exportIcs();
+  if (a === "taste-reset") { S.taste = Taste.empty(); haptic("select"); render(); return; }
+  if (a === "taste-copy") {
+    const cats = {}; Taste.top(S.taste, Date.now(), 12).filter((x) => x.key.startsWith("cat:")).forEach((x) => (cats[x.key.slice(4)] = +x.aff.toFixed(2)));
+    try { navigator.clipboard.writeText(JSON.stringify({ n: S.taste.n, cats })); haptic("success"); } catch {}
+    return;
+  }
   if (a === "dates") return openSheet();
   if (a === "sheetclose") return closeSheet();
   if (a === "day") {
@@ -512,7 +544,7 @@ function bindPlanRows() {
         if (moved) suppress = true;
         if (dx < -90) {
           w.classList.add("gone"); haptic("select");
-          setTimeout(() => { const id = w.dataset.row; delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; render(); }, 320);
+          setTimeout(() => { const id = w.dataset.row; const pe = itemById(id); if (pe) Taste.retract(S.taste, pe, true); delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; render(); }, 320);
         } else { r.classList.add("back"); r.style.transform = ""; }
       },
     });

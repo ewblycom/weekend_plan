@@ -64,3 +64,14 @@ def test_place_site_discovery():
     assert links[1] == "https://www.absolutnibowling.cz/cenik"
     assert pick_site("Absolutní Bowling", links) == "https://www.absolutnibowling.cz/"
     assert pick_site("Absolutní Bowling", ["https://www.facebook.com/absolutnibowling", "https://other.cz/"]) is None
+
+
+def test_profile_quota_and_loading(tmp_path):
+    from scraper import profile
+    f = tmp_path / "p.json"
+    f.write_text('{"n": 40, "cats": {"theater": 0.8, "exhibition": -0.3}}')
+    assert profile.load(f) == {"theater": 0.8, "exhibition": -0.3}
+    f.write_text('{"n": 5, "cats": {"theater": 0.8}}')
+    assert profile.load(f) == {}            # мало решений — не доверяем
+    assert profile.load(tmp_path / "none.json") == {}
+    assert profile.quota(40, 0.8) == 72 and profile.quota(40, -0.9) == 20 and profile.quota(10, -0.5) == 10

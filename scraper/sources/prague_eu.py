@@ -17,6 +17,7 @@ from datetime import date, timedelta
 
 from ..dates import NUMERIC_RANGE, overlaps, parse_range
 from ..extract import external_links, facebook_event, meta, soup_of
+from .. import profile
 from ..models import Event
 
 log = logging.getLogger(__name__)
@@ -153,11 +154,14 @@ def collect(fetcher, max_per_category: int = 40, today: date | None = None,
             horizon_days: int = 21, max_details: int = 60) -> list[Event]:
     today = today or date.today()
     out: list[Event] = []
+    interests = profile.load()
     for slug, cat in CATEGORIES.items():
         html = fetcher.get(listing_url(slug))
         if not html:
             continue
-        items = parse_listing(html, cat)[:max_per_category]
+        # театр лежит внутри «predstaveni», поэтому квоту смотрим по любой из его категорий
+        aff = max(interests.get(c, 0.0) for c in ({cat, "theater"} if cat == "show" else {cat}))
+        items = parse_listing(html, cat)[:profile.quota(max_per_category, aff) if interests else max_per_category]
         log.info("prague.eu/%s: %d событий", slug, len(items))
         out.extend(items)
     # Страницы событий открываем только для ближайших дат: оттуда берём сеансы и прямые ссылки.
