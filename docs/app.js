@@ -136,6 +136,28 @@ function restore() {
   cloudLoadPlan();
 }
 
+// ---------- сигналы для парсера ----------
+// Каждый лайк/пропуск тихо уходит в базу (только добавление; читает её лишь парсер). Нет связи — копим на устройстве.
+const SIG = { url: "https://rdibhhnbqvrgujfxranx.supabase.co/rest/v1/weekend_signals", key: "sb_publishable_1190WjPfc4t11x7o_t6Gxw_llCobWE2" };
+let sigTimer = 0;
+function signal(action, e) {
+  if (!e) return;
+  const row = { action, category: e.kind === "place" ? null : e.category || null, place_kind: e.kind === "place" ? e.placeKind || null : null,
+    venue: (e.venue || "").split(/[,—]/)[0].trim().slice(0, 120) || null, title: (e.title || "").slice(0, 200), lang: e.lang || null,
+    free: !!e.free, price_from: Number.isInteger(e.price_from) ? e.price_from : null, item_id: String(e.id || "").slice(0, 200) };
+  const q = load("sig1", []); q.push({ ...row, created_at: new Date().toISOString() });
+  try { localStorage.setItem("sig1", JSON.stringify(q.slice(-500))); } catch {}
+  clearTimeout(sigTimer); sigTimer = setTimeout(flushSignals, 1500);
+}
+function flushSignals() {
+  const q = load("sig1", []); if (!q.length || !navigator.onLine) return;
+  fetch(SIG.url, { method: "POST", keepalive: true, headers: { apikey: SIG.key, Authorization: "Bearer " + SIG.key, "Content-Type": "application/json", Prefer: "return=minimal" }, body: JSON.stringify(q) })
+    .then((r) => { if (r.ok) { const rest = load("sig1", []).slice(q.length); try { localStorage.setItem("sig1", JSON.stringify(rest)); } catch {} } })
+    .catch(() => {});
+}
+addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") flushSignals(); });
+addEventListener("online", flushSignals);
+
 // ---------- данные ----------
 const slotsIn = (e, a, b) => (e.slots || []).filter((x) => x.date >= a && x.date <= b);
 function overlaps(e, a, b) {
@@ -275,7 +297,7 @@ function planHtml() {
       ${p.time ? `<span class="tm">${esc(p.time)}</span>` : ""}<span class="dot"></span></button></div>`;
   const body = Object.entries(groups).map(([d, ps]) => `<section class="day"><div class="dh">${d === "any"
     ? '<span class="any">КОГДА УГОДНО</span>' : `<b>${dt(d).getDate()}</b><span>${WDL[dt(d).getDay()]}</span>`}</div>${ps.map(row).join("")}</section>`).join("");
-  return `<div class="plan"><div class="hd"><h1 data-act="taste-copy">План</h1>${xs.some((p) => p.date) ? `<button class="btn ink" data-act="ics">${IC.cal(18)}<span>В календарь</span></button>` : ""}</div>
+  return `<div class="plan"><div class="hd"><h1>План</h1>${xs.some((p) => p.date) ? `<button class="btn ink" data-act="ics">${IC.cal(18)}<span>В календарь</span></button>` : ""}</div>
     ${body || `<div class="empty"><div class="big">ПУСТО</div>Свайпни вправо то, что нравится<div class="btns"><button class="btn ink" data-act="tab" data-v="feed">В ленту</button></div></div>`}</div>`;
 }
 function tabsHtml() {
@@ -388,7 +410,7 @@ function snapshot(e) {
 }
 function decide(id, like) {
   S.decided[id] = like ? 1 : 0; S.history.push(id); if (S.top === id) S.top = null;
-  const it = itemById(id); if (it) Taste.record(S.taste, it, !!like);
+  const it = itemById(id); if (it) { Taste.record(S.taste, it, !!like); signal(like ? "like" : "skip", it); }
   if (like) { const e = itemById(id); if (e) S.plan[id] = snapshot(e); haptic("light"); } else haptic("select");
   render({ enter: "enter", bump: like });
 }
@@ -402,7 +424,7 @@ function fly(card, like) {
 function swipeTop(like) { const c = $(".card.top"); if (c) fly(c, like); }
 function undo() {
   const id = S.history.pop(); if (!id) return;
-  const prev = itemById(id); if (prev && S.decided[id] !== undefined) Taste.retract(S.taste, prev, S.decided[id] === 1, Date.now());
+  const prev = itemById(id); if (prev && S.decided[id] !== undefined) { Taste.retract(S.taste, prev, S.decided[id] === 1, Date.now()); signal(S.decided[id] === 1 ? "unlike" : "unskip", prev); }
   if (S.decided[id] === 1) delete S.plan[id];
   delete S.decided[id]; S.top = id; haptic("select");
   render({ enter: "land" });
@@ -415,8 +437,8 @@ function dice() {
   setTimeout(() => { S.top = pick.id; render({ enter: "land" }); haptic("success"); }, 650);
 }
 function togglePlan(id) {
-  if (S.plan[id]) { const e = itemById(id); if (e) Taste.retract(S.taste, e, true); delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; haptic("select"); }
-  else { const e = itemById(id); if (e) { S.plan[id] = snapshot(e); if (S.decided[id] === undefined) Taste.record(S.taste, e, true); S.decided[id] = 1; haptic("light"); } }
+  if (S.plan[id]) { const e = itemById(id); if (e) { Taste.retract(S.taste, e, true); signal("unlike", e); } delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; haptic("select"); }
+  else { const e = itemById(id); if (e) { S.plan[id] = snapshot(e); if (S.decided[id] === undefined) { Taste.record(S.taste, e, true); signal("like", e); } S.decided[id] = 1; haptic("light"); } }
   render({ bump: !!S.plan[id] });
 }
 function closeDetail() {
@@ -459,14 +481,6 @@ document.addEventListener("click", (ev) => {
   if (a === "url") return openUrl(v);
   if (a === "more") return t.classList.toggle("open");
   if (a === "ics") return exportIcs();
-  // скрытая выгрузка интересов для парсера: 5 быстрых нажатий на заголовок «План» копируют профиль в буфер
-  if (a === "taste-copy") {
-    const now = Date.now(); S.tapN = now - (S.tapT || 0) < 2500 ? (S.tapN || 0) + 1 : 1; S.tapT = now;
-    if (S.tapN < 5) return; S.tapN = 0;
-    const cats = {}; Taste.top(S.taste, Date.now(), 12).filter((x) => x.key.startsWith("cat:")).forEach((x) => (cats[x.key.slice(4)] = +x.aff.toFixed(2)));
-    try { navigator.clipboard.writeText(JSON.stringify({ n: S.taste.n, cats })); haptic("success"); } catch {}
-    return;
-  }
   if (a === "dates") return openSheet();
   if (a === "sheetclose") return closeSheet();
   if (a === "day") {
@@ -527,7 +541,7 @@ function bindPlanRows() {
         if (moved) suppress = true;
         if (dx < -90) {
           w.classList.add("gone"); haptic("select");
-          setTimeout(() => { const id = w.dataset.row; const pe = itemById(id); if (pe) Taste.retract(S.taste, pe, true); delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; render(); }, 320);
+          setTimeout(() => { const id = w.dataset.row; const pe = itemById(id); if (pe) { Taste.retract(S.taste, pe, true); signal("unlike", pe); } delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; render(); }, 320);
         } else { r.classList.add("back"); r.style.transform = ""; }
       },
     });

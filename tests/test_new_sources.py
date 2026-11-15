@@ -70,8 +70,21 @@ def test_profile_quota_and_loading(tmp_path):
     from scraper import profile
     f = tmp_path / "p.json"
     f.write_text('{"n": 40, "cats": {"theater": 0.8, "exhibition": -0.3}}')
-    assert profile.load(f) == {"theater": 0.8, "exhibition": -0.3}
+    assert profile.load_file(f) == {"theater": 0.8, "exhibition": -0.3}
     f.write_text('{"n": 5, "cats": {"theater": 0.8}}')
-    assert profile.load(f) == {}            # мало решений — не доверяем
-    assert profile.load(tmp_path / "none.json") == {}
+    assert profile.load_file(f) == {}            # мало решений — не доверяем
+    assert profile.load_file(tmp_path / "none.json") == {}
     assert profile.quota(40, 0.8) == 72 and profile.quota(40, -0.9) == 20 and profile.quota(10, -0.5) == 10
+
+
+def test_profile_affinities_from_signals():
+    from datetime import datetime, timezone
+    from scraper import profile
+    now = datetime(2026, 11, 15, tzinfo=timezone.utc)
+    mk = lambda a, c, d="2026-11-14T10:00:00Z": {"action": a, "category": c, "created_at": d}
+    rows = [mk("like", "theater") for _ in range(8)] + [mk("skip", "exhibition") for _ in range(6)] + [{"action": "like", "place_kind": "sauna", "created_at": "2026-11-14T10:00:00Z"}]
+    aff = profile.affinities(rows, now)
+    assert aff["theater"] > 0.5 and aff["exhibition"] < 0 and "kind:sauna" in aff
+    old = [mk("like", "theater", "2026-05-01T00:00:00Z") for _ in range(8)]
+    assert profile.affinities(old, now)["theater"] < aff["theater"]          # старые сигналы слабее
+    assert profile.affinities([mk("like", "show"), mk("unlike", "show")], now)["show"] < 0.05   # отменённый лайк не считается

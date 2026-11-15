@@ -7,8 +7,6 @@ from . import config, profile
 from .dates import overlaps
 from .models import Event
 
-_INTERESTS = profile.load()
-
 
 def _has(text: str, markers: list[str]) -> bool:
     return any(m in text for m in markers)
@@ -18,7 +16,7 @@ def score_event(ev: Event, weekend: tuple[date, date]) -> Event:
     title = (ev.title or "").lower()
     blob = " ".join(filter(None, [ev.title, ev.venue, ev.description])).lower()
     s = config.CATEGORY_WEIGHT.get(ev.category, 1.0)
-    s += profile.bonus(_INTERESTS.get(ev.category or "", 0.0))
+    s += profile.bonus(profile.load().get(ev.category or "", 0.0))
     tags: list[str] = []
 
     if ev.lang == "ru":
