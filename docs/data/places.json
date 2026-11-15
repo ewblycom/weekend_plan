@@ -147,7 +147,8 @@
    "map": "Galaxy Laser Game, Bohnická 320/40, Praha 8",
    "site": "https://www.lasergamegalaxy.cz/",
    "booking": "https://rezervace.lasergamegalaxy.cz/",
-   "manual": true
+   "manual": true,
+   "image": "https://www.lasergamegalaxy.cz/img/og_1.png"
   },
   {
    "name": "Kart Centrum Prague Indoor Radotín",
@@ -178,7 +179,8 @@
    "map": "CMKarting, Ringhofferova 115/1, Praha",
    "site": "https://cmkarting.cz/",
    "manual": true,
-   "hours": "10:00–23:00"
+   "hours": "10:00–22:00",
+   "image": "https://www.cmkarting.cz/uploads/hero/20260427-174938-cmk-header-cool-no-text-max-1-e6976164.webp"
   },
   {
    "name": "Zero Latency Prague",
@@ -221,7 +223,8 @@
    "url": "https://www.jumpfamily.cz/zlicin",
    "map": "Jump Family Zličín, Ringhofferova 1, Praha 5",
    "site": "https://www.jumpfamily.cz/zlicin",
-   "manual": true
+   "manual": true,
+   "image": "https://www.jumpfamily.cz/img/logo-fb-6-min.jpg"
   },
   {
    "name": "JumpPark Praha — Jarov",
@@ -231,7 +234,8 @@
    "url": null,
    "map": "JumpPark Praha, Na Jarově 2, Praha 3",
    "site": "https://jarov.jumppark.cz/",
-   "manual": true
+   "manual": true,
+   "hours": "14:00–20:00"
   },
   {
    "name": "Mercuria Laser Game a Pixel",
@@ -241,7 +245,8 @@
    "url": null,
    "map": "Mercuria Laser Game a Pixel, Budějovická 409/1, Praha 4",
    "site": "https://mercurialaser.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://mercurialaser.cz/wp-content/uploads/2024/03/mercuria-nahled.webp"
   },
   {
    "name": "Mercuria Laser Game Lužiny",
@@ -251,7 +256,8 @@
    "url": null,
    "map": "Mercuria Laser Game Lužiny, Archeologická 2256/1, Praha 13",
    "site": "https://mercurialaser.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://mercurialaser.cz/wp-content/uploads/2024/03/mercuria-nahled.webp"
   },
   {
    "name": "Laser Tag Prague",
@@ -271,7 +277,8 @@
    "url": null,
    "map": "Esco Laser Game, Kladenská 417/7, Praha 6",
    "site": "https://escolasergame.cz",
-   "manual": true
+   "manual": true,
+   "hours": "13:00–20:00"
   },
   {
    "name": "Vodafone PLAYzone Arena",
@@ -281,7 +288,8 @@
    "url": null,
    "map": "Vodafone PLAYzone Arena, Roztylská 2321/19, Praha 4 Westfield Chodov",
    "site": "https://playzonearena.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://www.playzonearena.cz/images/og/og-default.jpg"
   },
   {
    "name": "MVP Chill & Gaming space",
@@ -291,7 +299,9 @@
    "url": null,
    "map": "MVP Chill & Gaming space, Spálená 108/51, Praha 1",
    "site": "https://mvpesports.cz/prague",
-   "manual": true
+   "manual": true,
+   "image": "https://static.tildacdn.net/tild3863-3861-4662-b137-646666333765/__2023-02-08__071352.png",
+   "hours": "12:00–08:00"
   },
   {
    "name": "SkillZone",
@@ -301,7 +311,8 @@
    "url": "https://skillzone.cz/",
    "map": "SkillZone Praha",
    "site": "https://skillzone.cz/",
-   "manual": true
+   "manual": true,
+   "image": "https://skillzone.cz/SkillZone_FB_Share.jpg"
   },
   {
    "name": "Najada Games",
@@ -312,7 +323,8 @@
    "map": "Najada Games, Ondříčkova 2166/14, Praha 3",
    "site": "https://www.kudyznudy.cz/aktivity/najada-games",
    "manual": true,
-   "hours": "12:00–19:00"
+   "hours": "12:00–19:00",
+   "image": "https://cdn.kudyznudy.cz/files/9c/9cd31de5-5239-4531-ae39-2d77079734c6.jpg?v=20260521030550"
   },
   {
    "name": "Deskohub",
@@ -322,7 +334,8 @@
    "url": "https://www.kudyznudy.cz/aktivity/deskoherni-klub-kazdou-nedeli",
    "map": "Deskohub Hotel Pulse8, Praha 8",
    "site": "https://www.kudyznudy.cz/aktivity/deskoherni-klub-kazdou-nedeli",
-   "manual": true
+   "manual": true,
+   "image": "https://cdn.kudyznudy.cz/files/5e/5e813794-b74e-4d5a-80e1-1d6580140674.jpg?v=20261018034739"
   },
   {
    "name": "Boulder Na Pláni",
@@ -332,7 +345,8 @@
    "url": null,
    "map": "Boulder Na Pláni, Na Vítězné pláni 1160/1, Praha 4",
    "site": "https://bouldernaplani.cz",
-   "manual": true
+   "manual": true,
+   "hours": "15:00–21:30"
   },
   {
    "name": "Lokal Blok — boulder",
@@ -362,7 +376,9 @@
    "url": null,
    "map": "Lezecká stěna Třináctka, Jeremiášova 2581/2, Praha 13",
    "site": "https://stenatrinactka.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://stenatrinactka.cz/media/cache/65/30/65305bffe514688ff3a09596722e412a/frame_513538.jpg",
+   "hours": "07:00–22:30"
   },
   {
    "name": "BigWall",
@@ -372,7 +388,9 @@
    "url": null,
    "map": "Lezecká stěna BigWall, Ocelářská 891/16, Praha 9",
    "site": "https://big-wall.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://www.big-wall.cz/media/cache/f6/97/f6979cfe9ced0bd5eeeb2164fe6fb08c/frame_513539_fzl1bph.jpg",
+   "hours": "09:00–22:00"
   },
   {
    "name": "Pinball Museum 1990",
@@ -392,7 +410,9 @@
    "url": null,
    "map": "Joystick Bar, Jindřišská 5, Praha 1",
    "site": "https://joystickbar.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://www.joystickbar.cz/og-default.png",
+   "hours": "18:00–02:00"
   },
   {
    "name": "The House of Axes",
@@ -402,7 +422,8 @@
    "url": "https://prague.eu/cs/objevujte/the-house-of-axes/",
    "map": "The House of Axes Praha",
    "site": "https://prague.eu/cs/objevujte/the-house-of-axes/",
-   "manual": true
+   "manual": true,
+   "image": "https://cdn.praguecitytourism.city/2024/03/13063924/f1-3-scaled.jpg"
   },
   {
    "name": "Kluziště Vyšehrad",
@@ -413,7 +434,8 @@
    "map": "Kluziště Vyšehrad, 5. května 1640/65, Praha 4",
    "site": "https://jdemebruslit.cz/kluzistevysehrad",
    "manual": true,
-   "hours": "13:00–21:00"
+   "hours": "13:00–21:00",
+   "image": "https://jdemebruslit.cz/api/rink-media?id=zip-20260902-b3cdb82b198456-hero"
   },
   {
    "name": "Kluziště Letná",
@@ -423,7 +445,8 @@
    "url": null,
    "map": "Kluziště Letná, Milady Horákové, Praha 7",
    "site": "https://praha7.cz/kluziste-26",
-   "manual": true
+   "manual": true,
+   "image": "https://www.praha7.cz/wp-content/uploads/2026/10/kluziste-unor-25-3-scaled.jpeg"
   },
   {
    "name": "Terasa Ice Rink",
@@ -433,7 +456,9 @@
    "url": null,
    "map": "Terasa Ice Rink, Terasa Smíchov, Praha 5",
    "site": "https://terasasmichov.cz/",
-   "manual": true
+   "manual": true,
+   "image": "https://terasasmichov.cz/wp-content/uploads/2023/12/DSC04748-1024x683.jpg",
+   "hours": "09:00–20:00"
   },
   {
    "name": "Zimní bruslení — Malá sportovní hala",
@@ -443,7 +468,8 @@
    "url": "https://www.kudyznudy.cz/akce/brusleni-v-male-sportovni-hale-incheba-na-vystavis",
    "map": "Malá sportovní hala, Výstaviště, Praha 7",
    "site": "https://www.kudyznudy.cz/akce/brusleni-v-male-sportovni-hale-incheba-na-vystavis",
-   "manual": true
+   "manual": true,
+   "image": "https://cdn.kudyznudy.cz/files/e5/e5596f19-816d-4c41-b6ea-1b59516096f1.jpg?v=20260715213031"
   },
   {
    "name": "Aquapalace Praha — Мир саун",
@@ -453,7 +479,8 @@
    "url": "https://www.aquapalace.cz/en/banya-days",
    "map": "Aquapalace Praha, Čestlice",
    "site": "https://www.aquapalace.cz/en/banya-days",
-   "manual": true
+   "manual": true,
+   "image": "https://cdn7.aquapalace.cz/im/aqp/jpeg/1200/0/microsites/img_thumbnail3b4b2100-20e4-4fda-be38-ab6627e938d9_1736777744.png"
   },
   {
    "name": "Sauna Central",
@@ -463,7 +490,8 @@
    "url": null,
    "map": "Sauna Central, Ve Smečkách 1593/19, Praha 1",
    "site": "https://saunacentral.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://saunacentral.cz/media/seo.jpg"
   },
   {
    "name": "Modrá Zebra",
@@ -473,7 +501,8 @@
    "url": null,
    "map": "Modrá Zebra, Branická 397/241, Praha 4",
    "site": null,
-   "manual": true
+   "manual": true,
+   "site_searched": true
   },
   {
    "name": "Chateau St. Havel",
@@ -483,7 +512,8 @@
    "url": null,
    "map": "Chateau St. Havel, Praha 4 Krč",
    "site": "https://chateauhotel.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://chateauhotel.cz/templates/obrazek_zamku.png?width=600"
   },
   {
    "name": "Lázně TOM — приватный wellness",
@@ -503,7 +533,8 @@
    "url": "https://www.kudyznudy.cz/aktivity/privatni-sauna",
    "map": "Relax Studio Troja, Praha 8",
    "site": "https://www.kudyznudy.cz/aktivity/privatni-sauna",
-   "manual": true
+   "manual": true,
+   "image": "https://cdn.kudyznudy.cz/files/71/71dee6a9-c419-4ff4-b302-450b537bf522.jpg?v=20241115114612"
   },
   {
    "name": "Wellness Bohemia",
@@ -523,7 +554,8 @@
    "url": "https://www.visitczechia.com/es-ES/Things-to-Do/Places/Spa-and-Wellness/Beer-and-Wine-Spa/g-prague-original-beer-spa",
    "map": "Original Beer Spa, Žitná 9/658, Praha 1",
    "site": "https://www.visitczechia.com/es-ES/Things-to-Do/Places/Spa-and-Wellness/Beer-and-Wine-Spa/g-prague-original-beer-spa",
-   "manual": true
+   "manual": true,
+   "image": "https://cdn.visitczechia.com/cms/getwebpmedia/acf89bf2-7534-45e0-ae6c-64eb9f829d13/Prague-Original-Beer-Spa-KzN.jpg?width=768"
   }
  ]
 }

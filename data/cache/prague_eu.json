@@ -205,6 +205,13 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/certi-na-certovce/": {
+"booking": "https://www.certinacertovce.cz/event-details/certi-na-certovce-2026-2",
+"description": "5. prosince 2026 znovu ožijí břehy Vltavy oblíbenou rodinnou akcí Čerti na Čertovce. Každoroční mikulášské plavby promění okolí pražské Čertovka v pohádkovou scénu plnou ohně, čertovských příběhů a napětí, které děti milují. Na březích se rozparádí čertovská cháska a z temných zákoutí bude vyprávět strašidelné, ale laskavé příběhy. Na palubě celodřevěných lodí však zůstanete v teple a bezpečí. Během přibližně 30minutové plavby na lodích typu Vodouch a Bivoj potkáte nejen čerty, ale i anděla a samotného Mikuláše, který hodné děti náležitě odmění. Přijďte si užít kouzelnou atmosféru adventní Prahy z hladiny řeky a dopřejte dětem nezapomenutelný mikulášský zážitek.",
+"fetched": "2026-11-15",
+"link": "https://www.certinacertovce.cz/",
+"slots": []
+},
 "https://prague.eu/cs/akce/cesko-belgie/": {
 "booking": "https://www.ticketportal.cz/event/Cesko-Belgie",
 "description": "Čeští basketbalisté se 29. listopadu v pražské hale Královka utkají s Belgií v důležitém zápase předkvalifikace EuroBasket 2029. Přijďte podpořit národní tým a zároveň být u mimořádného okamžiku, kdy se s reprezentační kariérou rozloučí dlouholetý lídr českého basketbalu Tomáš Satoranský. Pro zkušeného rozehrávače půjde o poslední utkání v národním dresu, v němž naváže na svůj dosud poslední reprezentační start proti Slovinsku.",
@@ -1176,6 +1183,13 @@
 "link": "https://www.designmuseumprague.com",
 "slots": []
 },
+"https://prague.eu/cs/akce/hrncirske-a-remeslne-trhy/": {
+"booking": null,
+"description": "Tradiční hrnčířské trhy se z Berouna v předvánočním období stěhují do Prahy. Ti, kdo mají rádi výrobky z hlíny, tak mají příležitost k nákupům na ploše před Průmyslovým palácem. Keramika a umělecká užitá řemesla v nepřeberném množství od 130 řemeslníků z celé České republiky.",
+"fetched": "2026-11-15",
+"link": "https://navystavisti.cz/udalosti/hrncirske-a-remeslne-trhy/?termin=5&program=154",
+"slots": []
+},
 "https://prague.eu/cs/akce/hrrr-na-ne/": {
 "booking": "https://zdjc.cz/cs/program/hrrr-na-ne/",
 "description": "Dva herci, jedno jeviště (nebo někdy také dvorek divadla) a hrrr na ně! Husitská výprava může začít!",
@@ -1316,6 +1330,13 @@
 "description": "Karlínská husa 2026 zve na den plný podzimních chutí, vůní a příjemné atmosféry v srdci Karlína. Karlínské náměstí ožije tradičními husími specialitami, svatomartinským vínem, pestrou nabídkou občerstvení i kulturním programem pro všechny generace. K zakoupení budou gastronomické speciality inspirované podzimní sezonou, sladké dobroty. a výběr vín, která k období sv. Martina patří. Přijďte si užít pohodovou listopadovou neděli plnou dobrého jídla, hudby a setkávání pod širým nebem.",
 "fetched": "2026-11-14",
 "link": "https://www.facebook.com/events/1839195380419259",
+"slots": []
+},
+"https://prague.eu/cs/akce/karlinske-vanocni-trhy/": {
+"booking": null,
+"description": "Nasajte kouzlo adventu na Karlínském náměstí. V neděli 6. prosince vás čekají tradiční vánoční trhy plné sváteční atmosféry, vůně svařeného vína, vánočních dobrot a oblíbených koled. Chybět nebude dřevěný betlém ani Ježíškova pošta, kde mohou děti odeslat svá přání Ježíškovi. Zůstaňte až do setmění a vychutnejte si pohled na slavnostně rozsvícený vánoční strom a kostel sv. Cyrila a Metoděje.",
+"fetched": "2026-11-15",
+"link": "https://www.facebook.com/events/912311148165753",
 "slots": []
 },
 "https://prague.eu/cs/akce/kasparek-v-pekle/": {
@@ -1611,12 +1632,56 @@
 "link": "https://www.museumkampa.cz",
 "slots": []
 },
+"https://prague.eu/cs/akce/mikulas-na-kampe/": {
+"booking": null,
+"description": "Mikuláš na Kampě patří k tradičním pražským předvánočním akcím, jejíž součástí je také slavnostní rozsvícení vánočního stromu. Návštěvníky čeká setkání s Mikulášem, anděly a čerty, mikulášská nadílka pro děti i bohatý doprovodný program. V romantickém prostředí ostrova Kampa nebudou chybět vánoční dobroty, tradiční malostranský betlém ani jedinečná adventní atmosféra historické Malé Strany.",
+"fetched": "2026-11-15",
+"link": "https://sopmsh.estranky.cz/clanky/co-se-chysta/vanoce-na-kampe-----2026.html",
+"slots": []
+},
 "https://prague.eu/cs/akce/mikulas-prahy-7-na-vystavisti/": {
 "booking": null,
 "description": "Praha 7 zve malé i velké na mikulášské bruslení na Výstavišti. 29. listopadu v Malé sportovní hale, s bruslemi i bez.",
 "fetched": "2026-11-14",
 "link": "https://navystavisti.cz/udalosti/mikulas-prahy-7/?termin=620&program=154",
 "slots": []
+},
+"https://prague.eu/cs/akce/mikulas-v-muzeu-mhd/": {
+"booking": "https://www.dpp.cz/zabava-a-zazitky/historie-dpp/muzeum-mhd",
+"description": "Mikulášské odpoledne ve vozovně Střešovice. Cinkot tramvají vystřídá mikulášský zvoneček. Mikuláš, anděl a čert potěší děti mezi historickými exponáty muzea MHD.",
+"fetched": "2026-11-15",
+"link": "https://www.dpp.cz/spolecnost/aktuality/detail/66_3256-kalendar-akci-2026",
+"slots": []
+},
+"https://prague.eu/cs/akce/mikulas-v-narodopisnem-muzeu/": {
+"booking": "https://www.nm.cz/navstivte-nas/program/akce/mikulas-v-narodopisnem-muzeu1",
+"description": "Vydejte se s dětmi do Národopisného muzea na tradiční mikulášské odpoledne! Čeká vás setkání s Mikulášem, andělem a čertem, připomenutí lidových zvyků i tvořivé dílny, ve kterých si děti vyrobí čertíka ze sušených švestek nebo slaměný řetěz na vánoční stromeček. Užijte si příjemnou předvánoční atmosféru a objevte kouzlo českých lidových tradic.",
+"fetched": "2026-11-15",
+"link": "https://www.nm.cz/navstivte-nas/program/akce/mikulas-v-narodopisnem-muzeu1",
+"slots": []
+},
+"https://prague.eu/cs/akce/mikulas-v-zoo/": {
+"booking": "https://www.zoopraha.cz/navsteva/program/week.listevents/2026/11/12/-",
+"description": "5. prosince zavítá do Zoo Praha Mikuláš, anděl i čert, kteří se postarají o pravou předvánoční atmosféru a potěší zejména nejmenší návštěvníky. Součástí programu bude také tematické komentované krmení ďáblů medvědovitých v Darwinově kráteru, kde se symbolicky setká pohádkový čert se svým zvířecím jmenovcem. Mikulášská nadílka, zábava pro děti i nevšední zážitky se zvířaty udělají z návštěvy zoo příjemné adventní zastavení pro celou rodinu.",
+"fetched": "2026-11-15",
+"link": "https://www.zoopraha.cz",
+"slots": []
+},
+"https://prague.eu/cs/akce/mikulas-ve-stare-cistirne/": {
+"booking": "https://vstupenky.staracistirna.cz/ticket/detail/4582",
+"description": "Mikulášskou atmosféru v industriálním prostředí Staré čistírny odpadních vod v Bubenči oživí představení Mikulášské divadlo ve Staré čistírně. Představení v podání Sacra Cirkus nabídne jedinečnou kombinaci pohádky a ohnivé show. Těšit se můžete i na Mikuláše na chůdách, anděla a čerty chrlící oheň.",
+"fetched": "2026-11-15",
+"link": "https://vstupenky.staracistirna.cz/ticket/detail/1621",
+"slots": [
+{
+"date": "2026-12-05",
+"time": "11:00"
+},
+{
+"date": "2026-12-05",
+"time": "18:00"
+}
+]
 },
 "https://prague.eu/cs/akce/mikulasske-jizdy-prahou-a-okolim-aneb-po-certech-dobra-zabava-na-kolejich/": {
 "booking": null,
@@ -2627,6 +2692,13 @@
 "link": "https://www.muzeumprahy.cz",
 "slots": []
 },
+"https://prague.eu/cs/akce/vanoce-vanoce-mikulas-nadeluje/": {
+"booking": null,
+"description": "Muzeum Prahy zve na sváteční program inspirovaný jednou z nejoblíbenějších adventních tradic. Rodiny s dětmi se mohou zapojit do mikulášského pátrání v muzejních sálech a vydat se po stopách Mikuláše, který si letos pro malé návštěvníky připravil netradiční schovávanou. V rámci programu bude i adventní dílna zaměřená na výrobu tradičních vánočních ozdob ze slámy. Akce nabídne příjemné adventní zastavení v kulisách muzea a možnost užít si předvánoční atmosféru s celou rodinou.",
+"fetched": "2026-11-15",
+"link": "https://www.muzeumprahy.cz/vystavy-a-akce/vanoce-vanoce-mikulas-nadeluje",
+"slots": []
+},
 "https://prague.eu/cs/akce/vanoce-vanoce-stromecek-sviti/": {
 "booking": null,
 "description": "Přijďte si užít adventní atmosféru do Muzea Prahy! Čeká vás tvořivá dílna, ve které si děti vyrobí vlastní papírové vánoční ozdoby a společně jimi ozdobí muzejní stromeček. Chybět nebude ani maskot Grifo, adventní koncert dětského pěveckého sboru a slavnostní rozsvícení vánočního stromku.",
@@ -2667,6 +2739,13 @@
 "description": "Vánoční trhy na Václavském náměstí 2026 nabídnou adventní čas v jeho nejživější podobě, s vůní svařeného vína, ručně vyráběnými dárky z českých dílen a každodenním kulturním programem přímo v srdci města. Dřevěné domky lemující spodní část náměstí spojí tradiční řemesla s moderní gastronomií, zatímco hudební vystoupení, pěvecké sbory i rodinné programy budou doprovázet celé období až do Tří králů.",
 "fetched": "2026-11-14",
 "link": "https://trhypraha.cz",
+"slots": []
+},
+"https://prague.eu/cs/akce/veggie-vanoce/": {
+"booking": null,
+"description": "Veggie Vánoce 2026 přinesou do Galerie Mánes inspiraci pro sváteční období spojené s rostlinnou gastronomií, udržitelnějším životním stylem a ohleduplným přístupem ke zvířatům i životnímu prostředí. Návštěvníci si budou moci projít veganský vánoční trh s nabídkou občerstvení, dárků a lokálních produktů, zúčastnit se přednášek, diskusí a kulinářských ukázek nebo navštívit konferenci Plant-based 2026, která představí aktuální trendy a poznatky z oblasti rostlinné stravy.",
+"fetched": "2026-11-15",
+"link": "https://www.veggievanoce.cz/",
 "slots": []
 },
 "https://prague.eu/cs/akce/vystava-betlemu-2026/": {
