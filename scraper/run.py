@@ -16,7 +16,7 @@ from .dates import overlaps, upcoming_weekend
 from .http import Fetcher
 from .models import Event
 from .score import score_event
-from .sources import goout, kudyznudy, luma, places, prague_eu, telegram, tickettailor, vinegret
+from .sources import food, goout, kudyznudy, luma, places, prague_eu, telegram, tickettailor, vinegret
 
 log = logging.getLogger("scraper")
 OUT = Path(__file__).resolve().parent.parent / "docs" / "data" / "events.json"
@@ -109,6 +109,13 @@ def main(argv: list[str] | None = None) -> int:
             errors["places"] = f"{type(e).__name__}: {e}"
 
     data = build(collected, today, errors)
+    if not args.only or "food" in only:
+        try:
+            food.collect(data["events"], today)
+        except Exception as e:  # еда рядом — приятное дополнение, не критично
+            log.exception("food упал")
+            errors["food"] = f"{type(e).__name__}: {str(e)[:120]}"
+            data["errors"] = errors
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     log.info("Записано %d событий в %s; ошибки: %s", len(data["events"]), args.out, errors or "нет")

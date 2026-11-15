@@ -88,3 +88,17 @@ def test_profile_affinities_from_signals():
     old = [mk("like", "theater", "2026-05-01T00:00:00Z") for _ in range(8)]
     assert profile.affinities(old, now)["theater"] < aff["theater"]          # старые сигналы слабее
     assert profile.affinities([mk("like", "show"), mk("unlike", "show")], now)["show"] < 0.05   # отменённый лайк не считается
+
+
+def test_food_venues_and_items(tmp_path, monkeypatch):
+    from datetime import date
+    from scraper.sources import food
+    assert food.venue_key("Jatka78, Praha 7") == "jatka78" and food.venue_key("Praha") is None
+    evs = [{"venue": "Jatka78, Praha 7", "start": "2026-11-18"}, {"venue": "Jatka78", "start": "2026-11-19"},
+           {"venue": "Rock Cafe — Národní", "start": "2026-11-16"}, {"venue": "Wiener Konzerthaus", "city": "Вена"},
+           {"venue": "Daleko", "start": "2027-03-01"}]
+    assert food.pick_venues(evs, date(2026, 11, 15)) == [("jatka78", "Jatka78"), ("rock cafe", "Rock Cafe")]
+    it = {"title": "Lokál", "totalScore": 4.5, "reviewsCount": 900, "categoryName": "Restaurace", "address": "x", "location": {"lat": 50.1, "lng": 14.4}}
+    assert food.parse_item(it)["rating"] == 4.5 and food.parse_item({**it, "permanentlyClosed": True}) is None
+    monkeypatch.delenv("APIFY_TOKEN", raising=False)
+    assert food.collect(evs, date(2026, 11, 15)) == 0       # без токена тихо пропускаем

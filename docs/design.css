@@ -241,3 +241,12 @@ h1 { margin: 0; font: 700 30px/32px var(--sans); letter-spacing: -.02em; }
 .detail .ph.hero .phk { font-size: 40px; left: var(--edge); bottom: var(--s4); }
 
 .day .dh .mo { color: var(--ink); font-weight: 700; }
+
+.food { margin-top: var(--s5); }
+.food h3 { font: 800 22px/26px var(--display); margin: 0 0 var(--s1); }
+.food .fs { margin: 0 0 var(--s3); font-size: 13px; color: var(--ink-2); }
+.food .frow { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: var(--s3); padding: var(--s3) 0; border: 0; border-top: 1px solid var(--hairline); background: none; text-align: left; color: inherit; font: inherit; }
+.food .frow .tx { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.food .frow b { font-weight: 600; font-size: 15px; }
+.food .frow .tx span { font-size: 13px; color: var(--ink-2); }
+.food .frow .rt { flex: none; min-width: 40px; height: 28px; padding: 0 var(--s2); display: grid; place-items: center; border-radius: var(--r-pill); background: var(--lime); color: #0a0a0b; font-weight: 800; font-size: 13px; }

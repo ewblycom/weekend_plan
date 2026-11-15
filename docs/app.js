@@ -34,7 +34,7 @@ const IC = {
 
 // ---------- состояние ----------
 const S = {
-  events: [], places: [], loaded: false,
+  events: [], places: [], food: {}, loaded: false,
   from: null, to: null, mode: "events", tab: "feed",
   cats: new Set(), kinds: new Set(), ru: false,
   decided: {}, history: [], top: null, taste: Taste.empty(),
@@ -327,6 +327,7 @@ function detailHtml() {
       <p class="meta">${esc(sub || (e.venue || ""))}${first && e.venue ? " · " + esc(e.venue.split(/[,—]/)[0]) : ""}</p>
       ${slotsHtml}
       ${desc.length > 20 ? `<div class="desc" data-act="more">${esc(desc)}</div>` : ""}
+      ${foodHtml(e)}
     </div>
     <div class="dact">
       ${booking ? `<button class="btn ink big" data-act="url" data-v="${esc(booking)}">${IC.ticket(22)}<span>${e.kind === "place" ? "Бронь" : "Билеты"}</span></button>` : ""}
@@ -334,6 +335,18 @@ function detailHtml() {
       <button class="btn sq" data-act="url" data-v="${esc("https://www.google.com/maps/search/" + encodeURIComponent((e.venue || e.title) + ", " + town))}" aria-label="Маршрут">${IC.pin(22)}</button>
       <button class="rb l ${inPlan ? "like" : ""}" data-act="toggle" data-v="${esc(e.id)}" aria-label="${inPlan ? "Убрать из плана" : "Хочу"}">${IC.heart(24)}</button>
     </div></div>`;
+}
+// «Поесть рядом»: данные собирает парсер (Apify) для площадок ближайших событий. Ключ — как в scraper/sources/food.py: venue_key
+const foodKey = (v) => { const k = (v || "").split(/[,—]/)[0].trim().toLowerCase(); return k.length >= 3 ? k.slice(0, 60) : null; };
+function foodHtml(e) {
+  if (e.kind === "place") return "";
+  const k = foodKey(e.venue), list = k && S.food[k];
+  if (!list || !list.length) return "";
+  const venue = (e.venue || "").split(/[,—]/)[0].trim();
+  const row = (p) => `<button class="frow" data-act="url" data-v="${esc(p.url || "https://www.google.com/maps/search/" + encodeURIComponent(p.name + ", Praha"))}">
+    <span class="tx"><b>${esc(p.name)}</b><span>${esc([p.type, p.price].filter(Boolean).join(" · "))}</span></span>
+    ${p.rating ? `<span class="rt">${String(p.rating).replace(".", ",")}</span>` : ""}</button>`;
+  return `<section class="food"><h3>Поесть рядом</h3><p class="fs">Рядом с ${esc(venue)}</p>${list.slice(0, 5).map(row).join("")}</section>`;
 }
 function weekends() {
   const w1 = weekendRange(), t = todayIso();
@@ -558,10 +571,12 @@ function bindDetail() {
 async function boot() {
   restore(); render();
   const bust = `?v=${Date.now()}`;
-  const [ev, pl] = await Promise.all([
+  const [ev, pl, food] = await Promise.all([
     fetch("data/events.json" + bust).then((r) => r.json()),
     fetch("data/places.json" + bust).then((r) => r.json()).catch(() => ({ places: [] })),
+    fetch("data/food.json" + bust).then((r) => r.json()).catch(() => ({})),
   ]);
+  S.food = food || {};
   S.events = (ev.events || []).map((e) => ({ ...e, title: noEmoji(e.title), category: CAT[e.category] ? e.category : "other", tags: (e.tags || []).map(noEmoji) }));
   S.places = pl.places || [];
   S.loaded = true;
