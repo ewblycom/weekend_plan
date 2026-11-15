@@ -70,12 +70,48 @@ function weekendRange() {
 // ---------- хранение: выбор возвращается при следующем заходе ----------
 const load = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
 function cloudSet(k, v) { try { tg && tg.CloudStorage && v.length < 4000 && tg.CloudStorage.setItem(k, v); } catch {} }
-function save() {
+// В облако Telegram (лимит 4096 символов на ключ) кладём только id избранного + дату/время/место,
+// порциями по ключам pn / p0..pN. Полные карточки восстанавливаются из events.json.
+const CHUNK = 3500;
+function cloudSavePlan() {
+  try {
+    if (!(tg && tg.CloudStorage)) return;
+    const rows = Object.values(S.plan).map((p) => [p.id, p.date, p.time, p.place]);
+    const s = JSON.stringify(rows), n = Math.ceil(s.length / CHUNK);
+    for (let i = 0; i < n; i++) tg.CloudStorage.setItem("p" + i, s.slice(i * CHUNK, (i + 1) * CHUNK));
+    tg.CloudStorage.setItem("pn", String(n));
+  } catch (e) { console.warn("cloud save failed", e); }
+}
+function cloudLoadPlan() {
+  try {
+    if (!(tg && tg.CloudStorage)) return;
+    tg.CloudStorage.getItem("pn", (e, v) => {
+      if (e || v === undefined || v === null || v === "") { cloudSavePlan(); return; }  // в облаке пусто: отправим локальное
+      const n = +v, keys = Array.from({ length: n }, (_, i) => "p" + i);
+      if (!n) { S.cloudRows = []; mergeCloud(); return; }
+      tg.CloudStorage.getItems(keys, (e2, o) => {
+        if (e2 || !o) return;
+        try { S.cloudRows = JSON.parse(keys.map((k) => o[k] || "").join("")); mergeCloud(); } catch {}
+      });
+    });
+  } catch {}
+}
+function mergeCloud() {
+  if (!S.cloudRows || !S.loaded) return;
+  const plan = {};
+  S.cloudRows.forEach(([id, date, time, place]) => {
+    if (S.plan[id]) { plan[id] = S.plan[id]; return; }
+    const e = itemById(id);
+    if (e) { plan[id] = { ...snapshot(e), date, time, place }; S.decided[id] = 1; }
+  });
+  S.plan = plan; S.cloudRows = null; save(true); render();
+}
+function save(skipCloud) {
   const sess = JSON.stringify({ from: S.from, to: S.to, mode: S.mode, cats: [...S.cats], kinds: [...S.kinds], ru: S.ru, decided: S.decided, history: S.history.slice(-30), top: S.top });
   try { localStorage.setItem("s2", sess); localStorage.setItem("plan2", JSON.stringify(S.plan)); } catch {}
-  cloudSet("s2", sess);
-  const compact = {}; Object.values(S.plan).forEach((p) => (compact[p.id] = { ...p, description: undefined, image: undefined }));
-  cloudSet("plan2", JSON.stringify(compact));
+  if (skipCloud) return;
+  cloudSet("s2", JSON.stringify({ from: S.from, to: S.to, mode: S.mode, cats: [...S.cats], kinds: [...S.kinds], ru: S.ru }));
+  cloudSavePlan();
 }
 function applySession(o) {
   if (!o || !o.from || o.to < todayIso()) return false;
@@ -88,14 +124,11 @@ function restore() {
   S.plan = load("plan2", {});
   if (!applySession(load("s2", null))) { const [a, b] = weekendRange(); S.from = a; S.to = b; }
   try {
-    tg && tg.CloudStorage && tg.CloudStorage.getItems(["s2", "plan2"], (e, v) => {
-      if (e || !v) return;
-      let changed = false;
-      try { if (v.plan2 && !Object.keys(S.plan).length) { S.plan = JSON.parse(v.plan2); changed = true; } } catch {}
-      try { if (v.s2 && !localStorage.getItem("s2") && applySession(JSON.parse(v.s2))) changed = true; } catch {}
-      if (changed) render();
+    tg && tg.CloudStorage && tg.CloudStorage.getItem("s2", (e, v) => {
+      try { if (!e && v && !localStorage.getItem("s2") && applySession(JSON.parse(v))) render(); } catch {}
     });
   } catch {}
+  cloudLoadPlan();
 }
 
 // ---------- данные ----------
@@ -501,6 +534,7 @@ async function boot() {
   S.events = (ev.events || []).map((e) => ({ ...e, title: noEmoji(e.title), category: CAT[e.category] ? e.category : "other", tags: (e.tags || []).map(noEmoji) }));
   S.places = pl.places || [];
   S.loaded = true;
+  mergeCloud();
   render({ enter: "enter", tiles: true });
 }
 boot().catch((e) => { $("#app").innerHTML = `<div class="loading">Не удалось загрузить: ${esc(e.message)}</div>`; });
