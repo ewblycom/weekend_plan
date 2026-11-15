@@ -164,13 +164,7 @@ function inRange(a = S.from, b = S.to, ru = S.ru) { return S.events.filter((e) =
 function deck() {
   const t0 = (e) => dayOf(e) + (timeOf(e) || "99");
   let xs = inRange().filter((e) => (!S.cats.size || S.cats.has(e.category)) && S.decided[e.id] === undefined);
-  const rank = (e) => Taste.blend(S.taste, e, e.score);
-  xs.sort((x, y) => tier(x) - tier(y) || (tier(x) === 0 ? t0(x).localeCompare(t0(y)) : 0) || rank(y) - rank(x));
-  // каждая 5-я карточка внутри уровня — из малоизвестной категории, чтобы лента не замыкалась в пузырь
-  if (S.taste.n >= 10) for (let i = 4; i < xs.length; i += 5) {
-    const j = xs.findIndex((e, k) => k > i && tier(e) === tier(xs[i]) && Taste.unexplored(S.taste, e));
-    if (j > i) xs.splice(i, 0, xs.splice(j, 1)[0]);
-  }
+  xs.sort((x, y) => tier(x) - tier(y) || (tier(x) === 0 ? t0(x).localeCompare(t0(y)) : 0) || y.score - x.score);
   if (S.top) { const i = xs.findIndex((e) => e.id === S.top); if (i > 0) xs.unshift(xs.splice(i, 1)[0]); }
   return xs;
 }
@@ -192,9 +186,7 @@ function ph(e, cls = "", w = 800) {
 }
 function stickers(e) {
   const out = [];
-  const likeMe = Taste.confidence(S.taste) >= 0.3 && Taste.score(S.taste, e) >= 0.3;
-  if (e.kind === "place") { if (likeMe) out.push('<span class="stk f">В ТВОЁМ ДУХЕ</span>'); if (HOME_AREA.test(e.area || "")) out.push('<span class="stk">РЯДОМ С ДОМОМ</span>'); return out; }
-  if (likeMe) out.push('<span class="stk f">В ТВОЁМ ДУХЕ</span>');
+  if (e.kind === "place") { if (HOME_AREA.test(e.area || "")) out.push('<span class="stk">РЯДОМ С ДОМОМ</span>'); return out; }
   if (tier(e) === 0) out.push('<span class="stk">ТОЛЬКО ЭТИ ВЫХОДНЫЕ</span>');
   else if (e.end && e.end <= addDays(S.to, 3)) out.push('<span class="stk">ПОСЛЕДНИЕ ДНИ</span>');
   if (e.free) out.push('<span class="stk w">БЕСПЛАТНО</span>');
@@ -249,7 +241,7 @@ function headerHtml() {
 function feedHtml(opts = {}) {
   if (S.mode === "places") {
     const xs = placeItems().filter((p) => !S.kinds.size || S.kinds.has(p.placeKind))
-      .sort((a, b) => (HOME_AREA.test(b.area) ? 1 : 0) - (HOME_AREA.test(a.area) ? 1 : 0) || Taste.score(S.taste, b) - Taste.score(S.taste, a));
+      .sort((a, b) => (HOME_AREA.test(b.area) ? 1 : 0) - (HOME_AREA.test(a.area) ? 1 : 0));
     return `<div class="feed"><div class="grid ${opts.tiles ? "in" : ""}">${xs.map((p, i) => `<button class="tile" style="animation-delay:${Math.min(i, 8) * 30}ms" data-act="open" data-v="${esc(p.id)}">
       ${ph(p, "", 420)}${stickers(p)[0] || ""}${S.plan[p.id] ? `<span class="heart">${IC.heart(14)}</span>` : ""}
       <span class="t"><b>${esc(p.title)}</b><span>${esc(p.area)}</span>${p.hours ? `<span class="h">${esc(p.hours)}</span>` : ""}</span></button>`).join("")}</div></div>`;
@@ -273,16 +265,6 @@ function planItems() {
   const t = todayIso();
   return Object.values(S.plan).filter((p) => !p.date || p.date >= t).sort((a, b) => (a.date || "9").localeCompare(b.date || "9") || (a.time || "99").localeCompare(b.time || "99"));
 }
-function tasteHtml() {
-  if (S.taste.n < 5) return "";
-  const rows = Taste.top(S.taste).filter((x) => x.aff > 0.05).map((x) => {
-    const name = x.key.startsWith("kind:") ? KIND[x.key.slice(5)] : CAT1[x.key.slice(4)];
-    return name ? `<div class="tr"><span>${esc(name)}</span><i style="--w:${Math.round(Math.min(1, x.aff) * 100)}%"></i></div>` : "";
-  }).join("");
-  if (!rows) return "";
-  return `<section class="taste"><div class="dh"><span class="any">ТВОЙ ВКУС</span></div>${rows}
-    <p>Лента поднимает похожее. Решений учтено: ${S.taste.n}.</p><div class="btns"><button class="btn" data-act="taste-copy">Профиль для парсера</button><button class="btn" data-act="taste-reset">Сбросить</button></div></section>`;
-}
 function planHtml() {
   const xs = planItems();
   const groups = {};
@@ -293,8 +275,7 @@ function planHtml() {
       ${p.time ? `<span class="tm">${esc(p.time)}</span>` : ""}<span class="dot"></span></button></div>`;
   const body = Object.entries(groups).map(([d, ps]) => `<section class="day"><div class="dh">${d === "any"
     ? '<span class="any">КОГДА УГОДНО</span>' : `<b>${dt(d).getDate()}</b><span>${WDL[dt(d).getDay()]}</span>`}</div>${ps.map(row).join("")}</section>`).join("");
-  return `<div class="plan"><div class="hd"><h1>План</h1>${xs.some((p) => p.date) ? `<button class="btn ink" data-act="ics">${IC.cal(18)}<span>В календарь</span></button>` : ""}</div>
-    ${tasteHtml()}
+  return `<div class="plan"><div class="hd"><h1 data-act="taste-copy">План</h1>${xs.some((p) => p.date) ? `<button class="btn ink" data-act="ics">${IC.cal(18)}<span>В календарь</span></button>` : ""}</div>
     ${body || `<div class="empty"><div class="big">ПУСТО</div>Свайпни вправо то, что нравится<div class="btns"><button class="btn ink" data-act="tab" data-v="feed">В ленту</button></div></div>`}</div>`;
 }
 function tabsHtml() {
@@ -478,8 +459,10 @@ document.addEventListener("click", (ev) => {
   if (a === "url") return openUrl(v);
   if (a === "more") return t.classList.toggle("open");
   if (a === "ics") return exportIcs();
-  if (a === "taste-reset") { S.taste = Taste.empty(); haptic("select"); render(); return; }
+  // скрытая выгрузка интересов для парсера: 5 быстрых нажатий на заголовок «План» копируют профиль в буфер
   if (a === "taste-copy") {
+    const now = Date.now(); S.tapN = now - (S.tapT || 0) < 2500 ? (S.tapN || 0) + 1 : 1; S.tapT = now;
+    if (S.tapN < 5) return; S.tapN = 0;
     const cats = {}; Taste.top(S.taste, Date.now(), 12).filter((x) => x.key.startsWith("cat:")).forEach((x) => (cats[x.key.slice(4)] = +x.aff.toFixed(2)));
     try { navigator.clipboard.writeText(JSON.stringify({ n: S.taste.n, cats })); haptic("success"); } catch {}
     return;
