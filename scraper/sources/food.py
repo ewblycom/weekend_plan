@@ -26,13 +26,24 @@ MAX_WALK_MIN = 10          # «до 10 минут пешком»
 WALK_M_PER_MIN = 80        # ~4,8 км/ч
 DETOUR = 1.3               # по улицам дальше, чем по прямой
 RADIUS_KM = round(MAX_WALK_MIN * WALK_M_PER_MIN / DETOUR / 1000 + 0.05, 2)   # ≈0,67 км по прямой
-SEARCH_LIMIT = 15          # берём с запасом, потом фильтруем по расстоянию и качеству
+SEARCH_LIMIT = 20          # берём с запасом, потом фильтруем по расстоянию и качеству
 KEEP = 6
 MIN_RATING, MIN_REVIEWS = 4.0, 20
 PRAGUE = (49.9, 50.2, 14.2, 14.75)   # lat_min, lat_max, lng_min, lng_max — защита от геокода «не в ту Прагу»
 REFRESH_DAYS = 30
 MAX_VENUES_PER_RUN = 15
 CACHE_VERSION = 2
+# Только рестораны: тип из Google Maps должен быть «…restaurace», бистро или хоспода/пивница с кухней.
+FOOD_TYPE = re.compile(r"restaura|bistro|hospoda|pivnice|gastropub|trattoria|pizzerie|steak|taverna", re.I)
+# Фастфуд и всё, что не про сесть поесть.
+FAST_TYPE = re.compile(r"rychl|fast.?food|občerstven|kebab|bufet|food ?court|kavárn|bar$|čajovn|hotel|centrum|park", re.I)
+FAST_NAME = re.compile(r"mcdonald|\bkfc\b|burger king|subway|starbucks|costa coffee|coffee fellows|bageterie|paul\b|wok to walk|"
+                       r"bistro (makro|tesco)|ikea|pizza hut|domino|five guys|popeyes|t\.g\.i|vapiano|ugo\b|panda express", re.I)
+# Корнеры в торговых центрах: по адресу/«находится в».
+MALL = re.compile(r"palladium|quadrio|nový smíchov|novy smichov|arkády|arkady|westfield|chodov|černý most|cerny most|harfa|atrium flora|"
+                  r"fénix|fenix|letňany|letnany|pop airport|novodvorská plaza|galerie|nákupní|obchodní centrum|shopping|outlet|metropole zličín|"
+                  r"europark|central kladno|oc |o\.c\.|tesco|albert|globus|kaufland|lidl|billa|penny", re.I)
+PRICE_CZK = re.compile(r"(kč|czk)", re.I)
 BAD_VENUE = re.compile(r"^(praha|online|různá místa|various)$", re.I)
 
 
@@ -80,7 +91,7 @@ def parse_item(it: dict, origin: tuple[float, float] | None = None) -> dict | No
     lat, lng = loc.get("lat"), loc.get("lng")
     rec = {k: v for k, v in {
         "name": name, "rating": it.get("totalScore"), "reviews": it.get("reviewsCount"), "type": it.get("categoryName"),
-        "price": it.get("price"), "address": it.get("address"), "url": it.get("url"), "lat": lat, "lng": lng,
+        "price": czk_price(it.get("price")), "address": it.get("address"), "in": it.get("locatedIn"), "url": it.get("url"), "lat": lat, "lng": lng,
     }.items() if v not in (None, "")}
     if origin:
         if lat is None or lng is None:
@@ -93,8 +104,23 @@ def parse_item(it: dict, origin: tuple[float, float] | None = None) -> dict | No
     return rec
 
 
+def czk_price(v) -> str | None:
+    """Цена только в кронах: «200–400 Kč». Чужая валюта (HNL, €, $) → не показываем."""
+    if not isinstance(v, str) or not PRICE_CZK.search(v):
+        return None
+    return re.sub(r"\s*(kč|czk)\s*", " Kč", v.replace("\xa0", " "), flags=re.I).strip()
+
+
+def is_restaurant(p: dict) -> bool:
+    """Ресторан, не фастфуд и не корнер в ТЦ."""
+    t = p.get("type") or ""
+    if not FOOD_TYPE.search(t) or FAST_TYPE.search(t) or FAST_NAME.search(p.get("name") or ""):
+        return False
+    return not MALL.search(" ".join(str(p.get(k) or "") for k in ("in", "address", "name")))
+
+
 def good(p: dict) -> bool:
-    return (p.get("rating") or 0) >= MIN_RATING and (p.get("reviews") or 0) >= MIN_REVIEWS
+    return is_restaurant(p) and (p.get("rating") or 0) >= MIN_RATING and (p.get("reviews") or 0) >= MIN_REVIEWS
 
 
 def rank(p: dict) -> float:
@@ -131,6 +157,22 @@ def fetch_nearby(token: str, origin: tuple[float, float]) -> list[dict]:
     return places[:KEEP]
 
 
+def clean(p: dict) -> dict:
+    q = {k: v for k, v in p.items() if k != "in"}
+    q["price"] = czk_price(p.get("price"))
+    return {k: v for k, v in q.items() if v not in (None, "")}
+
+
+def write_out(cache: dict) -> None:
+    """Публичный файл: фильтр применяется и к старому кэшу — правка правил не требует новых запросов в Apify."""
+    out = {}
+    for k, v in cache.items():
+        places = [clean(p) for p in v.get("places", []) if good(p)][:KEEP]
+        if places:
+            out[k] = places
+    OUT.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+
+
 def collect(events: list[dict], today: date | None = None, token: str | None = None) -> int:
     token = token or os.environ.get("APIFY_TOKEN")
     if not token:
@@ -159,6 +201,6 @@ def collect(events: list[dict], today: date | None = None, token: str | None = N
             log.warning("food: %s — %s", name, str(e).replace(token, "***"))
     CACHE.parent.mkdir(parents=True, exist_ok=True)
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
-    OUT.write_text(json.dumps({k: v["places"] for k, v in cache.items() if v["places"]}, ensure_ascii=False), encoding="utf-8")
+    write_out(cache)
     log.info("food: обновлено площадок %d, с едой %d из %d в кэше", done, sum(1 for v in cache.values() if v["places"]), len(cache))
     return done

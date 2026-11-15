@@ -119,3 +119,14 @@ def test_food_walking_radius_and_ranking(monkeypatch):
     got = [p["name"] for p in food.fetch_nearby("t", o)]
     assert got == ["B", "A"]                                           # C — низкая оценка, D — мало отзывов, E — далеко; B выше A за счёт числа отзывов
     assert food.in_prague(50.07, 14.43) and not food.in_prague(48.2, 16.3)
+
+
+def test_food_only_restaurants_and_czk():
+    from scraper.sources import food
+    r = lambda **k: {"name": "X", "type": "Česká restaurace", "rating": 4.6, "reviews": 300, "address": "Národní 1, Praha", **k}
+    assert food.good(r())
+    for bad in (r(type="Kavárna"), r(type="Rychlé občerstvení"), r(type="Hotel"), r(type="Outletové centrum"),
+                r(name="McDonald's"), r(name="KFC Anděl", type="Restaurace"), r(address="Westfield Chodov, Roztylská 2321"),
+                r(**{"in": "Palladium"}), r(name="Coffee Fellows", type="Restaurace")):
+        assert not food.good(bad), bad
+    assert food.czk_price("200–400\xa0Kč") == "200–400 Kč" and food.czk_price("2\xa0826\xa0HNL") is None and food.czk_price("€10–20") is None
