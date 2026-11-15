@@ -48,6 +48,7 @@ const todayIso = () => iso(new Date());
 const dt = (s) => new Date(s + "T12:00:00");
 const addDays = (s, n) => { const d = dt(s); d.setDate(d.getDate() + n); return iso(d); };
 const WD = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
+const MONG = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
 const WDL = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
 const short = (s) => dt(s).toLocaleDateString("ru-RU", { day: "numeric", month: "short" }).replace(".", "");
 const rangeLabel = (a, b) => {
@@ -296,7 +297,7 @@ function planHtml() {
       <span class="tx"><b>${esc(p.item.title)}</b><span>${esc(p.place || "")}</span></span>
       ${p.time ? `<span class="tm">${esc(p.time)}</span>` : ""}<span class="dot"></span></button></div>`;
   const body = Object.entries(groups).map(([d, ps]) => `<section class="day"><div class="dh">${d === "any"
-    ? '<span class="any">КОГДА УГОДНО</span>' : `<b>${dt(d).getDate()}</b><span>${WDL[dt(d).getDay()]}</span>`}</div>${ps.map(row).join("")}</section>`).join("");
+    ? '<span class="any">КОГДА УГОДНО</span>' : `<b>${dt(d).getDate()}</b><span class="mo">${MONG[dt(d).getMonth()]}</span><span>${WDL[dt(d).getDay()]}</span>`}</div>${ps.map(row).join("")}</section>`).join("");
   return `<div class="plan"><div class="hd"><h1>План</h1>${xs.some((p) => p.date) ? `<button class="btn ink" data-act="ics">${IC.cal(18)}<span>В календарь</span></button>` : ""}</div>
     ${body || `<div class="empty"><div class="big">ПУСТО</div>Свайпни вправо то, что нравится<div class="btns"><button class="btn ink" data-act="tab" data-v="feed">В ленту</button></div></div>`}</div>`;
 }

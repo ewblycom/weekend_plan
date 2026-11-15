@@ -239,3 +239,5 @@ h1 { margin: 0; font: 700 30px/32px var(--sans); letter-spacing: -.02em; }
 .ph .phk { position: absolute; left: 14px; bottom: 10px; right: 10px; font: 800 22px/1 var(--display); letter-spacing: -.02em; color: var(--hairline); text-transform: uppercase; overflow: hidden; white-space: nowrap; }
 .prow .ph .phk, .card .ph .phk { display: none; }
 .detail .ph.hero .phk { font-size: 40px; left: var(--edge); bottom: var(--s4); }
+
+.day .dh .mo { color: var(--ink); font-weight: 700; }
