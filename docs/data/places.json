@@ -530,9 +530,9 @@
    "kind": "sauna",
    "area": "Praha 8 — Troja",
    "note": "Приватная сауна для пар у ботанического сада, музыка и мягкий свет.",
-   "url": "https://www.kudyznudy.cz/aktivity/privatni-sauna",
+   "url": "https://relaxtroja.cz/",
    "map": "Relax Studio Troja, Praha 8",
-   "site": "https://www.kudyznudy.cz/aktivity/privatni-sauna",
+   "site": "https://relaxtroja.cz/",
    "manual": true,
    "image": "https://cdn.kudyznudy.cz/files/71/71dee6a9-c419-4ff4-b302-450b537bf522.jpg?v=20241115114612"
   },
@@ -556,6 +556,88 @@
    "site": "https://www.visitczechia.com/es-ES/Things-to-Do/Places/Spa-and-Wellness/Beer-and-Wine-Spa/g-prague-original-beer-spa",
    "manual": true,
    "image": "https://cdn.visitczechia.com/cms/getwebpmedia/acf89bf2-7534-45e0-ae6c-64eb9f829d13/Prague-Original-Beer-Spa-KzN.jpg?width=768"
+  },
+  {
+   "name": "Sauna Spot Dvorce",
+   "kind": "sauna",
+   "area": "Praha 4 — Podolí",
+   "note": "Сауна-мир на берегу Влтавы: 4 финские сауны с разной температурой, приватная сауна с джакузи, бассейны для охлаждения, зоны отдыха. Рядом с домом.",
+   "url": "https://www.saunaspot.cz/",
+   "map": "Sauna Spot Dvorce, Podolské nábřeží 1110, Praha 4",
+   "site": "https://www.saunaspot.cz/",
+   "manual": true
+  },
+  {
+   "name": "Sauny Vltava",
+   "kind": "sauna",
+   "area": "Praha 4 — Dvorce",
+   "note": "5 саун, типи с живым огнём, частный пляж с заходом во Влтаву и бассейн для охлаждения. Одна из самых больших сауна-миров в стране. Рядом с домом.",
+   "url": "https://saunyvltava.cz",
+   "map": "Sauny Vltava, Praha 4 Dvorce",
+   "site": "https://saunyvltava.cz",
+   "manual": true
+  },
+  {
+   "name": "Infinit Step",
+   "kind": "sauna",
+   "area": "Praha 9 — Vysočany",
+   "note": "Сауна-мир и водный мир: бассейн, джакузи, парная, плавающая сауна. Единственный Infinit в Праге (остальные — Брно и Сенограбы).",
+   "url": "https://step.infinit.cz/cs",
+   "map": "Infinit Step, Malletova 2350/6, Praha 9",
+   "site": "https://step.infinit.cz/cs",
+   "manual": true
+  },
+  {
+   "name": "Infinit Sen",
+   "kind": "sauna",
+   "area": "Senohraby (за Прагой)",
+   "note": "Самый большой уличный сауна-мир возле Праги: 8 саун и термальный бассейн круглый год. Поездка на машине.",
+   "url": "https://www.infinit.cz/cs",
+   "map": "Infinit Sen, Senohraby",
+   "site": "https://www.infinit.cz/cs",
+   "manual": true
+  },
+  {
+   "name": "Lázně na Lodi",
+   "kind": "sauna",
+   "area": "Praha 2 — Nové Město",
+   "note": "Финская сауна на лодке на Рашиновой набережной, вид на Влтаву, до 15 человек.",
+   "url": "https://laznenalodi.cz/",
+   "map": "Lázně na Lodi, Rašínovo nábřeží 30, Praha 2",
+   "site": "https://laznenalodi.cz/",
+   "manual": true,
+   "hours": "17:00–23:00"
+  },
+  {
+   "name": "Saunia Westfield Chodov",
+   "kind": "sauna",
+   "area": "Praha 4 — Chodov",
+   "note": "Сауна-мир на крыше ТЦ Westfield Chodov: разные типы саун, зоны отдыха, ритуалы. Парковка на крыше. Рядом с домом.",
+   "url": "https://www.saunia.cz/westfield-chodov-praha/",
+   "map": "Saunia, OC Westfield Chodov, Roztylská 2321/19, Praha 4",
+   "site": "https://www.saunia.cz/westfield-chodov-praha/",
+   "manual": true,
+   "hours": "09:00–23:00"
+  },
+  {
+   "name": "Chillin — приватный wellness",
+   "kind": "sauna",
+   "area": "Praha 8 — Karlín",
+   "note": "Приватная сауна и джакузи на 2 часа только для вас, бронь онлайн. Сауна без джакузи от 1190 Kč/час.",
+   "url": "https://www.chillin.cz/",
+   "map": "Chillin, Pobřežní 58, Praha 8",
+   "site": "https://www.chillin.cz/",
+   "manual": true
+  },
+  {
+   "name": "Lázně AXA",
+   "kind": "sauna",
+   "area": "Praha 1 — Nové Město",
+   "note": "Городской бассейн с сауной: сухая, инфракрасная, парная; есть смешанные и женские часы.",
+   "url": "https://www.bazenaxa.cz/",
+   "map": "Lázně AXA, Na Poříčí 40, Praha 1",
+   "site": "https://www.bazenaxa.cz/",
+   "manual": true
   }
  ]
 }
