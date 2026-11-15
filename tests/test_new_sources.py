@@ -130,3 +130,13 @@ def test_food_only_restaurants_and_czk():
                 r(**{"in": "Palladium"}), r(name="Coffee Fellows", type="Restaurace")):
         assert not food.good(bad), bad
     assert food.czk_price("200–400\xa0Kč") == "200–400 Kč" and food.czk_price("2\xa0826\xa0HNL") is None and food.czk_price("€10–20") is None
+
+
+
+def test_food_details_fields():
+    from scraper.sources import food
+    it = {"title": "U X", "totalScore": 4.6, "reviewsCount": 300, "categoryName": "Česká restaurace", "imageUrl": "https://lh3/x.jpg",
+          "description": " Domácí kuchyně ", "menu": "https://ux.cz/menu", "location": {"lat": 50.08, "lng": 14.42},
+          "reviewsTags": [{"title": "svíčková", "count": 40}, {"title": "obsluha", "count": 30}, {"title": "guláš", "count": 20}]}
+    p = food.parse_item(it)
+    assert p["img"] == "https://lh3/x.jpg" and p["desc"] == "Domácí kuchyně" and p["menu"].endswith("/menu") and p["tags"] == ["svíčková", "guláš"]

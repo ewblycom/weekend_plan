@@ -352,7 +352,36 @@ function detailHtml() {
 // «Поесть рядом»: данные собирает парсер (Apify): рестораны в радиусе 10 минут пешком от площадки. Ключ — как в scraper/sources/food.py: venue_key
 const MAXWALK = 10;
 const foodKey = (v) => { const k = (v || "").split(/[,—]/)[0].trim().toLowerCase(); return k.length >= 3 && !/^(praha|online|různá místa|various)$/.test(k) ? k.slice(0, 60) : null; };
-const foodList = (e) => { const k = e && foodKey(e.venue); return (k && S.food[k]) || []; };
+const foodRec = (e) => { const k = e && foodKey(e.venue); const v = k && S.food[k]; return Array.isArray(v) ? { p: v } : v || { p: [] }; };
+const foodList = (e) => foodRec(e).p || [];
+const foodAt = (e) => foodRec(e).at || null;
+// ---------- мини-карта без библиотек: тайлы CARTO (OSM) + свои точки ----------
+const TILE = 256;
+const mpx = (lat, lng, z) => { const n = TILE * 2 ** z, r = (lat * Math.PI) / 180; return [((lng + 180) / 360) * n, ((1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2) * n]; };
+const darkUi = () => document.documentElement.dataset.theme === "dark" || (!document.documentElement.dataset.theme && matchMedia("(prefers-color-scheme: dark)").matches);
+function mapHtml(pts, h, link, line) {
+  const W = Math.min(440, window.innerWidth - 40), pad = 44;
+  let z = 17, P;
+  for (; z > 11; z--) {
+    P = pts.map((p) => mpx(p.lat, p.lng, z));
+    const xs = P.map((q) => q[0]), ys = P.map((q) => q[1]);
+    if (Math.max(...xs) - Math.min(...xs) <= W - 2 * pad && Math.max(...ys) - Math.min(...ys) <= h - 2 * pad) break;
+  }
+  P = pts.map((p) => mpx(p.lat, p.lng, z));
+  const xs = P.map((q) => q[0]), ys = P.map((q) => q[1]);
+  const cx = (Math.min(...xs) + Math.max(...xs)) / 2, cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+  const x0 = cx - W / 2, y0 = cy - h / 2, style = darkUi() ? "dark_all" : "light_all";
+  let tiles = "";
+  for (let tx = Math.floor(x0 / TILE); tx <= Math.floor((x0 + W) / TILE); tx++)
+    for (let ty = Math.floor(y0 / TILE); ty <= Math.floor((y0 + h) / TILE); ty++)
+      tiles += `<img alt="" draggable="false" style="left:${tx * TILE - x0}px;top:${ty * TILE - y0}px" src="https://${"abcd"[(tx + ty) & 3]}.basemaps.cartocdn.com/${style}/${z}/${tx}/${ty}@2x.png">`;
+  const at = (i) => [P[i][0] - x0, P[i][1] - y0];
+  const ln = line != null ? (() => { const [a, b] = [at(0), at(line)]; return `<svg class="mln" width="${W}" height="${h}"><line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}"/></svg>`; })() : "";
+  const pins = pts.map((p, i) => { const [x, y] = at(i);
+    return p.kind === "venue" ? `<span class="mpin v" style="left:${x}px;top:${y}px"><i></i><b>${esc(p.label)}</b></span>`
+      : `<button class="mpin ${p.kind === "sel" ? "s" : "f"}" style="left:${x}px;top:${y}px" ${p.act ? `data-act="${p.act}" data-v="${p.v}"` : ""} aria-label="${esc(p.label)}">${p.n ? p.n : ""}</button>`; }).join("");
+  return `<div class="map" style="height:${h}px"><div class="mt" ${link ? `data-act="url" data-v="${esc(link)}"` : ""}>${tiles}</div>${ln}${pins}<span class="mattr">© OpenStreetMap · © CARTO</span></div>`;
+}
 const venueName = (e) => (e.venue || "").split(/[,—]/)[0].trim();
 const rating = (p) => (p.rating ? `<span class="rt">${(+p.rating).toFixed(1).replace(".", ",")}</span>` : "");
 const placeMeta = (p) => [p.type, p.min ? p.min + " мин пешком" : ""].filter(Boolean).join(" · ");
@@ -366,9 +395,12 @@ const mapsFood = (e) => "https://www.google.com/maps/search/" + encodeURICompone
 function foodSheetHtml() {
   const e = itemById(S.fsheet); if (!e) return "";
   const list = foodList(e);
-  const rows = list.map((p, i) => `<button class="frow" data-act="fplace" data-v="${i}"><span class="tx"><b>${esc(p.name)}</b><span>${esc(placeMeta(p))}</span></span>${rating(p)}</button>`).join("");
+  const at = foodAt(e);
+  const map = at && list.some((p) => p.lat) ? mapHtml([{ lat: at[0], lng: at[1], kind: "venue", label: venueName(e) },
+    ...list.map((p, i) => ({ lat: p.lat, lng: p.lng, kind: "food", n: i + 1, act: "fplace", v: i, label: p.name })).filter((q) => q.lat)], 200, mapsFood(e)) : "";
+  const rows = list.map((p, i) => `<button class="frow" data-act="fplace" data-v="${i}"><span class="fth">${p.img ? `<img loading="lazy" alt="" src="${esc(thumb(p.img, 160))}" onerror="this.remove()">` : ""}<i>${i + 1}</i></span><span class="tx"><b>${esc(p.name)}</b><span>${esc(placeMeta(p))}</span></span>${rating(p)}</button>`).join("");
   const body = list.length
-    ? `<div class="fseg" role="tablist"><button class="${S.fside === "before" ? "on" : ""}" data-act="fside" data-v="before">До</button><button class="${S.fside === "after" ? "on" : ""}" data-act="fside" data-v="after">После</button></div><div class="flist">${rows}</div>`
+    ? `<div class="fseg" role="tablist"><button class="${S.fside === "before" ? "on" : ""}" data-act="fside" data-v="before">До</button><button class="${S.fside === "after" ? "on" : ""}" data-act="fside" data-v="after">После</button></div>${map}<div class="flist">${rows}</div>`
     : `<div class="fempty"><div class="big">ПУСТО</div><p>Пока нет мест рядом.</p><button class="btn ink big" data-act="url" data-v="${esc(mapsFood(e))}">${IC.pin(22)}<span>Искать на карте</span></button></div>`;
   return `<div class="scrim fz" data-act="fclose"></div><section class="sheet fz" id="fsheet" aria-label="Поесть рядом"><span class="handle"></span>
     <div class="fsh"><h2>ПОЕСТЬ РЯДОМ</h2><p class="fs">Рядом с ${esc(venueName(e))}</p>${body}</div></section>`;
@@ -376,18 +408,25 @@ function foodSheetHtml() {
 function restaurantHtml() {
   const f = S.fplace, e = f && itemById(f.eid), p = f && f.p; if (!e || !p) return "";
   const d = S.dinner[e.id], on = !!(d && d.p.name === p.name);
-  const word = (p.type || "Ресторан").split(/[\s,/]+/)[0];
+  const word = (p.type || "Ресторан").replace(/\s*restaurace\s*/i, "").split(/[\s,/]+/)[0] || "Ресторан";
   const meta = [p.type, p.price, p.reviews ? p.reviews + " отзывов" : ""].filter(Boolean).join(" · ");
   const route = "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=" + encodeURIComponent(venueName(e) + ", Praha") + "&destination=" + encodeURIComponent(p.name + (p.address ? ", " + p.address : ", Praha"));
+  const at = foodAt(e);
+  const map = at && p.lat ? mapHtml([{ lat: at[0], lng: at[1], kind: "venue", label: venueName(e) }, { lat: p.lat, lng: p.lng, kind: "sel", label: p.name }], 180, route, 1) : "";
+  const hero = p.img ? `<div class="ph hero"><img alt="" src="${esc(thumb(p.img, 900))}" onerror="this.remove()"><span class="phk">${esc(word)}</span></div>` : `<div class="ph hero"><span class="phk">${esc(word)}</span></div>`;
   return `<div class="detail rcard" id="rcard" role="dialog" aria-label="${esc(p.name)}">
     <button class="x glass" data-act="fplaceclose" aria-label="Закрыть">${IC.down(20)}</button>
-    <div class="ph hero"><span class="phk">${esc(word)}</span></div>
+    ${hero}
     <div class="stks">${p.min ? `<span class="stk">${p.min} МИН ПЕШКОМ</span>` : ""}</div>
     <div class="sh"><span class="handle"></span>
       <div class="rtl"><h1>${esc(p.name)}</h1>${rating(p)}</div>
       <p class="meta">${esc(meta)}</p>
+      ${p.desc ? `<p class="rdesc">${esc(noEmoji(p.desc))}</p>` : ""}
+      ${p.tags && p.tags.length ? `<h3 class="rh">Хвалят в отзывах</h3><div class="slots">${p.tags.map((t) => `<span class="slot">${esc(t)}</span>`).join("")}</div>` : ""}
+      ${p.menu || p.web ? `<button class="fentry" data-act="url" data-v="${esc(p.menu || p.web)}"><span class="tx"><b>${p.menu ? "Меню" : "Сайт"}</b><span>${esc((p.menu || p.web).replace(/^https?:\/\/(www\.)?/, "").split("/")[0])}</span></span>${IC.down(20)}</button>` : ""}
+      <h3 class="rh">${p.min ? p.min + " мин пешком от " + esc(venueName(e)) : "Рядом с " + esc(venueName(e))}</h3>
+      ${map}
       ${p.address ? `<p class="addr">${esc(p.address)}</p>` : ""}
-      <p class="addr">${S.fside === "before" ? "До" : "После"} · ${esc(e.title)}</p>
     </div>
     <div class="dact">
       <button class="btn ink big" data-act="url" data-v="${esc(route)}">${IC.pin(22)}<span>Маршрут</span></button>

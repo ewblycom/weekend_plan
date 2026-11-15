@@ -32,7 +32,7 @@ MIN_RATING, MIN_REVIEWS = 4.0, 20
 PRAGUE = (49.9, 50.2, 14.2, 14.75)   # lat_min, lat_max, lng_min, lng_max — защита от геокода «не в ту Прагу»
 REFRESH_DAYS = 30
 MAX_VENUES_PER_RUN = 15
-CACHE_VERSION = 2
+CACHE_VERSION = 3          # 3: фото, описание, меню, теги из отзывов
 # Только рестораны: тип из Google Maps должен быть «…restaurace», бистро или хоспода/пивница с кухней.
 FOOD_TYPE = re.compile(r"restaura|bistro|hospoda|pivnice|gastropub|trattoria|pizzerie|steak|taverna", re.I)
 # Фастфуд и всё, что не про сесть поесть.
@@ -92,6 +92,8 @@ def parse_item(it: dict, origin: tuple[float, float] | None = None) -> dict | No
     rec = {k: v for k, v in {
         "name": name, "rating": it.get("totalScore"), "reviews": it.get("reviewsCount"), "type": it.get("categoryName"),
         "price": czk_price(it.get("price")), "address": it.get("address"), "in": it.get("locatedIn"), "url": it.get("url"), "lat": lat, "lng": lng,
+        "img": it.get("imageUrl"), "desc": (it.get("description") or "").strip()[:280], "menu": it.get("menu"), "web": it.get("website"),
+        "tags": review_tags(it.get("reviewsTags")),
     }.items() if v not in (None, "")}
     if origin:
         if lat is None or lng is None:
@@ -102,6 +104,16 @@ def parse_item(it: dict, origin: tuple[float, float] | None = None) -> dict | No
         if rec["min"] > MAX_WALK_MIN:
             return None
     return rec
+
+
+def review_tags(v) -> list[str]:
+    """Темы, которые чаще всего упоминают в отзывах (часто это блюда): [{title, count}] → 5 названий."""
+    out = []
+    for t in v or []:
+        name = t.get("title") if isinstance(t, dict) else t
+        if isinstance(name, str) and 2 < len(name) < 30 and name.lower() not in ("ceny", "obsluha", "personál", "atmosféra", "prostředí", "porce"):
+            out.append(name)
+    return out[:5]
 
 
 def czk_price(v) -> str | None:
@@ -169,7 +181,7 @@ def write_out(cache: dict) -> None:
     for k, v in cache.items():
         places = [clean(p) for p in v.get("places", []) if good(p)][:KEEP]
         if places:
-            out[k] = places
+            out[k] = {"at": [v["lat"], v["lng"]], "p": places} if v.get("lat") is not None else {"p": places}
     OUT.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
 
 
