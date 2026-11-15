@@ -534,7 +534,8 @@
    "map": "Relax Studio Troja, Praha 8",
    "site": "https://relaxtroja.cz/",
    "manual": true,
-   "image": "https://cdn.kudyznudy.cz/files/71/71dee6a9-c419-4ff4-b302-450b537bf522.jpg?v=20241115114612"
+   "image": "https://cdn.kudyznudy.cz/files/71/71dee6a9-c419-4ff4-b302-450b537bf522.jpg?v=20241115114612",
+   "hours": "09:00–21:00"
   },
   {
    "name": "Wellness Bohemia",
@@ -565,7 +566,9 @@
    "url": "https://www.saunaspot.cz/",
    "map": "Sauna Spot Dvorce, Podolské nábřeží 1110, Praha 4",
    "site": "https://www.saunaspot.cz/",
-   "manual": true
+   "manual": true,
+   "image": "https://www.saunaspot.cz/wp-content/uploads/2024/10/screenshot.png",
+   "hours": "10:00–23:00"
   },
   {
    "name": "Sauny Vltava",
@@ -575,7 +578,9 @@
    "url": "https://saunyvltava.cz",
    "map": "Sauny Vltava, Praha 4 Dvorce",
    "site": "https://saunyvltava.cz",
-   "manual": true
+   "manual": true,
+   "image": "https://saunyvltava.cz/wp-content/uploads/2021/11/cropped-saunyvltava-symbol.png",
+   "hours": "10:00–23:00"
   },
   {
    "name": "Infinit Step",
@@ -585,7 +590,8 @@
    "url": "https://step.infinit.cz/cs",
    "map": "Infinit Step, Malletova 2350/6, Praha 9",
    "site": "https://step.infinit.cz/cs",
-   "manual": true
+   "manual": true,
+   "image": "https://step.infinit.cz/files/2017-07-25-4148-5d-mk-iv.jpg"
   },
   {
    "name": "Infinit Sen",
@@ -595,7 +601,8 @@
    "url": "https://www.infinit.cz/cs",
    "map": "Infinit Sen, Senohraby",
    "site": "https://www.infinit.cz/cs",
-   "manual": true
+   "manual": true,
+   "image": "https://www.infinit.cz/files/fal2019-230faltejsek.jpg"
   },
   {
    "name": "Lázně na Lodi",
@@ -627,7 +634,8 @@
    "url": "https://www.chillin.cz/",
    "map": "Chillin, Pobřežní 58, Praha 8",
    "site": "https://www.chillin.cz/",
-   "manual": true
+   "manual": true,
+   "image": "https://81abdce3ee.clvaw-cdnwnd.com/db023f448766ceebb4d30157a8869305/200000036-1178c1178e/700/chillin_spa-1580-1.jpg?ph=81abdce3ee"
   },
   {
    "name": "Lázně AXA",
