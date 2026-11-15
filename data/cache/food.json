@@ -1100,5 +1100,1193 @@
     "min": 3
    }
   ]
+ },
+ "o2 arena": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.104819,
+  "lng": 14.4936272,
+  "places": [
+   {
+    "name": "Balkanske Speciality Tajne",
+    "rating": 4.7,
+    "reviews": 235,
+    "type": "Restaurace",
+    "address": "Českomoravská 2420, 190 00 Praha 9, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Balkanske%20Speciality%20Tajne&query_place_id=ChIJQ6cbFWXtC0cRGXeiBbKmU-I",
+    "lat": 50.1047627,
+    "lng": 14.4911915,
+    "m": 174,
+    "min": 3
+   },
+   {
+    "name": "Turmeric Indická Restaurace",
+    "rating": 4.8,
+    "reviews": 314,
+    "type": "Restaurace",
+    "address": "Spojovací 192/17, 190 00 Praha 9, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Turmeric%20Indick%C3%A1%20Restaurace&query_place_id=ChIJk9sQTaSTC0cREVLiZOjxHO0",
+    "lat": 50.1011023,
+    "lng": 14.4904635,
+    "m": 471,
+    "min": 8
+   },
+   {
+    "name": "Dookan Dosa Bistro",
+    "rating": 4.8,
+    "reviews": 635,
+    "type": "Jihoindická restaurace",
+    "address": "Podvinný mlýn 1418/2, 190 00 Praha 9-Libeň, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Dookan%20Dosa%20Bistro&query_place_id=ChIJ8_NvM5LtC0cRuRaPy-xNAkk",
+    "lat": 50.1064953,
+    "lng": 14.4864599,
+    "m": 544,
+    "min": 9
+   },
+   {
+    "name": "Jerusalem Prague",
+    "rating": 4.7,
+    "reviews": 1411,
+    "type": "Středomořská restaurace",
+    "address": "Kurta Konráda 12, 190 00 Praha 9, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Jerusalem%20Prague&query_place_id=ChIJvUmqod2VC0cRABfEEdAA9UY",
+    "lat": 50.1052831,
+    "lng": 14.4879682,
+    "m": 407,
+    "min": 7
+   },
+   {
+    "name": "Mexicali Mercado Taco Bar",
+    "rating": 4.6,
+    "reviews": 1748,
+    "type": "Mexická restaurace",
+    "address": "Kovářská 939/4, 190 00 Praha 9-Libeň, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Mexicali%20Mercado%20Taco%20Bar&query_place_id=ChIJM4CNgLTsC0cRUtS74nWpTlE",
+    "lat": 50.1060209,
+    "lng": 14.4917684,
+    "m": 188,
+    "min": 4
+   },
+   {
+    "name": "BACKSTAGE RESTAURANT",
+    "rating": 4.5,
+    "reviews": 467,
+    "type": "Restaurace",
+    "address": "Českomoravská 19a, 190 00 Praha 9, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=BACKSTAGE%20RESTAURANT&query_place_id=ChIJ60DJjMftC0cRirQZWl5YmHY",
+    "lat": 50.1039591,
+    "lng": 14.4957112,
+    "m": 177,
+    "min": 3
+   }
+  ]
+ },
+ "jazz dock": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0773912,
+  "lng": 14.4084855,
+  "places": [
+   {
+    "name": "Pho a Ramen Restaurant",
+    "rating": 4.8,
+    "reviews": 377,
+    "type": "Restaurace",
+    "address": "Gorazdova 1983/17, 120 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Pho%20a%20Ramen%20Restaurant&query_place_id=ChIJ-SkPSkmVC0cRS65QyELfp6o",
+    "lat": 50.0752487,
+    "lng": 14.4146578,
+    "m": 501,
+    "min": 9
+   },
+   {
+    "name": "Pivní přístav",
+    "rating": 4.8,
+    "reviews": 1026,
+    "type": "Restaurace",
+    "address": "Rašínovo nábř. 1781/64, 120 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Pivn%C3%AD%20p%C5%99%C3%ADstav&query_place_id=ChIJtQrjYPaUC0cRQ-7qpl8yDOg",
+    "lat": 50.0737332,
+    "lng": 14.4142177,
+    "m": 577,
+    "min": 10
+   },
+   {
+    "name": "The Syrian Chef",
+    "rating": 4.8,
+    "reviews": 1005,
+    "type": "Restaurace",
+    "address": "Myslíkova 1698/18, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=The%20Syrian%20Chef&query_place_id=ChIJNeZ-c9SVC0cRV3-uAs-j1v0",
+    "lat": 50.0775918,
+    "lng": 14.4170569,
+    "m": 612,
+    "min": 10
+   },
+   {
+    "name": "Bassotto - Kavárna - Vinárna",
+    "rating": 4.8,
+    "reviews": 1020,
+    "type": "Bezlepková restaurace",
+    "address": "Pštrossova 1926/4, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Bassotto%20-%20Kav%C3%A1rna%20-%20Vin%C3%A1rna&query_place_id=ChIJoxyLfB2VC0cRtkGFDZPERNs",
+    "lat": 50.0778986,
+    "lng": 14.4164521,
+    "m": 571,
+    "min": 10
+   },
+   {
+    "name": "River´s smokelab",
+    "rating": 4.7,
+    "reviews": 768,
+    "type": "Restaurace",
+    "address": "Janáčkovo nábř. 1, 150 00 Praha 5-Smíchov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=River%C2%B4s%20smokelab&query_place_id=ChIJHfNiedWVC0cRbpLLBTAW6Uw",
+    "lat": 50.0727212,
+    "lng": 14.4098145,
+    "m": 528,
+    "min": 9
+   },
+   {
+    "name": "Terra e Mare",
+    "rating": 4.7,
+    "reviews": 494,
+    "type": "Restaurace",
+    "address": "Pštrossova 29, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Terra%20e%20Mare&query_place_id=ChIJE8-N-kWVC0cRxgcv25gLAWU",
+    "lat": 50.0797079,
+    "lng": 14.4152591,
+    "m": 548,
+    "min": 9
+   }
+  ]
+ },
+ "městská knihovna v praze": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0873969,
+  "lng": 14.4173664,
+  "places": [
+   {
+    "name": "Ribs of Prague",
+    "rating": 4.7,
+    "reviews": 8906,
+    "type": "Restaurace",
+    "address": "Melantrichova 5, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Ribs%20of%20Prague&query_place_id=ChIJZ4JX-VKVC0cREvoqN13UeB0",
+    "lat": 50.0852822,
+    "lng": 14.4211478,
+    "m": 358,
+    "min": 6
+   },
+   {
+    "name": "Restaurace U Dvou velbloudů",
+    "rating": 4.7,
+    "reviews": 5721,
+    "type": "Česká restaurace",
+    "address": "Kožná 474/4, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Restaurace%20U%20Dvou%20velbloud%C5%AF&query_place_id=ChIJB1zHs-6UC0cR5mpD23EUEtQ",
+    "lat": 50.0858749,
+    "lng": 14.4211633,
+    "m": 319,
+    "min": 6
+   },
+   {
+    "name": "Mama Lucy",
+    "rating": 4.7,
+    "reviews": 6416,
+    "type": "Česká restaurace",
+    "address": "Dlouhá 609/2, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Mama%20Lucy&query_place_id=ChIJqa3RdOmUC0cRVQKCjeim8Rc",
+    "lat": 50.0885319,
+    "lng": 14.4218053,
+    "m": 341,
+    "min": 6
+   },
+   {
+    "name": "Matzip",
+    "rating": 4.7,
+    "reviews": 2987,
+    "type": "Korejská restaurace",
+    "address": "Dušní 1082/6, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Matzip&query_place_id=ChIJPepGAD6VC0cRBjNYw0U91Is",
+    "lat": 50.0894046,
+    "lng": 14.4214165,
+    "m": 365,
+    "min": 6
+   },
+   {
+    "name": "FAT CAT Old Town",
+    "rating": 4.6,
+    "reviews": 13017,
+    "type": "Restaurace",
+    "address": "Karlova 44, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=FAT%20CAT%20Old%20Town&query_place_id=ChIJxT1C1u6UC0cRjNBm7b6wDjM",
+    "lat": 50.0860664,
+    "lng": 14.4187637,
+    "m": 178,
+    "min": 3
+   },
+   {
+    "name": "Beer Restaurant U Černého Medvěda (At the Black Bear)",
+    "rating": 4.7,
+    "reviews": 2622,
+    "type": "Česká restaurace",
+    "address": "Týn 6/642, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Beer%20Restaurant%20U%20%C4%8Cern%C3%A9ho%20Medv%C4%9Bda%20(At%20the%20Black%20Bear)&query_place_id=ChIJzRYOp6mVC0cRJo2v2WlLRJE",
+    "lat": 50.0879046,
+    "lng": 14.4238438,
+    "m": 466,
+    "min": 8
+   }
+  ]
+ },
+ "státní opera": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0807207,
+  "lng": 14.4326918,
+  "places": [
+   {
+    "name": "Mr. Pham Vinohradská",
+    "rating": 4.8,
+    "reviews": 492,
+    "type": "Restaurace",
+    "address": "Vinohradská 208/14, 120 00 Praha 2-Vinohrady, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Mr.%20Pham%20Vinohradsk%C3%A1&query_place_id=ChIJ4VTUHMaVC0cRip_ePnAD7b0",
+    "lat": 50.0784575,
+    "lng": 14.435086,
+    "m": 304,
+    "min": 5
+   },
+   {
+    "name": "LA VIE",
+    "rating": 4.8,
+    "reviews": 816,
+    "type": "Restaurace",
+    "address": "Mánesova 311/13, 120 00 Vinohrady, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=LA%20VIE&query_place_id=ChIJ3V4V1pGUC0cR4-xKL0jiyE0",
+    "lat": 50.0790805,
+    "lng": 14.4364012,
+    "m": 321,
+    "min": 6
+   },
+   {
+    "name": "Linh - Not Just A Restaurant",
+    "rating": 4.7,
+    "reviews": 1723,
+    "type": "Veganská restaurace",
+    "address": "Mánesova 7, 120 00 Praha 2-Vinohrady, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Linh%20-%20Not%20Just%20A%20Restaurant&query_place_id=ChIJNy0vaaKVC0cRGgJ_pG6xOCI",
+    "lat": 50.0793737,
+    "lng": 14.4353975,
+    "m": 244,
+    "min": 4
+   },
+   {
+    "name": "GRØN Bistro",
+    "rating": 4.8,
+    "reviews": 1210,
+    "type": "Bistro",
+    "address": "Anglická 336/21, 120 00 Vinohrady, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=GR%C3%98N%20Bistro&query_place_id=ChIJue94YgCVC0cR5P0nIyjD1YU",
+    "lat": 50.0764792,
+    "lng": 14.4341271,
+    "m": 483,
+    "min": 8
+   },
+   {
+    "name": "Hoxton Burgers",
+    "rating": 4.8,
+    "reviews": 4070,
+    "type": "Hamburgerová restaurace",
+    "address": "Náměstí Míru 1221/4, 120 00 Praha 2-Vinohrady, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Hoxton%20Burgers&query_place_id=ChIJZYzRJs6VC0cRdAHDKGxK93k",
+    "lat": 50.0761825,
+    "lng": 14.4358251,
+    "m": 552,
+    "min": 9
+   },
+   {
+    "name": "Bistro Cafē Laskavá",
+    "rating": 4.7,
+    "reviews": 2546,
+    "type": "Bistro",
+    "address": "Anglická 390, 120 00 Vinohrady, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Bistro%20Caf%C4%93%20Laskav%C3%A1&query_place_id=ChIJ_3eezMGVC0cRNoazI-iTIkM",
+    "lat": 50.0764984,
+    "lng": 14.4340332,
+    "m": 479,
+    "min": 8
+   }
+  ]
+ },
+ "meetfactory": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0528726,
+  "lng": 14.4084487,
+  "places": [
+   {
+    "name": "NAMI - Persian Cuisine",
+    "rating": 4.7,
+    "reviews": 101,
+    "type": "Íránská restaurace",
+    "address": "Křížová 1018/6, 150 00 Praha 5-Smíchov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=NAMI%20-%20Persian%20Cuisine&query_place_id=ChIJIW5UvoeVC0cRYlL2lmkTtzg",
+    "lat": 50.054575,
+    "lng": 14.405735,
+    "m": 271,
+    "min": 5
+   },
+   {
+    "name": "Na Kopci",
+    "rating": 4.8,
+    "reviews": 1833,
+    "type": "Restaurace",
+    "address": "K Závěrce 2774, 150 00 Praha 5, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Na%20Kopci&query_place_id=ChIJ1xrRe0aUC0cRzm99y26a0Ng",
+    "lat": 50.0566767,
+    "lng": 14.4027179,
+    "m": 588,
+    "min": 10
+   },
+   {
+    "name": "Racek Terasa & Bar",
+    "rating": 4.9,
+    "reviews": 79,
+    "type": "Restaurace",
+    "address": "Podolské nábř., 147 00 Praha 4, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Racek%20Terasa%20%26%20Bar&query_place_id=ChIJ06DJcaaVC0cRy-p-u11p-i8",
+    "lat": 50.0510648,
+    "lng": 14.4148135,
+    "m": 497,
+    "min": 9
+   },
+   {
+    "name": "Kantýna SmíchOFF",
+    "rating": 4.6,
+    "reviews": 77,
+    "type": "Restaurace",
+    "address": "Křížová 6, 150 00 Praha 5-Smíchov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Kant%C3%BDna%20Sm%C3%ADchOFF&query_place_id=ChIJaUgzDeyVC0cR5S8Az7xVaC0",
+    "lat": 50.0551817,
+    "lng": 14.4066269,
+    "m": 288,
+    "min": 5
+   },
+   {
+    "name": "Giallo Bistro",
+    "rating": 4,
+    "reviews": 22,
+    "type": "Pizzerie",
+    "address": "Podolské nábř. 2, 147 00 Praha 4, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Giallo%20Bistro&query_place_id=ChIJBU3hOceVC0cR5qTrFjn86zg",
+    "lat": 50.0491804,
+    "lng": 14.4141426,
+    "m": 578,
+    "min": 10
+   }
+  ]
+ },
+ "vyšehrad": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0636791,
+  "lng": 14.4202128,
+  "places": [
+   {
+    "name": "Bistro Habibi",
+    "rating": 4.9,
+    "reviews": 639,
+    "type": "Blízkovýchodní restaurace",
+    "address": "Vratislavova 21/1, 128 00 Praha 2-Vyšehrad, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Bistro%20Habibi&query_place_id=ChIJHVDU5THrC0cRg5Pm1iqFHUc",
+    "lat": 50.0663824,
+    "lng": 14.4190796,
+    "m": 311,
+    "min": 6
+   },
+   {
+    "name": "U Olmerů",
+    "rating": 4.8,
+    "reviews": 423,
+    "type": "Restaurace",
+    "address": "Slavojova 95/16, 128 00 Praha 2-Nusle, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=U%20Olmer%C5%AF&query_place_id=ChIJwYBEp2aUC0cRbXGD3sYZPRM",
+    "lat": 50.0637933,
+    "lng": 14.4252616,
+    "m": 361,
+    "min": 6
+   },
+   {
+    "name": "Malby's Café",
+    "rating": 4.7,
+    "reviews": 156,
+    "type": "Bistro",
+    "address": "Neklanova 150/38, 128 00 Praha 2, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Malby's%20Caf%C3%A9&query_place_id=ChIJnXpIZ7OVC0cRTR4JQ63wzZg",
+    "lat": 50.0658707,
+    "lng": 14.421822,
+    "m": 269,
+    "min": 5
+   },
+   {
+    "name": "YUZU Asian Fusion",
+    "rating": 4.7,
+    "reviews": 485,
+    "type": "Asijská restaurace Fusion",
+    "address": "Na Slupi 2102/2b, 128 00, Nové Město, 128 00 Praha 2, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=YUZU%20Asian%20Fusion&query_place_id=ChIJuZRbNgCVC0cRUOmfN3SvHFs",
+    "lat": 50.0664995,
+    "lng": 14.4224246,
+    "m": 351,
+    "min": 6
+   },
+   {
+    "name": "Ristorante Trulli",
+    "rating": 4.8,
+    "reviews": 705,
+    "type": "Italská restaurace",
+    "address": "Na Dolinách 2/16, 147 00 Praha 4, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Ristorante%20Trulli&query_place_id=ChIJTWxitWiUC0cR1lF8KGNb4eQ",
+    "lat": 50.0584995,
+    "lng": 14.4223918,
+    "m": 597,
+    "min": 10
+   },
+   {
+    "name": "Trattoria Da Adi",
+    "rating": 4.7,
+    "reviews": 700,
+    "type": "Italská restaurace",
+    "address": "Oldřichova 251/3, 128 00 Praha 2-Nusle, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Trattoria%20Da%20Adi&query_place_id=ChIJCfW978iVC0cR5W9poquG1nc",
+    "lat": 50.0657974,
+    "lng": 14.4251895,
+    "m": 426,
+    "min": 7
+   }
+  ]
+ },
+ "jatka78": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.1001136,
+  "lng": 14.4465109,
+  "places": [
+   {
+    "name": "Sachi sushi & poke",
+    "rating": 4.7,
+    "reviews": 500,
+    "type": "Restaurace",
+    "address": "Stupkova 1570/6, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Sachi%20sushi%20%26%20poke&query_place_id=ChIJK1r0pd2VC0cR3VhvgtdOyBE",
+    "lat": 50.1013125,
+    "lng": 14.4461357,
+    "m": 136,
+    "min": 3
+   },
+   {
+    "name": "Big Smokers",
+    "rating": 4.7,
+    "reviews": 2465,
+    "type": "Barbeque restaurace",
+    "address": "Dělnická 643/40, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Big%20Smokers&query_place_id=ChIJOWxRQuuVC0cR3sTg67EVQp0",
+    "lat": 50.1030311,
+    "lng": 14.450926,
+    "m": 452,
+    "min": 8
+   },
+   {
+    "name": "Le Asian Restaurant",
+    "rating": 4.6,
+    "reviews": 316,
+    "type": "Asijská restaurace",
+    "address": "Tusarova, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Le%20Asian%20Restaurant&query_place_id=ChIJOQUsuoyVC0cRucqye9z-hy4",
+    "lat": 50.1019445,
+    "lng": 14.4496366,
+    "m": 302,
+    "min": 5
+   },
+   {
+    "name": "Tràng An",
+    "rating": 4.5,
+    "reviews": 1547,
+    "type": "Vietnamská restaurace",
+    "address": "hala č. 5, Bubenské nábř. 306/13, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Tr%C3%A0ng%20An&query_place_id=ChIJk9ZK9bCUC0cRRI3ZVYVJcz0",
+    "lat": 50.0994214,
+    "lng": 14.4459535,
+    "m": 87,
+    "min": 2
+   },
+   {
+    "name": "MrBurger",
+    "rating": 4.6,
+    "reviews": 469,
+    "type": "Hamburgerová restaurace",
+    "address": "Komunardů 1046/19, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=MrBurger&query_place_id=ChIJmZl6PiuVC0cRyUq0s10hhss",
+    "lat": 50.1027625,
+    "lng": 14.4496878,
+    "m": 372,
+    "min": 7
+   },
+   {
+    "name": "VNITROBLOCK",
+    "rating": 4.5,
+    "reviews": 2126,
+    "type": "Restaurace",
+    "address": "Tusarova 791/31, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=VNITROBLOCK&query_place_id=ChIJvVOyprGUC0cRZctPMRKZjLE",
+    "lat": 50.1019397,
+    "lng": 14.4493285,
+    "m": 286,
+    "min": 5
+   }
+  ]
+ },
+ "3 místa konání": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.082267,
+  "lng": 14.4489335,
+  "places": [
+   {
+    "name": "El Camino Tapas Restaurant",
+    "rating": 4.9,
+    "reviews": 1068,
+    "type": "Španělská restaurace",
+    "address": "Jagellonská 10, 130 00 Praha 3-Vinohrady, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=El%20Camino%20Tapas%20Restaurant&query_place_id=ChIJo8uTYo-VC0cRXJFgzt-rASQ",
+    "lat": 50.0793286,
+    "lng": 14.4526665,
+    "m": 422,
+    "min": 7
+   },
+   {
+    "name": "Thien Long 1 (asia bistro )wok Viet Thai Thai",
+    "rating": 4.8,
+    "reviews": 419,
+    "type": "Restaurace",
+    "address": "Seifertova 682/81, 130 00 Praha 3-Žižkov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Thien%20Long%201%20(asia%20bistro%20)wok%20Viet%20Thai%20Thai&query_place_id=ChIJ_QGn2p6UC0cRrjPN8NJVjng",
+    "lat": 50.0843384,
+    "lng": 14.4516723,
+    "m": 302,
+    "min": 5
+   },
+   {
+    "name": "U Mariánského obrazu",
+    "rating": 4.6,
+    "reviews": 2723,
+    "type": "Restaurace",
+    "address": "Kubelíkova 1089/22, 130 00 Praha 3-Žižkov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=U%20Mari%C3%A1nsk%C3%A9ho%20obrazu&query_place_id=ChIJg9R9CJyUC0cRRm0saV_BIew",
+    "lat": 50.0821363,
+    "lng": 14.4496091,
+    "m": 50,
+    "min": 1
+   },
+   {
+    "name": "Yoon's kitchen / 윤식당",
+    "rating": 4.8,
+    "reviews": 160,
+    "type": "Korejská restaurace",
+    "address": "Chelčického 1153/14, 130 00 Praha 3-Žižkov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Yoon's%20kitchen%20%2F%20%EC%9C%A4%EC%8B%9D%EB%8B%B9&query_place_id=ChIJuQGLGsaVC0cRRAIqR8pddGU",
+    "lat": 50.0831227,
+    "lng": 14.4552534,
+    "m": 461,
+    "min": 8
+   },
+   {
+    "name": "Černomorka",
+    "rating": 4.7,
+    "reviews": 3292,
+    "type": "Rybí restaurace",
+    "address": "Ondříčkova 1234/17, 130 00 Praha 3-Žižkov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=%C4%8Cernomorka&query_place_id=ChIJp6d_-lqVC0cRC72nPPQIOO8",
+    "lat": 50.0798288,
+    "lng": 14.4503871,
+    "m": 290,
+    "min": 5
+   },
+   {
+    "name": "crunch",
+    "rating": 4.7,
+    "reviews": 649,
+    "type": "Snídaňová restaurace",
+    "address": "Sladkovského nám. 309/6, 130 00 Praha 3-Žižkov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=crunch&query_place_id=ChIJuYS1JTyVC0cRGvds4A-WNQk",
+    "lat": 50.0843892,
+    "lng": 14.4512185,
+    "m": 287,
+    "min": 5
+   }
+  ]
+ },
+ "forum karlín": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0914263,
+  "lng": 14.454816,
+  "places": [
+   {
+    "name": "KABINA Bistro&Bar",
+    "rating": 4.8,
+    "reviews": 414,
+    "type": "Bistro",
+    "address": "3FQ4+QF, Pražačka 3, 130 00 Praha 3-Žižkov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=KABINA%20Bistro%26Bar&query_place_id=ChIJx-V1QKqTC0cRwtzQE1PexTw",
+    "lat": 50.0894375,
+    "lng": 14.4561874,
+    "m": 242,
+    "min": 4
+   },
+   {
+    "name": "FUEL bistro",
+    "rating": 4.6,
+    "reviews": 358,
+    "type": "Bistro",
+    "address": "Pernerova 691/42, 186 00 Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=FUEL%20bistro&query_place_id=ChIJpbp3m2KVC0cR_4w92vt01BM",
+    "lat": 50.0922035,
+    "lng": 14.4574865,
+    "m": 209,
+    "min": 4
+   },
+   {
+    "name": "MATOKA Georgian Žižkov",
+    "rating": 4.7,
+    "reviews": 1375,
+    "type": "Restaurace",
+    "address": "Hartigova 61, 130 00 Praha 3-Žižkov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=MATOKA%20Georgian%20%C5%BDi%C5%BEkov&query_place_id=ChIJ8dAUo6qTC0cRcqef2g6d2c0",
+    "lat": 50.0889698,
+    "lng": 14.4611088,
+    "m": 526,
+    "min": 9
+   },
+   {
+    "name": "PROTI PROUDU",
+    "rating": 4.6,
+    "reviews": 1392,
+    "type": "Bistro",
+    "address": "Březinova 471 /22, 186 00 Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=PROTI%20PROUDU&query_place_id=ChIJLYAagqaUC0cRpeUtP7o5Dwk",
+    "lat": 50.0944559,
+    "lng": 14.4561641,
+    "m": 350,
+    "min": 6
+   },
+   {
+    "name": "Lumbini",
+    "rating": 4.6,
+    "reviews": 1290,
+    "type": "Indická restaurace",
+    "address": "Hartigova 52/25, 130 00 Praha 3-Žižkov, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Lumbini&query_place_id=ChIJbwEWNKCUC0cRvydGPr0fPPg",
+    "lat": 50.0879254,
+    "lng": 14.4567106,
+    "m": 412,
+    "min": 7
+   },
+   {
+    "name": "Etapa",
+    "rating": 4.6,
+    "reviews": 1970,
+    "type": "Dopolední restaurace",
+    "address": "Urxova 479/6, 186 00 Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Etapa&query_place_id=ChIJpauOto2VC0cRT42rSr1l5JQ",
+    "lat": 50.0945405,
+    "lng": 14.4578286,
+    "m": 408,
+    "min": 7
+   }
+  ]
+ },
+ "nosticova 634": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0845371,
+  "lng": 14.4064383,
+  "places": [
+   {
+    "name": "Jacob's Little Italy",
+    "rating": 4.9,
+    "reviews": 502,
+    "type": "Restaurace",
+    "address": "Vítězná 558/2, 118 00 Malá Strana, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Jacob's%20Little%20Italy&query_place_id=ChIJt_Nk762VC0cRuoP6VO3WNpQ",
+    "lat": 50.0814284,
+    "lng": 14.4077881,
+    "m": 359,
+    "min": 6
+   },
+   {
+    "name": "Velkopřevorský Mlýn",
+    "rating": 4.7,
+    "reviews": 6342,
+    "type": "Česká restaurace",
+    "address": "Hroznová 489, 118 00 Malá Strana, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Velkop%C5%99evorsk%C3%BD%20Ml%C3%BDn&query_place_id=ChIJYz0piuOUC0cRf6qDPrcH6uo",
+    "lat": 50.0863193,
+    "lng": 14.4079366,
+    "m": 225,
+    "min": 4
+   },
+   {
+    "name": "Opera Grill",
+    "rating": 4.8,
+    "reviews": 141,
+    "type": "Gruzínská restaurace",
+    "address": "Karoliny Světlé 328/35, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Opera%20Grill&query_place_id=ChIJi6TPukGVC0cRZMU9uxSFrHA",
+    "lat": 50.0840933,
+    "lng": 14.4140292,
+    "m": 544,
+    "min": 9
+   },
+   {
+    "name": "Bella Vida café",
+    "rating": 4.6,
+    "reviews": 3115,
+    "type": "Restaurace",
+    "address": "Malostranské nábř. 563/3, 118 00 Malá Strana, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Bella%20Vida%20caf%C3%A9&query_place_id=ChIJBaBIOvuUC0cRPMEwPyhHBtk",
+    "lat": 50.0820109,
+    "lng": 14.407807,
+    "m": 297,
+    "min": 5
+   },
+   {
+    "name": "Restaurace Mlýnec",
+    "rating": 4.7,
+    "reviews": 5474,
+    "type": "Restaurace",
+    "address": "Novotného lávka 9, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Restaurace%20Ml%C3%BDnec&query_place_id=ChIJq8Kqk-WUC0cR1qKYFrCBV84",
+    "lat": 50.0854209,
+    "lng": 14.413601,
+    "m": 520,
+    "min": 9
+   },
+   {
+    "name": "Lehká hlava - vegetariánská restaurace",
+    "rating": 4.7,
+    "reviews": 4987,
+    "type": "Vegetariánská restaurace",
+    "address": "Boršov 280/2, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Lehk%C3%A1%20hlava%20-%20vegetari%C3%A1nsk%C3%A1%20restaurace&query_place_id=ChIJXW2Mg--UC0cRm7smgk3t-aU",
+    "lat": 50.0841244,
+    "lng": 14.4145615,
+    "m": 581,
+    "min": 10
+   }
+  ]
+ },
+ "bike jesus": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0952569,
+  "lng": 14.4362048,
+  "places": [
+   {
+    "name": "Kasumi Sushi Restaurant",
+    "rating": 4.9,
+    "reviews": 1043,
+    "type": "Asijská restaurace Fusion",
+    "address": "Sokolovská 65/26, 186 00 Praha 8-Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Kasumi%20Sushi%20Restaurant&query_place_id=ChIJVdHOqrGVC0cRvm2b7iMCpqM",
+    "lat": 50.0916664,
+    "lng": 14.4412911,
+    "m": 539,
+    "min": 9
+   },
+   {
+    "name": "Bab rýže Florenc",
+    "rating": 4.8,
+    "reviews": 186,
+    "type": "Korejská restaurace",
+    "address": "Sokolovská 41/7, 186 00 Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Bab%20r%C3%BD%C5%BEe%20Florenc&query_place_id=ChIJBcjzSxeVC0cREmbTPhQZZcM",
+    "lat": 50.0913844,
+    "lng": 14.4391243,
+    "m": 478,
+    "min": 8
+   },
+   {
+    "name": "Lacinka na Florenci",
+    "rating": 4.8,
+    "reviews": 311,
+    "type": "Restaurace",
+    "address": "Na Florenci 1413, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Lacinka%20na%20Florenci&query_place_id=ChIJsYDPabCVC0cRVYEmR7nHFCw",
+    "lat": 50.0900505,
+    "lng": 14.4372616,
+    "m": 584,
+    "min": 10
+   },
+   {
+    "name": "Veggie One",
+    "rating": 4.7,
+    "reviews": 464,
+    "type": "Veganská restaurace",
+    "address": "Pobřežní 394, 186 00 Praha 8-Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Veggie%20One&query_place_id=ChIJnZ_Ngr6UC0cRbrkobNV9Z9c",
+    "lat": 50.0923002,
+    "lng": 14.440055,
+    "m": 428,
+    "min": 7
+   },
+   {
+    "name": "Bagel Lounge Florenc",
+    "rating": 4.7,
+    "reviews": 2897,
+    "type": "Restaurace",
+    "address": "Sokolovská 343/21, 186 00 Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Bagel%20Lounge%20Florenc&query_place_id=ChIJCQv7712VC0cRsjao6cAB0fc",
+    "lat": 50.0918822,
+    "lng": 14.4408987,
+    "m": 503,
+    "min": 9
+   },
+   {
+    "name": "The Cozy Restaurant",
+    "rating": 4.7,
+    "reviews": 981,
+    "type": "Vietnamská restaurace",
+    "address": "Sokolovská 205, 186 00 Praha 8-Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=The%20Cozy%20Restaurant&query_place_id=ChIJzXN_fSKVC0cRENhqZ7Z3nUE",
+    "lat": 50.0918255,
+    "lng": 14.4419089,
+    "m": 558,
+    "min": 10
+   }
+  ]
+ },
+ "ulice národní": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0820028,
+  "lng": 14.4176067,
+  "places": [
+   {
+    "name": "Brit Bar Prague",
+    "rating": 4.7,
+    "reviews": 376,
+    "type": "Restaurace",
+    "address": "Ostrovní 103/27, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Brit%20Bar%20Prague&query_place_id=ChIJE7j8bICVC0cRx453X-45Rfo",
+    "lat": 50.0810688,
+    "lng": 14.4191342,
+    "m": 151,
+    "min": 3
+   },
+   {
+    "name": "SijiXiaoMian",
+    "rating": 4.8,
+    "reviews": 685,
+    "type": "Asijská restaurace",
+    "address": "Palackého 717, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=SijiXiaoMian&query_place_id=ChIJocdznjqVC0cRI2Ttp__mv8U",
+    "lat": 50.0809657,
+    "lng": 14.4236102,
+    "m": 444,
+    "min": 8
+   },
+   {
+    "name": "McCarthy's Irish Pub",
+    "rating": 4.7,
+    "reviews": 7435,
+    "type": "Irská hospoda",
+    "address": "Rytířská 406/10, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=McCarthy's%20Irish%20Pub&query_place_id=ChIJk2rsJ-yUC0cRs41N88GoMnI",
+    "lat": 50.0841848,
+    "lng": 14.4213459,
+    "m": 361,
+    "min": 6
+   },
+   {
+    "name": "HUA LONG ZHAI",
+    "rating": 4.7,
+    "reviews": 715,
+    "type": "Čínská restaurace",
+    "address": "Vladislavova 11/110 00, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=HUA%20LONG%20ZHAI&query_place_id=ChIJZfTiGX-TC0cRvI4VitSVwcU",
+    "lat": 50.0802536,
+    "lng": 14.4209852,
+    "m": 310,
+    "min": 6
+   },
+   {
+    "name": "Ideas are Bulletproof",
+    "rating": 4.7,
+    "reviews": 570,
+    "type": "Americká restaurace",
+    "address": "Jungmannova 11, 101 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Ideas%20are%20Bulletproof&query_place_id=ChIJJRBytfyVC0cR1E5oQs92Dcw",
+    "lat": 50.0803768,
+    "lng": 14.4221397,
+    "m": 371,
+    "min": 7
+   },
+   {
+    "name": "Venue",
+    "rating": 4.6,
+    "reviews": 4576,
+    "type": "Bistro",
+    "address": "Havelská 4, 110 00 Staré Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Venue&query_place_id=ChIJU8i3mu6UC0cR6e7p4wpr62A",
+    "lat": 50.0843167,
+    "lng": 14.4205692,
+    "m": 333,
+    "min": 6
+   }
+  ]
+ },
+ "studio ypsilon": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0806669,
+  "lng": 14.4198986,
+  "places": [
+   {
+    "name": "Lộc Fusion",
+    "rating": 4.9,
+    "reviews": 310,
+    "type": "Asijská restaurace",
+    "address": "Vodičkova 679/14, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=L%E1%BB%99c%20Fusion&query_place_id=ChIJPfgckGeVC0cRDom6Baw79aw",
+    "lat": 50.0792846,
+    "lng": 14.4224275,
+    "m": 237,
+    "min": 4
+   },
+   {
+    "name": "Loft N8 Garden Restaurant Grill & Shisha Lounge",
+    "rating": 4.9,
+    "reviews": 3152,
+    "type": "Restaurace",
+    "address": "Navrátilova 11, Nové Město 110 00, 1 Praha 1, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Loft%20N8%20Garden%20Restaurant%20Grill%20%26%20Shisha%20Lounge&query_place_id=ChIJB2_Xz62VC0cRg46ogRlSyNk",
+    "lat": 50.0786591,
+    "lng": 14.4235594,
+    "m": 344,
+    "min": 6
+   },
+   {
+    "name": "Jáma³ Garden Pub",
+    "rating": 4.9,
+    "reviews": 1338,
+    "type": "Restaurace",
+    "address": "V Jámě 1671/7, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=J%C3%A1ma%C2%B3%20Garden%20Pub&query_place_id=ChIJD5YZt3uVC0cRRREFqwDeh4k",
+    "lat": 50.0800165,
+    "lng": 14.4254838,
+    "m": 405,
+    "min": 7
+   },
+   {
+    "name": "‘90s Bánh Mì & Minimart",
+    "rating": 4.9,
+    "reviews": 110,
+    "type": "Vietnamská restaurace",
+    "address": "Žitná 564/14, 120 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=%E2%80%9890s%20B%C3%A1nh%20M%C3%AC%20%26%20Minimart&query_place_id=ChIJUdZSmimVC0cRBZNCkjV-UpY",
+    "lat": 50.0771856,
+    "lng": 14.4234461,
+    "m": 463,
+    "min": 8
+   },
+   {
+    "name": "SijiXiaoMian",
+    "rating": 4.8,
+    "reviews": 685,
+    "type": "Asijská restaurace",
+    "address": "Palackého 717, 110 00 Nové Město, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=SijiXiaoMian&query_place_id=ChIJocdznjqVC0cRI2Ttp__mv8U",
+    "lat": 50.0809657,
+    "lng": 14.4236102,
+    "m": 267,
+    "min": 5
+   },
+   {
+    "name": "AL BARON PYRAMID IV Halal Restaurant حلال",
+    "rating": 4.8,
+    "reviews": 1468,
+    "type": "Halal restaurace",
+    "address": "Karlovo náměstí 27, Žitná 2/560, 120 00 Praha, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=AL%20BARON%20PYRAMID%20IV%20Halal%20Restaurant%20%D8%AD%D9%84%D8%A7%D9%84&query_place_id=ChIJ1aykNHCVC0cRdqqdq2oaBbc",
+    "lat": 50.0772944,
+    "lng": 14.421325,
+    "m": 389,
+    "min": 7
+   }
+  ]
+ },
+ "národní zemědělské muzeum": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0969691,
+  "lng": 14.423316,
+  "places": [
+   {
+    "name": "CHUTNEJ",
+    "rating": 4.8,
+    "reviews": 1569,
+    "type": "Veganská restaurace",
+    "address": "Letohradská 755/50, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=CHUTNEJ&query_place_id=ChIJD9AmeTuVC0cRQP9AgnQgzF4",
+    "lat": 50.0981357,
+    "lng": 14.4244291,
+    "m": 152,
+    "min": 3
+   },
+   {
+    "name": "Sally O’Brien’s Irish Pub",
+    "rating": 4.8,
+    "reviews": 493,
+    "type": "Irská hospoda",
+    "address": "Kamenická 17, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Sally%20O%E2%80%99Brien%E2%80%99s%20Irish%20Pub&query_place_id=ChIJI-IEPnKVC0cRg7_82U_ZiYY",
+    "lat": 50.099006,
+    "lng": 14.4275992,
+    "m": 380,
+    "min": 7
+   },
+   {
+    "name": "Burgerman",
+    "rating": 4.7,
+    "reviews": 1891,
+    "type": "Hamburgerová restaurace",
+    "address": "M. Horákové 63, 170 00 Praha 7-Letná, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Burgerman&query_place_id=ChIJPyHUMfGVC0cRGpJJZfPA6F0",
+    "lat": 50.0998045,
+    "lng": 14.4252129,
+    "m": 343,
+    "min": 6
+   },
+   {
+    "name": "Dim Sum Spot Letná",
+    "rating": 4.7,
+    "reviews": 2133,
+    "type": "Restaurace",
+    "address": "M. Horákové 806/29, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Dim%20Sum%20Spot%20Letn%C3%A1&query_place_id=ChIJqSSDtDCVC0cRGi9pTareaCQ",
+    "lat": 50.0994424,
+    "lng": 14.4290747,
+    "m": 494,
+    "min": 9
+   },
+   {
+    "name": "Pizza Gatto Nero Letná - Holešovice",
+    "rating": 4.7,
+    "reviews": 393,
+    "type": "Italská restaurace",
+    "address": "Kostelní 1104/16, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Pizza%20Gatto%20Nero%20Letn%C3%A1%20-%20Hole%C5%A1ovice&query_place_id=ChIJw33QQ2uVC0cRvomvkWnLJLc",
+    "lat": 50.0978502,
+    "lng": 14.4312358,
+    "m": 573,
+    "min": 10
+   },
+   {
+    "name": "Mr.HotDoG",
+    "rating": 4.6,
+    "reviews": 4207,
+    "type": "Hot dog restaurace",
+    "address": "Kamenická 24, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Mr.HotDoG&query_place_id=ChIJhULlwMWUC0cRBLJ-IpBfWv0",
+    "lat": 50.0994932,
+    "lng": 14.4277813,
+    "m": 425,
+    "min": 7
+   }
+  ]
+ },
+ "holešovická tržnice": {
+  "v": 2,
+  "fetched": "2026-11-15",
+  "lat": 50.0997529,
+  "lng": 14.4447139,
+  "places": [
+   {
+    "name": "Sachi sushi & poke",
+    "rating": 4.7,
+    "reviews": 500,
+    "type": "Restaurace",
+    "address": "Stupkova 1570/6, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Sachi%20sushi%20%26%20poke&query_place_id=ChIJK1r0pd2VC0cR3VhvgtdOyBE",
+    "lat": 50.1013125,
+    "lng": 14.4461357,
+    "m": 201,
+    "min": 4
+   },
+   {
+    "name": "Tràng An",
+    "rating": 4.5,
+    "reviews": 1547,
+    "type": "Vietnamská restaurace",
+    "address": "hala č. 5, Bubenské nábř. 306/13, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Tr%C3%A0ng%20An&query_place_id=ChIJk9ZK9bCUC0cRRI3ZVYVJcz0",
+    "lat": 50.0994214,
+    "lng": 14.4459535,
+    "m": 96,
+    "min": 2
+   },
+   {
+    "name": "Wine Rebels Karlín",
+    "rating": 4.7,
+    "reviews": 240,
+    "type": "Restaurace",
+    "address": "Rohanské nábř. 657/7, 186 00 Karlín, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Wine%20Rebels%20Karl%C3%ADn&query_place_id=ChIJo-a4gqmVC0cR9XTAo916F5c",
+    "lat": 50.0946706,
+    "lng": 14.4470811,
+    "m": 590,
+    "min": 10
+   },
+   {
+    "name": "Big Smokers",
+    "rating": 4.7,
+    "reviews": 2465,
+    "type": "Barbeque restaurace",
+    "address": "Dělnická 643/40, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Big%20Smokers&query_place_id=ChIJOWxRQuuVC0cR3sTg67EVQp0",
+    "lat": 50.1030311,
+    "lng": 14.450926,
+    "m": 574,
+    "min": 10
+   },
+   {
+    "name": "Le Asian Restaurant",
+    "rating": 4.6,
+    "reviews": 316,
+    "type": "Asijská restaurace",
+    "address": "Tusarova, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=Le%20Asian%20Restaurant&query_place_id=ChIJOQUsuoyVC0cRucqye9z-hy4",
+    "lat": 50.1019445,
+    "lng": 14.4496366,
+    "m": 427,
+    "min": 7
+   },
+   {
+    "name": "VNITROBLOCK",
+    "rating": 4.5,
+    "reviews": 2126,
+    "type": "Restaurace",
+    "address": "Tusarova 791/31, 170 00 Praha 7-Holešovice, Česko",
+    "url": "https://www.google.com/maps/search/?api=1&query=VNITROBLOCK&query_place_id=ChIJvVOyprGUC0cRZctPMRKZjLE",
+    "lat": 50.1019397,
+    "lng": 14.4493285,
+    "m": 409,
+    "min": 7
+   }
+  ]
  }
 }
