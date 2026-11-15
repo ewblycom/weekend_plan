@@ -97,7 +97,7 @@ def test_food_venues_and_items(tmp_path, monkeypatch):
     evs = [{"venue": "Jatka78, Praha 7", "start": "2026-11-18"}, {"venue": "Jatka78", "start": "2026-11-19"},
            {"venue": "Rock Cafe — Národní", "start": "2026-11-16"}, {"venue": "Wiener Konzerthaus", "city": "Вена"},
            {"venue": "Daleko", "start": "2027-03-01"}]
-    assert food.pick_venues(evs, date(2026, 11, 15)) == [("jatka78", "Jatka78"), ("rock cafe", "Rock Cafe")]
+    assert food.pick_venues(evs, date(2026, 11, 15)) == [("rock cafe", "Rock Cafe"), ("jatka78", "Jatka78")]   # ближайшая дата — первой
     it = {"title": "Lokál", "totalScore": 4.5, "reviewsCount": 900, "categoryName": "Restaurace", "address": "x", "location": {"lat": 50.1, "lng": 14.4}}
     assert food.parse_item(it)["rating"] == 4.5 and food.parse_item({**it, "permanentlyClosed": True}) is None
     monkeypatch.delenv("APIFY_TOKEN", raising=False)
@@ -140,3 +140,26 @@ def test_food_details_fields():
           "reviewsTags": [{"title": "svíčková", "count": 40}, {"title": "obsluha", "count": 30}, {"title": "guláš", "count": 20}]}
     p = food.parse_item(it)
     assert p["img"] == "https://lh3/x.jpg" and p["desc"] == "Domácí kuchyně" and p["menu"].endswith("/menu") and p["tags"] == ["svíčková", "guláš"]
+
+
+def test_food_budget_rules(tmp_path, monkeypatch):
+    import requests
+    from datetime import date
+    from scraper.sources import food
+    today = date(2026, 11, 15)
+    evs = [{"venue": "Близко", "start": "2026-11-17"}, {"venue": "Через десять дней", "start": "2026-11-25"}]
+    assert [k for k, _ in food.pick_venues(evs, today)] == ["близко"]                   # только 7 дней
+    monkeypatch.setattr(food, "CACHE", tmp_path / "c.json"); monkeypatch.setattr(food, "OUT", tmp_path / "o.json")
+    calls = []
+    def boom(token, payload):
+        calls.append(1)
+        r = requests.Response(); r.status_code = 402
+        raise requests.HTTPError("402 Payment Required", response=r)
+    monkeypatch.setattr(food, "_run", boom)
+    evs = [{"venue": f"Площадка {i}", "start": "2026-11-16"} for i in range(5)]
+    assert food.collect(evs, today, "tok") == 0 and len(calls) == 1                         # лимит → стоп после первого 402
+    (tmp_path / "c.json").write_text('{"старая": {"v": 2, "fetched": "2026-11-01", "places": []}}')
+    evs = [{"venue": "Старая", "start": "2026-11-16"}, {"venue": "Новая", "start": "2026-11-17"}]
+    calls.clear(); monkeypatch.setattr(food, "_run", lambda t, p: calls.append(p["searchStringsArray"][0]) or [])
+    food.collect(evs, today, "tok")
+    assert calls[0].startswith("Новая")                                                     # сначала площадка без данных

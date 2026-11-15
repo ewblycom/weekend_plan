@@ -2,7 +2,12 @@
 
 Токен — секрет репозитория APIFY_TOKEN. Без него шаг пропускается, приложение просто не показывает блок.
 Для каждой площадки: геокод (1 место) + рестораны в радиусе ~10 минут пешком, оставляем лучшие по оценке.
-Обновляем раз в 30 дней, не больше MAX_VENUES_PER_RUN площадок за запуск (бюджет Apify). Результат: docs/data/food.json {ключ_площадки: [места]}.
+Правила бюджета Apify (бесплатно $5/мес — упирались в лимит, 402):
+  1. Берём только площадки событий ближайших 7 дней (HORIZON_DAYS), самые близкие по дате — первыми.
+  2. Сначала площадки, по которым вообще нет данных; потом те, у кого данные старого формата или старше 30 дней.
+  3. Не больше MAX_VENUES_PER_RUN площадок за запуск, в поиске SEARCH_LIMIT мест (потом фильтр по типу/расстоянию/рейтингу).
+  4. Если Apify ответил 402 (лимит) — сразу останавливаем сбор; остальное допарсится в следующем запуске.
+Результат: docs/data/food.json {ключ_площадки: {at: [lat,lng], p: [места]}}.
 """
 from __future__ import annotations
 
@@ -26,11 +31,12 @@ MAX_WALK_MIN = 10          # «до 10 минут пешком»
 WALK_M_PER_MIN = 80        # ~4,8 км/ч
 DETOUR = 1.3               # по улицам дальше, чем по прямой
 RADIUS_KM = round(MAX_WALK_MIN * WALK_M_PER_MIN / DETOUR / 1000 + 0.05, 2)   # ≈0,67 км по прямой
-SEARCH_LIMIT = 20          # берём с запасом, потом фильтруем по расстоянию и качеству
+SEARCH_LIMIT = 12          # берём с запасом, потом фильтруем по расстоянию и качеству
 KEEP = 6
 MIN_RATING, MIN_REVIEWS = 4.0, 20
 PRAGUE = (49.9, 50.2, 14.2, 14.75)   # lat_min, lat_max, lng_min, lng_max — защита от геокода «не в ту Прагу»
 REFRESH_DAYS = 30
+HORIZON_DAYS = 7
 MAX_VENUES_PER_RUN = 15
 CACHE_VERSION = 3          # 3: фото, описание, меню, теги из отзывов
 # Только рестораны: тип из Google Maps должен быть «…restaurace», бистро или хоспода/пивница с кухней.
@@ -53,12 +59,14 @@ def venue_key(venue: str | None) -> str | None:
     return v[:60] if len(v) >= 3 and not BAD_VENUE.match(v) else None
 
 
-def pick_venues(events: list[dict], today: date, horizon_days: int = 14) -> list[tuple[str, str]]:
-    """Площадки ближайших событий в порядке важности (события уже отсортированы по score). → [(ключ, название для поиска)]"""
+def pick_venues(events: list[dict], today: date, horizon_days: int = HORIZON_DAYS) -> list[tuple[str, str]]:
+    """Площадки событий ближайших horizon_days дней, ближайшая дата — первой. → [(ключ, название для поиска)]"""
     until = (today + timedelta(days=horizon_days)).isoformat()
     seen: dict[str, str] = {}
-    for e in events:
+    for e in sorted(events, key=lambda e: e.get("start") or "9999"):
         if e.get("city") and e["city"] != "Прага":
+            continue
+        if (e.get("start") or "")[:10] < today.isoformat():
             continue
         if e.get("start") and e["start"] > until:
             continue
@@ -196,8 +204,9 @@ def collect(events: list[dict], today: date | None = None, token: str | None = N
     except (OSError, ValueError):
         cache = {}
     stale = (today - timedelta(days=REFRESH_DAYS)).isoformat()
-    todo = [(k, n) for k, n in pick_venues(events, today)
-            if k not in cache or cache[k].get("v") != CACHE_VERSION or cache[k]["fetched"] < stale][:MAX_VENUES_PER_RUN]
+    need = [(k, n) for k, n in pick_venues(events, today)
+            if k not in cache or cache[k].get("v") != CACHE_VERSION or cache[k]["fetched"] < stale]
+    todo = sorted(need, key=lambda kn: kn[0] in cache)[:MAX_VENUES_PER_RUN]      # сначала те, по которым данных нет совсем (sorted стабилен — порядок по дате сохраняется)
     done = 0
     for k, name in todo:
         try:
@@ -209,6 +218,11 @@ def collect(events: list[dict], today: date | None = None, token: str | None = N
                 continue
             cache[k] = {"v": CACHE_VERSION, "fetched": today.isoformat(), "lat": origin[0], "lng": origin[1], "places": fetch_nearby(token, origin)}
             done += 1
+        except requests.HTTPError as e:
+            log.warning("food: %s — %s", name, str(e).replace(token, "***"))
+            if e.response is not None and e.response.status_code in (402, 403, 429):
+                log.warning("food: лимит Apify исчерпан — останавливаюсь, остальное в следующем запуске")
+                break
         except Exception as e:  # noqa: BLE001 — одна площадка не должна ронять сбор
             log.warning("food: %s — %s", name, str(e).replace(token, "***"))
     CACHE.parent.mkdir(parents=True, exist_ok=True)
