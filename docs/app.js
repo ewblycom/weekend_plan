@@ -29,6 +29,7 @@ const IC = {
   ticket: (s) => svg(1.4, '<path d="M3.25 3.5 H12.75 A1.25 1.25 0 0 1 14 4.75 V6.25 A1.75 1.75 0 0 0 14 9.75 V11.25 A1.25 1.25 0 0 1 12.75 12.5 H3.25 A1.25 1.25 0 0 1 2 11.25 V9.75 A1.75 1.75 0 0 0 2 6.25 V4.75 A1.25 1.25 0 0 1 3.25 3.5 Z"/><circle cx="9.75" cy="5.75" r="0.77" fill="currentColor" stroke="none"/><circle cx="9.75" cy="8" r="0.77" fill="currentColor" stroke="none"/><circle cx="9.75" cy="10.25" r="0.77" fill="currentColor" stroke="none"/>', s),
   pin: (s) => svg(1.4, '<path d="M8 14 C8 14 3.25 10 3.25 6.75 A4.75 4.75 0 0 1 12.75 6.75 C12.75 10 8 14 8 14 Z"/><circle cx="8" cy="6.75" r="1.75"/>', s),
   globe: (s) => svg(1.4, '<circle cx="8" cy="8" r="6"/><line x1="2" y1="8" x2="14" y2="8"/><ellipse cx="8" cy="8" rx="2.5" ry="6"/>', s),
+  plus: (s) => svg(1.8, '<line x1="8" y1="3" x2="8" y2="13"/><line x1="3" y1="8" x2="13" y2="8"/>', s),
   down: (s) => svg(1.6, '<path d="M3.75 5.875 L8 10.125 L12.25 5.875"/>', s),
 };
 
@@ -39,6 +40,7 @@ const S = {
   cats: new Set(), kinds: new Set(), ru: false,
   decided: {}, history: [], top: null, taste: Taste.empty(),
   plan: {}, detail: null, sheet: null, draft: null,
+  dinner: {}, fsheet: null, fside: "after", fplace: null,
 };
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -109,7 +111,7 @@ function mergeCloud() {
 }
 function save(skipCloud) {
   const sess = JSON.stringify({ from: S.from, to: S.to, mode: S.mode, cats: [...S.cats], kinds: [...S.kinds], ru: S.ru, decided: S.decided, history: S.history.slice(-30), top: S.top });
-  try { localStorage.setItem("s2", sess); localStorage.setItem("plan2", JSON.stringify(S.plan)); } catch {}
+  try { localStorage.setItem("s2", sess); localStorage.setItem("plan2", JSON.stringify(S.plan)); localStorage.setItem("din1", JSON.stringify(S.dinner)); } catch {}
   try { const tj = JSON.stringify(S.taste); localStorage.setItem("taste1", tj); if (!skipCloud) cloudSet("taste1", tj); } catch {}
   if (skipCloud) return;
   cloudSet("s2", JSON.stringify({ from: S.from, to: S.to, mode: S.mode, cats: [...S.cats], kinds: [...S.kinds], ru: S.ru }));
@@ -123,7 +125,7 @@ function applySession(o) {
   return true;
 }
 function restore() {
-  S.plan = load("plan2", {});
+  S.plan = load("plan2", {}); S.dinner = load("din1", {});
   const tt = load("taste1", null); if (tt && tt.f) S.taste = tt;
   if (!applySession(load("s2", null))) { const [a, b] = weekendRange(); S.from = a; S.to = b; }
   try {
@@ -292,10 +294,21 @@ function planHtml() {
   const xs = planItems();
   const groups = {};
   xs.forEach((p) => (groups[p.date || "any"] = groups[p.date || "any"] || []).push(p));
-  const row = (p) => `<div class="rowwrap" data-row="${esc(p.id)}"><div class="del">${IC.close(20)}</div>
+  const evRow = (p) => `<div class="rowwrap" data-row="${esc(p.id)}"><div class="del">${IC.close(20)}</div>
     <button class="prow" data-act="open" data-v="${esc(p.id)}">${ph(p.item, "", 160)}
       <span class="tx"><b>${esc(p.item.title)}</b><span>${esc(p.place || "")}</span></span>
       ${p.time ? `<span class="tm">${esc(p.time)}</span>` : ""}<span class="dot"></span></button></div>`;
+  const row = (p) => {
+    const d = S.dinner[p.id], ev = evRow(p);
+    if (d) {
+      const dn = `<button class="prow dn" data-act="fplan" data-v="${esc(p.id)}"><span class="dtile">УЖИН</span>
+        <span class="tx"><b>${esc(d.p.name)}</b><span>${d.side === "before" ? "До" : "После"}${d.p.min ? " · " + d.p.min + " мин пешком" : ""}</span></span>
+        ${dinnerTime(p.time, d) ? `<span class="tm">${dinnerTime(p.time, d)}</span>` : ""}<span class="dot"></span></button>`;
+      return `<div class="pair">${d.side === "before" ? dn + '<span class="lk"></span>' + ev : ev + '<span class="lk"></span>' + dn}</div>`;
+    }
+    if (p.item.kind !== "place" && foodList(p.item).length) return `<div class="pair">${ev}<span class="lk"></span><button class="addin" data-act="food" data-v="${esc(p.id)}">${IC.plus(18)}<span>Ужин</span></button></div>`;
+    return ev;
+  };
   const body = Object.entries(groups).map(([d, ps]) => `<section class="day"><div class="dh">${d === "any"
     ? '<span class="any">КОГДА УГОДНО</span>' : `<b>${dt(d).getDate()}</b><span class="mo">${MONG[dt(d).getMonth()]}</span><span>${WDL[dt(d).getDay()]}</span>`}</div>${ps.map(row).join("")}</section>`).join("");
   return `<div class="plan"><div class="hd"><h1>План</h1>${xs.some((p) => p.date) ? `<button class="btn ink" data-act="ics">${IC.cal(18)}<span>В календарь</span></button>` : ""}</div>
@@ -336,18 +349,64 @@ function detailHtml() {
       <button class="rb l ${inPlan ? "like" : ""}" data-act="toggle" data-v="${esc(e.id)}" aria-label="${inPlan ? "Убрать из плана" : "Хочу"}">${IC.heart(24)}</button>
     </div></div>`;
 }
-// «Поесть рядом»: данные собирает парсер (Apify) для площадок ближайших событий. Ключ — как в scraper/sources/food.py: venue_key
-const foodKey = (v) => { const k = (v || "").split(/[,—]/)[0].trim().toLowerCase(); return k.length >= 3 ? k.slice(0, 60) : null; };
+// «Поесть рядом»: данные собирает парсер (Apify): рестораны в радиусе 10 минут пешком от площадки. Ключ — как в scraper/sources/food.py: venue_key
+const MAXWALK = 10;
+const foodKey = (v) => { const k = (v || "").split(/[,—]/)[0].trim().toLowerCase(); return k.length >= 3 && !/^(praha|online|různá místa|various)$/.test(k) ? k.slice(0, 60) : null; };
+const foodList = (e) => { const k = e && foodKey(e.venue); return (k && S.food[k]) || []; };
+const venueName = (e) => (e.venue || "").split(/[,—]/)[0].trim();
+const rating = (p) => (p.rating ? `<span class="rt">${(+p.rating).toFixed(1).replace(".", ",")}</span>` : "");
+const placeMeta = (p) => [p.type, p.min ? p.min + " мин пешком" : ""].filter(Boolean).join(" · ");
 function foodHtml(e) {
-  if (e.kind === "place") return "";
-  const k = foodKey(e.venue), list = k && S.food[k];
-  if (!list || !list.length) return "";
-  const venue = (e.venue || "").split(/[,—]/)[0].trim();
-  const row = (p) => `<button class="frow" data-act="url" data-v="${esc(p.url || "https://www.google.com/maps/search/" + encodeURIComponent(p.name + ", Praha"))}">
-    <span class="tx"><b>${esc(p.name)}</b><span>${esc([p.type, p.price].filter(Boolean).join(" · "))}</span></span>
-    ${p.rating ? `<span class="rt">${String(p.rating).replace(".", ",")}</span>` : ""}</button>`;
-  return `<section class="food"><h3>Поесть рядом</h3><p class="fs">Рядом с ${esc(venue)}</p>${list.slice(0, 5).map(row).join("")}</section>`;
+  if (e.kind === "place" || !foodKey(e.venue)) return "";
+  const n = foodList(e).length, d = S.dinner[e.id];
+  return `<button class="fentry" data-act="food" data-v="${esc(e.id)}"><span class="tx"><b>Поесть рядом</b>
+    <span>${d ? esc(d.p.name) + " · " + (d.side === "before" ? "до" : "после") : n ? `${n} ${n === 1 ? "место" : n < 5 ? "места" : "мест"} · до ${MAXWALK} мин пешком` : "Пока нет мест рядом"}</span></span>${IC.down(20)}</button>`;
 }
+const mapsFood = (e) => "https://www.google.com/maps/search/" + encodeURIComponent("рестораны рядом " + venueName(e) + ", Praha");
+function foodSheetHtml() {
+  const e = itemById(S.fsheet); if (!e) return "";
+  const list = foodList(e);
+  const rows = list.map((p, i) => `<button class="frow" data-act="fplace" data-v="${i}"><span class="tx"><b>${esc(p.name)}</b><span>${esc(placeMeta(p))}</span></span>${rating(p)}</button>`).join("");
+  const body = list.length
+    ? `<div class="fseg" role="tablist"><button class="${S.fside === "before" ? "on" : ""}" data-act="fside" data-v="before">До</button><button class="${S.fside === "after" ? "on" : ""}" data-act="fside" data-v="after">После</button></div><div class="flist">${rows}</div>`
+    : `<div class="fempty"><div class="big">ПУСТО</div><p>Пока нет мест рядом.</p><button class="btn ink big" data-act="url" data-v="${esc(mapsFood(e))}">${IC.pin(22)}<span>Искать на карте</span></button></div>`;
+  return `<div class="scrim fz" data-act="fclose"></div><section class="sheet fz" id="fsheet" aria-label="Поесть рядом"><span class="handle"></span>
+    <div class="fsh"><h2>ПОЕСТЬ РЯДОМ</h2><p class="fs">Рядом с ${esc(venueName(e))}</p>${body}</div></section>`;
+}
+function restaurantHtml() {
+  const f = S.fplace, e = f && itemById(f.eid), p = f && f.p; if (!e || !p) return "";
+  const d = S.dinner[e.id], on = !!(d && d.p.name === p.name);
+  const word = (p.type || "Ресторан").split(/[\s,/]+/)[0];
+  const meta = [p.type, p.price, p.reviews ? p.reviews + " отзывов" : ""].filter(Boolean).join(" · ");
+  const route = "https://www.google.com/maps/dir/?api=1&travelmode=walking&origin=" + encodeURIComponent(venueName(e) + ", Praha") + "&destination=" + encodeURIComponent(p.name + (p.address ? ", " + p.address : ", Praha"));
+  return `<div class="detail rcard" id="rcard" role="dialog" aria-label="${esc(p.name)}">
+    <button class="x glass" data-act="fplaceclose" aria-label="Закрыть">${IC.down(20)}</button>
+    <div class="ph hero"><span class="phk">${esc(word)}</span></div>
+    <div class="stks">${p.min ? `<span class="stk">${p.min} МИН ПЕШКОМ</span>` : ""}</div>
+    <div class="sh"><span class="handle"></span>
+      <div class="rtl"><h1>${esc(p.name)}</h1>${rating(p)}</div>
+      <p class="meta">${esc(meta)}</p>
+      ${p.address ? `<p class="addr">${esc(p.address)}</p>` : ""}
+      <p class="addr">${S.fside === "before" ? "До" : "После"} · ${esc(e.title)}</p>
+    </div>
+    <div class="dact">
+      <button class="btn ink big" data-act="url" data-v="${esc(route)}">${IC.pin(22)}<span>Маршрут</span></button>
+      <button class="rb l ${on ? "like" : ""}" data-act="dinner" aria-label="${on ? "Убрать из плана" : "Добавить ужин в план"}">${IC.heart(24)}</button>
+    </div></div>`;
+}
+const mins = (t) => { const m = /^(\d{1,2}):(\d{2})/.exec(t || ""); return m ? +m[1] * 60 + +m[2] : null; };
+const hm = (n) => { n = ((n % 1440) + 1440) % 1440; return String(Math.floor(n / 60)).padStart(2, "0") + ":" + String(n % 60).padStart(2, "0"); };
+function dinnerTime(time, d) { const t = mins(time); return t == null ? "" : "~" + hm(d.side === "before" ? t - 60 - (d.p.min || 0) : t + 120 + (d.p.min || 0)); }
+const dropDinner = (id) => { delete S.dinner[id]; };
+function toggleDinner() {
+  const f = S.fplace; if (!f) return;
+  const cur = S.dinner[f.eid];
+  if (cur && cur.p.name === f.p.name) dropDinner(f.eid);
+  else { if (!S.plan[f.eid]) togglePlan(f.eid); S.dinner[f.eid] = { side: S.fside, p: f.p }; haptic("light"); }
+  render();
+}
+function closeFood() { const s = $("#fsheet"); if (!s) return; s.classList.add("closing"); setTimeout(() => { S.fsheet = null; render(); }, 260); }
+function closeRest() { const d = $("#rcard"); if (!d) return; d.classList.add("closing"); setTimeout(() => { S.fplace = null; render(); }, 260); }
 function weekends() {
   const w1 = weekendRange(), t = todayIso();
   const sat2 = dt(w1[0]).getDay() === 0 ? addDays(t, 6) : addDays(w1[0], 7);
@@ -395,10 +454,12 @@ function render(opts = {}) {
     sheet: $(".sheet") ? $(".sheet").scrollTop : 0,
     detail: $(".detail") ? $(".detail").scrollTop : 0,
   };
-  const sheetWas = S.sheetShown, detailWas = S.detailShown;
+  const sheetWas = S.sheetShown, detailWas = S.detailShown, fsWas = S.fsheetShown, fpWas = S.fplaceShown;
   app.innerHTML = (S.tab === "feed" ? headerHtml() + feedHtml(opts) : planHtml()) + tabsHtml() +
-    (S.sheet === "dates" ? datesHtml() : "") + (S.detail ? detailHtml() : "");
-  S.sheetShown = S.sheet === "dates"; S.detailShown = !!S.detail;
+    (S.sheet === "dates" ? datesHtml() : "") + (S.detail ? detailHtml() : "") + (S.fsheet ? foodSheetHtml() : "") + (S.fplace ? restaurantHtml() : "");
+  S.sheetShown = S.sheet === "dates"; S.detailShown = !!S.detail; S.fsheetShown = !!S.fsheet; S.fplaceShown = !!S.fplace;
+  if (fsWas && S.fsheetShown) { const a = $("#fsheet"), b = $(".scrim.fz"); a && a.classList.add("static"); b && b.classList.add("static"); }
+  if (fpWas && S.fplaceShown) { const d = $("#rcard"); d && d.classList.add("static"); }
   // листы появляются с анимацией только при открытии, не при каждом выборе внутри
   if (sheetWas && S.sheetShown) { const a = $("#sheet"), b = $(".scrim"); a && a.classList.add("static"); b && b.classList.add("static"); }
   if (detailWas && S.detailShown) { const d = $("#detail"); d && d.classList.add("static"); }
@@ -413,7 +474,7 @@ function render(opts = {}) {
   if (opts.enter) { const c = $(".card.top"); c && c.classList.add(opts.enter); }
   if (opts.bump) { const b = $("#badge"); b && b.classList.add("bump"); }
   bindStack(); bindPlanRows(); bindDetail();
-  if (tg && tg.BackButton) (S.detail || S.sheet) ? tg.BackButton.show() : tg.BackButton.hide();
+  if (tg && tg.BackButton) (S.detail || S.sheet || S.fsheet || S.fplace) ? tg.BackButton.show() : tg.BackButton.hide();
   save();
 }
 // ---------- действия ----------
@@ -439,7 +500,7 @@ function swipeTop(like) { const c = $(".card.top"); if (c) fly(c, like); }
 function undo() {
   const id = S.history.pop(); if (!id) return;
   const prev = itemById(id); if (prev && S.decided[id] !== undefined) { Taste.retract(S.taste, prev, S.decided[id] === 1, Date.now()); signal(S.decided[id] === 1 ? "unlike" : "unskip", prev); }
-  if (S.decided[id] === 1) delete S.plan[id];
+  if (S.decided[id] === 1) { delete S.plan[id]; dropDinner(id); }
   delete S.decided[id]; S.top = id; haptic("select");
   render({ enter: "land" });
 }
@@ -451,7 +512,7 @@ function dice() {
   setTimeout(() => { S.top = pick.id; render({ enter: "land" }); haptic("success"); }, 650);
 }
 function togglePlan(id) {
-  if (S.plan[id]) { const e = itemById(id); if (e) { Taste.retract(S.taste, e, true); signal("unlike", e); } delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; haptic("select"); }
+  if (S.plan[id]) { const e = itemById(id); if (e) { Taste.retract(S.taste, e, true); signal("unlike", e); } delete S.plan[id]; dropDinner(id); if (S.decided[id] === 1) delete S.decided[id]; haptic("select"); }
   else { const e = itemById(id); if (e) { S.plan[id] = snapshot(e); if (S.decided[id] === undefined) { Taste.record(S.taste, e, true); signal("like", e); } S.decided[id] = 1; haptic("light"); } }
   render({ bump: !!S.plan[id] });
 }
@@ -483,7 +544,7 @@ document.addEventListener("click", (ev) => {
   if (a === "mode") { if (S.mode !== v) { S.mode = v; haptic("select"); render({ tiles: true }); } return; }
   if (a === "cat") { v ? (S.cats.has(v) ? S.cats.delete(v) : S.cats.add(v)) : S.cats.clear(); S.top = null; haptic("select"); return render({ enter: "enter" }); }
   if (a === "kind") { v ? (S.kinds.has(v) ? S.kinds.delete(v) : S.kinds.add(v)) : S.kinds.clear(); haptic("select"); return render(); }
-  if (a === "tab") { S.tab = v; S.detail = null; haptic("select"); window.scrollTo(0, 0); return render(); }
+  if (a === "tab") { S.tab = v; S.detail = null; S.fsheet = null; S.fplace = null; haptic("select"); window.scrollTo(0, 0); return render(); }
   if (a === "like") return swipeTop(true);
   if (a === "pass") return swipeTop(false);
   if (a === "undo") return undo();
@@ -493,6 +554,13 @@ document.addEventListener("click", (ev) => {
   if (a === "close") return closeDetail();
   if (a === "toggle") return togglePlan(v);
   if (a === "url") return openUrl(v);
+  if (a === "food") { S.fsheet = v; haptic("select"); return render(); }
+  if (a === "fclose") return closeFood();
+  if (a === "fside") { S.fside = v; haptic("select"); return render(); }
+  if (a === "fplace") { const e = itemById(S.fsheet); const p = e && foodList(e)[+v]; if (p) { S.fplace = { eid: e.id, p }; haptic("select"); render(); } return; }
+  if (a === "fplan") { const d = S.dinner[v]; if (d) { S.fplace = { eid: v, p: d.p }; S.fside = d.side; haptic("select"); render(); } return; }
+  if (a === "fplaceclose") return closeRest();
+  if (a === "dinner") return toggleDinner();
   if (a === "more") return t.classList.toggle("open");
   if (a === "ics") return exportIcs();
   if (a === "dates") return openSheet();
@@ -510,7 +578,7 @@ document.addEventListener("click", (ev) => {
   if (a === "apply") return applyDraft(false);
   if (a === "applydice") return applyDraft(true);
 });
-tg && tg.BackButton && tg.BackButton.onClick(() => (S.detail ? closeDetail() : S.sheet ? closeSheet() : null));
+tg && tg.BackButton && tg.BackButton.onClick(() => (S.fplace ? closeRest() : S.fsheet ? closeFood() : S.detail ? closeDetail() : S.sheet ? closeSheet() : null));
 
 // ---------- жесты ----------
 function drag(el, { onMove, onEnd, axis }) {
@@ -555,7 +623,7 @@ function bindPlanRows() {
         if (moved) suppress = true;
         if (dx < -90) {
           w.classList.add("gone"); haptic("select");
-          setTimeout(() => { const id = w.dataset.row; const pe = itemById(id); if (pe) { Taste.retract(S.taste, pe, true); signal("unlike", pe); } delete S.plan[id]; if (S.decided[id] === 1) delete S.decided[id]; render(); }, 320);
+          setTimeout(() => { const id = w.dataset.row; const pe = itemById(id); if (pe) { Taste.retract(S.taste, pe, true); signal("unlike", pe); } delete S.plan[id]; dropDinner(id); if (S.decided[id] === 1) delete S.decided[id]; render(); }, 320);
         } else { r.classList.add("back"); r.style.transform = ""; }
       },
     });

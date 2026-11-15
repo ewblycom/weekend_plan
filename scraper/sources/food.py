@@ -1,13 +1,14 @@
 """«Поесть рядом»: для площадок ближайших событий берём рестораны рядом через Apify (Google Maps scraper).
 
 Токен — секрет репозитория APIFY_TOKEN. Без него шаг пропускается, приложение просто не показывает блок.
-Бережём бесплатный бюджет Apify ($5/мес ≈ 1000+ мест): на каждую площадку 5 мест, обновляем раз в 30 дней,
-не больше MAX_VENUES_PER_RUN новых площадок за запуск. Результат: docs/data/food.json {ключ_площадки: [места]}.
+Для каждой площадки: геокод (1 место) + рестораны в радиусе ~10 минут пешком, оставляем лучшие по оценке.
+Обновляем раз в 30 дней, не больше MAX_VENUES_PER_RUN площадок за запуск (бюджет Apify). Результат: docs/data/food.json {ключ_площадки: [места]}.
 """
 from __future__ import annotations
 
 import json
 import logging
+import math
 import os
 import re
 from datetime import date, timedelta
@@ -21,9 +22,17 @@ OUT = ROOT / "docs" / "data" / "food.json"
 CACHE = ROOT / "data" / "cache" / "food.json"
 ACTOR = "compass~crawler-google-places"
 API = f"https://api.apify.com/v2/acts/{ACTOR}/run-sync-get-dataset-items"
-PER_VENUE = 5
+MAX_WALK_MIN = 10          # «до 10 минут пешком»
+WALK_M_PER_MIN = 80        # ~4,8 км/ч
+DETOUR = 1.3               # по улицам дальше, чем по прямой
+RADIUS_KM = round(MAX_WALK_MIN * WALK_M_PER_MIN / DETOUR / 1000 + 0.05, 2)   # ≈0,67 км по прямой
+SEARCH_LIMIT = 15          # берём с запасом, потом фильтруем по расстоянию и качеству
+KEEP = 6
+MIN_RATING, MIN_REVIEWS = 4.0, 20
+PRAGUE = (49.9, 50.2, 14.2, 14.75)   # lat_min, lat_max, lng_min, lng_max — защита от геокода «не в ту Прагу»
 REFRESH_DAYS = 30
-MAX_VENUES_PER_RUN = 20
+MAX_VENUES_PER_RUN = 15
+CACHE_VERSION = 2
 BAD_VENUE = re.compile(r"^(praha|online|různá místa|various)$", re.I)
 
 
@@ -48,29 +57,78 @@ def pick_venues(events: list[dict], today: date, horizon_days: int = 14) -> list
     return list(seen.items())
 
 
-def parse_item(it: dict) -> dict | None:
-    """Одно место из ответа Apify → компактная запись для приложения."""
+def haversine_m(a: tuple[float, float], b: tuple[float, float]) -> float:
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 2 * 6371000 * math.asin(math.sqrt(h))
+
+
+def walk_min(dist_m: float) -> int:
+    return max(1, math.ceil(dist_m * DETOUR / WALK_M_PER_MIN))
+
+
+def in_prague(lat: float, lng: float) -> bool:
+    return PRAGUE[0] <= lat <= PRAGUE[1] and PRAGUE[2] <= lng <= PRAGUE[3]
+
+
+def parse_item(it: dict, origin: tuple[float, float] | None = None) -> dict | None:
+    """Одно место из ответа Apify → компактная запись. С origin считает расстояние и время пешком; дальше 10 минут → None."""
     name = it.get("title")
     if not name or it.get("permanentlyClosed") or it.get("temporarilyClosed"):
         return None
     loc = it.get("location") or {}
-    return {k: v for k, v in {
+    lat, lng = loc.get("lat"), loc.get("lng")
+    rec = {k: v for k, v in {
         "name": name, "rating": it.get("totalScore"), "reviews": it.get("reviewsCount"), "type": it.get("categoryName"),
-        "price": it.get("price"), "address": it.get("address"), "url": it.get("url"),
-        "lat": loc.get("lat"), "lng": loc.get("lng"),
+        "price": it.get("price"), "address": it.get("address"), "url": it.get("url"), "lat": lat, "lng": lng,
     }.items() if v not in (None, "")}
+    if origin:
+        if lat is None or lng is None:
+            return None
+        d = haversine_m(origin, (lat, lng))
+        rec["m"] = round(d)
+        rec["min"] = walk_min(d)
+        if rec["min"] > MAX_WALK_MIN:
+            return None
+    return rec
 
 
-def fetch_nearby(token: str, venue_name: str) -> list[dict]:
+def good(p: dict) -> bool:
+    return (p.get("rating") or 0) >= MIN_RATING and (p.get("reviews") or 0) >= MIN_REVIEWS
+
+
+def rank(p: dict) -> float:
+    """Выше — лучше: оценка с поправкой на число отзывов, небольшой бонус за близость."""
+    return (p.get("rating") or 0) * min(1, (p.get("reviews") or 0) / 100) - (p.get("min") or 0) * 0.03
+
+
+def _run(token: str, payload: dict) -> list[dict]:
     r = requests.post(API, params={"token": token}, timeout=240, json={
-        "searchStringsArray": [f"restaurace poblíž {venue_name}, Praha"],
-        "maxCrawledPlacesPerSearch": PER_VENUE, "language": "cs", "skipClosedPlaces": True,
-        "scrapeContacts": False, "scrapeReviewsPersonalData": False, "maxReviews": 0, "maxImages": 0,
+        "language": "cs", "skipClosedPlaces": True, "scrapeContacts": False, "scrapeReviewsPersonalData": False,
+        "maxReviews": 0, "maxImages": 0, **payload,
     })
     r.raise_for_status()
-    out = [p for p in (parse_item(i) for i in r.json()) if p]
-    out.sort(key=lambda p: -(p.get("rating") or 0) * min(1, (p.get("reviews") or 0) / 50))   # оценка с поправкой на число отзывов
-    return out[:PER_VENUE]
+    return r.json()
+
+
+def geocode(token: str, venue_name: str) -> tuple[float, float] | None:
+    """Координаты площадки: ищем её саму в Google Maps (1 место). Не в Праге — считаем промахом."""
+    for it in _run(token, {"searchStringsArray": [f"{venue_name}, Praha"], "maxCrawledPlacesPerSearch": 1}):
+        loc = it.get("location") or {}
+        if loc.get("lat") is not None and in_prague(loc["lat"], loc["lng"]):
+            return (loc["lat"], loc["lng"])
+    return None
+
+
+def fetch_nearby(token: str, origin: tuple[float, float]) -> list[dict]:
+    """Рестораны в радиусе ~10 минут пешком от точки. Радиус просим у Apify, а расстояние всё равно проверяем сами."""
+    items = _run(token, {
+        "searchStringsArray": ["restaurace"], "maxCrawledPlacesPerSearch": SEARCH_LIMIT,
+        "customGeolocation": {"type": "Point", "coordinates": [origin[1], origin[0]], "radiusKm": RADIUS_KM},
+    })
+    places = [p for p in (parse_item(i, origin) for i in items) if p and good(p)]
+    places.sort(key=rank, reverse=True)
+    return places[:KEEP]
 
 
 def collect(events: list[dict], today: date | None = None, token: str | None = None) -> int:
@@ -84,16 +142,23 @@ def collect(events: list[dict], today: date | None = None, token: str | None = N
     except (OSError, ValueError):
         cache = {}
     stale = (today - timedelta(days=REFRESH_DAYS)).isoformat()
-    todo = [(k, n) for k, n in pick_venues(events, today) if k not in cache or cache[k]["fetched"] < stale][:MAX_VENUES_PER_RUN]
+    todo = [(k, n) for k, n in pick_venues(events, today)
+            if k not in cache or cache[k].get("v") != CACHE_VERSION or cache[k]["fetched"] < stale][:MAX_VENUES_PER_RUN]
     done = 0
     for k, name in todo:
         try:
-            cache[k] = {"fetched": today.isoformat(), "places": fetch_nearby(token, name)}
+            old = cache.get(k) or {}
+            origin = (old["lat"], old["lng"]) if old.get("lat") is not None else geocode(token, name)
+            if not origin:
+                cache[k] = {"v": CACHE_VERSION, "fetched": today.isoformat(), "places": []}   # не нашли площадку — повтор через 30 дней
+                log.info("food: %s — не нашёл координаты", name)
+                continue
+            cache[k] = {"v": CACHE_VERSION, "fetched": today.isoformat(), "lat": origin[0], "lng": origin[1], "places": fetch_nearby(token, origin)}
             done += 1
         except Exception as e:  # noqa: BLE001 — одна площадка не должна ронять сбор
             log.warning("food: %s — %s", name, str(e).replace(token, "***"))
     CACHE.parent.mkdir(parents=True, exist_ok=True)
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
     OUT.write_text(json.dumps({k: v["places"] for k, v in cache.items() if v["places"]}, ensure_ascii=False), encoding="utf-8")
-    log.info("food: обновлено площадок %d, всего в кэше %d", done, len(cache))
+    log.info("food: обновлено площадок %d, с едой %d из %d в кэше", done, sum(1 for v in cache.values() if v["places"]), len(cache))
     return done

@@ -242,11 +242,38 @@ h1 { margin: 0; font: 700 30px/32px var(--sans); letter-spacing: -.02em; }
 
 .day .dh .mo { color: var(--ink); font-weight: 700; }
 
-.food { margin-top: var(--s5); }
-.food h3 { font: 800 22px/26px var(--display); margin: 0 0 var(--s1); }
-.food .fs { margin: 0 0 var(--s3); font-size: 13px; color: var(--ink-2); }
-.food .frow { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: var(--s3); padding: var(--s3) 0; border: 0; border-top: 1px solid var(--hairline); background: none; text-align: left; color: inherit; font: inherit; }
-.food .frow .tx { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.food .frow b { font-weight: 600; font-size: 15px; }
-.food .frow .tx span { font-size: 13px; color: var(--ink-2); }
-.food .frow .rt { flex: none; min-width: 40px; height: 28px; padding: 0 var(--s2); display: grid; place-items: center; border-radius: var(--r-pill); background: var(--lime); color: #0a0a0b; font-weight: 800; font-size: 13px; }
+/* ---------- «Поесть рядом» ---------- */
+.fentry { width: 100%; margin-top: var(--s5); display: flex; align-items: center; justify-content: space-between; gap: var(--s3); padding: var(--s3) var(--s4); border: 1px solid var(--hairline); border-radius: var(--r-md); background: var(--paper); color: inherit; font: inherit; text-align: left; }
+.fentry .tx { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.fentry b { font: 600 16px/22px var(--sans); }
+.fentry .tx span { font: 500 14px/19px var(--sans); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.fentry svg { flex: none; transform: rotate(-90deg); color: var(--ink-2); }
+.scrim.fz { z-index: 59; }
+.sheet.fz { z-index: 60; }
+.fsh { padding: 0 var(--edge); }
+.fsh h2 { font: 800 22px/26px var(--display); margin: 0; }
+.fsh .fs { margin: var(--s1) 0 0; font-size: 14px; line-height: 19px; color: var(--ink-2); }
+.fseg { margin-top: var(--s4); display: flex; gap: 2px; padding: 4px; height: 44px; border-radius: var(--r-pill); background: var(--paper-2); }
+.fseg button { flex: 1; border-radius: var(--r-pill); font-weight: 600; font-size: 14px; color: var(--ink-2); transition: background .2s, color .2s; }
+.fseg button.on { background: var(--ink); color: var(--on-ink); }
+.flist { margin-top: var(--s4); display: flex; flex-direction: column; gap: var(--s2); }
+.frow { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: var(--s3); padding: var(--s3) var(--s4); border: 1px solid var(--hairline); border-radius: var(--r-md); background: var(--paper); color: inherit; font: inherit; text-align: left; }
+.frow .tx { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.frow b { font: 600 16px/22px var(--sans); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.frow .tx span { font: 500 14px/19px var(--sans); color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rt { flex: none; min-width: 40px; height: 28px; padding: 0 var(--s2); display: grid; place-items: center; border-radius: var(--r-pill); background: var(--paper-2); color: var(--ink); font-weight: 800; font-size: 13px; }
+.fempty { padding: var(--s6) 0 0; }
+.fempty .big { font: 800 44px/44px var(--display); color: var(--hairline); }
+.fempty p { margin: var(--s2) 0 var(--s5); font-size: 16px; line-height: 22px; color: var(--ink-2); }
+.detail.rcard { z-index: 70; }
+.rcard .ph.hero { height: 42dvh; min-height: 260px; }
+.rcard .sh { min-height: 58dvh; }
+.rtl { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--s3); }
+.rtl h1 { margin: 0; }
+.rtl .rt { margin-top: var(--s1); }
+.rcard .addr { margin: var(--s3) 0 0; font-size: 15px; line-height: 21px; color: var(--ink-2); }
+.pair { display: flex; flex-direction: column; }
+.pair .lk { display: block; width: 1px; height: 12px; margin-left: 38px; background: var(--hairline); }
+.prow.dn { width: 100%; text-align: left; font: inherit; color: inherit; }
+.dtile { flex: none; width: 52px; height: 52px; border-radius: 12px; background: var(--paper-2); display: grid; place-items: center; font: 800 11px/1 var(--display); letter-spacing: .04em; color: var(--ink-2); }
+.addin { align-self: flex-start; height: 44px; padding: 0 16px; display: inline-flex; align-items: center; gap: 8px; border: 1px dashed var(--hairline); border-radius: var(--r-pill); background: var(--paper); color: var(--ink); font-weight: 600; font-size: 16px; }

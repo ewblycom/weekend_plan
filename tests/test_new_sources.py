@@ -102,3 +102,20 @@ def test_food_venues_and_items(tmp_path, monkeypatch):
     assert food.parse_item(it)["rating"] == 4.5 and food.parse_item({**it, "permanentlyClosed": True}) is None
     monkeypatch.delenv("APIFY_TOKEN", raising=False)
     assert food.collect(evs, date(2026, 11, 15)) == 0       # без токена тихо пропускаем
+
+
+def test_food_walking_radius_and_ranking(monkeypatch):
+    from scraper.sources import food
+    o = (50.0755, 14.4378)                       # Вацлавак
+    mk = lambda t, lat, lng, r=4.5, n=300: {"title": t, "totalScore": r, "reviewsCount": n, "categoryName": "Restaurace", "location": {"lat": lat, "lng": lng}}
+    near = food.parse_item(mk("Близко", 50.0775, 14.4378), o)         # ~220 м
+    assert near["min"] <= 4 and near["m"] < 300
+    assert food.parse_item(mk("Далеко", 50.0900, 14.4378), o) is None   # ~1,6 км — больше 10 минут
+    assert food.parse_item({"title": "Без координат"}, o) is None
+    assert food.walk_min(600) == 10 and food.walk_min(700) == 12
+    items = [mk("A", 50.0760, 14.4378, 4.9, 25), mk("B", 50.0765, 14.4378, 4.6, 900), mk("C", 50.0770, 14.4378, 3.5, 900),
+             mk("D", 50.0770, 14.4378, 4.8, 5), mk("E", 50.0900, 14.4378, 5.0, 900)]
+    monkeypatch.setattr(food, "_run", lambda token, payload: items)
+    got = [p["name"] for p in food.fetch_nearby("t", o)]
+    assert got == ["B", "A"]                                           # C — низкая оценка, D — мало отзывов, E — далеко; B выше A за счёт числа отзывов
+    assert food.in_prague(50.07, 14.43) and not food.in_prague(48.2, 16.3)
