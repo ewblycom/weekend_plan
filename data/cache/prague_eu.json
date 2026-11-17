@@ -1958,13 +1958,6 @@
 "link": "https://pragovkagallery.com",
 "slots": []
 },
-"https://prague.eu/cs/akce/ragby-me-trophy-ceskolitva/": {
-"booking": null,
-"description": "Národní tým Česka se v únoru postaví Litvě v důležitém utkání mistrovství Evropy třídy Trophy (Rugby Europe Trophy), což je druhá nejvyšší evropská soutěž v patnáctkovém ragby pro národní reprezentace. Souboj se uskuteční na břevnovském stadionu Markéta v Praze a nabídne fanouškům bitvu o cenné body v tabulce tohoto prestižního evropského seriálu. Český tým, hrající doma před svými příznivci, bude usilovat o další úspěch v soutěži, která mu pravidelně umožňuje měřit síly s reprezentacemi podobné kvality a sbírat zkušenosti pro postup směrem k vrcholu evropského ragby, Championship.",
-"fetched": "2026-11-14",
-"link": "https://www.rugbyunion.cz/kalendar",
-"slots": []
-},
 "https://prague.eu/cs/akce/restaurant-week/": {
 "booking": "https://restaurant-week.cz/restaurants/festival/restaurant-week?peopleCount=2&location=1-Praha",
 "description": "RestaurantWeek® je svátkem všech milovníků dobrého jídla a jednou z největších a nejoblíbenějších kulinářských akcí na světě. Koná se v duchu #RespectFood. Díky systému předběžných rezervací s výběrem menu nepřijde během festivalu nazmar ani drobeček. Posláním festivalu je představit a propagovat autentickou českou restaurační scénu. Během této výjimečné gastronomické události otevírají špičkové pražské restaurace své dveře široké veřejnosti a nabízejí speciální degustační menu za zvýhodněné ceny. Tématem této edice jsou sezónní chutě podzimu, které se promítnou do menu plných dýní, lesních plodů, zvěřiny, regionálních surovin i oblíbených lanýžů. Ochutnejte kreativní kuchyni talentovaných šéfkuchařů, objevte nové podniky i známé gastronomické adresy a dopřejte si kulinářský zážitek, který je běžně dostupný jen při výjimečných příležitostech. RestaurantWeek® je ideální příležitostí vyrazit za chutěmi světa, podpořit lokální gastronomii a zažít město trochu jinak — skrze jeho nejlepší talíře.",
@@ -2028,6 +2021,13 @@
 "description": "Songs of Europe přivede do Prahy 430 zpěváků z jedenácti evropských sborů. Slavnostní koncert ve Smetanově sále nabídne pestrou přehlídku lidové hudby z různých koutů Evropy, od Norska přes Řecko až po Kosovo, a představí také pražské dětské sbory Radost Praha a Pueri Gaudentes. Publikum tak zažije jedinečné hudební setkání evropských tradic a sborového umění na jednom pódiu.",
 "fetched": "2026-11-14",
 "link": "https://www.obecnidum.cz/program/slavnostni-koncert-festival-songs-of-europe-praha-2026/",
+"slots": []
+},
+"https://prague.eu/cs/akce/snow-film-fest/": {
+"booking": "https://www.bez.cz/festivaly/snow-film-fest-praha--kino-aero/",
+"description": "Snow Film Fest se vrací do Prahy s výběrem nejlepších světových i českých filmů o horách, zimních expedicích a outdoorových dobrodružstvích. Patnáctý ročník festivalu nabídne strhující příběhy špičkových sportovců, odvážné výstupy na horské vrcholy, freeridové sjezdy i výpravy do ledových krajin. Pražská zastávka festivalu se uskuteční v úterý 8. prosince v kině Aero. Celorepubliková přehlídka probíhá od 25. října 2026 do 31. ledna 2027 v kinech a kulturních sálech po celé České republice a Slovensku.",
+"fetched": "2026-11-17",
+"link": "https://snowfilmfest.cz/",
 "slots": []
 },
 "https://prague.eu/cs/akce/stana-francu-rytmus-stani/": {
