@@ -70,13 +70,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/a-whole-different-animal/": {
-"booking": null,
-"description": "Skupinová výstava k 20. výročí galerie Hunt Kastner s názvem A Whole Different Animal kurátorsky připravili jen kratochvil a Laura Amann Marín. Výstavní projekt s tematikou narozeninové oslavy zaplňuje hlavní výstavní sál i menší projekt_room a představuje díla více než dvaceti dvou dvou umělců a umělkyň.",
-"fetched": "2026-11-14",
-"link": "https://huntkastner.com",
-"slots": []
-},
 "https://prague.eu/cs/akce/adventni-trhy-na-chvalske-tvrzi/": {
 "booking": null,
 "description": "První adventní neděli ožije areál Chvalské tvrze tradičními adventními trhy plnými řemeslných výrobků, vánočních dobrot a sváteční atmosféry. Návštěvníky čeká kulturní program, tvořivé dílny pro děti, rozsvícení vánočního stromu i setkání s tajemnými Luciemi, které podle lidových tradic dohlížejí na pořádek v adventním čase.",
@@ -96,6 +89,13 @@
 "description": "Arlo Parks vystoupí 21. listopadu 2026 v pražském prostoru ARCHA+. Britská zpěvačka, básnířka a držitelka Mercury Music Prize patří k nejvýraznějším hlasům současné hudby a publikum po celém světě si získala citlivými texty, intimní atmosférou i jedinečnou schopností proměnit osobní příběhy v silné koncertní momenty. Do Prahy přijede v době vydání očekávaného třetího alba Ambiguous Desire, na kterém posouvá svůj zvuk směrem k odvážnějším a experimentálnějším polohám.",
 "fetched": "2026-11-14",
 "link": "https://archa-plus.cz/cz/program/detail/755/2026-11-21-arlo-parks",
+"slots": []
+},
+"https://prague.eu/cs/akce/baby-lasagna/": {
+"booking": "https://www.livenation.cz/event/baby-lasagna-prague-tickets-edp1656073",
+"description": "Baby Lasagna se vrací do Prahy — syrovější, temnější a osobnější než kdy dřív. Chorvatský fenomén, který po Eurovizi 2024 vystřelil mezi nejvýraznější evropské umělce, dorazí 3. prosince 2026 do ARCHA+ s turné END THE PARTY TOUR. Naživo představí novou éru své tvorby, intenzivní návrat k alternativním a metalovým kořenům, hlubší sebereflexi i nečekaně upřímné výpovědi o tlaku úspěchu. Fanoušky čeká koncert, který bourá vlastní obraz i hranici mezi performerem a publikem.",
+"fetched": "2026-11-18",
+"link": "https://www.archa-plus.cz/cz/program/detail/753/2026-12-03-baby-lasagna",
 "slots": []
 },
 "https://prague.eu/cs/akce/bach-houslove-sonaty/": {
@@ -180,13 +180,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/buchty-a-loutky-punch-a-judy-automat-na-filmy/": {
-"booking": "https://www.svandovodivadlo.cz/inscenace/755/buchty-a-loutky-punch-a-judy-automat-na-filmy/6532",
-"description": "Maňásková groteska, původem z Anglie.",
-"fetched": "2026-11-14",
-"link": "https://www.svandovodivadlo.cz/inscenace/755/buchty-a-loutky-punch-a-judy-automat-na-filmy/6532",
-"slots": []
-},
 "https://prague.eu/cs/akce/buh-v-las-vegas/": {
 "booking": "https://www.nazabradli.cz/repertoar/buh-v-las-vegas/",
 "description": "„Co se stalo ve Vegas, zůstane ve Vegas.“",
@@ -269,6 +262,78 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/cirk-la-putyka-st-art/": {
+"booking": "https://www.jatka78.cz/cs/inscenace/st-art",
+"description": "Jak vypadá cesta za snem? Co se odehrává v hlavě sportovce vteřinu před startem? Jak chutná návrat do tréninku po zranění? Co sportovec prožívá, když se nedaří, když všechno bolí a nic nefunguje? Kdy touží po samotě? A kdy se naopak cítí opuštěný? Silné obrazy. Pohyb, který vypráví příběh. Emocionální jízda plná euforie, vítězství, ale i frustrace a bolesti. Sport jako brána k tématům, která se dotýkají každého z nás. Bez ohledu na to, jestli ho milujeme, nebo jím pohrdáme.",
+"fetched": "2026-11-18",
+"link": "https://www.jatka78.cz/cs/inscenace/st-art",
+"slots": [
+{
+"date": "2026-09-09",
+"time": "19:30"
+},
+{
+"date": "2026-09-10",
+"time": "19:30"
+},
+{
+"date": "2026-09-11",
+"time": "19:30"
+},
+{
+"date": "2026-09-12",
+"time": "19:30"
+},
+{
+"date": "2026-09-13",
+"time": "18:00"
+},
+{
+"date": "2026-09-22",
+"time": "19:30"
+},
+{
+"date": "2026-09-23",
+"time": "19:30"
+},
+{
+"date": "2026-09-24",
+"time": "19:30"
+},
+{
+"date": "2026-09-25",
+"time": "19:30"
+},
+{
+"date": "2026-09-26",
+"time": "19:30"
+},
+{
+"date": "2026-09-27",
+"time": "18:00"
+},
+{
+"date": "2026-11-24",
+"time": "19:30"
+},
+{
+"date": "2026-11-26",
+"time": "19:30"
+},
+{
+"date": "2026-11-27",
+"time": "19:30"
+},
+{
+"date": "2026-11-28",
+"time": "19:30"
+},
+{
+"date": "2026-11-29",
+"time": "18:00"
+}
+]
+},
 "https://prague.eu/cs/akce/clarinet-factory-2/": {
 "booking": "https://www.mlp.cz/cz/ticketing/12795",
 "description": "Clarinet Factory patří už více než dvě desetiletí k výrazným projektům české hudební scény. Čtveřice klarinetistů na svém koncertě v Městské knihovně v Praze nabídne originální spojení klasické hudby, jazzu, elektroniky i improvizace, které překračuje hranice jednotlivých žánrů. Večer navíc obohatí hosté Milan Cimfe a zpěvačka Kateřina García.",
@@ -296,34 +361,6 @@
 "fetched": "2026-11-14",
 "link": "https://www.hrad.cz",
 "slots": []
-},
-"https://prague.eu/cs/akce/deja-vu-cabaret-italia/": {
-"booking": "https://linktr.ee/dejavu.cabaret",
-"description": "Déjà Vu Cabaret Show Italia oživuje svět Guida Continiho v podmanivé kabaretní show plné třpytu, elegance, pokušení a nezapomenutelných žen. Italia — z filmového plátna na jeviště. Inspirováno ikonickým filmem Nine.",
-"fetched": "2026-11-14",
-"link": "https://dejavucabaret.show/",
-"slots": [
-{
-"date": "2026-10-26",
-"time": "19:30"
-},
-{
-"date": "2026-10-31",
-"time": "19:30"
-},
-{
-"date": "2026-11-05",
-"time": "19:30"
-},
-{
-"date": "2026-11-12",
-"time": "19:30"
-},
-{
-"date": "2026-11-17",
-"time": "19:30"
-}
-]
 },
 "https://prague.eu/cs/akce/dekkadancers-tramvaj-do-stanice-touha-2/": {
 "booking": "https://www.jatka78.cz/cs/inscenace/tramvaj-do-stanice-touha",
@@ -423,26 +460,6 @@
 "link": "https://martinufestival.cz/",
 "slots": []
 },
-"https://prague.eu/cs/akce/doktorka-z-domu-trubacu/": {
-"booking": "https://www.mestskadivadlaprazska.cz/inscenace/2260/doktorka-z-domu-trubacu/",
-"description": "Strhující životní příběh české lékařky Vlasty Kalálové-di Lotti s Beátou Kaňokovou v hlavní roli.",
-"fetched": "2026-11-14",
-"link": "https://www.mestskadivadlaprazska.cz/inscenace/2260/doktorka-z-domu-trubacu/",
-"slots": [
-{
-"date": "2026-10-31",
-"time": "19:00"
-},
-{
-"date": "2026-11-14",
-"time": "19:00"
-},
-{
-"date": "2026-11-17",
-"time": "19:00"
-}
-]
-},
 "https://prague.eu/cs/akce/dracula/": {
 "booking": "https://www.hdk.cz/repertoar/dracula",
 "description": "Dracula není jen muzikál, je to legenda, která znovu ožívá. Přijďte se přesvědčit, že jeho příběh je stejně věčný jako on sám.",
@@ -482,13 +499,6 @@
 "time": "15:00"
 }
 ]
-},
-"https://prague.eu/cs/akce/drazdanska-filharmonie/": {
-"booking": "https://fok.cz/drazdanska-filharmonie",
-"description": "Drážďanská filharmonie, jeden z předních německých orchestrů, zavítá do Prahy. Ve spolupráci se Symfonickým orchestrem hl. m. Prahy FOK zazní ve Smetanově síni Obecního domu Beethovenův Klavírní koncert č. 2 a Brucknerova 7. symfonie.",
-"fetched": "2026-11-14",
-"link": "https://fok.cz/drazdanska-filharmonie",
-"slots": []
 },
 "https://prague.eu/cs/akce/dvojice-karolina-rossi-a-janek-rous/": {
 "booking": null,
@@ -1022,26 +1032,6 @@
 "link": "https://vecnanadeje.org",
 "slots": []
 },
-"https://prague.eu/cs/akce/i-and-you/": {
-"booking": "https://goout.net/cs/listky/i-and-you-pouze-v-anglictine/joolb/",
-"description": "Jednoho odpoledne Anthony nečekaně přichází ke dveřím své spolužačky Caroline a nese výtisk knihy Stébla trávy od Walta Whitmana a naléhavý úkol od učitele angličtiny na básnický projekt. Nakonec tento zdánlivě všední projekt odhalí mnohem hlubší tajemství, které je v tento den svedlo dohromady.",
-"fetched": "2026-11-14",
-"link": "http://www.napradle.cz/nic.php?choose=program",
-"slots": [
-{
-"date": "2026-11-13",
-"time": "19:00"
-},
-{
-"date": "2026-11-14",
-"time": "19:00"
-},
-{
-"date": "2026-11-17",
-"time": "19:00"
-}
-]
-},
 "https://prague.eu/cs/akce/idomeneo/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/idomeneo-VNCLqwNQRw-obfPIGouO5Q?t=2025-09-25-19-00",
 "description": "Mozartův Idomeneo, považovaný za jeho první operní mistrovské dílo, je strhujícím hudebním ztvárněním konfliktu mezi otcovskou autoritou, milostnými vášněmi a osudem.",
@@ -1078,13 +1068,6 @@
 "description": "Cizí slova, která zpravidla odrazují širší veřejnost od čtení umělecko-vědeckých textů, by neměla být nástrojem pseudointelektuální exhibice, ale nenahraditelnou pomůckou k popisu jevů, které se vymykají každodennosti. Umění je v našich životech právě takovým jevem, a proto k vysvětlení toho, co se odehrává například na fotografiích Ivana Pinkavy, nestačí pouhá základní slovní zásoba. Pokud nejsou určité pojmy, například z poststrukturalistického slovníku, používány a do omrzení opakovány pouze jako módní manýra, pak nás hledání správného výrazu pro popis složitých vztahů v rámci umělecké kompozice dokáže nasměrovat na dobrodružnou cestu časem a prostorem, na cestu dobrodružství poznání. K takové cestě zve i výstava fotografií Ivana Pinkavy, neboť ve snaze proniknout za povrchovou vrstvu jeho lidských těl, naakumulovaných materiálů či atypických hromad objektů překračujeme kategorie jednoduchých popisů krásy.",
 "fetched": "2026-11-14",
 "link": "https://www.galerievaclavaspaly.cz",
-"slots": []
-},
-"https://prague.eu/cs/akce/ivan-zenaty-bach/": {
-"booking": "https://fok.cz/zenaty-bach",
-"description": "Houslista Ivan Ženatý patří k nejvýraznějším interpretům hudby Johanna Sebastiana Bacha a právě jeho celoživotní dialog s Bachovým dílem se stává hlavním tématem výjimečného večera Symfonického orchestru hl. m. Prahy FOK.",
-"fetched": "2026-11-14",
-"link": "https://fok.cz/zenaty-bach",
 "slots": []
 },
 "https://prague.eu/cs/akce/ja-bych-rad-k-betlemu/": {
@@ -1218,18 +1201,11 @@
 "link": "https://www.ice-tec.cz/praha-letna.php",
 "slots": []
 },
-"https://prague.eu/cs/akce/koncert-pro-budoucnost/": {
-"booking": null,
-"description": "Koncert pro budoucnost je tradičním vyvrcholením oslav 17. listopadu a jedním z nejvýznamnějších občanských setkání v České republice. Na pódiu se i v roce 2026 představí přední čeští umělci spolu se zástupci občanské společnosti, aby společně navázali na odkaz sametové revoluce a otevřeli debatu o výzvách současnosti i podobě naší společné budoucnosti.",
-"fetched": "2026-11-14",
-"link": "https://koncertprobudoucnost.cz/#program",
-"slots": []
-},
-"https://prague.eu/cs/akce/koncert-pro-svobodu-a-demokracii/": {
-"booking": "https://www.ceskafilharmonie.cz/event/38860-ceska-filharmonie-koncert-pro-svobodu-a-demokracii/",
-"description": "U příležitosti 17. listopadu spojí síly Česká filharmonie a Police Symphony Orchestra v mimořádném koncertu věnovaném svobodě a demokracii. Program plný českých hudebních symbolů, filmové hudby i světových melodií připomene, že demokracie stojí na každodenní odvaze, odpovědnosti a vzájemném respektu.",
-"fetched": "2026-11-14",
-"link": "https://www.rudolfinum.cz",
+"https://prague.eu/cs/akce/kodaline/": {
+"booking": "https://www.livenation.cz/event/kodaline-prague-tickets-edp1657486",
+"description": "Jedna z nejvýraznějších irských kapel současnosti Kodaline vyráží na své poslední světové turné Farewell Tour 2026 a v jeho rámci se 5. prosince zastaví v pražském klubu SaSaZu. Emotivní rozlučkový večer v Praha doprovází i oznámení finálního alba, které uzavře více než desetiletou kariéru kapely. Kodaline se během své kariéry vypracovali z pouličního hraní v Dublinu až na vyprodané koncerty a haly po celém světě. Jejich emotivní skladby a charakteristický zvuk si získaly miliony fanoušků napříč kontinenty a zařadily kapelu mezi nejúspěšnější irské hudební projekty posledních let.",
+"fetched": "2026-11-18",
+"link": "https://www.sasazu-club.com",
 "slots": []
 },
 "https://prague.eu/cs/akce/korzo-narodni/": {
@@ -1267,6 +1243,13 @@
 "link": "https://www.botanicka.cz",
 "slots": []
 },
+"https://prague.eu/cs/akce/krystof-maratka-surrealismus/": {
+"booking": "https://fok.cz/maratka",
+"description": "Hudba, která se odvažuje jít proti proudu, zazní na večeru Kryštofa Mařatky a violistky Karine Lethiec v jedinečných prostorách Kláštera svaté Anežky České. Program propojí díla skladatelů, kteří ve své době posouvali hranice hudebního vnímání. Večer nabídne nevšední dialog mezi tradicí a experimentem, v němž zazní viola, klavír i originální archaické trans-nástroje. Koncert doplní úvodní přednáška inspirovaná surrealismem a výtvarným uměním, která podtrhne propojení hudby s širším kulturním kontextem.",
+"fetched": "2026-11-18",
+"link": "https://fok.cz/maratka",
+"slots": []
+},
 "https://prague.eu/cs/akce/kveta-kovarova-za-tvar-figury/": {
 "booking": null,
 "description": "Sochařka Květa Kovářová (1925–1966) patřila ke generaci, která svá studia započala za války a jejíž vstup do výtvarného života se odehrával již v podmínkách nesvobody. Absolvovala v ateliéru Josefa Wagnera, odkud vzešel nezvykle silný okruh sochařek. Zatímco řada z nich se dříve či později výrazně prosadila, Kovářové se srovnatelné pozornosti nedostalo. A to i přes blízkost dobového uměleckého prostředí a nových možností skupinového vystavování – její manžel malíř Ladislav Karoušek a švagr sochař Valerian Karoušek byli oba spoluzakladateli a členy tvůrčí skupiny M 57 (Makarská).  Výstava Za tvar figury sleduje cestu její volné tvorby, od studijních prací přes komorní figurální plastiky padesátých let až k abstrahovaným tvarům a zakázkám do architektury let šedesátých. Její sochařská díla vždy doprovázely přípravné kresby, v nichž si ověřovala tvar, kompoziční řešení i způsob, jak plastika obstojí v prostoru. Kovářová pracovala především se sádrou, ale neváhala též experimentovat s novými umělými hmotami: moduritem a laminátem, jenž jí otevřel cestu k monumentálnímu měřítku. V laminátu vytvořila téměř pětimetrový reliéf Sedící akty dívek (1961–1962) pro zasedací síň podniku zahraničního obchodu Jablonex v Jablonci nad Nisou, který tak znamená její nejvýznačnější dochovanou realizaci pro architekturu.",
@@ -1294,26 +1277,6 @@
 "fetched": "2026-11-16",
 "link": null,
 "slots": []
-},
-"https://prague.eu/cs/akce/le-magnifique-1/": {
-"booking": "https://www.hdk.cz/repertoar/le-magnifique-1",
-"description": "Jedinečný performer, zpěvák a dirigent Ondřej Brzobohatý a jeho Le Magnifique, s doprovodem skvělého Epoque Symphonic Orchestra v krásném prostředí Hudebního divadla Karlín.",
-"fetched": "2026-11-14",
-"link": "https://www.hdk.cz/repertoar/le-magnifique-1",
-"slots": [
-{
-"date": "2026-10-19",
-"time": "19:00"
-},
-{
-"date": "2026-11-09",
-"time": "19:00"
-},
-{
-"date": "2026-11-16",
-"time": "19:00"
-}
-]
 },
 "https://prague.eu/cs/akce/le-magnifique-2/": {
 "booking": "https://www.hdk.cz/cs/repertoar/le-magnifique-2",
@@ -1372,6 +1335,70 @@
 {
 "date": "2026-11-21",
 "time": "20:00"
+}
+]
+},
+"https://prague.eu/cs/akce/louis-armstrong-forever/": {
+"booking": "https://www.redutajazzclub.cz/artists-cs/louis-armstrong-forever-celebrating-a-jazz-icon-with-old-timers-jazz-band-2",
+"description": "Oslava jazzové ikony Old Timers Jazz Bandem.",
+"fetched": "2026-11-18",
+"link": "https://www.redutajazzclub.cz/artists-cs/louis-armstrong-forever-celebrating-a-jazz-icon-with-old-timers-jazz-band-2",
+"slots": [
+{
+"date": "2026-04-27",
+"time": "19:00"
+},
+{
+"date": "2026-05-24",
+"time": "19:00"
+},
+{
+"date": "2026-06-28",
+"time": "20:00"
+},
+{
+"date": "2026-07-14",
+"time": "20:00"
+},
+{
+"date": "2026-07-26",
+"time": "20:00"
+},
+{
+"date": "2026-08-12",
+"time": "20:00"
+},
+{
+"date": "2026-08-30",
+"time": "20:00"
+},
+{
+"date": "2026-09-14",
+"time": "20:00"
+},
+{
+"date": "2026-09-29",
+"time": "20:00"
+},
+{
+"date": "2026-10-11",
+"time": "19:00"
+},
+{
+"date": "2026-10-26",
+"time": "19:00"
+},
+{
+"date": "2026-11-10",
+"time": "19:00"
+},
+{
+"date": "2026-11-29",
+"time": "19:00"
+},
+{
+"date": "2026-12-07",
+"time": "19:00"
 }
 ]
 },
@@ -1460,6 +1487,13 @@
 "link": "https://www.dscgallery.com",
 "slots": []
 },
+"https://prague.eu/cs/akce/mauricio-kagel/": {
+"booking": "https://goout.net/cs/klang-systematiek-mauricio-kagel-a-concert/szimkly/",
+"description": "Podzimní sezónu 2027 ansámblu Klang Systematiek uzavře 4. prosince v Divadle X10 Ludwig van Mauricia Kagela — neobvyklý pohled na hudbu Ludwiga van Beethovena, ve kterém se koncert setkává s divadlem, humorem a nadsázkou. Kagel Beethovenovu hudbu rozebírá, vrství a skládá do nových souvislostí, takže se známé fragmenty objevují v překvapivých kombinacích a umožňují poslouchat důvěrně známého skladatele z úplně jiné perspektivy. Prostor Divadla X10 zároveň umožní rozvinout scénickou a performativní stránku díla a uzavřít podzimní sérii otázkou, co všechno vlastně může být koncertem.",
+"fetched": "2026-11-18",
+"link": "https://www.klangsystematiek.com/4december2026/",
+"slots": []
+},
 "https://prague.eu/cs/akce/mezinarodni-charitativni-trh/": {
 "booking": "https://goout.net/cs/dsa-vanocni-charitativni-trh/szcptny/",
 "description": "Praha se 21. listopadu stane místem setkání kultur z celého světa. Mezinárodní charitativní trh v hotelu Hilton Praha, na jehož přípravě se podílejí zahraniční velvyslanectví akreditovaná v České republice, představí vánoční tradice, řemesla, dárky a gastronomické speciality z více než 50 zemí. Barevná přehlídka krojů, hudby, tance a světových tradic navíc pomůže dobré věci. Návštěvníci svou účastí i nákupem originálních výrobků podpoří české charitativní organizace a užijí si jednu z nejoblíbenějších akcí pražské vánoční sezony.",
@@ -1515,6 +1549,22 @@
 {
 "date": "2026-12-05",
 "time": "18:00"
+}
+]
+},
+"https://prague.eu/cs/akce/mikulasska-pohadka-v-rudolfinu/": {
+"booking": "https://goout.net/cs/camerata-2018/pzreoag/",
+"description": "Veselý příběh o ztracené vánoční poště, mezinárodní spolupráci vánočních bytostí a kouzelné moci našich přání. Oblíbená rodinná akce Mikulášská pohádka v Sukově sini Rudolfina zve malé i velké diváky do kouzelného předvánočního světa plného fantazie a hudebních překvapení. Veselý příběh o zatoulaném dopisu Ježíškovi, nebeských pomocnících a síle lidských přání doprovodí živá hudba v podání souboru Camerata 2018 pod vedením dirigenta Vojtěch Jouza. A možná dorazí i sám Mikuláš",
+"fetched": "2026-11-18",
+"link": "https://www.rudolfinum.cz/program/?strana=2",
+"slots": [
+{
+"date": "2026-12-05",
+"time": "15:00"
+},
+{
+"date": "2026-12-05",
+"time": "17:00"
 }
 ]
 },
@@ -1721,6 +1771,13 @@
 "link": "https://www.meatspace.cz/prostory/wpp-campus/",
 "slots": []
 },
+"https://prague.eu/cs/akce/pastyri-vstavejte/": {
+"booking": "https://praha-vysehrad.cz/cs/program/pastyri-vstavejte:328/",
+"description": "V zasněžené krajině se probouzí malá ovečka a tuší, že dnešní noc bude výjimečná. Zatímco pastýři ještě pokojně dřímají ve svých kožiších, na obloze se rozzáří zářivá hvězda a krajinou se rozezní andělské zvonění. Nastal čas vydat se do Betléma!",
+"fetched": "2026-11-18",
+"link": "https://praha-vysehrad.cz/cs/program/pastyri-vstavejte:328/",
+"slots": []
+},
 "https://prague.eu/cs/akce/pelleas-a-melisanda/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/pelleas-a-melisanda-Z-4dNFUgTcCv_GK007I0-Q?t=2026-10-15-19-00",
 "description": "Debussyho jediná dokončená opera je mistrovským dílem hudebního symbolismu.",
@@ -1782,13 +1839,6 @@
 "description": "Hvězdná sitáristka Anoushka Shankar vystoupí na jubilejním ročníku Prague Sounds s výjimečným koncertem ve Dvořákově síni Rudolfina. V doprovodu Symfonického orchestru hl. m. Prahy FOK pod vedením Roberta Amese uvede orchestrální podobu své oceňované trilogie Chapters, v níž propojuje indickou klasickou tradici se současným hudebním jazykem.",
 "fetched": "2026-11-14",
 "link": "https://praguesounds.cz/cs/event/anoushka-shankar-72YCGw",
-"slots": []
-},
-"https://prague.eu/cs/akce/prague-sounds-2026-kojey-radical/": {
-"booking": "https://praguesounds.enigoo.cz/app/tickets/events/10",
-"description": "Nekompromisní hlas současného britského rapu míří poprvé do Prahy. Kojey Radical, vizionářský performer balancující mezi poezií, rapem i živelnou energií, přiveze na Prague Sounds intenzivní koncert plný osobních výpovědí i společenské reflexe. Umělec na vrcholu kariéry, nominovaný na Mercury Prize, slibuje strhující zážitek, který propojí intimitu i výbušnou sílu současné scény a potvrdí pověst festivalu jako místa, kde zní ty nejvýraznější hlasy dneška.",
-"fetched": "2026-11-14",
-"link": "https://praguesounds.cz/cs/event/kojey-radical-7uPKhP",
 "slots": []
 },
 "https://prague.eu/cs/akce/prague-sounds-2026-max-cooper/": {
@@ -1915,22 +1965,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/promena-aneb-rehor-uz-toho-ma-dost/": {
-"booking": "https://www.ypsilonka.cz/repertoar/hrajeme/promena-aneb-rehor-uz-toho-ma-dost",
-"description": "Řehoř Samsa pracoval, živil rodiče a sestru a jednoho dne už ho to přestalo bavit.",
-"fetched": "2026-11-14",
-"link": "http://www.ypsilonka.cz/program-a-nakup/promena-aneb-rehor-uz-toho-ma-dost",
-"slots": [
-{
-"date": "2026-10-13",
-"time": "19:30"
-},
-{
-"date": "2026-11-16",
-"time": "19:30"
-}
-]
-},
 "https://prague.eu/cs/akce/pustte-me-ven/": {
 "booking": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/pustte-me-ven/",
 "description": "Velké herecké sólo Ivy Janžurové v brilantní komedii.",
@@ -2044,6 +2078,30 @@
 "link": "https://vecnanadeje.org/koncert/stepanka-andelova/",
 "slots": []
 },
+"https://prague.eu/cs/akce/sul-nad-zlato/": {
+"booking": "https://www.riseloutek.cz/program-2/",
+"description": "Je sůl opravdu nad zlato? Zlato je přece vzácné a sůl docela obyčejná. Jenže když ta docela obyčejná sůl schází, tak je najednou všem ouvej.",
+"fetched": "2026-11-18",
+"link": "https://www.riseloutek.cz/repertoar/sul-nad-zlato/",
+"slots": [
+{
+"date": "2026-10-11",
+"time": "14:00"
+},
+{
+"date": "2026-10-11",
+"time": "16:00"
+},
+{
+"date": "2026-11-29",
+"time": "14:00"
+},
+{
+"date": "2026-11-29",
+"time": "16:00"
+}
+]
+},
 "https://prague.eu/cs/akce/svatomartinske-slavnosti-a-pecena-husa/": {
 "booking": null,
 "description": "Degustační slavnost svatomartinských vín a oslava svátku sv. Martina na náplavce Rašínova nábřeží tradičně představuje mladá vína z Moravy i Čech. Svatomartinská vína, první vína nového ročníku, jsou suchá, lehká, svěží a ovocitá. Přestože zrála jen několik týdnů, už nyní vynikají svým osobitým charakterem. Pražská náplavka se 14. listopadu 2026 opět promění v malý vinařský svět, kde se první mladá vína snoubí s vůní pečené husy, křupavého zelí a dalších husích specialit, doplněných hudebním programem, který dotváří jedinečnou atmosféru.",
@@ -2111,6 +2169,66 @@
 "link": "https://www.ghmp.cz",
 "slots": []
 },
+"https://prague.eu/cs/akce/the-bodyguard/": {
+"booking": "https://www.hdk.cz/cs/repertoar/the-bodyguard#program",
+"description": "Muzikál podle stejnojmenného filmového hitu z roku 1992 s Kevinem Costnerem a Whitney Houston v hlavních rolích.",
+"fetched": "2026-11-18",
+"link": "https://www.hdk.cz/cs/repertoar/the-bodyguard",
+"slots": [
+{
+"date": "2026-09-12",
+"time": "19:00"
+},
+{
+"date": "2026-09-13",
+"time": "15:00"
+},
+{
+"date": "2026-10-28",
+"time": "19:00"
+},
+{
+"date": "2026-10-29",
+"time": "19:00"
+},
+{
+"date": "2026-10-30",
+"time": "19:00"
+},
+{
+"date": "2026-10-31",
+"time": "15:00"
+},
+{
+"date": "2026-10-31",
+"time": "19:00"
+},
+{
+"date": "2026-11-01",
+"time": "15:00"
+},
+{
+"date": "2026-11-26",
+"time": "19:00"
+},
+{
+"date": "2026-11-27",
+"time": "19:00"
+},
+{
+"date": "2026-11-28",
+"time": "15:00"
+},
+{
+"date": "2026-11-28",
+"time": "19:00"
+},
+{
+"date": "2026-11-29",
+"time": "15:00"
+}
+]
+},
 "https://prague.eu/cs/akce/the-golden-voice-a-celebration-of-tony-bennett/": {
 "booking": "https://www.redutajazzclub.cz/artists-cs/the-golden-voice-a-celebration-of-tony-bennett",
 "description": "Koncert věnovaný odkazu Tonyho Benetta, jedné z nejvýraznějších osobností světového jazzu, nabídne průřez jeho nejznámější tvorbou. Jazzový zpěvák David Kleňha připomene Bennettovy romantické balady i energické swingové skladby. Večer bude poctou nadčasové hudbě a výjimečnému interpretačnímu stylu.",
@@ -2150,13 +2268,6 @@
 "time": "19:00"
 }
 ]
-},
-"https://prague.eu/cs/akce/the-kid-laroi/": {
-"booking": "https://www.livenation.cz/event/the-kid-laroi-a-perfect-world-tour-prague-tickets-edp1652233?gad_source=1&gad_campaignid=23215104880&gclid=EAIaIQobChMI7r_mq5H5kgMVCZWDBx3B9wEsEAAYASAAEgLjq_D_BwE",
-"description": "Australský zpěvák a rapper The Kid LAROI míří poprvé do České republiky. V rámci evropského zakončení turné A Perfect World Tour vystoupí 17. listopadu 2026 v O2 areně. Jeden z nejstreamovanějších mladých interpretů současnosti, autor globálního hitu „Stay“ na němž spolupracoval s Justinem Bieberem, přiveze do Prahy energickou show plnou světových singlů i nové tvorby, která potvrzuje jeho výjimečné postavení na globální hudební scéně.",
-"fetched": "2026-11-14",
-"link": "https://www.o2arena.cz/events/the-kid-laroi-a-perfect-world-tour/",
-"slots": []
 },
 "https://prague.eu/cs/akce/the-prodigy/": {
 "booking": "https://www.livenation.cz/event/the-prodigy-prague-tickets-edp1663140",
@@ -2217,6 +2328,38 @@
 },
 {
 "date": "2026-11-24",
+"time": "19:00"
+}
+]
+},
+"https://prague.eu/cs/akce/timeless-legends/": {
+"booking": "https://www.redutajazzclub.cz/artists-cs/timeless-legends-m-novak",
+"description": "Oslava odkazu Michaela Jacksona, AC Jobima, Herbie Hancocka a Dukea Ellingtona v pražské Redutě.",
+"fetched": "2026-11-18",
+"link": "https://www.redutajazzclub.cz/artists-cs/timeless-legends-m-novak",
+"slots": [
+{
+"date": "2026-05-19",
+"time": "19:00"
+},
+{
+"date": "2026-07-05",
+"time": "20:00"
+},
+{
+"date": "2026-08-11",
+"time": "20:00"
+},
+{
+"date": "2026-09-30",
+"time": "20:00"
+},
+{
+"date": "2026-11-11",
+"time": "19:00"
+},
+{
+"date": "2026-12-03",
 "time": "19:00"
 }
 ]
@@ -2487,13 +2630,6 @@
 "link": "https://kinoatlaspraha.cz/?tag=96",
 "slots": []
 },
-"https://prague.eu/cs/akce/underground-totalita/": {
-"booking": "https://connect.boomevents.org/cs/ullmann-ensemble-werdg/underground-totalita-tnzqg?fromGuidepost=true",
-"description": "Čtyři skladatelé, čtyři osobité hlasy a čtyři různé cesty k vnitřní svobodě. Sofia Gubaidulina, György Ligeti, Miloslav Kabeláč a Ljubica Marić tvořili v prostředí totalitních režimů, které se snažily umění i jednotlivce usměrňovat, kontrolovat a podřizovat vlastní ideologii. Přesto, nebo právě proto, každý z nich hledal svůj vlastní jazyk, svou integritu a svou pravdu. Koncert není jen setkáním čtyř výrazných hudebních osobností 20. století. Je také cestou k otázce, která zůstává živá i dnes: Jak si ve světě, který se nás neustále snaží nějakým způsobem formovat, zachovat vlastní hlas, vnitřní svobodu, identitu a autenticitu?",
-"fetched": "2026-11-16",
-"link": "https://ullmannensemble.com/totalita.php",
-"slots": []
-},
 "https://prague.eu/cs/akce/vaclavske-vanoce/": {
 "booking": null,
 "description": "Václavské Vánoce 2026 se vzhledem k probíhající revitalizaci horní části Václavského náměstí uskuteční v parku za radnicí na Staroměstském náměstí. Místo je však to jediné, co se mění. Nezaměnitelná atmosféra 17. ročníku Václavských Vánoc zůstává, stejně tak jako podpora neziskových organizací, a tedy stánky s dárky z jejich chráněných dílen, široká nabídka občerstvení, fajn kapely, dětské sbory, Mikuláš, Betlémské světlo i Štědrovečerní bohoslužba pod širým nebem.",
@@ -2704,18 +2840,27 @@
 "link": "https://www.mlp.cz/cz/akce/zemlinskeho-kvarteto-les-smyccu-4-koncert/3001",
 "slots": []
 },
+"https://prague.eu/cs/akce/zeny-drzte-huby/": {
+"booking": "https://www.mestskadivadlaprazska.cz/inscenace/1854/zeny-drzte-huby/",
+"description": "Inscenace o jedné nenapravitelné ženě.",
+"fetched": "2026-11-18",
+"link": "https://www.mestskadivadlaprazska.cz/inscenace/1854/zeny-drzte-huby/",
+"slots": [
+{
+"date": "2026-10-21",
+"time": "19:30"
+},
+{
+"date": "2026-11-30",
+"time": "19:30"
+}
+]
+},
 "https://prague.eu/cs/akce/zimni-apetit-piknik/": {
 "booking": null,
 "description": "Milovníky dobrého jídla, kvalitních surovin a kulinářské inspirace zve 21. listopadu do prostor Národního zemědělského muzea na Letné Zimní Apetit piknik. Oblíbený food festival magazínu Apetit nabídne celodenní program plný ochutnávek, setkání s výrobci, kuchaři i osobnostmi české gastronomické scény a inspirace pro sezonní i sváteční vaření. Součástí programu budou kuchařské show, rozhovory i další vystoupení na festivalové scéně. Atmosféru doplní předadventní nálada, vůně zimních specialit a program určený návštěvníkům všech generací. Zimní Apetit piknik je příležitostí objevovat nové chutě, poznat zajímavé gastronomické projekty a strávit den ve společnosti lidí, které spojuje láska k dobrému jídlu.",
 "fetched": "2026-11-14",
 "link": "https://piknik.apetitonline.cz/",
-"slots": []
-},
-"https://prague.eu/cs/akce/zimni-prihody-vcelich-medvidku__trashed/": {
-"booking": "https://www.imagetheatre.cz/show/zimni-prihody-vcelich-medvidku-host/",
-"description": "Humorné a napínavé příhody dvou malých čmeláčků.",
-"fetched": "2026-11-16",
-"link": "https://www.imagetheatre.cz/show/zimni-prihody-vcelich-medvidku-host/",
 "slots": []
 }
 }
