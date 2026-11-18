@@ -1,24 +1,4 @@
 {
-"https://prague.eu/cs/akce/17-listopad-v-ypsilonce/": {
-"booking": "https://www.ypsilonka.cz/repertoar/hrajeme/17-listopad-v-ypsilonce",
-"description": "Přijďte si připomenout 17. listopad — důležitý den našich dějin a zároveň si užít večer plný divadla, hudby a setkávání.",
-"fetched": "2026-11-14",
-"link": "https://www.ypsilonka.cz",
-"slots": [
-{
-"date": "2026-11-17",
-"time": "16:00"
-},
-{
-"date": "2026-11-17",
-"time": "17:00"
-},
-{
-"date": "2026-11-17",
-"time": "18:00"
-}
-]
-},
 "https://prague.eu/cs/akce/1984-2/": {
 "booking": "https://zdjc.cz/cs/program/1984/",
 "description": "„Ve hře, kterou hrajeme, nemůžeme vyhrát.“",
@@ -124,6 +104,13 @@
 "time": "19:00"
 }
 ]
+},
+"https://prague.eu/cs/akce/bara-mrazkova-charge-flipping/": {
+"booking": null,
+"description": "Co se stane s nerostem, když se jeho význam začne odvíjet od očekávání budoucnosti?    Sólová výstava Báry Mrázkové zkoumá, jak se nerostné materiály proměňují ve vědecky měřitelné a ekonomicky obchodovatelné hodnoty.    Audiovizuální esej a imerzivní instalace odhalují způsoby, jimiž se komplexita přírodních materiálů převádí do dat a parametrů, které určují jejich význam pro současné i budoucí technologie. Výstava se zaměřuje na způsoby, jakými jsou nerosty zobrazovány a představovány trhu, a zároveň na to, jak se při tomto procesu vytrácí jejich materiální původ a širší ekologické, ekonomické a geopolitické souvislosti. Otevírá tak otázku, jak hodnotu nerostů vedle jejich fyzických vlastností určují také potřeby technologií a představy o budoucnosti.",
+"fetched": "2026-11-18",
+"link": "https://etcgalerie.cz",
+"slots": []
 },
 "https://prague.eu/cs/akce/bavorsko-cesky-adventni-trh/": {
 "booking": null,
@@ -409,13 +396,6 @@
 "time": "19:00"
 }
 ]
-},
-"https://prague.eu/cs/akce/dinner-of-the-year-2026/": {
-"booking": "https://gault-millau.attendu.com/event/a729bc5924b1e699e7142cc0/?p=6ab2213cb0392bd2433d6378&lang=cs",
-"description": "Pět výrazných osobností české gastronomie, oceněných v průvodci Gault&Millau 2026, se spojí při kulinářském večeru Dinner of the Year 2026. V sobotu 14. listopadu nabídne pražská restaurace Reason, situovaná v nejvyšším patře budovy Masaryčka, šestichodové degustační menu, na němž se budou podílet Khanh Ta, Jan Horák, Marco Christov, Sabina Keltnerová a Jiří Hrachový. Výjimečný gastronomický zážitek doplní vinné či nealkoholické párování a panoramatický výhled na Prahu.",
-"fetched": "2026-11-14",
-"link": "https://gault-millau.attendu.com/event/a729bc5924b1e699e7142cc0/?p=6ab2213cb0392bd2433d6378&lang=cs",
-"slots": []
 },
 "https://prague.eu/cs/akce/discoland/": {
 "booking": "https://www.nazabradli.cz/repertoar/discoland/",
@@ -952,13 +932,6 @@
 "link": "https://www.festivalff.cz/",
 "slots": []
 },
-"https://prague.eu/cs/akce/festival-svobody/": {
-"booking": null,
-"description": "Festival svobody zastřešuje některé akce pořádané různými iniciativami s cílem připomenout události spojené se 17. listopadem a propagovat demokratické principy a hodnoty občanské společnosti.",
-"fetched": "2026-11-14",
-"link": "https://festivalsvobody.cz",
-"slots": []
-},
 "https://prague.eu/cs/akce/filmasia/": {
 "booking": null,
 "description": "Festival asijských filmů FILMASIA se koná tradičně na začátku prosince a do Prahy každoročně přiváží snímky, které výrazně zaujaly na světových filmových festivalech i v kinech po celém světě. Letošní 22. ročník s podtitulem Nit osudu propojí příběhy z Hongkongu, Jižní Koreje, Japonska, Tchaj-wanu a Vietnamu. Vedle oceňovaných filmů nabídne také setkání s filmaři a filmařkami a představí nové talenty současné asijské kinematografie.",
@@ -1055,6 +1028,13 @@
 "time": "18:00"
 }
 ]
+},
+"https://prague.eu/cs/akce/infinite-frontiers/": {
+"booking": null,
+"description": "Od oceánských hlubin po vesmír se společnost vydává za hranice známého a obyvatelného světa. Vzdálená a neznámá místa si představujeme, mapujeme a zkoumáme. Technologiemi mediované procesy místa přetváří v krajiny zdrojů a příležitostí. Těmto imaginativním světům čísel a užitku pak podléhají všechny další hodnoty, vztahy a podoby, které si s krajinou spojujeme.  Výstava Infinite Frontiers zkoumá, jak se vědecké poznání a technologický pokrok prolínají s koloniálními představami, mocenskými zájmy a touhou po nových územích. Připomíná, že žádná hranice není jen čárou na mapě a žádné „neznámé“ místo není prázdné. Jaké vztahy ke vzdáleným světům vytváříme – a co si do nich přenášíme ze světa, který už obýváme?",
+"fetched": "2026-11-18",
+"link": "https://www.gamu.cz",
+"slots": []
 },
 "https://prague.eu/cs/akce/iren-stehli-lide-doma-praha-70-leta/": {
 "booking": null,
@@ -1173,13 +1153,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/karlinska-husa/": {
-"booking": null,
-"description": "Karlínská husa 2026 zve na den plný podzimních chutí, vůní a příjemné atmosféry v srdci Karlína. Karlínské náměstí ožije tradičními husími specialitami, svatomartinským vínem, pestrou nabídkou občerstvení i kulturním programem pro všechny generace. K zakoupení budou gastronomické speciality inspirované podzimní sezonou, sladké dobroty. a výběr vín, která k období sv. Martina patří. Přijďte si užít pohodovou listopadovou neděli plnou dobrého jídla, hudby a setkávání pod širým nebem.",
-"fetched": "2026-11-14",
-"link": "https://www.facebook.com/events/1839195380419259",
-"slots": []
-},
 "https://prague.eu/cs/akce/karlinske-vanocni-trhy/": {
 "booking": null,
 "description": "Nasajte kouzlo adventu na Karlínském náměstí. V neděli 6. prosince vás čekají tradiční vánoční trhy plné sváteční atmosféry, vůně svařeného vína, vánočních dobrot a oblíbených koled. Chybět nebude dřevěný betlém ani Ježíškova pošta, kde mohou děti odeslat svá přání Ježíškovi. Zůstaňte až do setmění a vychutnejte si pohled na slavnostně rozsvícený vánoční strom a kostel sv. Cyrila a Metoděje.",
@@ -1201,6 +1174,18 @@
 "link": "https://www.ice-tec.cz/praha-letna.php",
 "slots": []
 },
+"https://prague.eu/cs/akce/kluziste-vaclavske-namesti/": {
+"booking": "https://www.ice-tec.cz/#rezervaceblok",
+"description": "Od 28. listopadu si můžete zabruslit na kluzišti na Václavském náměstí. Ledová plocha nabídne prostor pro aktivní odpočinek v centru Prahy začátečníkům, rekreačním bruslařům i zkušenějším návštěvníkům. Stačí si přinést vlastní brusle, případně využít půjčovnu přímo na místě. Kluziště může být příjemným zpestřením zimní procházky městem i příležitostí k setkání s přáteli nebo rodinnému výletu.",
+"fetched": "2026-11-18",
+"link": "https://praguevisitorpass.eu/",
+"slots": [
+{
+"date": "2026-12-31",
+"time": "09:00"
+}
+]
+},
 "https://prague.eu/cs/akce/kodaline/": {
 "booking": "https://www.livenation.cz/event/kodaline-prague-tickets-edp1657486",
 "description": "Jedna z nejvýraznějších irských kapel současnosti Kodaline vyráží na své poslední světové turné Farewell Tour 2026 a v jeho rámci se 5. prosince zastaví v pražském klubu SaSaZu. Emotivní rozlučkový večer v Praha doprovází i oznámení finálního alba, které uzavře více než desetiletou kariéru kapely. Kodaline se během své kariéry vypracovali z pouličního hraní v Dublinu až na vyprodané koncerty a haly po celém světě. Jejich emotivní skladby a charakteristický zvuk si získaly miliony fanoušků napříč kontinenty a zařadily kapelu mezi nejúspěšnější irské hudební projekty posledních let.",
@@ -1208,11 +1193,11 @@
 "link": "https://www.sasazu-club.com",
 "slots": []
 },
-"https://prague.eu/cs/akce/korzo-narodni/": {
-"booking": "https://www.korzonarodni.cz/cs/program",
-"description": "Korzo Národní 2026, největší pražské oslavy Dne boje za svobodu a demokracii, připomenou 37. výročí sametové revoluce. Národní třída se v prostoru mezi Národním divadlem a Jungmannovým náměstím opět promění v živé centrum kultury, umění a občanského dialogu. Pouliční slavnost vzdá hold všem, kteří se nebáli postavit totalitnímu režimu, a připomene hodnoty svobody, demokracie a občanské odpovědnosti. Součástí programu bude i tradiční Modlitba pro Martu, jeden z nejsilnějších symbolů 17. listopadu. Návštěvníci se mohou těšit na pestrou nabídku koncertů, debat, divadelních představení, výstav, živých podcastů i oblíbený Havlův obývák. Do oslav se každoročně zapojují desítky kulturních institucí, médií a občanských iniciativ, které společně proměňují centrum Prahy v otevřený prostor pro setkávání, sdílení příběhů a reflexi událostí 17. listopadu 1989. Korzo Národní opět nabídne jedinečnou příležitost připomenout si odkaz sametové revoluce a společně oslavit svobodu, která není samozřejmostí.",
-"fetched": "2026-11-14",
-"link": "https://www.korzonarodni.cz/",
+"https://prague.eu/cs/akce/komentovana-krmeni/": {
+"booking": "https://www.zoopraha.cz/navsteva/program/komentovana-krmeni-cviceni",
+"description": "Nahlédněte do zákulisí chovu zvířat a zjistěte, jak probíhá jejich krmení a trénink. Během komentovaných krmení a cvičení se od chovatelů dozvíte zajímavosti o chování zvířat, jejich potravě i péči, kterou jim Zoo Praha věnuje. Ideální příležitost zažít zvířata zblízka a odnést si spoustu nových poznatků.",
+"fetched": "2026-11-18",
+"link": "https://www.zoopraha.cz",
 "slots": []
 },
 "https://prague.eu/cs/akce/kostelni-slavnosti-adventni-koncert/": {
@@ -1293,20 +1278,6 @@
 "time": "19:00"
 }
 ]
-},
-"https://prague.eu/cs/akce/letenska-husa-aneb-kost-svatomartinskeho-vina/": {
-"booking": null,
-"description": "Vůně pečené husy, první doušky mladého vína a podzimní atmosféra na Letné — to je Letenská husa a košt svatomartinských vín v Národním zemědělském muzeu. Každoroční oblíbená akce zve návštěvníky všech generací na ochutnávky svatomartinských a mladých vín od českých a moravských vinařů, tradiční husí speciality i bohatý doprovodný program inspirovaný lidovými zvyky. Přijďte oslavit svátek sv. Martina v duchu chutí, tradic a dobré nálady.",
-"fetched": "2026-11-14",
-"link": "https://www.nzm.cz/aktualne-v-muzeu/akce/letenska-husa-a-kost-svatomartinskeho-vina7",
-"slots": []
-},
-"https://prague.eu/cs/akce/lichtenstejnsky-palac-den-otevrenych-dveri/": {
-"booking": "https://www.mezipatra.cz/en/program/tickets-venues.html",
-"description": "Lichtenštejnský palác na pražské Kampě se v roce 2026 ještě jednou otevře veřejnosti a nabídne jedinečnou příležitost nahlédnout do jeho reprezentačních prostor i bohaté historie. Prohlídková trasa zahrnuje modrý salonek, salonek Kampa, zlatý a hnědý sál i zahradní salon, přičemž závěr prohlídky tvoří malebný výhled na Vltavu a Karlův most. Návštěvníci se seznámí s historií paláce sahající až do 16. století i s jeho současnou funkcí vládní reprezentační budovy, která hostí konference, protokolární akce a slouží k ubytování významných zahraničních delegací. V minulosti zde pobývali například španělský král Juan Carlos s chotí Sofií, britská královna Alžběta II. či japonský císař Akihito s císařovnou Mičiko.",
-"fetched": "2026-11-14",
-"link": "https://www.vlada.cz/cz/urad-vlady/dalsi-objekty/lichtenstejnsky-palac-3690",
-"slots": []
 },
 "https://prague.eu/cs/akce/lida-baarova-a-ta-druha/": {
 "booking": "https://praha-vysehrad.cz/cs/program/lida-baarova-a-ta-druha:317/",
@@ -1478,13 +1449,6 @@
 "description": "Pro velké autisty i malé nemotory. Převeze maminka děti svými pohádkami o patníku, stěračích a volantu, aby vydrželi cestu až do cíle?",
 "fetched": "2026-11-16",
 "link": "https://www.minor.cz/repertoar/mami-uz-tam-budem/",
-"slots": []
-},
-"https://prague.eu/cs/akce/martin-eder-saints-no-heaven-in-the-sky/": {
-"booking": null,
-"description": "Martin Eder: SAINTS – NO HEAVEN IN THE SKY představuje novou samostatnou výstavu německého umělce Martina Edera v DSC Gallery. Výstava otevírá téma víry, spirituality a současného vztahu člověka k představě nebe a posvátna. Prostřednictvím malby, symboliky a výrazné vizuální estetiky Eder vytváří napětí mezi sakrálním a profánním, krásou a znepokojením, duchovním ideálem a lidskou zkušeností.  Výstava zve návštěvníky k zamyšlení nad tím, zda jsme nepřestali věřit v nebe právě proto, že jsme si ho začali budovat sami.",
-"fetched": "2026-11-14",
-"link": "https://www.dscgallery.com",
 "slots": []
 },
 "https://prague.eu/cs/akce/mauricio-kagel/": {
@@ -1999,11 +1963,11 @@
 "link": "https://restaurant-week.cz/",
 "slots": []
 },
-"https://prague.eu/cs/akce/sametove-posviceni/": {
+"https://prague.eu/cs/akce/salon-dautomne-2026/": {
 "booking": null,
-"description": "Sametové posvícení se letos uskuteční už po patnácté. Satiricko-karnevalový průvod s maskami v nadživotní velikosti opět zaplní ulice Prahy a s humorem, nadsázkou i ostrou satirou okomentuje témata, která hýbou současnou společností. Do průvodu se tradičně zapojují občanské iniciativy, spolky, školní kolektivy i jednotlivci. Akce je součástí platformy Festival svobody, která po celé republice propojuje oslavy a připomínkové události k výročí sametové revoluce. Průvod vyrazí kolem 15. hodiny z Parku Kampa, projde přes Karlův most, Staroměstské náměstí a Národní třídu a zakončí svou cestu v Kampusu Hybernská.",
-"fetched": "2026-11-14",
-"link": "https://www.sametoveposviceni.cz/",
+"description": "Prvorepubliková vila v pražských Střešovicích otvírá své reprezentativní prostory pro konání mezinárodní výstavy Salon D'Automne 2026, kterou pořádá PINK FLOOR GALLERY a Villa P651 ve Fejer-Behal Institute v Praze.  Zuzana Halfarová a Matěj Rejl Vám zprostředkují autorský výběr ze současného umění napříč kontinenty a možnost setkání s některými tvůrci.   Pop-up výstava je k vidění víkend 21. a 22. listopadu od jedenácti do sedmi hodin na adrese Pevnostní 651/8, Praha 6 Střešovice, 16000.  Finissage výstavy s nejvyšší koncentrací autorů bude probíhat v neděli v podvečerních hodinách.",
+"fetched": "2026-11-18",
+"link": "https://www.pinkfloorgallery.com/salon-dautomne",
 "slots": []
 },
 "https://prague.eu/cs/akce/sansonarium-s-milonem-cepelkou/": {
@@ -2021,13 +1985,6 @@
 "time": "19:00"
 }
 ]
-},
-"https://prague.eu/cs/akce/sherlock-holmes-the-exhibition/": {
-"booking": null,
-"description": "Tato jedinečná expozice, pořádaná ve spolupráci s Muzeem Policie České republiky, poutavou a moderní formou přibližuje mladým lidem nejen svět nejslavnějšího detektiva všech dob, ale také mimořádnou osobnost jeho stvořitele, sira Arthura Conana Doyla. Sir Arthur Conan Doyle byl nejen významným spisovatelem, ale také lékařem, intelektuálem a pozorovatelem lidské povahy. Ve své tvorbě dokázal propojit logiku, vědecké myšlení, dedukci i hluboký smysl pro detail tak, jako jeho hrdina soukromý detektiv Sherlock Holmes. Výstava nabízí jedinečný interaktivní zážitek, během něhož se studenti stávají součástí vyšetřování a prostřednictvím autentických scén, dobových rekvizit, multimediálních stanovišť i vizuálně působivého prostředí objevují atmosféru viktoriánského Londýna i samotný proces vyšetřování. Projekt zároveň otevírá zajímavý přesah do oblasti literatury, historie, kriminalistiky, psychologie, ale také biologie, chemie i matematiky. Připraven je soubor pracovních listů inspirovaných výstavou a také zábavný kvíz. Na výstavě se spolu se svými studenty stanete součástí vyšetřování zločinu a přímo pod vedením a s nápovědami samotného Sherlocka Holmese případ vyřešíte. Hned u vstupu všichni obdrží speciální vyšetřovatelský zápisník, do kterého si zapisují svoje závěry a děrují možnosti. Na konci výstavy právě pomocí vyplněného zápisníku rozluští šifru a odhalí zločin. Mnoho interaktivních prvků a úkolů zaujme starší i mladší studenty a žáky a podpoří je v jejich soustředění a zájmu o vyšetřování. Historické kulisy a rekvizity navodí jedinečnou atmosféru starého Londýna v době 2. průmyslové revoluce.",
-"fetched": "2026-11-14",
-"link": "https://www.sherlockholmespraha.cz",
-"slots": []
 },
 "https://prague.eu/cs/akce/sherpa-fest/": {
 "booking": null,
@@ -2101,27 +2058,6 @@
 "time": "16:00"
 }
 ]
-},
-"https://prague.eu/cs/akce/svatomartinske-slavnosti-a-pecena-husa/": {
-"booking": null,
-"description": "Degustační slavnost svatomartinských vín a oslava svátku sv. Martina na náplavce Rašínova nábřeží tradičně představuje mladá vína z Moravy i Čech. Svatomartinská vína, první vína nového ročníku, jsou suchá, lehká, svěží a ovocitá. Přestože zrála jen několik týdnů, už nyní vynikají svým osobitým charakterem. Pražská náplavka se 14. listopadu 2026 opět promění v malý vinařský svět, kde se první mladá vína snoubí s vůní pečené husy, křupavého zelí a dalších husích specialit, doplněných hudebním programem, který dotváří jedinečnou atmosféru.",
-"fetched": "2026-11-14",
-"link": "https://www.svatomartinskeslavnosti.cz/",
-"slots": []
-},
-"https://prague.eu/cs/akce/svaty-martin-na-vinici/": {
-"booking": null,
-"description": "Svatomartinská vína, podzimní atmosféra a jedinečné výhledy na Prahu nabídne Festival vína, který se uskuteční 14. a 15. listopadu 2026 na Svatováclavské vinici a ve Ville Richter pod Pražským hradem. V programu nechybí degustace mladých vín od předních českých vinařů ani příjemné posezení v historickém areálu vinice. Pro případ nepříznivého počasí bude návštěvníkům k dispozici vyhřívaný stan. Vstup je horním vchodem z ulice Na Opyši.",
-"fetched": "2026-11-14",
-"link": "https://www.villarichter.cz/svaty-martin-na-vinici/",
-"slots": []
-},
-"https://prague.eu/cs/akce/svobodny-listopad/": {
-"booking": null,
-"description": "Svobodný listopad připomene odkaz 17. listopadu a hodnoty svobody, demokracie a občanské angažovanosti. Výročí let 1939 a 1989 jsou neodmyslitelně spjata s českými studenty, proto Centrum spolků, studentů a absolventů Univerzity Karlovy každoročně pořádá pietní akci Uctění památky 17. listopadu. Program na Albertově nabídne studentské debaty, vystoupení pěveckých sborů, prezentace studentských spolků a iniciativ i projevy studentů a akademiků. Návštěvníci se mohou zapojit do celodenního programu, který připomene významné historické události a jejich odkaz pro současnost.",
-"fetched": "2026-11-14",
-"link": "https://www.cssauk.cz/na%C5%A1e-aktivity/17-listopad",
-"slots": []
 },
 "https://prague.eu/cs/akce/tajemstvi-2/": {
 "booking": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/tajemstvi/",
@@ -2616,13 +2552,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/tyden-svobody/": {
-"booking": "https://www.tydensvobody.cz/program/?kraj=PHA",
-"description": "Spolek Díky, že můžem opět přidává k oslavám 17. listopadu na Národní třídě doprovodný program Týden svobody. Divadla, výstavy, besedy, debaty, workshopy, venkovní instalace, projekce i program pro děti. Týden zahájí slavnostní předávání Cen Jana Opletala 11. 11. a vyvrcholí 17. listopadu na Národní třídě. Výrazným tématem programu bude také 90. výročí narození Václava Havla, které připomenou filmové projekce a divadelní představení včetně Havel77: Here We Go Again? v Rock Café.",
-"fetched": "2026-11-14",
-"link": "https://www.tydensvobody.cz",
-"slots": []
-},
 "https://prague.eu/cs/akce/tyden-ukrajinskeho-filmu/": {
 "booking": null,
 "description": "Oceňované novinky, silné dokumenty i návrat filmové klasiky. Devátý ročník Týdne ukrajinského filmu v kině Atlas přinese od 24. do 30. listopadu do pražského kina Atlas výběr současné ukrajinské kinematografie. Festival nabídne snímky uvedené na festivalech v Cannes, Benátkách či Berlíně, filmy oceněné v Torontu a Amsterdamu i restaurovaný trezorový titul z roku 1934. Diváci se mohou těšit na příběhy odvahy, identity, odporu i na dokumentární svědectví o událostech, které formují současnou Ukrajinu.",
@@ -2672,6 +2601,13 @@
 "link": "https://www.muzeumprahy.cz/vystavy-a-akce/",
 "slots": []
 },
+"https://prague.eu/cs/akce/vanocni-putovani-prazskym-hradem/": {
+"booking": "https://www.hrad.cz/cs/kultura-na-hrade/program/vanocni-putovani-prazskym-hradem-2-13893#from-list",
+"description": "Advent a Vánoce na Pražském hradě opět doplní oblíbené Vánoční putování Pražským hradem, které zve na procházku slavnostně vyzdobeným hradním areálem. Od konce listopadu až do začátku ledna čeká návštěvníky cesta plná vánoční atmosféry, při níž mohou objevovat zákoutí Hradu v zimním hávu a zavítat také do vánočního labyrintu v Císařské konírně, který pro Pražský hrad připravilo Divadlo bratří Formanů a jejich přátelé. Akce je určena rodinám s dětmi, přátelům i všem, kdo si chtějí zpříjemnit předvánoční čas a užít si jedinečné prostředí jedné z nejvýznamnějších pražských památek.",
+"fetched": "2026-11-18",
+"link": "https://www.hrad.cz",
+"slots": []
+},
 "https://prague.eu/cs/akce/vanocni-trhy-na-andelu/": {
 "booking": null,
 "description": "Na pěší zóně u stanice metra Anděl na vás čekají krásně nazdobené stánky s klasickým vánočním zbožím, originálními dárky a voňavé občerstvení. Každý den od 8 do 20 hodin si můžete dát něco dobrého na zahřátí a nakoupit vše, co k Vánocům patří.",
@@ -2705,6 +2641,13 @@
 "description": "Vánoční trhy na Václavském náměstí 2026 nabídnou adventní čas v jeho nejživější podobě, s vůní svařeného vína, ručně vyráběnými dárky z českých dílen a každodenním kulturním programem přímo v srdci města. Dřevěné domky lemující spodní část náměstí spojí tradiční řemesla s moderní gastronomií, zatímco hudební vystoupení, pěvecké sbory i rodinné programy budou doprovázet celé období až do Tří králů.",
 "fetched": "2026-11-14",
 "link": "https://trhypraha.cz",
+"slots": []
+},
+"https://prague.eu/cs/akce/vanocni-vystava-v-botanicke-zahrade-prirodovedecke-fakulty-univerzity-karlovy/": {
+"booking": null,
+"description": "V adventních týdnech a o vánočních svátcích proběhne v Botanické zahradě Přírodovědecké fakulty UK Vánoční výstava. Ocitnete se ve světě našich předků. Okouzlí vás stovky ozdob vycházejících z lidových tradic. Oživíte staré zvyky nerozlučně spjaté s vánočními svátky. Uvidíte ozdoby z rozličných materiálů, nápadité dekorace, betlémy v různém provedení, figurky s vánoční a mikulášskou tematikou, pohádkové postavičky a spoustu dalších krásných a rozmanitých výtvarných počinů. Nebude chybět ani bohatý doprovodný program, v němž si přijdou na své děti i hraví a tvořiví dospělí.",
+"fetched": "2026-11-18",
+"link": "https://www.bz-uk.cz",
 "slots": []
 },
 "https://prague.eu/cs/akce/veggie-vanoce/": {
