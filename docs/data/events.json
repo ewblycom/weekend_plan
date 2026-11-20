@@ -1,49 +1,21 @@
 {
- "generated_at": "2026-11-20T13:05:25+00:00",
+ "generated_at": "2026-11-20T22:48:02+00:00",
  "weekend": {
   "from": "2026-11-20",
   "to": "2026-11-22"
  },
  "counts": {
-  "tickettailor": 7,
-  "telegram": 3,
+  "tickettailor": 5,
+  "telegram": 10,
   "luma": 8,
   "prague.eu": 156,
   "kudyznudy": 24,
-  "goout": 13
+  "goout": 12
  },
  "errors": {
-  "vinegret": "RuntimeError: ссылок 25, загружено 25, рубрика «Афиша» 25, с датой в Праге 0"
+  "vinegret": "RuntimeError: ссылок 2, загружено 2, рубрика «Афиша» 2, с датой в Праге 0"
  },
  "events": [
-  {
-   "source": "tickettailor",
-   "url": "https://www.tickettailor.com/events/spotlightproduction/2350582",
-   "title": "Stand Up Astana в Вене",
-   "start": "2026-11-20",
-   "end": "2026-11-20",
-   "time": "19:30",
-   "venue": "VHS Urania, 1010",
-   "city": "Вена",
-   "category": "show",
-   "description": "Stand Up Astana в Вене – VHS Urania, Fri 20 Nov 2026 - SOLD OUT.  Открыта продажа билетов на дополнительный концерт в то...",
-   "image": "https://uploads.tickettailorassets.com/c_scale,w_800/v1/production/userfiles/ebebyekdfmdnaslkwtho.jpg?_a=BAAAEvDQ",
-   "lang": "ru",
-   "free": null,
-   "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
-   "date_uncertain": false,
-   "score": 7.5,
-   "tags": [
-    "на русском",
-    "для двоих",
-    "поездка: Вена",
-    "только сейчас"
-   ],
-   "id": "fd6e9fbbb765"
-  },
   {
    "source": "tickettailor",
    "url": "https://www.tickettailor.com/events/spotlightproduction/2354390",
@@ -72,21 +44,21 @@
   },
   {
    "source": "telegram:vinegret_cz",
-   "url": "https://t.me/vinegret_cz/35459",
-   "title": "Знаменитый американский мультиинструменталист и певец Кори Генри выступит в Праге с программой A Jam Good Time",
-   "start": "2026-12-02",
-   "end": "2026-12-02",
-   "time": "19:00",
+   "url": "https://t.me/vinegret_cz/35475",
+   "title": "Лучшие песни Metallica в исполнении симфонического оркестра: концерты в Праге и Остраве",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "time": null,
    "venue": null,
    "city": null,
    "category": "concert",
-   "description": "🎹 Знаменитый американский мультиинструменталист и певец Кори Генри выступит в Праге с программой A Jam Good Time\n\nКонцерт состоится 2 декабря в недавно отреставрированном круговом театре Nová Spirála.\n\n🎸 Вместе с музыкантом на сцену выйдет его бесподобный бэнд в полном составе:\n\nКори Хенри (Cory Henry) – клавишные, вокал;\nБибердед (Bbearded) – перкуссия;\nДоминик Ксавье (Dominique Xavier) – клавишные;\nДжо Кливленд (Joe Cleveland) – бас-гитара;\nРэнди Раньон (Randy Runyon) – электрогитара.\n\nЛюбителям джаза, фанка, соула и просто качественной музыки никак нельзя пропускать это событие!\n\n👉 Билеты п",
-   "image": "https://cdn4.telesco.pe/file/dE0FXdkDA96ViJ8vHTeyIEMTer1uFBnoKeXbb97YKxWTZjV8fV6_FXndjUpikZyddTbXtX4j1-KL1sY-QnTIuWQsvVWFFxdXiQdWUU5zjWRlm09rdBaa3Df-H7gB7H5vCFmKYTtZ3_LNNf0vHVOns97NcJClZCGYhzYfruz6ey1KgVdcwzYrGX2IHC6s_BB4TamXIkrD4R5-NZuLr8iJ3_es4ejBqkXB6BrufcQl2QoTLjNwVyCpvHza2pS3T6CWIsPUpgZnAbR0923leV8kjK6ufrVKMvy9xb7XMjPIPbnTpZRRUaf7cJCqesWqX1kRUL-AlGEaCQP2HAg9ntDbuA.jpg",
+   "description": "🎸 Лучшие песни Metallica в исполнении симфонического оркестра: концерты в Праге и Остраве\n\nПосле успеха выступлений в 2021 году проект Symphonic Tribute to METALLICA by Orion Band & Orchestra вновь представит в Чехии знаменитые композиции культовой рок-группы в масштабном симфоническом звучании.\n\nЗрителей ждёт необычное сочетание мощных гитарных риффов, рок-группы и симфонического оркестра. В программе – хиты Master of Puppets, Nothing Else Matters, For Whom the Bell Tolls, Enter Sandman и другие композиции из легендарного альбома S&M, вышедшего в 1999 году.\n\nНа одной сцене выступят Orion Orch",
+   "image": "https://cdn4.telesco.pe/file/VFtFAaEenwxvz8Y3110ca24WKPavZD9BLSWo-FKMILCd9iwxEDfK91A0HVBuImZ8wVgwARhZqJsYt8gbi-iDq3xFo2uXpzvRdO5VW3D6H2nJrk0ktwTejMcBAMPgSNI9nuODtJ_WYCid38hrIYg3gB5tYCN8CynCWGMLcCEFEO7ipS6kHJjw3wnp53incf_v8ex54L1UHc8-yLf4KTTO6RaIzqYMrA9An_fLjSTHz1VcFMPEB0o16hHD58eLDMnCj56iuiPQEdRwUbmcZSoVNe2N5PxvKmzpIZhRAvo1xnHpTezD7cyOJdC_JplOsgrzqM346E39GDvrkAoQuZIW9A.jpg",
    "lang": "ru",
    "free": null,
    "price_from": null,
    "link": null,
-   "booking": "https://www.ticketportal.cz/event/Cory-Henry-A-Jam-Good-Time",
+   "booking": "https://www.ticketportal.cz/event/Symphonic-tribute-to-METALLICA-by-Orion-band-Orchestra",
    "slots": [],
    "date_uncertain": false,
    "score": 6.77,
@@ -94,7 +66,7 @@
     "на русском",
     "для двоих"
    ],
-   "id": "50a343681b55"
+   "id": "a82d8c318962"
   },
   {
    "source": "tickettailor",
@@ -151,17 +123,17 @@
    "id": "a80268432eb9"
   },
   {
-   "source": "tickettailor",
-   "url": "https://www.tickettailor.com/events/spotlightproduction/2269794",
-   "title": "Анна Виленская в Мюнхене. Кто придумал дирижеров и за что им всё-таки платят деньги?",
-   "start": "2026-11-20",
-   "end": "2026-11-20",
+   "source": "telegram:pozor_brno",
+   "url": "https://t.me/pozor_brno/44797",
+   "title": "Slavnostní koncert festivalu Songs of Europe",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
    "time": null,
-   "venue": "Kulturzentrum Trudering",
-   "city": "Мюнхен",
-   "category": "concert",
-   "description": "Анна Виленская — музыковед, лектор и популяризатор классической и современной музыки. Она умеет говорить о сложном просто, увлекательно и с ",
-   "image": "https://uploads.tickettailorassets.com/c_scale,w_800/v1/production/userfiles/e1iqpelny4tgwkkxfocp.jpg?_a=BAAAEvDQ",
+   "venue": null,
+   "city": null,
+   "category": "other",
+   "description": "Фестиваль, в котором примут участие более 430 певцов и певиц.",
+   "image": null,
    "lang": "ru",
    "free": null,
    "price_from": null,
@@ -169,13 +141,13 @@
    "booking": null,
    "slots": [],
    "date_uncertain": false,
-   "score": 5.27,
+   "score": 6.27,
    "tags": [
     "на русском",
-    "поездка: Мюнхен",
+    "для двоих",
     "только сейчас"
    ],
-   "id": "aa8178649c19"
+   "id": "ec552836f80f"
   },
   {
    "source": "tickettailor",
@@ -260,6 +232,32 @@
    "id": "1ef942dd056b"
   },
   {
+   "source": "telegram:pozor_brno",
+   "url": "https://t.me/pozor_brno/44798",
+   "title": "Президент Петр Павел считает, что падение российской ракеты на территории Чехии - лишь вопрос времени",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "time": null,
+   "venue": null,
+   "city": null,
+   "category": "other",
+   "description": "⚠️ Президент Петр Павел считает, что падение российской ракеты на территории Чехии - лишь вопрос времени\n\nПрезидент Чехии Петр Павел заявил, что ситуация, произошедшая сегодня в Польше, рано или поздно может повториться и на территории Чехии.\n\n20 ноября на юго-востоке Польши упали две ракеты и реактивный беспилотник. По данным польских властей, они были российскими. Премьер-министр Польши Дональд Туск считает произошедшее преднамеренной провокацией.\n\n«Россия постоянно подчёркивает, что каждая страна, поддерживающая Украину, становится для неё законной целью. Это означает, что мы тоже находимся",
+   "image": "https://cdn4.telesco.pe/file/Zl9xcQvnEKRy663VTNfURiEiFlXZ-_xpVfllFB0rupvTeDWi2PTQ1nt0H6wsq32HV7MCBHVZf5C-wnQsMOoBIRvRhGeWLfYiLrTTgoRyX15khy8VEWzCwbv2qDkOe0XobmqSdCIafHKGkflj3yDnKshSGUMQVUgDI2eCXrqLxjzPJSds_zPC7UZnQCKy34UG86SaPVtpFcG5s2egCUNoWwAO83IFwfLOdYxUvtiZeum1fykYklB78-D_HEACZuWQ6VKLWx2L6Q1c7M5dZtrN-BCWw2gE3Hgk6RQnHiAMsWsYZmYWh1tdky0NEB1H_lz1AtUWWyxH0wwT_OvuaPVUbQ.jpg",
+   "lang": "ru",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.77,
+   "tags": [
+    "на русском",
+    "только сейчас"
+   ],
+   "id": "f84d846d8948"
+  },
+  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/slavnostni-koncert-festival-songs-of-europe-praha-2026/",
    "title": "Slavnostní koncert — Festival Songs of Europe Praha 2026",
@@ -338,6 +336,162 @@
    "id": "e184123c283d"
   },
   {
+   "source": "telegram:pozor_brno",
+   "url": "https://t.me/pozor_brno/44797",
+   "title": "Ярмарка на Náměstí míru",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": null,
+   "venue": null,
+   "city": null,
+   "category": "other",
+   "description": "Открытие первой рождественской ярмарки в Праге.",
+   "image": null,
+   "lang": "ru",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.77,
+   "tags": [
+    "на русском",
+    "только сейчас"
+   ],
+   "id": "7c8d15b971a4"
+  },
+  {
+   "source": "telegram:pozor_brno",
+   "url": "https://t.me/pozor_brno/44797",
+   "title": "ICE MAGIC",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": null,
+   "venue": null,
+   "city": null,
+   "category": "other",
+   "description": "Выставка ледяных скульптур, более 140 тонн льда и 8 сказочных миров.",
+   "image": null,
+   "lang": "ru",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.77,
+   "tags": [
+    "на русском",
+    "только сейчас"
+   ],
+   "id": "67896072e867"
+  },
+  {
+   "source": "telegram:pozor_brno",
+   "url": "https://t.me/pozor_brno/44797",
+   "title": "Шоу Крампусов",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": null,
+   "venue": null,
+   "city": null,
+   "category": "other",
+   "description": "Шоу альпийских демонов с рогами, колокольчиками и огнём.",
+   "image": null,
+   "lang": "ru",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.77,
+   "tags": [
+    "на русском",
+    "только сейчас"
+   ],
+   "id": "6bcf74d2fd8d"
+  },
+  {
+   "source": "telegram:pozor_brno",
+   "url": "https://t.me/pozor_brno/44797",
+   "title": "Grand Jour De Champagne",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": null,
+   "venue": null,
+   "city": null,
+   "category": "other",
+   "description": "Фестиваль шампанского с завтраком из пяти блюд.",
+   "image": null,
+   "lang": "ru",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.77,
+   "tags": [
+    "на русском",
+    "только сейчас"
+   ],
+   "id": "428ba8dbca39"
+  },
+  {
+   "source": "telegram:pozor_brno",
+   "url": "https://t.me/pozor_brno/44797",
+   "title": "Alla Danza",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": null,
+   "venue": null,
+   "city": null,
+   "category": "other",
+   "description": "Исторический бал в стиле XV-XIX столетия.",
+   "image": null,
+   "lang": "ru",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.77,
+   "tags": [
+    "на русском",
+    "только сейчас"
+   ],
+   "id": "18c4c7bb817f"
+  },
+  {
+   "source": "telegram:vinegret_cz",
+   "url": "https://t.me/vinegret_cz/35479",
+   "title": "В субботу в Праге состоится масштабное шоу Крампусов",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "time": "15:00",
+   "venue": "Výstaviště Praha",
+   "city": null,
+   "category": "other",
+   "description": "👹 В субботу в Праге состоится масштабное шоу Крампусов\n\nЖители и гости Праги за один вечер смогут увидеть более 200 жутких Крампусов. Они соберутся на территории выставочного комплекса Výstaviště в субботу, 21 ноября, в рамках масштабного шоу Krampus show 2026.\n\nЭтот «рождественский черт» с шерстью, рогами и копытами пришел в Чехию из альпийского фольклора.\nКрампус сопровождает Николая Чудотворца и пугает непослушных детей, действуя тем самым в противовес святому, который раздает подарки хорошим детям.\n\nОрганизаторы шоу подготовят фотозону и две разные программы, в зависимости от возраста дете",
+   "image": "https://cdn4.telesco.pe/file/RSuJxT7gL3PI6N9hqlGqw0kZT-eC-SjJpuRnM96QGJqzYD3gzp3XD-nfm42guud1cnJ88AYSFjeY5V5SxtTnC2NaeUxvaM6H5sDGyoGkOwY66eC6Yd7rTI_5jsLffAwbPNqjf0epAyfFpD8tJ8jefFCInd_op30uJ2W8Knj1e8-IPO3zWI4ZUbPGO3I7itt58xw2vpu6wZCLFk6kzj54iulW1P5__7KyhFFHHsLpAQ1Z7N-wYKhJN2s10D93jPpMn53L0P0PGo52faOAU2IAzRykLHCHk4N1_IuZle2E1wDgc-470V0cxAuLRmKA9Aya0Ms2gRsi3tTGjBEEjdzQ3g.jpg",
+   "lang": "ru",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": "https://www.fairplay.events/cs/promoters/vystaviste-praha",
+   "slots": [],
+   "date_uncertain": false,
+   "score": 4.77,
+   "tags": [
+    "на русском",
+    "только сейчас"
+   ],
+   "id": "7c21ab2dd1ca"
+  },
+  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/pitbull-2/",
    "title": "Pitbull",
@@ -390,31 +544,6 @@
    "id": "45de659cc1b6"
   },
   {
-   "source": "telegram:vinegret_cz",
-   "url": "https://t.me/vinegret_cz/35458",
-   "title": "Идея выходного дня: Рождество на острове — дворец Херренкимзее и необычная ярмарка на озере Химзее!",
-   "start": "2026-11-28",
-   "end": "2026-11-28",
-   "time": "06:00",
-   "venue": null,
-   "city": null,
-   "category": "market",
-   "description": "Идея выходного дня: Рождество на острове — дворец Херренкимзее и необычная ярмарка на озере Химзее!\n\n🗓 Когда: 28 ноября (суббота)\n\n📍 Выезжаем из Праги в 06:00, возвращаемся около 23:40\n\n💰Стоимость: 2 100 крон\n\nДворец баварского короля Людвига II, прогулка на кораблике по озеру Химзее, заснеженные Альпы и одна из самых необычных рождественских ярмарок Германии — на маленьком острове, куда можно попасть только по воде!\n\nВ программе:\n\n— путешествие на кораблике по озеру Химзее;\n— остров Херренинзель;\n— дворец Херренкимзее — баварский «Версаль» короля Людвига II;\n— прогулка по великолепному дворцо",
-   "image": "https://cdn4.telesco.pe/file/JfbfD32LXT0ZvdCZdQQsZURDmq0tt6Ni1h5VsPU77EQKeGL6Be8aATDH8GWuux9WG_pZgGnhCO8nvSKluhVcNihoOXG8XKz8md-5xuWmxruULzB8kS5upRWRn2T5_HTzBzNC8bG18P388Z84aw_sjWUWg1KZ5MNt4rgaiu5oGmJcTRLirHkB0Q8BMJJxmcMXY1sz7PIwePSHfFvYzWMGUocwWKJdXPX-tio41jvMQFDQHqqiYrdRxLnnif30lJyPZNSZ-JzmQd8-aX86L7_WUN4sEmL-JE11zWEbzhjiG3n9nCBUcr4sF9O76v4qqu___q7LHzJSGBsctd1q60XsTg.jpg",
-   "lang": "ru",
-   "free": null,
-   "price_from": 2100,
-   "link": null,
-   "booking": "https://praguetraveller.online/chiemsee_28.11.2026/",
-   "slots": [],
-   "date_uncertain": false,
-   "score": 4.75,
-   "tags": [
-    "на русском"
-   ],
-   "id": "41175347447e"
-  },
-  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/dekkadancers-tramvaj-do-stanice-touha-2/",
    "title": "DEKKADANCERS: Tramvaj do stanice Touha",
@@ -438,7 +567,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 4.68,
+   "score": 4.69,
    "tags": [
     "для двоих",
     "только сейчас"
@@ -508,7 +637,7 @@
    "city": null,
    "category": "market",
    "description": "Milovníky dobrého jídla, kvalitních surovin a kulinářské inspirace zve 21. listopadu do prostor Národního zemědělského muzea na Letné Zimní Apetit piknik. Oblíbený food festival magazínu Apetit nabídne celodenní program plný ochutnávek, setkání s výrobci, kuchaři i osobnostmi české gastronomické scény a inspirace pro sezonní i sváteční vaření. Součástí programu budou kuchařské show, rozhovory i další vystoupení na festivalové scéně. Atmosféru doplní předadventní nálada, vůně zimních specialit a program určený návštěvníkům všech generací. Zimní Apetit piknik je příležitostí objevovat nové chutě, poznat zajímavé gastronomické projekty a strávit den ve společnosti lidí, které spojuje láska k dobrému jídlu.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/12132915/5998-Apetit20Piknik20Zima2025-407.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/12132915/5998-Apetit20Piknik20Zima2025-407.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -750,31 +879,6 @@
    "id": "6c8dab7b3044"
   },
   {
-   "source": "telegram:pozor_brno",
-   "url": "https://t.me/pozor_brno/44776",
-   "title": "Самое масштабное шоу электронной музыки в Праге!",
-   "start": "2026-11-27",
-   "end": "2026-11-27",
-   "time": null,
-   "venue": null,
-   "city": null,
-   "category": "other",
-   "description": "🔥 Самое масштабное шоу электронной музыки в Праге!\n\n27 ноября THE SOUND CHAPTER захватит легендарную O2 арену!\n\nDimitri Vegas, KSHMR, MORTEN и R3HAB подарят незабываемую ночь с мощнейшими басами, впечатляющими визуальными эффектами и невероятной энергетикой.\n\nЕсли вы любите электронную музыку - ОБЯЗАТЕЛЬНО К ПОСЕЩЕНИЮ.\n\n🎟 Билеты быстро раскупаются на Ticketportal и Ticketmaster.\n\nНе пропустите! ❤️",
-   "image": "https://cdn4.telesco.pe/file/cCTuDWHY5HRYJyAg0F5g5wxbXdm7z-UJw-s4ZDx99ZMZXbC_7GXOvlOdbDrEpK5MU2px4rHlleImwUXVrnv55O5IjoNAmrbbvQhzYBR3N7YnlsctDOZ-s1XPl5tHtbsT9VhYvO_d4k4m4hxTpBwa3xzkEUHNw9AUUgtHJvmLLELpXZOnkBDT42zEqGNKzj9Jdyn8zyQtXnoQOIrUHm_oJA8iC6vlTUv3tUxJS0unSuSRzX3Kk7veBXNX6WUdRC-k8pEWd_Tvu8MAiRttTUvdbwCIrZNwR0N4UUcYPyVCBR_aS3ELzv424d9XbTKl3E_r57-6eOg_tyi9g7G8itqCPA",
-   "lang": "ru",
-   "free": null,
-   "price_from": null,
-   "link": null,
-   "booking": null,
-   "slots": [],
-   "date_uncertain": false,
-   "score": 3.77,
-   "tags": [
-    "на русском"
-   ],
-   "id": "de9c9da7178c"
-  },
-  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/terne-chave/",
    "title": "Terne Čhave",
@@ -952,7 +1056,7 @@
    "booking": "https://praha-vysehrad.cz/cs/program/osklive-kacatko:326/",
    "slots": [],
    "date_uncertain": false,
-   "score": 3.68,
+   "score": 3.69,
    "tags": [
     "рядом с домом",
     "только сейчас"
@@ -978,7 +1082,7 @@
    "booking": "https://divadlobravo.cz/predstaveni/svetla-a-stiny/",
    "slots": [],
    "date_uncertain": false,
-   "score": 3.68,
+   "score": 3.69,
    "tags": [
     "для двоих"
    ],
@@ -1003,7 +1107,7 @@
    "booking": "https://www.jatka78.cz/cs/inscenace/deus-ex-mikrofona-s-annou-klimesovou",
    "slots": [],
    "date_uncertain": false,
-   "score": 3.68,
+   "score": 3.69,
    "tags": [
     "для двоих"
    ],
@@ -1317,7 +1421,7 @@
    "free": null,
    "price_from": 280,
    "link": "http://www.cafevlese.cz",
-   "booking": "https://goout.net/cs/listky/matyasovi-kamaradi+support-joe-fracek/krgob/",
+   "booking": null,
    "slots": [],
    "date_uncertain": false,
    "score": 3.27,
@@ -1342,7 +1446,7 @@
    "free": null,
    "price_from": 150,
    "link": "https://www.restartbar.net/",
-   "booking": "https://goout.net/cs/listky/prague-lions-gala-night-2026/vuunb/",
+   "booking": null,
    "slots": [],
    "date_uncertain": false,
    "score": 3.27,
@@ -1487,7 +1591,7 @@
    "city": null,
    "category": "market",
    "description": "MINT Market v Holešovické tržnici opět před Vánoci představí tvorbu designérů a tvůrců z České republiky i ze zahraničí a nabídne možnost pořídit originální vánoční dárky v předstihu, pohodlně pod jednou střechou. Právě autorská tvorba, malé série a osobní přístup patří k tomu, co na MINT Marketech pořádaných po celé republice láká pravidelné návštěvníky. V hale 13 se představí více než sto značek s autorskou módou, ručně vyráběnými šperky, kabelkami, přírodní kosmetikou, sójovými svíčkami, papírenským zbožím, porcelánem, keramikou, bytovými doplňky i výrobky pro děti a domácí mazlíčky. MINT Market je příležitostí nasát předvánoční atmosféru, objevit nové značky a dopřát si něco dobrého k jídlu i pití.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/09/05092734/475794124_1010876944405700_1117201865668916663_n.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/09/05092734/475794124_1010876944405700_1117201865668916663_n.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -1512,7 +1616,7 @@
    "city": null,
    "category": "market",
    "description": "Tradiční hrnčířské trhy se z Berouna v předvánočním období stěhují do Prahy. Ti, kdo mají rádi výrobky z hlíny, tak mají příležitost k nákupům na ploše před Průmyslovým palácem. Keramika a umělecká užitá řemesla v nepřeberném množství od 130 řemeslníků z celé České republiky.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/02134429/645372085_26280519721578302_1529513877999151334_n.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/02134429/645372085_26280519721578302_1529513877999151334_n.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -1537,7 +1641,7 @@
    "city": null,
    "category": "market",
    "description": "Nasajte kouzlo adventu na Karlínském náměstí. V neděli 6. prosince vás čekají tradiční vánoční trhy plné sváteční atmosféry, vůně svařeného vína, vánočních dobrot a oblíbených koled. Chybět nebude dřevěný betlém ani Ježíškova pošta, kde mohou děti odeslat svá přání Ježíškovi. Zůstaňte až do setmění a vychutnejte si pohled na slavnostně rozsvícený vánoční strom a kostel sv. Cyrila a Metoděje.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/20112703/AdobeStock_178139211-scaled-e1763634439949.jpeg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/20112703/AdobeStock_178139211-scaled-e1763634439949.jpeg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -1562,7 +1666,7 @@
    "city": null,
    "category": "market",
    "description": "Galerie Mánes bude hostit Vánoční Lemarket 2026, tradiční přehlídku českého designu a lokálních značek. Třídenní akce představí tvorbu nezávislých designérů, řemeslníků, umělců i začínajících tvůrců a nabídne inspiraci pro předvánoční nákupy. Návštěvníci zde najdou originální dárky, módní doplňky, šperky, autorskou tvorbu i aktuální designové trendy. Lemarket zároveň poskytne prostor domácím značkám a vytvoří příjemnou adventní atmosféru v prostředí galerie na břehu Vltavy.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/23110826/LM4-1.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/10/23110826/LM4-1.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -1608,7 +1712,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 3.18,
+   "score": 3.19,
    "tags": [
     "только сейчас"
    ],
@@ -1638,7 +1742,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 3.18,
+   "score": 3.19,
    "tags": [
     "только сейчас"
    ],
@@ -1660,7 +1764,7 @@
    "free": null,
    "price_from": 250,
    "link": "https://www.rockcafe.cz/",
-   "booking": "https://goout.net/cs/listky/postupicka-fest-no-bark-no-bite+middleman+retrospektiff+ayskr+dzagub+dalsi/tqdpb/",
+   "booking": null,
    "slots": [],
    "date_uncertain": false,
    "score": 2.77,
@@ -1750,6 +1854,31 @@
    "id": "6c3b62f40e79"
   },
   {
+   "source": "telegram:pozor_brno",
+   "url": "https://t.me/pozor_brno/44797",
+   "title": "Рождественские рынки с датами открытия",
+   "start": null,
+   "end": null,
+   "time": null,
+   "venue": null,
+   "city": null,
+   "category": "other",
+   "description": "Pozor!® - новости и жизнь в Чехии 🐊",
+   "image": null,
+   "lang": "ru",
+   "free": null,
+   "price_from": null,
+   "link": null,
+   "booking": null,
+   "slots": [],
+   "date_uncertain": true,
+   "score": 2.77,
+   "tags": [
+    "на русском"
+   ],
+   "id": "7a1bb02c5dd6"
+  },
+  {
    "source": "kudyznudy",
    "url": "https://www.kudyznudy.cz/akce/farmarske-trhy-v-podebradech",
    "title": "Farmářské trhy Poděbrady 2026",
@@ -1790,7 +1919,7 @@
    "city": null,
    "category": "market",
    "description": "Praha se 21. listopadu stane místem setkání kultur z celého světa. Mezinárodní charitativní trh v hotelu Hilton Praha, na jehož přípravě se podílejí zahraniční velvyslanectví akreditovaná v České republice, představí vánoční tradice, řemesla, dárky a gastronomické speciality z více než 50 zemí. Barevná přehlídka krojů, hudby, tance a světových tradic navíc pomůže dobré věci. Návštěvníci svou účastí i nákupem originálních výrobků podpoří české charitativní organizace a užijí si jednu z nejoblíbenějších akcí pražské vánoční sezony.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/04095318/886446598_1537042115113856_2891591116218787222_n.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/04095318/886446598_1537042115113856_2891591116218787222_n.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -1823,7 +1952,7 @@
    "booking": "https://praha-vysehrad.cz/cs/program/lida-baarova-a-ta-druha:317/",
    "slots": [],
    "date_uncertain": false,
-   "score": 2.68,
+   "score": 2.69,
    "tags": [
     "рядом с домом"
    ],
@@ -2261,7 +2390,7 @@
    "city": null,
    "category": "market",
    "description": "Adventní čas v zámeckém areálu Ctěnice zahájí tradiční akce Vánoce na zámku. Návštěvníky čeká odpoledne, které nabídne adventní trh s řemeslnými výrobky, originálními dárky a vánočními dobrotami. Děti se mohou těšit na andělskou poštu, pastýře muzikanty nebo Louskáčka na chůdách, zatímco v tvořivých dílnách vzniknou vlastní vánoční dekorace a dárky. Na odvážnější návštěvníky pak čeká i peklo ukryté v jeskyni pod zámkem. Slavnostní náladu podtrhne vystoupení dětského pěveckého sboru spojené s rozsvícením vánočního stromku, zámeckého areálu a nově také zámeckého parku. Akce nabídne příležitost přivítat advent v jedinečném prostředí ctěnického zámku a užít si pestrý program pro celou rodinu.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/11094101/902000758_1424024123219373_636133245229486849_n-e1794387109270.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/11094101/902000758_1424024123219373_636133245229486849_n-e1794387109270.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2299,7 +2428,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 2.18,
+   "score": 2.19,
    "tags": [
     "для двоих",
     "идёт долго"
@@ -2334,7 +2463,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 2.18,
+   "score": 2.19,
    "tags": [],
    "id": "8914305d467c"
   },
@@ -2378,7 +2507,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 2.18,
+   "score": 2.19,
    "tags": [],
    "id": "12dfb07f384f"
   },
@@ -2406,7 +2535,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 2.18,
+   "score": 2.19,
    "tags": [],
    "id": "abb829212a2b"
   },
@@ -2429,7 +2558,7 @@
    "booking": "https://zdjc.cz/cs/program/pravda/",
    "slots": [],
    "date_uncertain": false,
-   "score": 2.18,
+   "score": 2.19,
    "tags": [],
    "id": "a3f14baa3d83"
   },
@@ -2452,7 +2581,7 @@
    "booking": "https://www.fidlovacka.cz/repertoar/frida",
    "slots": [],
    "date_uncertain": false,
-   "score": 2.18,
+   "score": 2.19,
    "tags": [],
    "id": "7a46a7bc17fb"
   },
@@ -2475,7 +2604,7 @@
    "booking": "https://zdjc.cz/cs/program/the-plum/",
    "slots": [],
    "date_uncertain": false,
-   "score": 2.18,
+   "score": 2.19,
    "tags": [],
    "id": "cc158b05750b"
   },
@@ -2498,7 +2627,7 @@
    "booking": "https://www.minor.cz/repertoar/mami-uz-tam-budem",
    "slots": [],
    "date_uncertain": false,
-   "score": 2.18,
+   "score": 2.19,
    "tags": [],
    "id": "3139737ec5ed"
   },
@@ -2941,7 +3070,7 @@
    "city": null,
    "category": "market",
    "description": "Na trhu na Řezáčově náměstí můžete nakupovat udržitelně do proutěných košíků a po zvážení odnášet v papírových nebo vlastních obalech. Nakoupíte zde kvalitní a čerstvé potraviny podle sezóny přímo od farmářů, v bio i ne-bio kvalitě, řezané byliny, houby, koření, cukrovinky, mošty, med, oleje, pečivo a chléb, domácí vajíčka od slepic s výběhem, nakládanou zeleninu, květiny, víno, pivo, různé lahůdky. Můžete se tu najíst, napít a dát si dát kávu. Sympatické je umístění trhu pod stromy, které i v letních měsících dávají příjemný stín.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/22104330/FT-Hermanak-34.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/22104330/FT-Hermanak-34.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -2988,7 +3117,7 @@
    "city": null,
    "category": "market",
    "description": "V hale 22 můžete po celý rok, kromě nedělí, nakupovat nepřeberné množství čerstvých produktů. Čeká vás ovoce a zelenina, pečivo, vejce, mléko, sýry, bylinky, ryby i maso, ale také med, houby, květiny či asijské speciality — vše od lokálních i zahraničních prodejců, často v bio kvalitě. V sezóně navíc najdete některé stánky i venku před halou.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/16130731/HALA-222744.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/16130731/HALA-222744.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3051,7 +3180,7 @@
    "city": null,
    "category": "market",
    "description": "Nechte se naladit na adventní čas a navštivte bavorsko-český adventní trh Bavorského zastoupení v Praze. Již potřetí se o prvním adventním víkendu slavnostně vyzdobené nádvoří Chotkova paláce, známého také jako Dům U Zlatého melounu v Michalské ulici 12, promění v místo setkávání, dobrého jídla, tradic a předvánoční atmosféry. Těšit se můžete na bavorské i české speciality, výstavu betlémů a pestrý program pro celou rodinu. Slavnostního zahájení 27. listopadu 2026 se zúčastní Bamberské Jezulátko a primátor partnerského města Bamberk. Po celý víkend bude možné sledovat při práci řezbáře, užít si hudební vystoupení kapely „Die Fexer“ a zapojit se společně s dětmi do kreativních dílen i dalších interaktivních aktivit.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/11/21105329/Adventsmarkt_2.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2025/11/21105329/Adventsmarkt_2.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3087,7 +3216,7 @@
    "city": null,
    "category": "market",
    "description": "Vánoční atmosféra se po roce vrací na Mariánské náměstí před Novou radnici. Dobročinné vánoční trhy nabídnou výrobky příspěvkových a neziskových organizací i chráněných dílen, které potěší originálními dárky, dekoracemi a řemeslnými výrobky. Letošní ročník se ponese v duchu oblíbených postaviček českých večerníčků a přinese návštěvníkům program pro malé i velké.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/12093047/vanoce-na-marianskem.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/12093047/vanoce-na-marianskem.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3113,7 +3242,7 @@
    "city": null,
    "category": "market",
    "description": "První adventní neděli ožije areál Chvalské tvrze tradičními adventními trhy plnými řemeslných výrobků, vánočních dobrot a sváteční atmosféry. Návštěvníky čeká kulturní program, tvořivé dílny pro děti, rozsvícení vánočního stromu i setkání s tajemnými Luciemi, které podle lidových tradic dohlížejí na pořádek v adventním čase.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/10090216/DSC00707.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2026/11/10090216/DSC00707.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3136,7 +3265,7 @@
    "city": null,
    "category": "market",
    "description": "Veggie Vánoce 2026 přinesou do Galerie Mánes inspiraci pro sváteční období spojené s rostlinnou gastronomií, udržitelnějším životním stylem a ohleduplným přístupem ke zvířatům i životnímu prostředí. Návštěvníci si budou moci projít veganský vánoční trh s nabídkou občerstvení, dárků a lokálních produktů, zúčastnit se přednášek, diskusí a kulinářských ukázek nebo navštívit konferenci Plant-based 2026, která představí aktuální trendy a poznatky z oblasti rostlinné stravy.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/23132731/AdobeStock_880819870.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/23132731/AdobeStock_880819870.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3317,7 +3446,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 1.18,
+   "score": 1.19,
    "tags": [
     "только сейчас"
    ],
@@ -3466,29 +3595,6 @@
    "id": "7865fd4e5410"
   },
   {
-   "source": "goout",
-   "url": "https://goout.net/cs/jan-studnicka-a-tereza-kujova-atentat-na-arcivevodu/szjpvoy/",
-   "title": "Jan Studnička a Tereza Kujová: Atentát na arcivévodu",
-   "start": "2026-11-25",
-   "end": "2026-11-25",
-   "time": null,
-   "venue": "Rock Café, Národní 116/20, Praha",
-   "city": null,
-   "category": "other",
-   "description": null,
-   "image": "https://goout.net/i/130/1301490-383.jpg",
-   "lang": "cs",
-   "free": null,
-   "price_from": 400,
-   "link": "https://www.rockcafe.cz/",
-   "booking": "https://goout.net/cs/listky/jan-studnicka-a-tereza-kujova-atentat-na-arcivevodu/pjopb/",
-   "slots": [],
-   "date_uncertain": false,
-   "score": 0.77,
-   "tags": [],
-   "id": "56965972dde8"
-  },
-  {
    "source": "prague.eu",
    "url": "https://prague.eu/cs/akce/dido-a-aeneas/",
    "title": "Dido a Aeneas",
@@ -3589,7 +3695,7 @@
    "city": null,
    "category": "market",
    "description": "Na pěší zóně u stanice metra Anděl můžete od dubna každé úterý nakupovat výrobky od českých výrobců, chovatelů a pěstitelů. V nabídce najdete kvalitní zeleninu, maso, sýry a mléčné výrobky i lokální doprovodný sortiment, jako jsou květiny, pečivo, marmelády, bylinky, koření, vajíčka, med a podobně a sezónní produkty. Pořadatelé se snaží poskytnout příležitost především českým prvovýrobcům a prvopěstitelům z celé republiky a vytvořit pro návštěvníky příjemné prostředí s bohatým sortimentem zohledňujícím sezónní produkty i zahraniční lahůdky.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/06090901/IMG-20241002-WA0017.webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/06090901/IMG-20241002-WA0017.webp@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3620,7 +3726,7 @@
    "city": null,
    "category": "market",
    "description": "Na pěší zóně u stanice metra Anděl na vás čekají krásně nazdobené stánky s klasickým vánočním zbožím, originálními dárky a voňavé občerstvení. Každý den od 8 do 20 hodin si můžete dát něco dobrého na zahřátí a nakoupit vše, co k Vánocům patří.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/18114847/jpgtif_DSC2111.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/18114847/jpgtif_DSC2111.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -3671,7 +3777,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3717,7 +3823,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3763,7 +3869,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3793,7 +3899,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3823,7 +3929,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3853,7 +3959,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3883,7 +3989,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3913,7 +4019,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3943,7 +4049,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -3973,7 +4079,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -4011,7 +4117,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -4041,7 +4147,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -4071,7 +4177,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -4101,7 +4207,7 @@
     }
    ],
    "date_uncertain": false,
-   "score": 0.68,
+   "score": 0.69,
    "tags": [
     "идёт долго"
    ],
@@ -4488,7 +4594,7 @@
    "city": null,
    "category": "market",
    "description": "Každou sobotu ožívá náplavka na břehu Vltavy jedním z největších farmářských trhů v republice, kde více než devadesát stánků nabízí čerstvé produkty od prověřených pěstitelů, chovatelů a výrobců. K pohodové sobotě patří bohatá gastronomie, kvalitní káva a živá hudba, které spolu s výhledem na Pražský hrad vytvářejí jedinečnou tržní atmosféru.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/31085925/Naplavka_6.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/31085925/Naplavka_6.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4534,7 +4640,7 @@
    "city": null,
    "category": "market",
    "description": "Farmářský trh Kulaťák patří k největším pravidelným trhům v Praze a dlouhodobě nabízí kvalitní produkty od českých farmářů a výrobců. Od začátku března vždy v sobotu proměňuje Vítězné náměstí v příjemné místo plné sezónních chutí a sousedské atmosféry. Každý týden zde pořídíte čerstvé ovoce a zeleninu, pečivo, maso, ryby, sýry, květiny i další produkty s jasným původem, doplněné o pestrý street food a vybrané zahraniční delikatesy.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/15122142/481086264_1041559144679445_6937361057754772119_n.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/15122142/481086264_1041559144679445_6937361057754772119_n.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4580,7 +4686,7 @@
    "city": null,
    "category": "market",
    "description": "Farmářské Trhy na Jiřáku patří mezi oblíbené trhy v Praze. Na náměstí Jiřího z Poděbrad se pravidelně setkávají lokální farmáři, výrobci i milovníci kvalitních potravin. Návštěvníci zde najdou čerstvou zeleninu a ovoce, bylinky, pečivo, sýry, bioprodukty i rukodělné výrobky — vše v příjemné atmosféře komunitního setkávání. Trhy se konají několikrát týdně a nabízejí pestrý výběr sezónních produktů přímo od českých producentů.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/05092347/01jzp-1.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/05092347/01jzp-1.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4626,7 +4732,7 @@
    "city": null,
    "category": "market",
    "description": "Vánoční trhy na náměstí Míru každoročně otevírají adventní sezónu v Praze a ani letošní rok nebude výjimkou. Před kostelem sv. Ludmily vyroste řada malebných stánků, které nabídnou široký výběr vánočního zboží — od ozdob, keramických betlémů či dřevěných hraček až po výrobky z ovčího rouna, umělecké šperky a tradiční sváteční dobroty. Zapomenout můžete na předvánoční shon a vychutnat si kouzelnou atmosféru adventu provoněnou svařeným vínem a typickým vánočním občerstvením. Trhy na Míráku jsou jedním velkých pražských vánočních trhů a nabídka bude opět bohatá a plná originálního zboží.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/05104422/IMG_2223.webp",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/05104422/IMG_2223.webp@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -4681,7 +4787,7 @@
    "city": null,
    "category": "market",
    "description": "Vánoční trhy na náměstí Republiky přinesou od 25. listopadu do 24. prosince 2026 tradiční předvánoční atmosféru do centra Prahy. V prostoru směrem do ulice V Celnici vyrostou desítky stánků s pestrou nabídkou vánočního zboží — od jmelí, adventních věnců, svíček, svícnů či ozdob až po hračky, cukrovinky, betlémy, adventní kalendáře i výrobky uměleckých řemesel. Nechybět bude ani typické vánoční občerstvení, které krásně dokreslí slavnostní náladu. Stačí se zastavit, zapomenout na shon a vychutnat si kouzlo Vánoc pod širým nebem.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/11141645/AdobeStock_468749161.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/11141645/AdobeStock_468749161.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -5437,7 +5543,7 @@
    "city": null,
    "category": "market",
    "description": "Každé úterý a čtvrtek se na malebném Malostranském náměstí konají oblíbené trhy, kde můžete objevovat pestrou nabídku výrobků od českých pěstitelů a chovatelů, od zeleniny a ovoce až po mléčné a masné produkty či vejce. Doplňují je stánky místních kaváren a restaurací s občerstvením a nápoji a řemeslné zboží. Trhy nabízejí nejen kvalitní potraviny, ale také jedinečnou atmosféru historické Malé Strany, kde se místní i návštěvníci potkávají, ochutnávají a užívají si přátelské prostředí.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/23124248/518300639_1333113725488383_5521580299313940465_n.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/03/23124248/518300639_1333113725488383_5521580299313940465_n.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -5497,7 +5603,7 @@
    "city": null,
    "category": "market",
    "description": "Václavské Vánoce 2026 se vzhledem k probíhající revitalizaci horní části Václavského náměstí uskuteční v parku za radnicí na Staroměstském náměstí. Místo je však to jediné, co se mění. Nezaměnitelná atmosféra 17. ročníku Václavských Vánoc zůstává, stejně tak jako podpora neziskových organizací, a tedy stánky s dárky z jejich chráněných dílen, široká nabídka občerstvení, fajn kapely, dětské sbory, Mikuláš, Betlémské světlo i Štědrovečerní bohoslužba pod širým nebem.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/14105120/IMG_0265-1-e1763113972175.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/11/14105120/IMG_0265-1-e1763113972175.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -5524,7 +5630,7 @@
    "city": null,
    "category": "market",
    "description": "Vánoční trhy na Václavském náměstí 2026 nabídnou adventní čas v jeho nejživější podobě, s vůní svařeného vína, ručně vyráběnými dárky z českých dílen a každodenním kulturním programem přímo v srdci města. Dřevěné domky lemující spodní část náměstí spojí tradiční řemesla s moderní gastronomií, zatímco hudební vystoupení, pěvecké sbory i rodinné programy budou doprovázet celé období až do Tří králů.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/17092738/20221110-DSC07251.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/17092738/20221110-DSC07251.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
@@ -5551,7 +5657,7 @@
    "city": null,
    "category": "market",
    "description": "Vánoční trhy na Staroměstském náměstí patří k největším a nejnavštěvovanějším svátečním akcím v Česku a každoročně proměňují historické centrum Prahy v jedinečné adventní místo setkávání. Adventní tržiště na Staroměstském náměstí je v posledních letech pravidelně oceňováno světovými médii jako jedna z nejkrásnějších vánočních destinací světa a přináší do historického centra města atmosféru opravdových českých Vánoc. Návštěvníky čekají desítky stylových stánků s tradičními českými výrobky, bohatá nabídka gastronomických specialit i každodenní kulturní program s hudbou a folklorem. Nechybí ani slavnostně nasvícený vánoční strom a jedinečná atmosféra, kterou dotváří vůně svařeného vína, cukroví a zvuky koled. Trhy, pořádané společností Taiko, každoročně lákají statisíce návštěvníků z celého světa a řadí se mezi nejkrásnější vánoční trhy vůbec.",
-   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/26142157/strom_staromestske_nam2-1.jpg",
+   "image": "https://imgproxy.cdn.praguecitytourism.city/insecure/rt:fit/w:727/q:90/plain/https://pct-wp-prod.storage.googleapis.com/2024/12/26142157/strom_staromestske_nam2-1.jpg@webp",
    "lang": "cs",
    "free": null,
    "price_from": null,
