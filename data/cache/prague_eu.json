@@ -50,6 +50,13 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/advent-v-muzeu/": {
+"booking": null,
+"description": "Máte oblíbené vánoční tradice a baví vás tvořit a být kreativní? Nebo si jen chcete před vánočním shonem oddychnout a nasát trochu vánoční atmosféry? Prožijte si adventní čas v Národním zemědělském muzeu nejen v tvořivých dílnách v sobotu 12. prosince.",
+"fetched": "2026-11-21",
+"link": "https://www.nzm.cz/aktualne-v-muzeu/akce/advent-v-muzeu1",
+"slots": []
+},
 "https://prague.eu/cs/akce/adventni-trhy-na-chvalske-tvrzi/": {
 "booking": null,
 "description": "První adventní neděli ožije areál Chvalské tvrze tradičními adventními trhy plnými řemeslných výrobků, vánočních dobrot a sváteční atmosféry. Návštěvníky čeká kulturní program, tvořivé dílny pro děti, rozsvícení vánočního stromu i setkání s tajemnými Luciemi, které podle lidových tradic dohlížejí na pořádek v adventním čase.",
@@ -490,6 +497,13 @@
 "description": "Série komorních výstav Dvojice tematizuje partnerské soužití dvou aktivních umělců. Pátá výstava tohoto cyklu přivádí do ateliéru Věry a Vladimíra Janouškových Karolínu Rossí a Janka Rouse. Vedle odkazu Janouškových se poprvé představuje umělecký pár, jehož práce stojí na zcela odlišných prostředcích. Karolína Rossí je vizuální umělkyně, která vytváří především obrazy, které občas přecházejí do objektů. Janek Rous se pohybuje na pomezí performance, videa a práce se zvukem. Právě tato rozdílnost možná vysvětluje, proč spolu vystavují teprve poprvé.",
 "fetched": "2026-11-14",
 "link": "https://www.nvvj.cz",
+"slots": []
+},
+"https://prague.eu/cs/akce/dyzajn-market-zima/": {
+"booking": null,
+"description": "Letošní sérii Dyzajn marketů zakončí v Holešovické tržnici vánoční trh. Dyzajn market je výběrový trh autorské tvorby, kde můžete nakupovat originální dárky a podpořit tak 200+ lokálních značek a dyzajnérů. U každého stánku se můžete potkat s autory naživo, víte tedy, od koho si výrobky kupujete. Prezentují se zde návrháři oblečení, šperkaři, drobní výrobci přírodní kosmetiky, tvůrci doplňků módních i bytových, produkty jako je porcelán, keramika, batohy, kabelky, hračky, svíčky, papírenské výrobky... Akce se účastní lokální tvůrci z České republiky, Slovenska, Maďarska, Rakouska, Ukrajiny a Itálie. Dyzajn market je nejen místem pro objevování a nákupy, ale i pro setkávání a inspiraci. Součástí akce je také pestrý food festival s výběrovou kávou, street foodem i sladkými a slanými specialitami pro vegetariány, vegany i milovníky masa.",
+"fetched": "2026-11-21",
+"link": "https://www.holesovickatrznice.cz",
 "slots": []
 },
 "https://prague.eu/cs/akce/euroliga-zen-zapasy-zvvz-usk-praha/": {
