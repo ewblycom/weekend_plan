@@ -60,7 +60,7 @@
 "https://prague.eu/cs/akce/adventni-trhy-na-chvalske-tvrzi/": {
 "booking": null,
 "description": "První adventní neděli ožije areál Chvalské tvrze tradičními adventními trhy plnými řemeslných výrobků, vánočních dobrot a sváteční atmosféry. Návštěvníky čeká kulturní program, tvořivé dílny pro děti, rozsvícení vánočního stromu i setkání s tajemnými Luciemi, které podle lidových tradic dohlížejí na pořádek v adventním čase.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://chvalskyzamek.cz/udalost/5042/",
 "slots": []
 },
@@ -136,7 +136,7 @@
 "https://prague.eu/cs/akce/bavorsko-cesky-adventni-trh/": {
 "booking": null,
 "description": "Nechte se naladit na adventní čas a navštivte bavorsko-český adventní trh Bavorského zastoupení v Praze. Již potřetí se o prvním adventním víkendu slavnostně vyzdobené nádvoří Chotkova paláce, známého také jako Dům U Zlatého melounu v Michalské ulici 12, promění v místo setkávání, dobrého jídla, tradic a předvánoční atmosféry. Těšit se můžete na bavorské i české speciality, výstavu betlémů a pestrý program pro celou rodinu. Slavnostního zahájení 27. listopadu 2026 se zúčastní Bamberské Jezulátko a primátor partnerského města Bamberk. Po celý víkend bude možné sledovat při práci řezbáře, užít si hudební vystoupení kapely „Die Fexer“ a zapojit se společně s dětmi do kreativních dílen i dalších interaktivních aktivit.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.bayern.de/staatskanzlei/bayern-in-prag/",
 "slots": [
 {
@@ -202,7 +202,7 @@
 "https://prague.eu/cs/akce/cesko-belgie/": {
 "booking": "https://www.ticketportal.cz/event/Cesko-Belgie",
 "description": "Čeští basketbalisté se 29. listopadu v pražské hale Královka utkají s Belgií v důležitém zápase předkvalifikace EuroBasket 2029. Přijďte podpořit národní tým a zároveň být u mimořádného okamžiku, kdy se s reprezentační kariérou rozloučí dlouholetý lídr českého basketbalu Tomáš Satoranský. Pro zkušeného rozehrávače půjde o poslední utkání v národním dresu, v němž naváže na svůj dosud poslední reprezentační start proti Slovinsku.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://naposledy8.cz.basketball/",
 "slots": []
 },
@@ -377,7 +377,7 @@
 "https://prague.eu/cs/akce/dido-a-aeneas/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/dido-a-aeneas-bRrriJXeQGytfiUJb2hc1w",
 "description": "Mistrovské dílo barokní opery, plné emocí a tajemství. Dido a Aeneas, ve světě i u nás neznámější dílo Henryho Purcella, je intimním a melancholickým hudebním ztvárněním Vergiliova příběhu o osudové lásce královny Dido a trójského hrdiny Aenea.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.narodni-divadlo.cz/cs/predstaveni/dido-a-aeneas-bRrriJXeQGytfiUJb2hc1w?t=2026-01-15-19-00",
 "slots": [
 {
@@ -1197,7 +1197,7 @@
 "https://prague.eu/cs/akce/kino-brasil/": {
 "booking": null,
 "description": "Festival brazilských filmů Kino Brasil přináší do kin energii, rytmus a emoce současné Brazílie. Nabídne pečlivě vybraný program oceňovaných snímků, které v celé své pestrosti zachycují brazilskou společnost a její kontrasty. Filmové projekce doplní bohatý doprovodný program plný debat, přednášek, hudby, tance a chutí Brazílie – od kávy po tradiční speciality. Kino Brasil je pozvánkou k objevování kultury, která pulzuje vášní a otevřeností.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.biooko.net",
 "slots": []
 },
@@ -1244,14 +1244,14 @@
 "https://prague.eu/cs/akce/la-pelicula/": {
 "booking": null,
 "description": "Festival španělských filmů La Película se po několika letech vrací v plnohodnotné podobě a letos zve diváky do tajemné Galicie, regionu s bohatou vypravěčskou tradicí a osobitou filmovou tvorbou. Od 3. do 6. prosince uvede kino Atlas výběr oceňovaných současných snímků, které zachycují místní legendy, hledání domova, rodinné vztahy i nečekaná životní setkání. Program obohatí restaurovaný němý film Carmiña, květ Galicie s živým hudebním doprovodem a festivalový hit Sirat, oceněný na festivalu v Cannes, Evropskými filmovými cenami i španělskými cenami Goya. Přehlídku doplní také debaty zaměřené na kulturní, historické a turistické bohatství Galicie.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.lapelicula.cz/#program",
 "slots": []
 },
 "https://prague.eu/cs/akce/ladovy-vanoce-na-marianskem/": {
 "booking": null,
 "description": "Vánoční atmosféra se po roce vrací na Mariánské náměstí před Novou radnici. Dobročinné vánoční trhy nabídnou výrobky příspěvkových a neziskových organizací i chráněných dílen, které potěší originálními dárky, dekoracemi a řemeslnými výrobky. Letošní ročník se ponese v duchu oblíbených postaviček českých večerníčků a přinese návštěvníkům program pro malé i velké.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": null,
 "slots": []
 },
@@ -1288,7 +1288,7 @@
 "https://prague.eu/cs/akce/lidova-zdobnost-v-betlemske-kapli-2026/": {
 "booking": "https://www.vanocnivystava.cz/events/",
 "description": "Letošní tradiční vánoční výstava v podzemních prostorách Betlémské kaple představuje předměty nesoucí rozmanité stopy lidové zdobnosti, především ty spojené s adventem a Vánocemi. Atmosféru doplňují betlémy, ozdobené vánoční stromečky i nejrůznější zvykoslovné artefakty. Výstava zároveň odhaluje, s jakým citem dokázali naši předkové zkrášlovat předměty každodenní potřeby prostou, nevyumělkovanou krásou.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "http://www.vanocnivystava.cz/",
 "slots": []
 },
@@ -1311,7 +1311,7 @@
 "https://prague.eu/cs/akce/mahler-schonberg-zemlinsky/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/mahler-schonberg-zemlinsky-cNezfoEyQEa_f0Yz1Sypng?t=2026-11-26-19-00",
 "description": "Koncert vás přenese do jedné z nejslavnějších kapitol historie Nového německého divadla (dnešní Státní opery), jehož operní soubor vedl v letech 1911—1927 skladatel a dirigent Alexander Zemlinsky. Během svého pražského působení nastudoval šedesát operních titulů a řídil stovky filharmonických koncertů, na nichž významné místo zaujímala díla dvou klíčových osobností hudební moderny, Gustava Mahlera a Arnolda Schönberga.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.narodni-divadlo.cz/cs/predstaveni/mahler-schonberg-zemlinsky-cNezfoEyQEa_f0Yz1Sypng?t=2026-11-26-19-00",
 "slots": []
 },
@@ -1410,7 +1410,7 @@
 "https://prague.eu/cs/akce/mikulas-prahy-7-na-vystavisti/": {
 "booking": null,
 "description": "Praha 7 zve malé i velké na mikulášské bruslení na Výstavišti. 29. listopadu v Malé sportovní hale, s bruslemi i bez.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://navystavisti.cz/udalosti/mikulas-prahy-7/?termin=620&program=154",
 "slots": []
 },
@@ -1454,14 +1454,14 @@
 "https://prague.eu/cs/akce/mikulasske-jizdy-prahou-a-okolim-aneb-po-certech-dobra-zabava-na-kolejich/": {
 "booking": null,
 "description": "Adventní atmosféru na kolejích přinesou tradiční Mikulášské jízdy Prahou a okolím. Z nádraží Praha-Braník vyjedou zvláštní parní vlaky vedené lokomotivou Čtyřkolák (434.2), které v sobotu zamíří na Karlštejn a v neděli na okružní trasu Posázavím přes Týnec nad Sázavou. Součástí jízd bude také mikulášská družina s anděly a čerty, doprovodný program pro děti i možnost vychutnat si jedinečnou atmosféru cestování historickým vlakem. Adventní akci doplní zvláštní jízdy Cyklohráčku a program na nádraží Praha-Braník.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://cs.wikipedia.org/wiki/Praha-Bran%C3%ADk_(n%C3%A1dra%C5%BE%C3%AD)",
 "slots": []
 },
 "https://prague.eu/cs/akce/mint-market-vanoce/": {
 "booking": null,
 "description": "MINT Market v Holešovické tržnici opět před Vánoci představí tvorbu designérů a tvůrců z České republiky i ze zahraničí a nabídne možnost pořídit originální vánoční dárky v předstihu, pohodlně pod jednou střechou. Právě autorská tvorba, malé série a osobní přístup patří k tomu, co na MINT Marketech pořádaných po celé republice láká pravidelné návštěvníky. V hale 13 se představí více než sto značek s autorskou módou, ručně vyráběnými šperky, kabelkami, přírodní kosmetikou, sójovými svíčkami, papírenským zbožím, porcelánem, keramikou, bytovými doplňky i výrobky pro děti a domácí mazlíčky. MINT Market je příležitostí nasát předvánoční atmosféru, objevit nové značky a dopřát si něco dobrého k jídlu i pití.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.mintmarket.cz/cs/trh/praha-53",
 "slots": []
 },
@@ -1475,14 +1475,14 @@
 "https://prague.eu/cs/akce/mistrovstvi-sveta-v-nohejbalu/": {
 "booking": "https://msnohejbal.cz/",
 "description": "Praha se po čtyřech letech znovu stane dějištěm světového nohejbalu. Mistrovství světa v nohejbalu 2026 přivede do metropole špičkové týmy z celého světa a nabídne souboje v disciplínách jednotlivců, dvojic i trojic. Naváže tak na úspěšný šampionát z roku 2022 a potvrdí, že Praha patří mezi významná centra tohoto dynamického sportu. Český tým navíc vstupuje do domácího šampionátu jako úřadující mistr světa v několika disciplínách, což slibuje mimořádnou atmosféru i vysoká očekávání fanoušků.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://msnohejbal.cz/",
 "slots": []
 },
 "https://prague.eu/cs/akce/mittel-cinema-fest/": {
 "booking": null,
 "description": "MittelCinemaFest, středoevropský festival současného italského filmu, se od 26. listopadu do 2. prosince vrací do pražského Kina Lucerna. Čtrnáctý ročník přehlídky nabídne české premiéry, oceňované snímky i setkání s tvůrci a představí pestrý výběr toho nejzajímavějšího ze současné italské kinematografie.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.mittelcinemafest.cz/cs/uvod#program",
 "slots": []
 },
@@ -1542,7 +1542,7 @@
 "https://prague.eu/cs/akce/nieve-ella/": {
 "booking": "https://fource.cz/cs/events/nieve-ella-26/",
 "description": "Britská zpěvačka a autorka Nieve Ella, která patří k nejvýraznějším novým hlasům generace Z, se vrátí do Prahy s debutovým albem How Long Will It Take?. Deska plná upřímných výpovědí o dospívání, komplikovaných vztazích i každodenních nejistotách potvrzuje její pověst interpretky, která dokáže autenticky zachytit pocity své generace. Nieve Ella vystoupí 26. listopadu 2026 v MeetFactory, kde představí nejen nové skladby, ale i energickou koncertní show, díky níž si získává stále širší publikum. Večer otevře Sofia and the Antoinettes se svým osobitým a nespoutaným popem.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://fource.cz/cs/events/nieve-ella-26/",
 "slots": []
 },
@@ -1623,7 +1623,7 @@
 "https://prague.eu/cs/akce/papir-fest/": {
 "booking": null,
 "description": "Podzimní část festivalu lokálních papírenských značek a tvůrců se koná v moderním prostoru WPP Campusu v Praze 7. Na akci, která láká milovníky sešitů, diářů, psacích potřeb, samolepek, pohlednic a dalších originálních papírových výrobků, představí více než 80 českých designérů a značek své produkty. Součástí programu jsou rovněž kreativní workshopy, kde si návštěvníci mohou vyzkoušet různé techniky tvorby vlastních papírových dekorací a doplňků, a nabídka kvalitního občerstvení. Papír Fest je ideální příležitostí pro všechny, kdo chtějí podpořit lokální tvorbu, najít inspiraci nebo si odnést jedinečné papírové dárky.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.meatspace.cz/prostory/wpp-campus/",
 "slots": []
 },
@@ -1730,7 +1730,7 @@
 "https://prague.eu/cs/akce/prazsky-hrad-den-otevrenych-dveri-3/": {
 "booking": "https://www.hrad.cz/cs/kultura-na-hrade/program/den-otevrenych-dveri-na-prazskem-hrade-7-13890#opening-hours-box",
 "description": "V předadventním čase se Den otevřených dveří na Pražském hradě opět stane příležitostí nahlédnout do míst, která jsou veřejnosti po většinu roku uzavřena. V sobotu 28. listopadu se od 9 do 17 hodin zdarma otevřou slavnostně vánočně vyzdobené reprezentační prostory, kde prezident republiky přijímá zahraniční státníky i účastníky klíčových politických jednání. Návštěvníci projdou mimo jiné Plečnikovou sloupovou síní, Rothmayerovým a Španělským sálem, Rudolfovou galerií nebo Zrcadlovým salonem. Součástí mimořádného dne bude také bezplatný vstup do návštěvnických objektů Pražského hradu stejně jako na aktuální výstavy Eva Eisler: Kruh ticha a Design pro Václava Havla. Výjimečně se otevřou také Jižní zahrady, které nabídnou krásné pohledy na historické centrum Prahy. Den otevřených dveří navíc symbolicky zahájí adventní program Vánoční putování Pražským hradem, jenž přinese sváteční atmosféru a kulturní zážitky až do začátku ledna.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.hrad.cz/cs/kultura-na-hrade/stale-expozice-2",
 "slots": []
 },
@@ -1855,7 +1855,7 @@
 "https://prague.eu/cs/akce/sherpa-fest/": {
 "booking": null,
 "description": "22. ročník pražského horolezeckého festivalu Sherpafest nabídne půldenní program kombinující promítání filmů a vystoupení inspirativních hostů. Tematicky pokrývá českou i světovou lezeckou historii a zároveň představuje aktuální dění v horském a skalním lezení. Sherpafest je každoročním svátkem horolezců a milovníků hor, kteří se mohou těšit na příběhy z expedic, setkání s výraznými osobnostmi oboru i neformální atmosféru akce, jež si i po více než dvaceti letech zachovává svůj autentický horolezecký charakter.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.sherpafest.cz/",
 "slots": []
 },
@@ -1953,7 +1953,7 @@
 "https://prague.eu/cs/akce/terne-chave/": {
 "booking": "https://www.jazzdock.cz/cs/koncert/terne-chave-29",
 "description": "Terne Čhave jsou považováni za jednu z nejlepších romských skupin v ČR. Již před pár lety se postavili na vlastní nohy, překročili hranice romského ghetta a vydali se do velkého světa. Přijali mezi sebe „gadže“, projeli Evropu a v jejich hudbě jste kromě rodných melodií mohli slyšet také rock, latino, jazz nebo taneční rytmy.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.jazzdock.cz/cs/koncert/terne-chave-29",
 "slots": []
 },
@@ -2389,14 +2389,14 @@
 "https://prague.eu/cs/akce/vaclavske-vanoce/": {
 "booking": null,
 "description": "Václavské Vánoce 2026 se vzhledem k probíhající revitalizaci horní části Václavského náměstí uskuteční v parku za radnicí na Staroměstském náměstí. Místo je však to jediné, co se mění. Nezaměnitelná atmosféra 17. ročníku Václavských Vánoc zůstává, stejně tak jako podpora neziskových organizací, a tedy stánky s dárky z jejich chráněných dílen, široká nabídka občerstvení, fajn kapely, dětské sbory, Mikuláš, Betlémské světlo i Štědrovečerní bohoslužba pod širým nebem.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://centrumprahy.cz",
 "slots": []
 },
 "https://prague.eu/cs/akce/vanoce-na-zamku/": {
 "booking": "https://eshop.muzeumprahy.cz/ticket/detail/16072",
 "description": "Adventní čas v zámeckém areálu Ctěnice zahájí tradiční akce Vánoce na zámku. Návštěvníky čeká odpoledne, které nabídne adventní trh s řemeslnými výrobky, originálními dárky a vánočními dobrotami. Děti se mohou těšit na andělskou poštu, pastýře muzikanty nebo Louskáčka na chůdách, zatímco v tvořivých dílnách vzniknou vlastní vánoční dekorace a dárky. Na odvážnější návštěvníky pak čeká i peklo ukryté v jeskyni pod zámkem. Slavnostní náladu podtrhne vystoupení dětského pěveckého sboru spojené s rozsvícením vánočního stromku, zámeckého areálu a nově také zámeckého parku. Akce nabídne příležitost přivítat advent v jedinečném prostředí ctěnického zámku a užít si pestrý program pro celou rodinu.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.muzeumprahy.cz",
 "slots": []
 },
@@ -2410,7 +2410,7 @@
 "https://prague.eu/cs/akce/vanoce-vanoce-stromecek-sviti/": {
 "booking": null,
 "description": "Přijďte si užít adventní atmosféru do Muzea Prahy! Čeká vás tvořivá dílna, ve které si děti vyrobí vlastní papírové vánoční ozdoby a společně jimi ozdobí muzejní stromeček. Chybět nebude ani maskot Grifo, adventní koncert dětského pěveckého sboru a slavnostní rozsvícení vánočního stromku.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://www.muzeumprahy.cz/vystavy-a-akce/vanoce-vanoce-stromecek-sviti",
 "slots": []
 },
@@ -2424,7 +2424,7 @@
 "https://prague.eu/cs/akce/vanocni-trhy-na-andelu/": {
 "booking": null,
 "description": "Na pěší zóně u stanice metra Anděl na vás čekají krásně nazdobené stánky s klasickým vánočním zbožím, originálními dárky a voňavé občerstvení. Každý den od 8 do 20 hodin si můžete dát něco dobrého na zahřátí a nakoupit vše, co k Vánocům patří.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://cs.wikipedia.org/wiki/Anděl_(Praha)",
 "slots": []
 },
@@ -2445,14 +2445,14 @@
 "https://prague.eu/cs/akce/vanocni-trhy-staromestske-namesti/": {
 "booking": null,
 "description": "Vánoční trhy na Staroměstském náměstí patří k největším a nejnavštěvovanějším svátečním akcím v Česku a každoročně proměňují historické centrum Prahy v jedinečné adventní místo setkávání. Adventní tržiště na Staroměstském náměstí je v posledních letech pravidelně oceňováno světovými médii jako jedna z nejkrásnějších vánočních destinací světa a přináší do historického centra města atmosféru opravdových českých Vánoc. Návštěvníky čekají desítky stylových stánků s tradičními českými výrobky, bohatá nabídka gastronomických specialit i každodenní kulturní program s hudbou a folklorem. Nechybí ani slavnostně nasvícený vánoční strom a jedinečná atmosféra, kterou dotváří vůně svařeného vína, cukroví a zvuky koled. Trhy, pořádané společností Taiko, každoročně lákají statisíce návštěvníků z celého světa a řadí se mezi nejkrásnější vánoční trhy vůbec.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://trhypraha.cz/",
 "slots": []
 },
 "https://prague.eu/cs/akce/vanocni-trhy-vaclavske-namesti/": {
 "booking": null,
 "description": "Vánoční trhy na Václavském náměstí 2026 nabídnou adventní čas v jeho nejživější podobě, s vůní svařeného vína, ručně vyráběnými dárky z českých dílen a každodenním kulturním programem přímo v srdci města. Dřevěné domky lemující spodní část náměstí spojí tradiční řemesla s moderní gastronomií, zatímco hudební vystoupení, pěvecké sbory i rodinné programy budou doprovázet celé období až do Tří králů.",
-"fetched": "2026-11-14",
+"fetched": "2026-11-22",
 "link": "https://trhypraha.cz",
 "slots": []
 },
