@@ -381,13 +381,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/deti-detem-vanocni-benefice-pro-deti-z-detskych-domovu/": {
-"booking": null,
-"description": "Gymnastky z T. J. Sokol Hodkovičky vystoupí v historickém Tyršově domě společně s dětmi z dětských domovů. Návštěvníky čeká adventní podvečer plný pohybu, hudby a radosti v jedinečném prostředí nedaleko Kampy a Karlova mostu. Veškerý výtěžek ze vstupného bude věnován zapojeným dětským domovům.",
-"fetched": "2026-11-23",
-"link": "https://www.sokolhodkovicky.cz/aktuality/",
-"slots": []
-},
 "https://prague.eu/cs/akce/dido-a-aeneas/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/dido-a-aeneas-bRrriJXeQGytfiUJb2hc1w",
 "description": "Mistrovské dílo barokní opery, plné emocí a tajemství. Dido a Aeneas, ve světě i u nás neznámější dílo Henryho Purcella, je intimním a melancholickým hudebním ztvárněním Vergiliova příběhu o osudové lásce královny Dido a trójského hrdiny Aenea.",
@@ -958,26 +951,6 @@
 "link": "https://www.biooko.net",
 "slots": []
 },
-"https://prague.eu/cs/akce/frankenstein/": {
-"booking": "https://www.mestskadivadlaprazska.cz/inscenace/2010/frankenstein/",
-"description": "Inscenace na motivy kultovního románu Mary Shelleyové zdůrazňuje dualitu stvořitele a potomstva, ženy a muže, života a smrti. A také si klade otázku, zda člověka formuje genetika, nebo prostředí.",
-"fetched": "2026-11-19",
-"link": "https://www.mestskadivadlaprazska.cz/inscenace/2010/frankenstein/",
-"slots": [
-{
-"date": "2026-09-30",
-"time": "19:30"
-},
-{
-"date": "2026-10-13",
-"time": "18:00"
-},
-{
-"date": "2026-11-30",
-"time": "19:30"
-}
-]
-},
 "https://prague.eu/cs/akce/franz-a-kavka/": {
 "booking": "https://www.nazabradli.cz/repertoar/franz-a-kavka/",
 "description": "„Ty můžeš mít strach. Ale strach nesmí mít tebe.“",
@@ -1088,22 +1061,6 @@
 "fetched": "2026-11-22",
 "link": "https://www.galerievaclavaspaly.cz",
 "slots": []
-},
-"https://prague.eu/cs/akce/ivanku-kamarade-muzes-mluvit/": {
-"booking": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/ivanku-kamarade-muzes-mluvit/",
-"description": "Exklusivní návrat legendárního představení Petra Čtvrtníčka a Jiřího Lábuse",
-"fetched": "2026-11-20",
-"link": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/ivanku-kamarade-muzes-mluvit/",
-"slots": [
-{
-"date": "2026-10-08",
-"time": "19:00"
-},
-{
-"date": "2026-12-01",
-"time": "19:00"
-}
-]
 },
 "https://prague.eu/cs/akce/ja-bych-rad-k-betlemu/": {
 "booking": "https://www.riseloutek.cz/program-2/v",
@@ -1239,13 +1196,6 @@
 "description": "Oslavu nádherné hudby i krásy našich kostelů nabízí jedinečný kulturní projekt s názvem Kostelní slavnosti, který připravuje vynikající pěvkyně Markéta Fassati ve spolupráci s Prahou 1 a Prahou 5. Prostřednictvím volného cyklu koncertů nahlédnou milovníci hudby každý měsíc do sakrálních staveb, kde budou představeny skladby české i světové klasické hudby. Další z koncertů se tentokrát adventní, se uskuteční v kostele sv. Václava na Smíchově.",
 "fetched": "2026-11-16",
 "link": "https://www.farnostsmichov.cz",
-"slots": []
-},
-"https://prague.eu/cs/akce/kreativni-jarmark-setrne-vanoce/": {
-"booking": null,
-"description": "Do adventního času můžete vkročit šetrným a tvořivým způsobem v Toulcově dvoře. Potěší vás stánky s ručními výrobky, řemeslné dílny, kde si sami vytvoříte osobité vánoční dárky, i malování na keramiku v dílně sociálního podniku Envira. Ve středověkém špýcharu se otevře výstava betlémů. Děti si užijí divadelní představení, zpívání koled i oblíbený průvod světel, který každoročně rozzáří dvůr. A až si budete chtít oddechnout, čeká na vás přírodní areál se zvířaty.",
-"fetched": "2026-11-23",
-"link": "https://toulcuvdvur.cz/akce/setrne-vanoce-adventni-setkani-na-praze-15-16",
 "slots": []
 },
 "https://prague.eu/cs/akce/kveta-kovarova-za-tvar-figury/": {
@@ -1520,13 +1470,6 @@
 "link": "https://www.meetfactory.cz",
 "slots": []
 },
-"https://prague.eu/cs/akce/my-kluci-co-spolu-chodime-deus-ex-mikrofona-2/": {
-"booking": "https://www.jatka78.cz/cs/inscenace/deus-ex-mikrofona-s-annou-klimesovou",
-"description": "Deus ex mikrofona je sérií setkání improvizačního souboru My kluci, co spolu chodíme s pokaždé jiným Režisérem. Živá režie, živá improvizace — neopakovatelný večer.",
-"fetched": "2026-11-19",
-"link": "https://www.jatka78.cz/cs/inscenace/deus-ex-mikrofona-s-annou-klimesovou",
-"slots": []
-},
 "https://prague.eu/cs/akce/nam-nam-narodil-se/": {
 "booking": "https://www.riseloutek.cz/program-2/",
 "description": "Josef s Marií marně hledají nocleh v Betlémě, a tak se nakonec Ježíšek narodí ve chlévě. Andělé tu novinu oznámí pastýřům, obyvatelům Betléma i třem králům, všichni pospíchají k jesličkám pozdravit narozené děťátko.Představení rodinného typu o narození Ježíše Krista doprovází instrumentální trio a dívčí pěvecké kvarteto. Zazní i některé známé koledy, které si na závěr můžete s účinkujícími zazpívat.",
@@ -1558,6 +1501,13 @@
 "description": "Britská zpěvačka a autorka Nieve Ella, která patří k nejvýraznějším novým hlasům generace Z, se vrátí do Prahy s debutovým albem How Long Will It Take?. Deska plná upřímných výpovědí o dospívání, komplikovaných vztazích i každodenních nejistotách potvrzuje její pověst interpretky, která dokáže autenticky zachytit pocity své generace. Nieve Ella vystoupí 26. listopadu 2026 v MeetFactory, kde představí nejen nové skladby, ale i energickou koncertní show, díky níž si získává stále širší publikum. Večer otevře Sofia and the Antoinettes se svým osobitým a nespoutaným popem.",
 "fetched": "2026-11-22",
 "link": "https://fource.cz/cs/events/nieve-ella-26/",
+"slots": []
+},
+"https://prague.eu/cs/akce/noc-s-arnostem-lustigem-na-publicistice/": {
+"booking": null,
+"description": "Noc s Lustigem připomene 100 let od narození významného českého spisovatele Arnošta Lustiga. Ve středu 25. listopadu 2026 se v Prostoru NULA v Praze 1 uskuteční multižánrový večer s projekcemi dokumentárních filmů, besedami s pamětníky, odborníky i členy rodiny a dalšími vzpomínkovými programy. Vstup na akci pořádanou ve spolupráci s Nadačním fondem Arnošta Lustiga je zdarma.",
+"fetched": "2026-11-23",
+"link": "https://www.vosp.cz/o-skole/kontakty/",
 "slots": []
 },
 "https://prague.eu/cs/akce/novomestsky-advent/": {
@@ -2393,21 +2343,5 @@
 "fetched": "2026-11-22",
 "link": "https://www.mlp.cz/cz/akce/zemlinskeho-kvarteto-les-smyccu-4-koncert/3001",
 "slots": []
-},
-"https://prague.eu/cs/akce/zeny-drzte-huby/": {
-"booking": "https://www.mestskadivadlaprazska.cz/inscenace/1854/zeny-drzte-huby/",
-"description": "Inscenace o jedné nenapravitelné ženě.",
-"fetched": "2026-11-18",
-"link": "https://www.mestskadivadlaprazska.cz/inscenace/1854/zeny-drzte-huby/",
-"slots": [
-{
-"date": "2026-10-21",
-"time": "19:30"
-},
-{
-"date": "2026-11-30",
-"time": "19:30"
-}
-]
 }
 }
