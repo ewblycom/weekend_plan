@@ -133,6 +133,13 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/bara-mrazkova-charge-flipping/": {
+"booking": null,
+"description": "Co se stane s nerostem, když se jeho význam začne odvíjet od očekávání budoucnosti?    Sólová výstava Báry Mrázkové zkoumá, jak se nerostné materiály proměňují ve vědecky měřitelné a ekonomicky obchodovatelné hodnoty.    Audiovizuální esej a imerzivní instalace odhalují způsoby, jimiž se komplexita přírodních materiálů převádí do dat a parametrů, které určují jejich význam pro současné i budoucí technologie. Výstava se zaměřuje na způsoby, jakými jsou nerosty zobrazovány a představovány trhu, a zároveň na to, jak se při tomto procesu vytrácí jejich materiální původ a širší ekologické, ekonomické a geopolitické souvislosti. Otevírá tak otázku, jak hodnotu nerostů vedle jejich fyzických vlastností určují také potřeby technologií a představy o budoucnosti.",
+"fetched": "2026-11-23",
+"link": "https://etcgalerie.cz",
+"slots": []
+},
 "https://prague.eu/cs/akce/bavorsko-cesky-adventni-trh/": {
 "booking": null,
 "description": "Nechte se naladit na adventní čas a navštivte bavorsko-český adventní trh Bavorského zastoupení v Praze. Již potřetí se o prvním adventním víkendu slavnostně vyzdobené nádvoří Chotkova paláce, známého také jako Dům U Zlatého melounu v Michalské ulici 12, promění v místo setkávání, dobrého jídla, tradic a předvánoční atmosféry. Těšit se můžete na bavorské i české speciality, výstavu betlémů a pestrý program pro celou rodinu. Slavnostního zahájení 27. listopadu 2026 se zúčastní Bamberské Jezulátko a primátor partnerského města Bamberk. Po celý víkend bude možné sledovat při práci řezbáře, užít si hudební vystoupení kapely „Die Fexer“ a zapojit se společně s dětmi do kreativních dílen i dalších interaktivních aktivit.",
@@ -195,7 +202,7 @@
 "https://prague.eu/cs/akce/certi-na-certovce/": {
 "booking": "https://www.certinacertovce.cz/event-details/certi-na-certovce-2026-2",
 "description": "5. prosince 2026 znovu ožijí břehy Vltavy oblíbenou rodinnou akcí Čerti na Čertovce. Každoroční mikulášské plavby promění okolí pražské Čertovka v pohádkovou scénu plnou ohně, čertovských příběhů a napětí, které děti milují. Na březích se rozparádí čertovská cháska a z temných zákoutí bude vyprávět strašidelné, ale laskavé příběhy. Na palubě celodřevěných lodí však zůstanete v teple a bezpečí. Během přibližně 30minutové plavby na lodích typu Vodouch a Bivoj potkáte nejen čerty, ale i anděla a samotného Mikuláše, který hodné děti náležitě odmění. Přijďte si užít kouzelnou atmosféru adventní Prahy z hladiny řeky a dopřejte dětem nezapomenutelný mikulášský zážitek.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://www.certinacertovce.cz/",
 "slots": []
 },
@@ -373,6 +380,13 @@
 "time": "19:30"
 }
 ]
+},
+"https://prague.eu/cs/akce/deti-detem-vanocni-benefice-pro-deti-z-detskych-domovu/": {
+"booking": null,
+"description": "Gymnastky z T. J. Sokol Hodkovičky vystoupí v historickém Tyršově domě společně s dětmi z dětských domovů. Návštěvníky čeká adventní podvečer plný pohybu, hudby a radosti v jedinečném prostředí nedaleko Kampy a Karlova mostu. Veškerý výtěžek ze vstupného bude věnován zapojeným dětským domovům.",
+"fetched": "2026-11-23",
+"link": "https://www.sokolhodkovicky.cz/aktuality/",
+"slots": []
 },
 "https://prague.eu/cs/akce/dido-a-aeneas/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/dido-a-aeneas-bRrriJXeQGytfiUJb2hc1w",
@@ -1019,7 +1033,7 @@
 "https://prague.eu/cs/akce/hrncirske-a-remeslne-trhy/": {
 "booking": null,
 "description": "Tradiční hrnčířské trhy se z Berouna v předvánočním období stěhují do Prahy. Ti, kdo mají rádi výrobky z hlíny, tak mají příležitost k nákupům na ploše před Průmyslovým palácem. Keramika a umělecká užitá řemesla v nepřeberném množství od 130 řemeslníků z celé České republiky.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://navystavisti.cz/udalosti/hrncirske-a-remeslne-trhy/?termin=5&program=154",
 "slots": []
 },
@@ -1190,7 +1204,7 @@
 "https://prague.eu/cs/akce/karlinske-vanocni-trhy/": {
 "booking": null,
 "description": "Nasajte kouzlo adventu na Karlínském náměstí. V neděli 6. prosince vás čekají tradiční vánoční trhy plné sváteční atmosféry, vůně svařeného vína, vánočních dobrot a oblíbených koled. Chybět nebude dřevěný betlém ani Ježíškova pošta, kde mohou děti odeslat svá přání Ježíškovi. Zůstaňte až do setmění a vychutnejte si pohled na slavnostně rozsvícený vánoční strom a kostel sv. Cyrila a Metoděje.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://www.facebook.com/events/912311148165753",
 "slots": []
 },
@@ -1227,11 +1241,11 @@
 "link": "https://www.farnostsmichov.cz",
 "slots": []
 },
-"https://prague.eu/cs/akce/krampus-show/": {
-"booking": "https://navystavisti.cz/udalosti/krampus-show-2026/?termin=558&program=154",
-"description": "Peklo se vrací na Výstaviště! V sobotu 21. listopadu 2026 ovládne prostor před nově zrekonstruovaným Průmyslovým palácem Krampus show s více než 200 děsivými čerty z českých a rakouských skupin. Čeká vás ohnivá podívaná plná kouře, zvonců, řinčících řetězů, dunivé hudby a pekelné atmosféry. Na své si přijdou rodiny s dětmi i milovníci pořádného adrenalinu. Odpoledne patří Family show, po setmění pak vypukne nekompromisní Night show.",
-"fetched": "2026-11-14",
-"link": "https://navystavisti.cz/udalosti/krampus-show-2026/?termin=558&program=154",
+"https://prague.eu/cs/akce/kreativni-jarmark-setrne-vanoce/": {
+"booking": null,
+"description": "Do adventního času můžete vkročit šetrným a tvořivým způsobem v Toulcově dvoře. Potěší vás stánky s ručními výrobky, řemeslné dílny, kde si sami vytvoříte osobité vánoční dárky, i malování na keramiku v dílně sociálního podniku Envira. Ve středověkém špýcharu se otevře výstava betlémů. Děti si užijí divadelní představení, zpívání koled i oblíbený průvod světel, který každoročně rozzáří dvůr. A až si budete chtít oddechnout, čeká na vás přírodní areál se zvířaty.",
+"fetched": "2026-11-23",
+"link": "https://toulcuvdvur.cz/akce/setrne-vanoce-adventni-setkani-na-praze-15-16",
 "slots": []
 },
 "https://prague.eu/cs/akce/kveta-kovarova-za-tvar-figury/": {
@@ -1393,17 +1407,10 @@
 "link": "https://www.dscgallery.com",
 "slots": []
 },
-"https://prague.eu/cs/akce/mezinarodni-charitativni-trh/": {
-"booking": "https://goout.net/cs/dsa-vanocni-charitativni-trh/szcptny/",
-"description": "Praha se 21. listopadu stane místem setkání kultur z celého světa. Mezinárodní charitativní trh v hotelu Hilton Praha, na jehož přípravě se podílejí zahraniční velvyslanectví akreditovaná v České republice, představí vánoční tradice, řemesla, dárky a gastronomické speciality z více než 50 zemí. Barevná přehlídka krojů, hudby, tance a světových tradic navíc pomůže dobré věci. Návštěvníci svou účastí i nákupem originálních výrobků podpoří české charitativní organizace a užijí si jednu z nejoblíbenějších akcí pražské vánoční sezony.",
-"fetched": "2026-11-14",
-"link": "https://www.dsaprague.org/",
-"slots": []
-},
 "https://prague.eu/cs/akce/mikulas-na-kampe/": {
 "booking": null,
 "description": "Mikuláš na Kampě patří k tradičním pražským předvánočním akcím, jejíž součástí je také slavnostní rozsvícení vánočního stromu. Návštěvníky čeká setkání s Mikulášem, anděly a čerty, mikulášská nadílka pro děti i bohatý doprovodný program. V romantickém prostředí ostrova Kampa nebudou chybět vánoční dobroty, tradiční malostranský betlém ani jedinečná adventní atmosféra historické Malé Strany.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://sopmsh.estranky.cz/clanky/co-se-chysta/vanoce-na-kampe-----2026.html",
 "slots": []
 },
@@ -1417,28 +1424,28 @@
 "https://prague.eu/cs/akce/mikulas-v-muzeu-mhd/": {
 "booking": "https://www.dpp.cz/zabava-a-zazitky/historie-dpp/muzeum-mhd",
 "description": "Mikulášské odpoledne ve vozovně Střešovice. Cinkot tramvají vystřídá mikulášský zvoneček. Mikuláš, anděl a čert potěší děti mezi historickými exponáty muzea MHD.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://www.dpp.cz/spolecnost/aktuality/detail/66_3256-kalendar-akci-2026",
 "slots": []
 },
 "https://prague.eu/cs/akce/mikulas-v-narodopisnem-muzeu/": {
 "booking": "https://www.nm.cz/navstivte-nas/program/akce/mikulas-v-narodopisnem-muzeu1",
 "description": "Vydejte se s dětmi do Národopisného muzea na tradiční mikulášské odpoledne! Čeká vás setkání s Mikulášem, andělem a čertem, připomenutí lidových zvyků i tvořivé dílny, ve kterých si děti vyrobí čertíka ze sušených švestek nebo slaměný řetěz na vánoční stromeček. Užijte si příjemnou předvánoční atmosféru a objevte kouzlo českých lidových tradic.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://www.nm.cz/navstivte-nas/program/akce/mikulas-v-narodopisnem-muzeu1",
 "slots": []
 },
 "https://prague.eu/cs/akce/mikulas-v-zoo/": {
 "booking": "https://www.zoopraha.cz/navsteva/program/week.listevents/2026/11/12/-",
 "description": "5. prosince zavítá do Zoo Praha Mikuláš, anděl i čert, kteří se postarají o pravou předvánoční atmosféru a potěší zejména nejmenší návštěvníky. Součástí programu bude také tematické komentované krmení ďáblů medvědovitých v Darwinově kráteru, kde se symbolicky setká pohádkový čert se svým zvířecím jmenovcem. Mikulášská nadílka, zábava pro děti i nevšední zážitky se zvířaty udělají z návštěvy zoo příjemné adventní zastavení pro celou rodinu.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://www.zoopraha.cz",
 "slots": []
 },
 "https://prague.eu/cs/akce/mikulas-ve-stare-cistirne/": {
 "booking": "https://vstupenky.staracistirna.cz/ticket/detail/4582",
 "description": "Mikulášskou atmosféru v industriálním prostředí Staré čistírny odpadních vod v Bubenči oživí představení Mikulášské divadlo ve Staré čistírně. Představení v podání Sacra Cirkus nabídne jedinečnou kombinaci pohádky a ohnivé show. Těšit se můžete i na Mikuláše na chůdách, anděla a čerty chrlící oheň.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://vstupenky.staracistirna.cz/ticket/detail/1621",
 "slots": [
 {
@@ -1505,6 +1512,13 @@
 "time": "10:00"
 }
 ]
+},
+"https://prague.eu/cs/akce/my-dear-ada/": {
+"booking": null,
+"description": "Výstava My Dear Ada (umělá a umělecká inteligence) ohledává a testuje možnosti tvorby a interpretace obrazů a textů v době vývoje umělé inteligence (AI). Představuje výběr z vědeckých a uměleckých děl předznamenávajících vznik a inovativní způsoby používání univerzálních počítačů (Ada Lovelace, Zdeněk Sýkora) a uvádí je do souvislostí s tvorbou vizuálního umění před AI a během učení AI expertních systémů (Milan Guštar, Magdalena Wutkowska, Jana Bernartová). Pro výstavu vznikly práce v interakci s AI proto-agenty (Virtuální futuroložka A°D°A), jsou tedy výsledkem sítě lidských a mimolidských aktérů (Paleofuture Lab, Zdeňka Němcová Zedníčková a Haruka Kajiura) a působí napříč vizuálním uměním, architekturou, technikou a technologií.",
+"fetched": "2026-11-23",
+"link": "https://www.meetfactory.cz",
+"slots": []
 },
 "https://prague.eu/cs/akce/my-kluci-co-spolu-chodime-deus-ex-mikrofona-2/": {
 "booking": "https://www.jatka78.cz/cs/inscenace/deus-ex-mikrofona-s-annou-klimesovou",
@@ -1704,13 +1718,6 @@
 "description": "Speciální koncert Prague Sounds připomene 90. narozeniny skladatele Steva Reicha prostřednictvím výběru jeho klíčových děl. V programu zazní Different Trains v podání Mivos Quartet z New Yourku, City Life v interpretaci domácí Agon Orchestra a Six Pianos v nové úpravě členů souboru Brandt Brauer Frick z Německa. Večer nabídne soustředěný pohled na Reichovu tvorbu v různých interpretačních přístupech i zvukových podobách.",
 "fetched": "2026-11-14",
 "link": "https://praguesounds.cz/cs/event/steve-reich-90-4HUsSU",
-"slots": []
-},
-"https://prague.eu/cs/akce/prague-sounds/": {
-"booking": "https://praguesounds.enigoo.cz/app/tickets/events",
-"description": "Festival Prague Sounds, dříve známý jako Struny podzimu, patří dlouhodobě mezi nejvýznamnější hudební události v České republice. Během let uvedl řadu světových osobností a zároveň systematicky představuje novou generaci umělců, často v českých premiérách. V listopadu 2026 představí festival svůj jubilejní 30. ročník, který nabídne multižánrový program na různorodých pražských scénách. Dramaturgie tradičně osvětluje vztahy mezi současnou a klasickou vážnou hudbou, jazzem, hip-hopem, elektronikou i písňovými projekty a vytváří originální dialogy napříč hudebními epochami i žánry. Festival klade důraz na výjimečné, často intimní koncertní zážitky v jedinečných prostorách Prahy.",
-"fetched": "2026-11-22",
-"link": "https://praguesounds.cz/cs/uvod",
 "slots": []
 },
 "https://prague.eu/cs/akce/pravda/": {
@@ -2155,146 +2162,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/trhy-andel/": {
-"booking": null,
-"description": "Na pěší zóně u stanice metra Anděl můžete od dubna každé úterý nakupovat výrobky od českých výrobců, chovatelů a pěstitelů. V nabídce najdete kvalitní zeleninu, maso, sýry a mléčné výrobky i lokální doprovodný sortiment, jako jsou květiny, pečivo, marmelády, bylinky, koření, vajíčka, med a podobně a sezónní produkty. Pořadatelé se snaží poskytnout příležitost především českým prvovýrobcům a prvopěstitelům z celé republiky a vytvořit pro návštěvníky příjemné prostředí s bohatým sortimentem zohledňujícím sezónní produkty i zahraniční lahůdky.",
-"fetched": "2026-11-14",
-"link": "https://www.trhynakulataku.cz/",
-"slots": [
-{
-"date": "2026-07-28",
-"time": "08:00"
-},
-{
-"date": "2026-07-31",
-"time": "08:00"
-},
-{
-"date": "2026-08-04",
-"time": "08:00"
-},
-{
-"date": "2026-08-07",
-"time": "08:00"
-},
-{
-"date": "2026-08-11",
-"time": "08:00"
-},
-{
-"date": "2026-08-14",
-"time": "08:00"
-},
-{
-"date": "2026-08-18",
-"time": "08:00"
-},
-{
-"date": "2026-08-21",
-"time": "08:00"
-},
-{
-"date": "2026-08-25",
-"time": "08:00"
-},
-{
-"date": "2026-08-28",
-"time": "08:00"
-},
-{
-"date": "2026-09-01",
-"time": "08:00"
-},
-{
-"date": "2026-09-04",
-"time": "08:00"
-},
-{
-"date": "2026-09-08",
-"time": "08:00"
-},
-{
-"date": "2026-09-11",
-"time": "08:00"
-},
-{
-"date": "2026-09-15",
-"time": "08:00"
-},
-{
-"date": "2026-09-18",
-"time": "08:00"
-},
-{
-"date": "2026-09-22",
-"time": "08:00"
-},
-{
-"date": "2026-09-25",
-"time": "08:00"
-},
-{
-"date": "2026-09-29",
-"time": "08:00"
-},
-{
-"date": "2026-10-02",
-"time": "08:00"
-},
-{
-"date": "2026-10-06",
-"time": "08:00"
-},
-{
-"date": "2026-10-09",
-"time": "08:00"
-},
-{
-"date": "2026-10-13",
-"time": "08:00"
-},
-{
-"date": "2026-10-16",
-"time": "08:00"
-},
-{
-"date": "2026-10-20",
-"time": "08:00"
-},
-{
-"date": "2026-10-23",
-"time": "08:00"
-},
-{
-"date": "2026-10-27",
-"time": "08:00"
-},
-{
-"date": "2026-10-30",
-"time": "08:00"
-},
-{
-"date": "2026-11-03",
-"time": "08:00"
-},
-{
-"date": "2026-11-06",
-"time": "08:00"
-},
-{
-"date": "2026-11-10",
-"time": "08:00"
-},
-{
-"date": "2026-11-13",
-"time": "08:00"
-},
-{
-"date": "2026-11-20",
-"time": "08:00"
-}
-]
-},
 "https://prague.eu/cs/akce/trhy-na-jiraku/": {
 "booking": null,
 "description": "Farmářské Trhy na Jiřáku patří mezi oblíbené trhy v Praze. Na náměstí Jiřího z Poděbrad se pravidelně setkávají lokální farmáři, výrobci i milovníci kvalitních potravin. Návštěvníci zde najdou čerstvou zeleninu a ovoce, bylinky, pečivo, sýry, bioprodukty i rukodělné výrobky — vše v příjemné atmosféře komunitního setkávání. Trhy se konají několikrát týdně a nabízejí pestrý výběr sezónních produktů přímo od českých producentů.",
@@ -2393,6 +2260,20 @@
 "link": "https://centrumprahy.cz",
 "slots": []
 },
+"https://prague.eu/cs/akce/valentyna-janu-hold-your-keys-tight/": {
+"booking": null,
+"description": "Výstava Hold Your Keys Tight představuje Valentýnu Janů jako autorku, která dlouhodobě zkoumá, jakými gesty, rytmy a postoji si ženy a queer lidé vytváří viditelnost ve veřejném prostoru, a která tuto otázku nyní přenáší do nočního města, tedy do prostředí, v němž se zranitelnost a svoboda těla prolínají nejzřetelněji. Název výstavy odkazuje k nenápadnému, ale přesto všeobecně srozumitelnému gestu klíčů sevřených mezi prsty, k tiché strategii sebeobrany, kterou si mnohé ženy osvojují cestou domů po setmění a která zároveň připomíná, že samozřejmost nočního pohybu nebyla nikdy rozdělena rovným dílem. Ústředním prvkem instalace je hybridní film, jehož námět se zrodil během autorčiny rezidence v newyorském Pioneer Works, scénář následně vznikal na rezidenci LaunchPad ve Francii a natáčení proběhlo v roce 2026 během rezidence v ISCP v New Yorku. Jeho hlavní postavou je stylizovaná hrdinka čerpající z noirové estetiky i z archetypu superhrdinky, která si však namísto role femme fatale, definované fascinací mužského pohledu (male gaze), určuje vlastní svébytnost. Ztvárňuje ji střídavě několik performerek, a Keywoman se tak místo portrétu jedné ženy stává zrcadlem kolektivní zkušenosti. Její cesta vede bytem, ulicemi nočního New Yorku i abstraktní tmou studia, a v jejím pohybu se kriticky přepisují historické figury flâneura a nightwalkera, pro něž byla svoboda toulat se městem samozřejmostí, ale pouze z mužské perspektivy.",
+"fetched": "2026-11-23",
+"link": "https://www.meetfactory.cz/cs",
+"slots": []
+},
+"https://prague.eu/cs/akce/vanoce-na-cechaci/": {
+"booking": null,
+"description": "Vánoce na Čecháči nabídnou deset dní adventní atmosféry v srdci Vršovic. Náměstí Svatopluka Čecha oživí koncerty školních sborů, místních hudebníků a kapel, rukodělné dílny, lokální občerstvení i stánky s drobnými vánočními dárky. Vedle tradičních adventních lákadel nabídne program na Čechově náměstí i kulturní zastavení a osobitou podobu předvánočního setkávání. Součástí programu bude již podruhé nejmenší betlém v České republice vytvořený pomocí 3D tisku a audiovizuální instalace v kostele sv. Václava, která připomene jedinečné Gočárovy varhany a snahu o jejich obnovu.",
+"fetched": "2026-11-23",
+"link": "https://mapy.com/cs/turisticka?x=14.4583968&y=50.0688507&z=17.748",
+"slots": []
+},
 "https://prague.eu/cs/akce/vanoce-na-zamku/": {
 "booking": "https://eshop.muzeumprahy.cz/ticket/detail/16072",
 "description": "Adventní čas v zámeckém areálu Ctěnice zahájí tradiční akce Vánoce na zámku. Návštěvníky čeká odpoledne, které nabídne adventní trh s řemeslnými výrobky, originálními dárky a vánočními dobrotami. Děti se mohou těšit na andělskou poštu, pastýře muzikanty nebo Louskáčka na chůdách, zatímco v tvořivých dílnách vzniknou vlastní vánoční dekorace a dárky. Na odvážnější návštěvníky pak čeká i peklo ukryté v jeskyni pod zámkem. Slavnostní náladu podtrhne vystoupení dětského pěveckého sboru spojené s rozsvícením vánočního stromku, zámeckého areálu a nově také zámeckého parku. Akce nabídne příležitost přivítat advent v jedinečném prostředí ctěnického zámku a užít si pestrý program pro celou rodinu.",
@@ -2403,7 +2284,7 @@
 "https://prague.eu/cs/akce/vanoce-vanoce-mikulas-nadeluje/": {
 "booking": null,
 "description": "Muzeum Prahy zve na sváteční program inspirovaný jednou z nejoblíbenějších adventních tradic. Rodiny s dětmi se mohou zapojit do mikulášského pátrání v muzejních sálech a vydat se po stopách Mikuláše, který si letos pro malé návštěvníky připravil netradiční schovávanou. V rámci programu bude i adventní dílna zaměřená na výrobu tradičních vánočních ozdob ze slámy. Akce nabídne příjemné adventní zastavení v kulisách muzea a možnost užít si předvánoční atmosféru s celou rodinou.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://www.muzeumprahy.cz/vystavy-a-akce/vanoce-vanoce-mikulas-nadeluje",
 "slots": []
 },
@@ -2466,7 +2347,7 @@
 "https://prague.eu/cs/akce/veggie-vanoce/": {
 "booking": null,
 "description": "Veggie Vánoce 2026 přinesou do Galerie Mánes inspiraci pro sváteční období spojené s rostlinnou gastronomií, udržitelnějším životním stylem a ohleduplným přístupem ke zvířatům i životnímu prostředí. Návštěvníci si budou moci projít veganský vánoční trh s nabídkou občerstvení, dárků a lokálních produktů, zúčastnit se přednášek, diskusí a kulinářských ukázek nebo navštívit konferenci Plant-based 2026, která představí aktuální trendy a poznatky z oblasti rostlinné stravy.",
-"fetched": "2026-11-15",
+"fetched": "2026-11-23",
 "link": "https://www.veggievanoce.cz/",
 "slots": []
 },
@@ -2483,82 +2364,6 @@
 {
 "date": "2026-11-21",
 "time": "11:00"
-}
-]
-},
-"https://prague.eu/cs/akce/zeleninovy-trh-v-holesovicke-trznici/": {
-"booking": null,
-"description": "V hale 22 můžete po celý rok, kromě nedělí, nakupovat nepřeberné množství čerstvých produktů. Čeká vás ovoce a zelenina, pečivo, vejce, mléko, sýry, bylinky, ryby i maso, ale také med, houby, květiny či asijské speciality — vše od lokálních i zahraničních prodejců, často v bio kvalitě. V sezóně navíc najdete některé stánky i venku před halou.",
-"fetched": "2026-11-14",
-"link": "https://www.holesovickatrznice.cz/hala-22",
-"slots": [
-{
-"date": "2026-11-03",
-"time": "07:30"
-},
-{
-"date": "2026-11-04",
-"time": "07:30"
-},
-{
-"date": "2026-11-05",
-"time": "07:30"
-},
-{
-"date": "2026-11-06",
-"time": "07:30"
-},
-{
-"date": "2026-11-07",
-"time": "07:30"
-},
-{
-"date": "2026-11-09",
-"time": "07:30"
-},
-{
-"date": "2026-11-10",
-"time": "07:30"
-},
-{
-"date": "2026-11-11",
-"time": "07:30"
-},
-{
-"date": "2026-11-12",
-"time": "07:30"
-},
-{
-"date": "2026-11-13",
-"time": "07:30"
-},
-{
-"date": "2026-11-14",
-"time": "07:30"
-},
-{
-"date": "2026-11-16",
-"time": "07:30"
-},
-{
-"date": "2026-11-17",
-"time": "07:30"
-},
-{
-"date": "2026-11-18",
-"time": "07:30"
-},
-{
-"date": "2026-11-19",
-"time": "07:30"
-},
-{
-"date": "2026-11-20",
-"time": "07:30"
-},
-{
-"date": "2026-11-21",
-"time": "07:30"
 }
 ]
 },
@@ -2604,12 +2409,5 @@
 "time": "19:30"
 }
 ]
-},
-"https://prague.eu/cs/akce/zimni-apetit-piknik/": {
-"booking": null,
-"description": "Milovníky dobrého jídla, kvalitních surovin a kulinářské inspirace zve 21. listopadu do prostor Národního zemědělského muzea na Letné Zimní Apetit piknik. Oblíbený food festival magazínu Apetit nabídne celodenní program plný ochutnávek, setkání s výrobci, kuchaři i osobnostmi české gastronomické scény a inspirace pro sezonní i sváteční vaření. Součástí programu budou kuchařské show, rozhovory i další vystoupení na festivalové scéně. Atmosféru doplní předadventní nálada, vůně zimních specialit a program určený návštěvníkům všech generací. Zimní Apetit piknik je příležitostí objevovat nové chutě, poznat zajímavé gastronomické projekty a strávit den ve společnosti lidí, které spojuje láska k dobrému jídlu.",
-"fetched": "2026-11-14",
-"link": "https://piknik.apetitonline.cz/",
-"slots": []
 }
 }
