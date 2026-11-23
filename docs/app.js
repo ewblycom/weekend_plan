@@ -198,6 +198,7 @@ const itemById = (id) => S.events.find((e) => e.id === id) || placeItems().find(
 // ---------- куски разметки ----------
 function thumb(url, w = 800) {
   if (!url) return "";
+  if (!/^https?:/.test(url)) return url;   // своя копия на сайте (docs/data/img) — без прокси
   if (url.includes("imgproxy.cdn.praguecitytourism.city")) return url.replace(/\/w:\d+\//, `/w:${w}/`).replace(/\/q:\d+\//, "/q:72/");
   if (url.includes("tickettailorassets.com")) return url.replace(/w_\d+/, `w_${w}`);
   return `https://images.weserv.nl/?url=${encodeURIComponent(url.replace(/^https?:\/\//, ""))}&w=${w}&output=webp&q=72`;

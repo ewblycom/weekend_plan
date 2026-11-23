@@ -163,3 +163,21 @@ def test_food_budget_rules(tmp_path, monkeypatch):
     calls.clear(); monkeypatch.setattr(food, "_run", lambda t, p: calls.append(p["searchStringsArray"][0]) or [])
     food.collect(evs, today, "tok")
     assert calls[0].startswith("Новая")                                                     # сначала площадка без данных
+
+
+def test_telegram_images_localized(tmp_path):
+    from scraper import images
+    class R:
+        def __init__(s, code=200, ct="image/jpeg", body=b"\xff\xd8x"): s.status_code, s.headers, s.content = code, {"content-type": ct}, body
+    class S:
+        def __init__(s): s.calls = []
+        def get(s, url, **k): s.calls.append(url); return R() if "ok" in url else R(404, "text/html", b"no")
+    ok, bad, other = "https://cdn4.telesco.pe/file/ok1", "https://cdn4.telesco.pe/file/zz", "https://www.praha.eu/a.jpg"
+    (tmp_path / "stale.jpg").write_bytes(b"x")
+    evs = [{"image": ok}, {"image": bad}, {"image": other}, {"image": None}]
+    s = S()
+    assert images.localize(evs, s, tmp_path) == 1
+    assert evs[0]["image"].startswith("data/img/") and evs[1]["image"] == bad and evs[2]["image"] == other   # чужие хосты не трогаем
+    assert (tmp_path / evs[0]["image"].split("/")[-1]).exists() and not (tmp_path / "stale.jpg").exists()
+    again = [{"image": ok}]
+    assert images.localize(again, s, tmp_path) == 0 and again[0]["image"] == evs[0]["image"] and len(s.calls) == 2   # повторно не качаем

@@ -11,7 +11,7 @@ import logging
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config
+from . import config, images
 from .dates import overlaps, upcoming_weekend
 from .http import Fetcher
 from .models import Event
@@ -109,6 +109,13 @@ def main(argv: list[str] | None = None) -> int:
             errors["places"] = f"{type(e).__name__}: {e}"
 
     data = build(collected, today, errors)
+    if not args.only or "telegram" in only:
+        try:
+            log.info("images: скачано %d картинок из Telegram", images.localize(data["events"], fetcher.session))
+        except Exception as e:  # без локальных копий остаются прямые ссылки
+            log.exception("images упал")
+            errors["images"] = f"{type(e).__name__}: {str(e)[:120]}"
+            data["errors"] = errors
     if not args.only or "food" in only:
         try:
             food.collect(data["events"], today)
