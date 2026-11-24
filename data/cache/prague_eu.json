@@ -29,7 +29,7 @@
 "https://prague.eu/cs/akce/a-vivaldi-ctvero-rocnich-obdobi-cikanske-melodie/": {
 "booking": "https://www.praguemusic.cz/",
 "description": "Virtuosní sólové výkony, výrazná dynamika a podmanivé melodie jsou charakteristickými rysy komorního orchestru Prague Music Orchestra. Soubor tvoří hráči předních českých hudebních těles, mezi něž patří Symfonický orchestr Českého rozhlasu, Česká filharmonie či Pražská komorní filharmonie. Koncerty orchestru se konají ve Smetanově síni Obecního domu.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.praguemusic.cz/",
 "slots": [
 {
@@ -412,7 +412,7 @@
 "https://prague.eu/cs/akce/discoland/": {
 "booking": "https://www.nazabradli.cz/repertoar/discoland/",
 "description": "Říká se, že kdo si pamatuje devadesátky, ten je neprožil. Ale co když se na tuto dobu snažíme zapomenout i z jiných důvodů?",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.nazabradli.cz/repertoar/discoland/",
 "slots": [
 {
@@ -999,7 +999,7 @@
 "https://prague.eu/cs/akce/horka-mucha-elgar/": {
 "booking": "https://pkf.enigoo.cz/app/tickets/events/566",
 "description": "Přátelství mezi ženami je i dnes často reflektované téma. Třetí komorní koncert Prague Philharmonia patří zásadně ženám, a to nejen ženám interpretkám, ale i ženám skladatelkám. Kalabis Quintet v ženském obsazení zahraje premiéru soudobé české hudební skladatelky Kateřiny Horké, Dechového kvintetu č. 1. Dalším dílem bude i Dechový kvintet britsko-české hudební skladatelky Geraldine Muchy, snachy malíře Alfonse Muchy, jejímž manželem byl spisovatel Jiří Mucha.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.prgphil.cz/33-sezona/komorni-cyklus/k3-horka-mucha-elgar",
 "slots": []
 },
@@ -1020,7 +1020,7 @@
 "https://prague.eu/cs/akce/idomeneo/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/idomeneo-VNCLqwNQRw-obfPIGouO5Q?t=2025-09-25-19-00",
 "description": "Mozartův Idomeneo, považovaný za jeho první operní mistrovské dílo, je strhujícím hudebním ztvárněním konfliktu mezi otcovskou autoritou, milostnými vášněmi a osudem.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.narodni-divadlo.cz/cs/predstaveni/idomeneo-VNCLqwNQRw-obfPIGouO5Q?t=2025-09-25-19-00",
 "slots": [
 {
@@ -1065,7 +1065,7 @@
 "https://prague.eu/cs/akce/ja-bych-rad-k-betlemu/": {
 "booking": "https://www.riseloutek.cz/program-2/v",
 "description": "Vánoční příběh o narození Ježíška je prostoupen těmi nejkrásnějšími a nejznámějšími vánočními koledami, které si mohou děti společně s rodiči zazpívat.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.riseloutek.cz/repertoar/ja-bych-rad-k-betlemu/",
 "slots": [
 {
@@ -1122,7 +1122,7 @@
 "https://prague.eu/cs/akce/kalich-plny-nadeje/": {
 "booking": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/kalich-plny-nadeje/",
 "description": "Po loňském rekordně úspěšném ročníku se uskuteční další již tradiční dvojkoncert muzikálových hvězd (nejen) Divadla Kalich. Benefiční akce, která přináší radost nejen divákům, ale i organizátorům, avšak především má přesah a pomáhá klientům organizace",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/kalich-plny-nadeje/",
 "slots": [
 {
@@ -1194,7 +1194,7 @@
 "https://prague.eu/cs/akce/kostelni-slavnosti-adventni-koncert/": {
 "booking": null,
 "description": "Oslavu nádherné hudby i krásy našich kostelů nabízí jedinečný kulturní projekt s názvem Kostelní slavnosti, který připravuje vynikající pěvkyně Markéta Fassati ve spolupráci s Prahou 1 a Prahou 5. Prostřednictvím volného cyklu koncertů nahlédnou milovníci hudby každý měsíc do sakrálních staveb, kde budou představeny skladby české i světové klasické hudby. Další z koncertů se tentokrát adventní, se uskuteční v kostele sv. Václava na Smíchově.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.farnostsmichov.cz",
 "slots": []
 },
@@ -1245,7 +1245,7 @@
 "https://prague.eu/cs/akce/lida-baarova-a-ta-druha/": {
 "booking": "https://praha-vysehrad.cz/cs/program/lida-baarova-a-ta-druha:317/",
 "description": "Kdo by neznal Lídu Baarovou? Slavnou prvorepublikovou herečku, ženu, která pro slávu neváhala učinit rozhodnutí, jež mnozí dodnes odsuzují. A co její sestra — Zorka Janů? Křehká dívka se stejnými sny, ale zcela jinou povahou. Dvě sestry ze stejného hnízda, přesto tak odlišné — nejen svými charaktery, ale i osudem.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "http://www.divadlo-ex-camini.cz",
 "slots": []
 },
@@ -1346,7 +1346,7 @@
 "https://prague.eu/cs/akce/mami-uz-tam-budem-2/": {
 "booking": "https://www.minor.cz/repertoar/mami-uz-tam-budem",
 "description": "Pro velké autisty i malé nemotory. Převeze maminka děti svými pohádkami o patníku, stěračích a volantu, aby vydrželi cestu až do cíle?",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.minor.cz/repertoar/mami-uz-tam-budem/",
 "slots": []
 },
@@ -1425,7 +1425,7 @@
 "https://prague.eu/cs/akce/miroslav-sekera-klavirni-recital/": {
 "booking": "https://fok.cz/sekera",
 "description": "Klavírista Miroslav Sekera se vrací do Rudolfina s osobitým recitálem, který propojuje klasický repertoár s objevnými dramaturgickými volbami. Publikum čeká Haydn, Chopin i méně hrané či současné kusy, včetně české premiéry skladby Josepha Summera. Večer slibuje virtuozitu, nadhled i neotřelý pohled na svět klavírní literatury v podání interpreta, jenž patří k nejvýraznějším osobnostem české hudební scény.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://fok.cz/sekera",
 "slots": []
 },
@@ -1473,7 +1473,7 @@
 "https://prague.eu/cs/akce/nam-nam-narodil-se/": {
 "booking": "https://www.riseloutek.cz/program-2/",
 "description": "Josef s Marií marně hledají nocleh v Betlémě, a tak se nakonec Ježíšek narodí ve chlévě. Andělé tu novinu oznámí pastýřům, obyvatelům Betléma i třem králům, všichni pospíchají k jesličkám pozdravit narozené děťátko.Představení rodinného typu o narození Ježíše Krista doprovází instrumentální trio a dívčí pěvecké kvarteto. Zazní i některé známé koledy, které si na závěr můžete s účinkujícími zazpívat.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.riseloutek.cz/repertoar/nam-nam-narodil-se/",
 "slots": [
 {
@@ -1608,7 +1608,7 @@
 "https://prague.eu/cs/akce/plum-svestka/": {
 "booking": "https://zdjc.cz/cs/program/the-plum/",
 "description": "Další inscenace Ladislava Smoljaka a Zdeňka Svěráka v anglickém jazyce, tentokráte Švestka, v podání anglicky mluvících herců.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "http://www.cimrmanenglishtheatre.cz/",
 "slots": []
 },
@@ -1622,7 +1622,7 @@
 "https://prague.eu/cs/akce/polyphia/": {
 "booking": "https://www.livenation.cz/event/polyphia-tour-mmxxvi-prague-tickets-edp1679519",
 "description": "Instrumentální fenomén Polyphia zamíří 28. listopadu 2026 do pražského SaSaZu. Čtveřice z Texasu si získala celosvětovou pozornost originálním propojením virtuózních kytarových výkonů, hiphopových rytmů, trapové produkce a progresivního metalu. Po úspěchu alba Remember That You Will Die a vydání nového singlu Can You Feel It vstupují Polyphia do další kapitoly své kariéry, která vyvrcholí novou deskou a rozsáhlým mezinárodním turné.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.sasazu-club.com",
 "slots": []
 },
@@ -1762,7 +1762,7 @@
 "https://prague.eu/cs/akce/pustte-me-ven/": {
 "booking": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/pustte-me-ven/",
 "description": "Velké herecké sólo Ivy Janžurové v brilantní komedii.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/pustte-me-ven/",
 "slots": [
 {
@@ -1819,7 +1819,7 @@
 "https://prague.eu/cs/akce/silksteel-svetla-a-stiny/": {
 "booking": "https://divadlobravo.cz/predstaveni/svetla-a-stiny/",
 "description": "Třináct tváří. Třináct emocí. Jeden večer plný kontrastů a momentů, které se vás dotknou více než čekáte.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://divadlobravo.cz/predstaveni/svetla-a-stiny/",
 "slots": []
 },
@@ -1878,7 +1878,7 @@
 "https://prague.eu/cs/akce/tajemstvi-2/": {
 "booking": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/tajemstvi/",
 "description": "Tajemství je napínavým mystickým příběhem, v němž se kolem hlavních hrdinů začínají dít nevysvětlitelné věci a oni postupně — společně s diváky — přicházejí na to, proč k těmto událostem dochází.",
-"fetched": "2026-11-16",
+"fetched": "2026-11-24",
 "link": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/tajemstvi/",
 "slots": [
 {
