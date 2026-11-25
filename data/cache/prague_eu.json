@@ -30,13 +30,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/advent-v-muzeu/": {
-"booking": null,
-"description": "Máte oblíbené vánoční tradice a baví vás tvořit a být kreativní? Nebo si jen chcete před vánočním shonem oddychnout a nasát trochu vánoční atmosféry? Prožijte si adventní čas v Národním zemědělském muzeu nejen v tvořivých dílnách v sobotu 12. prosince.",
-"fetched": "2026-11-21",
-"link": "https://www.nzm.cz/aktualne-v-muzeu/akce/advent-v-muzeu1",
-"slots": []
-},
 "https://prague.eu/cs/akce/adventni-trhy-na-chvalske-tvrzi/": {
 "booking": null,
 "description": "První adventní neděli ožije areál Chvalské tvrze tradičními adventními trhy plnými řemeslných výrobků, vánočních dobrot a sváteční atmosféry. Návštěvníky čeká kulturní program, tvořivé dílny pro děti, rozsvícení vánočního stromu i setkání s tajemnými Luciemi, které podle lidových tradic dohlížejí na pořádek v adventním čase.",
@@ -959,6 +952,13 @@
 "description": "Málokdo dokázal pojmenovat specifičnost českých reálií pozdního socialismu tak jako fotografka Iren Stehli.    Zatímco její zřejmě nejznámější a nejosobnější časosběrný cyklus Libuna (1974–2009) mapuje život romské ženy a její rodiny na pražském Žižkově, na opačném pólu stojí Pražské výlohy (od 1978 dodnes), rozsáhlý rozbor obsahové lability veřejného prostoru. Mezi těmito dvěma polohami se však otevírá mnoho jiných témat a prostorů zachycených v dalších cyklech, z nichž některé jsou dodnes téměř neznámé.    Iren Stehli vyrůstala ve švýcarském Zürichu ve dvojjazyčném prostředí (matka byla Češka) a od 60. let se do Prahy opakovaně vracela, aby po krátké epizodě studií slavistiky počátkem 70. let začala navštěvovat katedru fotografie FAMU, která tehdy představovala oázu relativní svobody.",
 "fetched": "2026-11-22",
 "link": "https://www.atelierjosefasudka.cz",
+"slots": []
+},
+"https://prague.eu/cs/akce/iva-huttnerova-obrazky-2/": {
+"booking": null,
+"description": "Výstava olejů a grafik herečky a výtvarnice Ivy Hüttnerové. Věnuje se výtvarné tvorbě přes padesát let, měla mnoho výstav u nás i v zahraničí. Na Novoměstské radnici v Praze vystavuje již pošesté.",
+"fetched": "2026-11-25",
+"link": "https://www.nrpraha.cz",
 "slots": []
 },
 "https://prague.eu/cs/akce/ivan-pinkava-symploke/": {
@@ -2149,6 +2149,13 @@
 "description": "Přijďte si užít adventní atmosféru do Muzea Prahy! Čeká vás tvořivá dílna, ve které si děti vyrobí vlastní papírové vánoční ozdoby a společně jimi ozdobí muzejní stromeček. Chybět nebude ani maskot Grifo, adventní koncert dětského pěveckého sboru a slavnostní rozsvícení vánočního stromku.",
 "fetched": "2026-11-22",
 "link": "https://www.muzeumprahy.cz/vystavy-a-akce/vanoce-vanoce-stromecek-sviti",
+"slots": []
+},
+"https://prague.eu/cs/akce/vanocni-flotila/": {
+"booking": null,
+"description": "Pražské tramvaje, autobusy i trolejbusy se opět zahalí do vánoční výzdoby. Dopravní podnik hl. m. Prahy zve na slavnostní zahájení Vánoční flotily v areálu Muzea MHD ve Střešovicích, kde návštěvníky čeká sváteční program, hudební vystoupení, rozsvícení vozidel i tradiční průvod vánočně vyzdobených vozů centrem metropole.",
+"fetched": "2026-11-25",
+"link": "https://www.dpp.cz/vanoce",
 "slots": []
 },
 "https://prague.eu/cs/akce/vanocni-trhy-na-andelu/": {
