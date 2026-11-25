@@ -409,26 +409,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/drama-v-kostce-pokus-2-mysterium-skutecnosti/": {
-"booking": "https://www.ypsilonka.cz/repertoar/hrajeme/drama-v-kostce-pokus-2-mysterium-skutecnosti",
-"description": "Divadlo je vždy něco mezi barem a estetickým tvarem.",
-"fetched": "2026-11-24",
-"link": "https://www.ypsilonka.cz/repertoar/hrajeme/drama-v-kostce-pokus-2-mysterium-skutecnosti",
-"slots": [
-{
-"date": "2026-10-16",
-"time": "19:30"
-},
-{
-"date": "2026-11-05",
-"time": "19:30"
-},
-{
-"date": "2026-12-03",
-"time": "19:30"
-}
-]
-},
 "https://prague.eu/cs/akce/dvojice-karolina-rossi-a-janek-rous/": {
 "booking": null,
 "description": "Série komorních výstav Dvojice tematizuje partnerské soužití dvou aktivních umělců. Pátá výstava tohoto cyklu přivádí do ateliéru Věry a Vladimíra Janouškových Karolínu Rossí a Janka Rouse. Vedle odkazu Janouškových se poprvé představuje umělecký pár, jehož práce stojí na zcela odlišných prostředcích. Karolína Rossí je vizuální umělkyně, která vytváří především obrazy, které občas přecházejí do objektů. Janek Rous se pohybuje na pomezí performance, videa a práce se zvukem. Právě tato rozdílnost možná vysvětluje, proč spolu vystavují teprve poprvé.",
@@ -532,22 +512,6 @@
 {
 "date": "2027-01-08",
 "time": "18:30"
-}
-]
-},
-"https://prague.eu/cs/akce/farinelli-a-kral/": {
-"booking": "https://www.mestskadivadlaprazska.cz/inscenace/2200/farinelli-a-kral/",
-"description": "Hra o síle umění a o křehké hranici mezi rozumem a šílenstvím připomíná, že když mluví múzy, mlčí zbraně.",
-"fetched": "2026-11-24",
-"link": "https://www.mestskadivadlaprazska.cz/inscenace/2200/farinelli-a-kral/",
-"slots": [
-{
-"date": "2026-11-19",
-"time": "19:00"
-},
-{
-"date": "2026-12-03",
-"time": "19:00"
 }
 ]
 },
@@ -1806,7 +1770,7 @@
 "https://prague.eu/cs/akce/snow-film-fest/": {
 "booking": "https://www.bez.cz/festivaly/snow-film-fest-praha--kino-aero/",
 "description": "Snow Film Fest se vrací do Prahy s výběrem nejlepších světových i českých filmů o horách, zimních expedicích a outdoorových dobrodružstvích. Patnáctý ročník festivalu nabídne strhující příběhy špičkových sportovců, odvážné výstupy na horské vrcholy, freeridové sjezdy i výpravy do ledových krajin. Pražská zastávka festivalu se uskuteční v úterý 8. prosince v kině Aero. Celorepubliková přehlídka probíhá od 25. října 2026 do 31. ledna 2027 v kinech a kulturních sálech po celé České republice a Slovensku.",
-"fetched": "2026-11-17",
+"fetched": "2026-11-25",
 "link": "https://snowfilmfest.cz/",
 "slots": []
 },
@@ -2138,38 +2102,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/trinacta-laska/": {
-"booking": "https://www.hdk.cz/cs/repertoar/bedrich-smetana-trinacta-laska",
-"description": "Inspirováno životem a dílem Bedřicha Smetany Hudební zábavný pořad pro děti, mládež, školy, rodiče i prarodiče.",
-"fetched": "2026-11-24",
-"link": "https://www.hdk.cz/repertoar/bedrich-smetana",
-"slots": [
-{
-"date": "2026-11-11",
-"time": "09:00"
-},
-{
-"date": "2026-11-11",
-"time": "11:00"
-},
-{
-"date": "2026-11-12",
-"time": "09:00"
-},
-{
-"date": "2026-11-12",
-"time": "11:00"
-},
-{
-"date": "2026-12-03",
-"time": "09:00"
-},
-{
-"date": "2026-12-03",
-"time": "11:00"
-}
-]
-},
 "https://prague.eu/cs/akce/tyden-ukrajinskeho-filmu/": {
 "booking": null,
 "description": "Oceňované novinky, silné dokumenty i návrat filmové klasiky. Devátý ročník Týdne ukrajinského filmu v kině Atlas přinese od 24. do 30. listopadu do pražského kina Atlas výběr současné ukrajinské kinematografie. Festival nabídne snímky uvedené na festivalech v Cannes, Benátkách či Berlíně, filmy oceněné v Torontu a Amsterdamu i restaurovaný trezorový titul z roku 1934. Diváci se mohou těšit na příběhy odvahy, identity, odporu i na dokumentární svědectví o událostech, které formují současnou Ukrajinu.",
@@ -2219,13 +2151,6 @@
 "link": "https://www.muzeumprahy.cz/vystavy-a-akce/vanoce-vanoce-stromecek-sviti",
 "slots": []
 },
-"https://prague.eu/cs/akce/vanocni-prohlidka-ctenickeho-zamku/": {
-"booking": null,
-"description": "Tři adventní soboty ve Ctěnicích přiblíží návštěvníkům kouzlo staročeských Vánoc i proměny vánočních tradic v průběhu staletí. Speciální kostýmované prohlídky zámku provedou malé i velké a nabídnou poutavé vyprávění o historii Vánoc, lidových zvycích, štědrovečerních obyčejích i tradicích, které se dochovaly dodnes. V autentické atmosféře zámeckého areálu Ctěnice ožijí příběhy českých Vánoc, vůně svátečního času i dávno zapomenuté obyčeje. Akce je vhodná pro rodiny s dětmi, které se zábavnou formou seznámí s vánočními tradicemi našich předků.",
-"fetched": "2026-11-21",
-"link": "https://www.muzeumprahy.cz/vystavy-a-akce/",
-"slots": []
-},
 "https://prague.eu/cs/akce/vanocni-trhy-na-andelu/": {
 "booking": null,
 "description": "Na pěší zóně u stanice metra Anděl na vás čekají krásně nazdobené stánky s klasickým vánočním zbožím, originálními dárky a voňavé občerstvení. Každý den od 8 do 20 hodin si můžete dát něco dobrého na zahřátí a nakoupit vše, co k Vánocům patří.",
@@ -2252,6 +2177,13 @@
 "description": "Vánoční trhy na Staroměstském náměstí patří k největším a nejnavštěvovanějším svátečním akcím v Česku a každoročně proměňují historické centrum Prahy v jedinečné adventní místo setkávání. Adventní tržiště na Staroměstském náměstí je v posledních letech pravidelně oceňováno světovými médii jako jedna z nejkrásnějších vánočních destinací světa a přináší do historického centra města atmosféru opravdových českých Vánoc. Návštěvníky čekají desítky stylových stánků s tradičními českými výrobky, bohatá nabídka gastronomických specialit i každodenní kulturní program s hudbou a folklorem. Nechybí ani slavnostně nasvícený vánoční strom a jedinečná atmosféra, kterou dotváří vůně svařeného vína, cukroví a zvuky koled. Trhy, pořádané společností Taiko, každoročně lákají statisíce návštěvníků z celého světa a řadí se mezi nejkrásnější vánoční trhy vůbec.",
 "fetched": "2026-11-22",
 "link": "https://trhypraha.cz/",
+"slots": []
+},
+"https://prague.eu/cs/akce/vanocni-trhy-tylovo-namesti/": {
+"booking": null,
+"description": "Vánoční trhy na Tylově náměstí přinesou do pražských Vinohrad tradiční adventní atmosféru pod širým nebem. Od 26. listopadu do 24. prosince nabídnou stánky s vánočním zbožím, řemeslnými výrobky, dekoracemi, dárky i typickými sezonními pochoutkami. Komornější trhy jsou příjemnou alternativou k velkým vánočním trhům v centru města a lze je snadno spojit s návštěvou nedalekých vánočních trhů na náměstí Míru.",
+"fetched": "2026-11-25",
+"link": "http://www.vanocnitrhy.cz/tylovo-namesti",
 "slots": []
 },
 "https://prague.eu/cs/akce/vanocni-trhy-vaclavske-namesti/": {
@@ -2296,18 +2228,6 @@
 {
 "date": "2026-12-01",
 "time": "19:00"
-}
-]
-},
-"https://prague.eu/cs/akce/za-to-pek/": {
-"booking": "https://www.minor.cz/repertoar/za-to-pek",
-"description": "Třicet tisíc diváků křičelo tohle jméno v Helsinkách v roce 1952, když vbíhal na stadion, coby první v maratonském běhu, aby získal třetí zlatou medaili v běhu na dlouhé tratě.",
-"fetched": "2026-11-24",
-"link": "https://www.minor.cz/repertoar/za-to-pek/",
-"slots": [
-{
-"date": "2026-12-03",
-"time": "18:00"
 }
 ]
 },
