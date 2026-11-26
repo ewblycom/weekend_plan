@@ -226,7 +226,7 @@
 "https://prague.eu/cs/akce/cirk-la-putyka-st-art/": {
 "booking": "https://www.jatka78.cz/cs/inscenace/st-art",
 "description": "Jak vypadá cesta za snem? Co se odehrává v hlavě sportovce vteřinu před startem? Jak chutná návrat do tréninku po zranění? Co sportovec prožívá, když se nedaří, když všechno bolí a nic nefunguje? Kdy touží po samotě? A kdy se naopak cítí opuštěný? Silné obrazy. Pohyb, který vypráví příběh. Emocionální jízda plná euforie, vítězství, ale i frustrace a bolesti. Sport jako brána k tématům, která se dotýkají každého z nás. Bez ohledu na to, jestli ho milujeme, nebo jím pohrdáme.",
-"fetched": "2026-11-18",
+"fetched": "2026-11-26",
 "link": "https://www.jatka78.cz/cs/inscenace/st-art",
 "slots": [
 {
@@ -943,7 +943,7 @@
 "https://prague.eu/cs/akce/infinite-frontiers/": {
 "booking": null,
 "description": "Od oceánských hlubin po vesmír se společnost vydává za hranice známého a obyvatelného světa. Vzdálená a neznámá místa si představujeme, mapujeme a zkoumáme. Technologiemi mediované procesy místa přetváří v krajiny zdrojů a příležitostí. Těmto imaginativním světům čísel a užitku pak podléhají všechny další hodnoty, vztahy a podoby, které si s krajinou spojujeme.  Výstava Infinite Frontiers zkoumá, jak se vědecké poznání a technologický pokrok prolínají s koloniálními představami, mocenskými zájmy a touhou po nových územích. Připomíná, že žádná hranice není jen čárou na mapě a žádné „neznámé“ místo není prázdné. Jaké vztahy ke vzdáleným světům vytváříme – a co si do nich přenášíme ze světa, který už obýváme?",
-"fetched": "2026-11-18",
+"fetched": "2026-11-26",
 "link": "https://www.gamu.cz",
 "slots": []
 },
@@ -1061,7 +1061,7 @@
 "https://prague.eu/cs/akce/kluziste-vaclavske-namesti/": {
 "booking": "https://www.ice-tec.cz/#rezervaceblok",
 "description": "Od 28. listopadu si můžete zabruslit na kluzišti na Václavském náměstí. Ledová plocha nabídne prostor pro aktivní odpočinek v centru Prahy začátečníkům, rekreačním bruslařům i zkušenějším návštěvníkům. Stačí si přinést vlastní brusle, případně využít půjčovnu přímo na místě. Kluziště může být příjemným zpestřením zimní procházky městem i příležitostí k setkání s přáteli nebo rodinnému výletu.",
-"fetched": "2026-11-18",
+"fetched": "2026-11-26",
 "link": "https://praguevisitorpass.eu/",
 "slots": [
 {
@@ -1598,7 +1598,7 @@
 "https://prague.eu/cs/akce/pastyri-vstavejte/": {
 "booking": "https://praha-vysehrad.cz/cs/program/pastyri-vstavejte:328/",
 "description": "V zasněžené krajině se probouzí malá ovečka a tuší, že dnešní noc bude výjimečná. Zatímco pastýři ještě pokojně dřímají ve svých kožiších, na obloze se rozzáří zářivá hvězda a krajinou se rozezní andělské zvonění. Nastal čas vydat se do Betléma!",
-"fetched": "2026-11-18",
+"fetched": "2026-11-26",
 "link": "https://praha-vysehrad.cz/cs/program/pastyri-vstavejte:328/",
 "slots": []
 },
@@ -1791,7 +1791,7 @@
 "https://prague.eu/cs/akce/sul-nad-zlato/": {
 "booking": "https://www.riseloutek.cz/program-2/",
 "description": "Je sůl opravdu nad zlato? Zlato je přece vzácné a sůl docela obyčejná. Jenže když ta docela obyčejná sůl schází, tak je najednou všem ouvej.",
-"fetched": "2026-11-18",
+"fetched": "2026-11-26",
 "link": "https://www.riseloutek.cz/repertoar/sul-nad-zlato/",
 "slots": [
 {
@@ -1861,7 +1861,7 @@
 "https://prague.eu/cs/akce/the-bodyguard/": {
 "booking": "https://www.hdk.cz/cs/repertoar/the-bodyguard#program",
 "description": "Muzikál podle stejnojmenného filmového hitu z roku 1992 s Kevinem Costnerem a Whitney Houston v hlavních rolích.",
-"fetched": "2026-11-18",
+"fetched": "2026-11-26",
 "link": "https://www.hdk.cz/cs/repertoar/the-bodyguard",
 "slots": [
 {
@@ -2203,7 +2203,7 @@
 "https://prague.eu/cs/akce/vanocni-vystava-v-botanicke-zahrade-prirodovedecke-fakulty-univerzity-karlovy/": {
 "booking": null,
 "description": "V adventních týdnech a o vánočních svátcích proběhne v Botanické zahradě Přírodovědecké fakulty UK Vánoční výstava. Ocitnete se ve světě našich předků. Okouzlí vás stovky ozdob vycházejících z lidových tradic. Oživíte staré zvyky nerozlučně spjaté s vánočními svátky. Uvidíte ozdoby z rozličných materiálů, nápadité dekorace, betlémy v různém provedení, figurky s vánoční a mikulášskou tematikou, pohádkové postavičky a spoustu dalších krásných a rozmanitých výtvarných počinů. Nebude chybět ani bohatý doprovodný program, v němž si přijdou na své děti i hraví a tvořiví dospělí.",
-"fetched": "2026-11-18",
+"fetched": "2026-11-26",
 "link": "https://www.bz-uk.cz",
 "slots": []
 },
