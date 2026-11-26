@@ -30,18 +30,18 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/adventni-koncert-ticheho-sveta/": {
+"booking": "https://goout.net/cs/adventni-koncert-ticheho-sveta-umelecky-tlumoceny-do-znakoveho-jazyka/szyoroy/",
+"description": "Adventní koncert pořádaný organizací Tichý svět nabídne večer plný vánočních melodií z Česka i zahraničí. Program v podání sborů Besharmonie a Pueri gaudentes doplní umělecké tlumočení do českého znakového jazyka. Umělecké tlumočnice a tlumočníci Tichého světa proměňují hudbu v obraz. Pohybem, rytmem, mimikou a celým tělem zprostředkovávají nejen obsah písní, ale také jejich atmosféru a emoce. Hudbu tak mohou návštěvníci nejen slyšet, ale také vidět a prožívat.",
+"fetched": "2026-11-26",
+"link": "https://www.tichysvet.cz/pripravujeme/adventni-koncert-2026",
+"slots": []
+},
 "https://prague.eu/cs/akce/adventni-trhy-na-chvalske-tvrzi/": {
 "booking": null,
 "description": "První adventní neděli ožije areál Chvalské tvrze tradičními adventními trhy plnými řemeslných výrobků, vánočních dobrot a sváteční atmosféry. Návštěvníky čeká kulturní program, tvořivé dílny pro děti, rozsvícení vánočního stromu i setkání s tajemnými Luciemi, které podle lidových tradic dohlížejí na pořádek v adventním čase.",
 "fetched": "2026-11-22",
 "link": "https://chvalskyzamek.cz/udalost/5042/",
-"slots": []
-},
-"https://prague.eu/cs/akce/alena-hron-alban-gerhardt/": {
-"booking": "https://fok.cz/hron-gerhardt",
-"description": "Orchestrální večer Symfonického orchestru hl. m. Prahy FOK přivítá výraznou českou dirigentku Alenu Hron a špičkového německého violoncellistu Albana Gerhardta. Ve Smetanově síni Obecního domu zazní mimo jiné Violoncellový koncert h moll Antonína Dvořáka a sugestivní Stabat Mater Francise Poulenca.",
-"fetched": "2026-11-22",
-"link": "https://fok.cz/hron-gerhardt",
 "slots": []
 },
 "https://prague.eu/cs/akce/anatomie-sebevrazdy/": {
@@ -107,13 +107,6 @@
 "link": "https://www.archa-plus.cz/cz/program/detail/753/2026-12-03-baby-lasagna",
 "slots": []
 },
-"https://prague.eu/cs/akce/bach-houslove-sonaty/": {
-"booking": "https://fok.cz/bach-houslove-sonaty",
-"description": "Houslové sonáty v podání dvou mimořádných osobností staré hudby slibují večer plný virtuozity, dialogu a stylové vytříbenosti. Cembalista Francesco Corti a houslista Ilya Gringolts propojí Bachovy sonáty s hudbou jeho syna, Vivaldiho i slavného virtuosa Pisendela a nabídnou pestrý pohled na houslový repertoár vrcholného baroka. Koncert v Kostele sv. Šimona a Judy bude svátkem technické brilance i hluboké hudební imaginace.",
-"fetched": "2026-11-22",
-"link": "https://fok.cz/bach-houslove-sonaty",
-"slots": []
-},
 "https://prague.eu/cs/akce/bara-mrazkova-charge-flipping/": {
 "booking": null,
 "description": "Co se stane s nerostem, když se jeho význam začne odvíjet od očekávání budoucnosti?    Sólová výstava Báry Mrázkové zkoumá, jak se nerostné materiály proměňují ve vědecky měřitelné a ekonomicky obchodovatelné hodnoty.    Audiovizuální esej a imerzivní instalace odhalují způsoby, jimiž se komplexita přírodních materiálů převádí do dat a parametrů, které určují jejich význam pro současné i budoucí technologie. Výstava se zaměřuje na způsoby, jakými jsou nerosty zobrazovány a představovány trhu, a zároveň na to, jak se při tomto procesu vytrácí jejich materiální původ a širší ekologické, ekonomické a geopolitické souvislosti. Otevírá tak otázku, jak hodnotu nerostů vedle jejich fyzických vlastností určují také potřeby technologií a představy o budoucnosti.",
@@ -157,6 +150,62 @@
 },
 {
 "date": "2026-12-03",
+"time": "19:00"
+}
+]
+},
+"https://prague.eu/cs/akce/big-band-trumpets-kings-of-swing-tribute-to-duke-ellington-quincy-jones-dizzy-gillespie-glen-miller/": {
+"booking": "https://goout.net/sk/big-band-trumpets/pzewc/events/",
+"description": "Big Band Trumpets přináší do Reduta Jazz Clubu jedinečný swingový večer „Kings of Swing“ jako poctu velikánům typu Duke Ellington, Quincy Jones, Glen Miller či Dizzy Gillespie. Originální formát orchestru složeného výhradně z trumpetové sekce, doplněné rytmikou a ženským vokálem, dává známým jazzovým standardům nečekaný zvuk i energii. Připravte se na slavné hity v neobvyklém, strhujícím podání, které překvapuje i zkušené posluchače.",
+"fetched": "2026-11-26",
+"link": "https://www.redutajazzclub.cz/artists-cs/big-band-trumpets-kings-of-swing-tribute-to-duke",
+"slots": [
+{
+"date": "2026-05-27",
+"time": "19:00"
+},
+{
+"date": "2026-06-14",
+"time": "20:00"
+},
+{
+"date": "2026-07-12",
+"time": "20:00"
+},
+{
+"date": "2026-07-21",
+"time": "20:00"
+},
+{
+"date": "2026-08-09",
+"time": "20:00"
+},
+{
+"date": "2026-07-25",
+"time": "20:00"
+},
+{
+"date": "2026-09-06",
+"time": "20:00"
+},
+{
+"date": "2026-09-23",
+"time": "20:00"
+},
+{
+"date": "2026-10-25",
+"time": "19:00"
+},
+{
+"date": "2026-11-03",
+"time": "19:00"
+},
+{
+"date": "2026-11-18",
+"time": "19:00"
+},
+{
+"date": "2026-12-08",
 "time": "19:00"
 }
 ]
@@ -508,6 +557,13 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/f-handel-mesias/": {
+"booking": "https://goout.net/cs/g-f-handel-mesias/szhvbmy/",
+"description": "Oratorium Georga Friedricha Händela Mesiáš zazní 8. prosince 2026 v pražském Kostele sv. Šimona a Judy v podání souborů Musica Florea a Collegium Floreum pod vedením dirigenta Marka Štryncla. Na programu je jedno z nejvýznamnějších děl barokní hudby, které je tradičně spojováno s adventním a vánočním obdobím.",
+"fetched": "2026-11-26",
+"link": "https://belcreaart.cz/handel-mesias/",
+"slots": []
+},
 "https://prague.eu/cs/akce/farmarske-trhy-na-kulataku/": {
 "booking": null,
 "description": "Farmářský trh Kulaťák patří k největším pravidelným trhům v Praze a dlouhodobě nabízí kvalitní produkty od českých farmářů a výrobců. Od začátku března vždy v sobotu proměňuje Vítězné náměstí v příjemné místo plné sezónních chutí a sousedské atmosféry. Každý týden zde pořídíte čerstvé ovoce a zeleninu, pečivo, maso, ryby, sýry, květiny i další produkty s jasným původem, doplněné o pestrý street food a vybrané zahraniční delikatesy.",
@@ -840,13 +896,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/festival-francouzskeho-filmu/": {
-"booking": null,
-"description": "Festival francouzského filmu, který pořádá Francouzský institut v Praze, je největší francouzskou kulturní událostí v České republice. Jeho 29. ročník se uskuteční od 19. do 25. listopadu 2026 a v pěti pražských kinech nabídne reprezentativní výběr současné francouzské kinematografie. Program tvoří čtrnáct předpremiérních titulů, z nichž většina měla premiéru na festivalu v Cannes, oceňované snímky předních francouzských tvůrců i setkání s filmovou klasikou. Festival připomene herečku Nathalii Baye a představí díla dvou výrazných tvůrců francouzské Nové vlny, Agnès Vardy a Clauda Chabrola.",
-"fetched": "2026-11-22",
-"link": "https://www.festivalff.cz/",
-"slots": []
-},
 "https://prague.eu/cs/akce/festival-svata-lucie/": {
 "booking": null,
 "description": "Festival Sv. Lucie, pořádaný ve spolupráci Galerie hlavního města Prahy a Signal Festivalu, zaplní areál Trojského zámku světlem, uměním a nevšedními zážitky. Prostřednictvím pěti originálních instalací rozvíjí téma Labyrintu, které letos zastřešuje celoroční výstavní program zámku, a zve návštěvníky k objevování vztahů mezi člověkem, prostorem, technologií a okolním světem. Trasa areálem vyvrcholí videomappingem na fasádě zámku, který historickou památku rozzáří a vytvoří z ní působivou světelnou podívanou.. Svátek svaté Lucie je tradičně spojován se světlem přicházejícím do nejtemnější části roku, a právě světlo se stává ústředním motivem celé akce.",
@@ -881,13 +930,6 @@
 "link": "http://www.saldovo-divadlo.cz",
 "slots": []
 },
-"https://prague.eu/cs/akce/gerald-clayton/": {
-"booking": "https://www.jazzdock.cz/cs/koncert/gerald-clayton-trio-usa-2",
-"description": "Pianista a skladatel Gerald Clayton je světovou jazzovou hvězdou první velikosti. Byl již šestkrát nominován na GRAMMY a získal také mnoho dalších prestižních ocenění - např. Recording Academy za album Live at the Village Vanguard (Blue Note Records) nebo druhou cenu na Thelonius Monk International Competition. V současné době též působí jako ředitel Next Generation Jazz Orchestra a také jako hudební ředitel Monterey Jazz Festival On Tour. Gerald Clayton se etabloval jako jedna z vůdčích postav mladé generace jazzových umělců, kteří se nenuceně pohybují v množství stylů, které tvoří moderní jazzový jazyk. Gerald Clayton má výrazně nakročeno k zanechání vlastní trvalé stopy v letité a bohaté jazzové tradici. Na živých vystoupeních se trio vyznačuje jiskřivou improvizací a hlubokým vhledem do jazzové historie i současnosti. Na aktuálním turné ho doprovodí skuteční mistři svých nástrojů: bubeník Gregory Hutchinson a kontrabasista Joe Sanders.",
-"fetched": "2026-11-22",
-"link": "https://www.jazzdock.cz/cs/koncert/gerald-clayton-trio-usa-2",
-"slots": []
-},
 "https://prague.eu/cs/akce/historia-naturalis/": {
 "booking": null,
 "description": "Jak se v průběhu staletí proměňoval pohled člověka na svět rostlin a zvířat? Výstava Historia naturalis v Galerii Klementinum vás provede staletími přírodovědného poznání prostřednictvím vzácných rukopisů, inkunábulí a starých tisků z 15.–18. století, které uchovává Národní knihovna ČR. Výstava je rozdělena do tematických celků, které sledují jednotlivé oblasti přírodovědného poznání – botaniku, zoologii, mykologii, entomologii či pomologii – a zároveň ukazuje, jak se jejich vnímání a popis v průběhu času proměňovaly.",
@@ -907,13 +949,6 @@
 "description": "Tradiční hrnčířské trhy se z Berouna v předvánočním období stěhují do Prahy. Ti, kdo mají rádi výrobky z hlíny, tak mají příležitost k nákupům na ploše před Průmyslovým palácem. Keramika a umělecká užitá řemesla v nepřeberném množství od 130 řemeslníků z celé České republiky.",
 "fetched": "2026-11-23",
 "link": "https://navystavisti.cz/udalosti/hrncirske-a-remeslne-trhy/?termin=5&program=154",
-"slots": []
-},
-"https://prague.eu/cs/akce/hudebni-festival-vecna-nadeje/": {
-"booking": "https://vecnanadeje.org/vstupenky/",
-"description": "Festival Věčná naděje připomíná hudbu skladatelů tvořících v nelidských podmínkách koncentračních táborů druhé světové války a vrací jí hlas v současnosti. Program propojuje díla terezínských autorů s tvorbou českých i světových hudebních velikánů, reaguje na významná výročí a oslovuje posluchače klasické hudby, divadla, kabaretu, šansonu i jazzu na koncertních místech po celé Praze.",
-"fetched": "2026-11-22",
-"link": "https://vecnanadeje.org",
 "slots": []
 },
 "https://prague.eu/cs/akce/idomeneo/": {
@@ -1369,6 +1404,20 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/mikulasska-jizda-metrem/": {
+"booking": null,
+"description": "Kdo bude mít v sobotu 5. prosince oči na stopkách, může v metru narazit na neobvyklou posádku. Historickou soupravou Ečs na trase A mezi Želivského a Dejvickou se od 12.27 do 16.39 hodin budou vozit Mikuláš, anděl a čert, kteří cestou rozdají dětem malé dárečky.",
+"fetched": "2026-11-26",
+"link": "https://www.dpp.cz/mikulas",
+"slots": []
+},
+"https://prague.eu/cs/akce/mikulasska-na-marianskem/": {
+"booking": null,
+"description": "Mikuláš, čert a anděl zavítají v pátek na Mariánské náměstí. Na děti čeká mikulášská nadílka, čertovské opékání buřtů i hudební program. Chybět nebude ani krampus čert a akce vyvrcholí velkou ohnivou show.",
+"fetched": "2026-11-26",
+"link": null,
+"slots": []
+},
 "https://prague.eu/cs/akce/mikulasska-pohadka-v-rudolfinu/": {
 "booking": "https://goout.net/cs/camerata-2018/pzreoag/",
 "description": "Veselý příběh o ztracené vánoční poště, mezinárodní spolupráci vánočních bytostí a kouzelné moci našich přání. Oblíbená rodinná akce Mikulášská pohádka v Sukově sini Rudolfina zve malé i velké diváky do kouzelného předvánočního světa plného fantazie a hudebních překvapení. Veselý příběh o zatoulaném dopisu Ježíškovi, nebeských pomocnících a síle lidských přání doprovodí živá hudba v podání souboru Camerata 2018 pod vedením dirigenta Vojtěch Jouza. A možná dorazí i sám Mikuláš",
@@ -1384,6 +1433,13 @@
 "time": "17:00"
 }
 ]
+},
+"https://prague.eu/cs/akce/mikulasska-show-s-mys-mas/": {
+"booking": null,
+"description": "Mikulášský program na trzích na Staroměstském náměstí s čertovsko-andělskou kapelou. V sobotu 5. prosince se v srdci Prahy se v centru Prahy sejdou pohádkové bytosti: Mikuláš, čerti a andělé. Společně s dětmi si užijí akci plnou písniček, her, soutěží, zábavy a sladkých odměn. Po celý den budou připraveny i mikulášské dílničky.",
+"fetched": "2026-11-26",
+"link": null,
+"slots": []
 },
 "https://prague.eu/cs/akce/mikulasska-v-ramci-vaclavskych-vanoc/": {
 "booking": null,
@@ -1504,13 +1560,6 @@
 "description": "Britská zpěvačka a autorka Nieve Ella, která patří k nejvýraznějším novým hlasům generace Z, se vrátí do Prahy s debutovým albem How Long Will It Take?. Deska plná upřímných výpovědí o dospívání, komplikovaných vztazích i každodenních nejistotách potvrzuje její pověst interpretky, která dokáže autenticky zachytit pocity své generace. Nieve Ella vystoupí 26. listopadu 2026 v MeetFactory, kde představí nejen nové skladby, ale i energickou koncertní show, díky níž si získává stále širší publikum. Večer otevře Sofia and the Antoinettes se svým osobitým a nespoutaným popem.",
 "fetched": "2026-11-22",
 "link": "https://fource.cz/cs/events/nieve-ella-26/",
-"slots": []
-},
-"https://prague.eu/cs/akce/noc-s-arnostem-lustigem-na-publicistice/": {
-"booking": null,
-"description": "Noc s Lustigem připomene 100 let od narození významného českého spisovatele Arnošta Lustiga. Ve středu 25. listopadu 2026 se v Prostoru NULA v Praze 1 uskuteční multižánrový večer s projekcemi dokumentárních filmů, besedami s pamětníky, odborníky i členy rodiny a dalšími vzpomínkovými programy. Vstup na akci pořádanou ve spolupráci s Nadačním fondem Arnošta Lustiga je zdarma.",
-"fetched": "2026-11-23",
-"link": "https://www.vosp.cz/o-skole/kontakty/",
 "slots": []
 },
 "https://prague.eu/cs/akce/noc-zlomenych-nehtu/": {
@@ -1781,13 +1830,6 @@
 "link": null,
 "slots": []
 },
-"https://prague.eu/cs/akce/stepanka-andelova/": {
-"booking": "https://goout.net/cs/stepanka-andelova/szjkidy/",
-"description": "Zářivý talent mladé české hobojistky Štěpánky Andělové rozezní festival Věčná naděje. Umělkyně, oceňovaná pro technickou preciznost i výraznou muzikalitu, vystoupí v rámci cyklu Mladé naděje a představí repertoár, který podtrhuje její mimořádné interpretační kvality. Štěpánka vystudovala prestižní evropské hudební školy, působí v orchestrálních projektech včetně European Union Youth Orchestra a měla řadu sólových koncertů s významnými orchesty.",
-"fetched": "2026-11-22",
-"link": "https://vecnanadeje.org/koncert/stepanka-andelova/",
-"slots": []
-},
 "https://prague.eu/cs/akce/sul-nad-zlato/": {
 "booking": "https://www.riseloutek.cz/program-2/",
 "description": "Je sůl opravdu nad zlato? Zlato je přece vzácné a sůl docela obyčejná. Jenže když ta docela obyčejná sůl schází, tak je najednou všem ouvej.",
@@ -1915,62 +1957,6 @@
 {
 "date": "2026-11-29",
 "time": "15:00"
-}
-]
-},
-"https://prague.eu/cs/akce/the-ray-charles-experience-by-lee-andrew-davison-usa/": {
-"booking": "https://www.redutajazzclub.cz/artists-cs/ray-charles-lee",
-"description": "Raye Charlese známe jako rozesmátého jazzmana, kterého proslavily písně z 60. a 70. let Georgia on my mind. Jeho životní i profesionální cesta byla plná krkolomných překážek, a i přes to byly obě dvě cesty po delší době úspěšně a zdatně zdolány. Raye Charlese a Lee Andrew Davisona nepojí jen láska k hudbě, ale i elán a touha tvořit hudbu publiku, které jí ocení a předá dalším generacím.",
-"fetched": "2026-11-22",
-"link": "https://www.redutajazzclub.cz/artists-cs/ray-charles-lee",
-"slots": [
-{
-"date": "2026-07-10",
-"time": "19:00"
-},
-{
-"date": "2026-08-01",
-"time": "21:15"
-},
-{
-"date": "2026-08-14",
-"time": "21:15"
-},
-{
-"date": "2026-08-28",
-"time": "19:00"
-},
-{
-"date": "2026-09-11",
-"time": "21:15"
-},
-{
-"date": "2026-09-18",
-"time": "19:00"
-},
-{
-"date": "2026-09-27",
-"time": "19:00"
-},
-{
-"date": "2026-10-10",
-"time": "19:00"
-},
-{
-"date": "2026-10-16",
-"time": "21:15"
-},
-{
-"date": "2026-11-14",
-"time": "21:15"
-},
-{
-"date": "2026-11-20",
-"time": "21:15"
-},
-{
-"date": "2026-11-24",
-"time": "19:00"
 }
 ]
 },
@@ -2109,6 +2095,30 @@
 "link": "https://kinoatlaspraha.cz/?tag=96",
 "slots": []
 },
+"https://prague.eu/cs/akce/ukaz-co-umis-design-market-na-jiraku/": {
+"booking": null,
+"description": "Každou adventní neděli bude na Trzích na Jiřáku probíhat design market s nabídkou tipů na vánoční dárky od lokální prodejců. Dárky, které dávají smysl a udělají radost. Dárky od srdce, vůně svařáku, zvuk koled a zimní atmosféra pod širým nebem — to všechno přímo u kostela Nejsvětějšího Srdce Páně, v samém srdci Vinohrad. Nebudou chybět ani prodejci s cukrovím, stromky, dobrotami a dalšími věcmi, které k Vánocům patří.",
+"fetched": "2026-11-26",
+"link": "https://www.facebook.com/events/1642020014082107/1642020017415440",
+"slots": [
+{
+"date": "2026-11-29",
+"time": "10:00"
+},
+{
+"date": "2026-12-06",
+"time": "10:00"
+},
+{
+"date": "2026-12-13",
+"time": "10:00"
+},
+{
+"date": "2026-12-20",
+"time": "10:00"
+}
+]
+},
 "https://prague.eu/cs/akce/vaclavske-vanoce/": {
 "booking": null,
 "description": "Václavské Vánoce 2026 se vzhledem k probíhající revitalizaci horní části Václavského náměstí uskuteční v parku za radnicí na Staroměstském náměstí. Místo je však to jediné, co se mění. Nezaměnitelná atmosféra 17. ročníku Václavských Vánoc zůstává, stejně tak jako podpora neziskových organizací, a tedy stánky s dárky z jejich chráněných dílen, široká nabídka občerstvení, fajn kapely, dětské sbory, Mikuláš, Betlémské světlo i Štědrovečerní bohoslužba pod širým nebem.",
@@ -2156,6 +2166,13 @@
 "description": "Pražské tramvaje, autobusy i trolejbusy se opět zahalí do vánoční výzdoby. Dopravní podnik hl. m. Prahy zve na slavnostní zahájení Vánoční flotily v areálu Muzea MHD ve Střešovicích, kde návštěvníky čeká sváteční program, hudební vystoupení, rozsvícení vozidel i tradiční průvod vánočně vyzdobených vozů centrem metropole.",
 "fetched": "2026-11-25",
 "link": "https://www.dpp.cz/vanoce",
+"slots": []
+},
+"https://prague.eu/cs/akce/vanocni-koncert-rainbow-gospel/": {
+"booking": "https://goout.net/cs/vanocni-koncert-rainbow-gospel/sznimpy/",
+"description": "Přijďte se v předvánočním čase zastavit, zklidnit a načerpat radost i adventní naději při vánočním koncertu pražského sboru Rainbow Gospel! Ve středu 9. prosince od 19 hodin rozezní evangelický kostel U Salvátora energické rytmy gospelu a spirituálů i hudba dalších žánrů v podání třicetičlenného sboru za doprovodu živé kapely. Výjimečným hostem večera bude zpěvačka Irena Budweiserová. Přijďte si užít večer plný hudby, radosti a sváteční atmosféry!",
+"fetched": "2026-11-26",
+"link": "http://www.rainbowgospel.cz/",
 "slots": []
 },
 "https://prague.eu/cs/akce/vanocni-trhy-na-andelu/": {
@@ -2238,11 +2255,11 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/zemlinskeho-kvarteto-4plus/": {
-"booking": "https://goout.net/cs/zemlinsky-quartet/pzwbnrf/",
-"description": "Zemlinského kvarteto připravilo pro rok 2026 již devátý ročník oblíbené koncertní série 4plus. Cyklus s názvem Les smyčců nabídne komorní večery hudby ve Velkém sále Městské knihovny v Praze. V posledním koncertu letošní série vystoupí spolu s Talichovým kvartetem.",
-"fetched": "2026-11-22",
-"link": "https://www.mlp.cz/cz/akce/zemlinskeho-kvarteto-les-smyccu-4-koncert/3001",
+"https://prague.eu/cs/akce/zelenaci-vanocni-koncert/": {
+"booking": "https://www.mlp.cz/cz/ticketing/12800",
+"description": "Skupina Zelenáči zve na tradiční vánoční koncert do Městské knihovny v Praze. Večer nabídne průřez repertoárem jedné z nejvýraznějších kapel české country scény, doplněný o písně s vánoční tematikou. Koncert naváže na dlouholetou tradici předvánočních vystoupení, která Zelenáči pořádají již od roku 1990.",
+"fetched": "2026-11-26",
+"link": "https://www.mlp.cz/cz/akce/zelenaci-vanocni-koncert/9490",
 "slots": []
 },
 "https://prague.eu/cs/akce/zeny-drzte-huby/": {
