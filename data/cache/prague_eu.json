@@ -30,6 +30,13 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/adventni-koncert-ceskeho-kytaroveho-orchestru/": {
+"booking": "https://www.nrpraha.cz/program/1576/adventni-koncert-ceskeho-kytaroveho-orchestru/",
+"description": "Adventní čas v Novoměstské radnici zpříjemní koncert Českého kytarového orchestru, který pod vedením Vladimíra Novotného představí pestrý program napříč hudebními žánry. Soubor více než dvaceti kytaristů nabídne originální orchestrální pojetí klasické kytary a skladby sahající od známých děl klasických autorů přes filmové a populární melodie až po hudbu inspirovanou jazzem, swingem či folklorem. Chybět nebude ani skladba, která navodí pravou adventní atmosféru – v kytarovém podání zazní některá z oblíbených vánočních melodií v netradiční orchestrální úpravě.",
+"fetched": "2026-11-27",
+"link": "https://www.nrpraha.cz",
+"slots": []
+},
 "https://prague.eu/cs/akce/adventni-koncert-ticheho-sveta/": {
 "booking": "https://goout.net/cs/adventni-koncert-ticheho-sveta-umelecky-tlumoceny-do-znakoveho-jazyka/szyoroy/",
 "description": "Adventní koncert pořádaný organizací Tichý svět nabídne večer plný vánočních melodií z Česka i zahraničí. Program v podání sborů Besharmonie a Pueri gaudentes doplní umělecké tlumočení do českého znakového jazyka. Umělecké tlumočnice a tlumočníci Tichého světa proměňují hudbu v obraz. Pohybem, rytmem, mimikou a celým tělem zprostředkovávají nejen obsah písní, ale také jejich atmosféru a emoce. Hudbu tak mohou návštěvníci nejen slyšet, ale také vidět a prožívat.",
@@ -344,13 +351,6 @@
 }
 ]
 },
-"https://prague.eu/cs/akce/clarinet-factory-2/": {
-"booking": "https://www.mlp.cz/cz/ticketing/12795",
-"description": "Clarinet Factory patří už více než dvě desetiletí k výrazným projektům české hudební scény. Čtveřice klarinetistů na svém koncertě v Městské knihovně v Praze nabídne originální spojení klasické hudby, jazzu, elektroniky i improvizace, které překračuje hranice jednotlivých žánrů. Večer navíc obohatí hosté Milan Cimfe a zpěvačka Kateřina García.",
-"fetched": "2026-11-22",
-"link": "https://www.mlp.cz/cz/akce/clarinet-factory/8872",
-"slots": []
-},
 "https://prague.eu/cs/akce/continuum/": {
 "booking": null,
 "description": "Fotografie není statická. Pohybuje se mezi minulostí a současností, skutečností a konstrukcí, soukromým a veřejným prostorem, záznamem a fikcí.    Výstava Continuum propojuje několik generací autorek a autorů Fotograf Contemporary a ukazuje fotografii jako médium, které se neustále proměňuje podle toho, kdo s ním pracuje, jakými prostředky a k čemu je používá.",
@@ -464,26 +464,6 @@
 "fetched": "2026-11-21",
 "link": "https://www.holesovickatrznice.cz",
 "slots": []
-},
-"https://prague.eu/cs/akce/euroliga-zen-zapasy-zvvz-usk-praha/": {
-"booking": "https://www.ticketportal.cz/nevent/ZVVZ-USK-PRAHA",
-"description": "Zažijte špičkový ženský basketbal přímo v srdci Prahy! V roce 2026 se v hale Královka opět odehrají zápasy nejprestižnější klubové soutěže Evropy — EuroLeague Women. Do metropole zavítají nejlepší evropské týmy, které v základní části i následném play-off bojují o postup mezi absolutní elitu a vysněnou účast na turnaji Final Six. Přijďte podpořit ZVVZ USK Praha, stálici evropské špičky a pravidelného kandidáta na titul. Na palubovce se představí hvězdy světového formátu a vychutnáte si jedinečnou atmosféru vrcholového sportu.",
-"fetched": "2026-11-22",
-"link": "http://www.uskbasket.cz/euroliga",
-"slots": [
-{
-"date": "2026-10-14",
-"time": "19:00"
-},
-{
-"date": "2026-10-28",
-"time": "19:00"
-},
-{
-"date": "2026-11-25",
-"time": "19:00"
-}
-]
 },
 "https://prague.eu/cs/akce/extraliga-ledniho-hokeje-zapasy-hc-sparta-praha-v-o2-arene/": {
 "booking": "https://www.hcsparta.cz/vstupenky.asp",
@@ -1072,6 +1052,13 @@
 "link": "https://www.villapelle.cz",
 "slots": []
 },
+"https://prague.eu/cs/akce/karel-plihal-recital/": {
+"booking": "https://www.mlp.cz/cz/ticketing/12789",
+"description": "Písničkář, kytarista a básník Karel Plíhal vystoupí 10. prosince 2026 ve Velkém sále Městské knihovny v Praze. V rámci komorního recitálu zazní jeho známé písně i poetické texty, které si během let získaly několik generací posluchačů. Na pódiu ho doprovodí kytarista Petr Fiala.",
+"fetched": "2026-11-27",
+"link": "https://www.mlp.cz/cz/akce/karel-plihal-recital-0/8560",
+"slots": []
+},
 "https://prague.eu/cs/akce/karlinske-vanocni-trhy/": {
 "booking": null,
 "description": "Nasajte kouzlo adventu na Karlínském náměstí. V neděli 6. prosince vás čekají tradiční vánoční trhy plné sváteční atmosféry, vůně svařeného vína, vánočních dobrot a oblíbených koled. Chybět nebude dřevěný betlém ani Ježíškova pošta, kde mohou děti odeslat svá přání Ježíškovi. Zůstaňte až do setmění a vychutnejte si pohled na slavnostně rozsvícený vánoční strom a kostel sv. Cyrila a Metoděje.",
@@ -1258,6 +1245,22 @@
 {
 "date": "2026-12-07",
 "time": "19:00"
+}
+]
+},
+"https://prague.eu/cs/akce/louskacek-pro-unicef/": {
+"booking": "https://fok.cz/louskacek",
+"description": "Vánoční atmosféra v Obecním domě ožije hudbou, tancem i dětskými hlasy. Pražští symfonikové spojují druhé jednání Čajkovského Kouzelného Louskáčka s Brittenovou lyrikou a zapojují dětský sbor i mladé tanečníky, čímž vzniká slavnostní večer plný fantazie, emocí i radosti. Benefiční koncert pro UNICEF slibuje nejen silný umělecký zážitek, ale i špetku svátečního kouzla s přesahem.",
+"fetched": "2026-11-27",
+"link": "https://fok.cz/louskacek",
+"slots": [
+{
+"date": "2026-12-09",
+"time": "19:30"
+},
+{
+"date": "2026-12-10",
+"time": "19:30"
 }
 ]
 },
@@ -1553,13 +1556,6 @@
 "description": "Dne 5. února 2026 uplynulo 230 let od založení Společnosti vlasteneckých přátel umění, soukromé společnosti, jejímž hlavním záměrem bylo otevření veřejně přístupné obrazárny a posléze i vytvoření umělecké sbírky. Umělecká díla získaná Společností vlasteneckých přátel umění jsou dodnes základními kameny sbírkového fondu NGP a řada z nich je vystavena v expozici 1796—1918: Umění dlouhého století, která se již svým názvem k tomuto spolku vztahuje. V rámci této expozice bude u příležitosti výročí otevřena komorní výstava, jež stručně nastíní 230 let vývoje, který vyústil v dnešní podobu NGP, jež byla zřízena zákonem v roce 1949, a tedy i existenci druhé předchůdkyně NGP, kterou byla Moderní galerie, založená roku 1902 císařem Františkem Josefem I.",
 "fetched": "2026-11-22",
 "link": "https://www.ngprague.cz/udalost/4659/ngp-230-let",
-"slots": []
-},
-"https://prague.eu/cs/akce/nieve-ella/": {
-"booking": "https://fource.cz/cs/events/nieve-ella-26/",
-"description": "Britská zpěvačka a autorka Nieve Ella, která patří k nejvýraznějším novým hlasům generace Z, se vrátí do Prahy s debutovým albem How Long Will It Take?. Deska plná upřímných výpovědí o dospívání, komplikovaných vztazích i každodenních nejistotách potvrzuje její pověst interpretky, která dokáže autenticky zachytit pocity své generace. Nieve Ella vystoupí 26. listopadu 2026 v MeetFactory, kde představí nejen nové skladby, ale i energickou koncertní show, díky níž si získává stále širší publikum. Večer otevře Sofia and the Antoinettes se svým osobitým a nespoutaným popem.",
-"fetched": "2026-11-22",
-"link": "https://fource.cz/cs/events/nieve-ella-26/",
 "slots": []
 },
 "https://prague.eu/cs/akce/noc-zlomenych-nehtu/": {
@@ -2261,6 +2257,46 @@
 "fetched": "2026-11-26",
 "link": "https://www.mlp.cz/cz/akce/zelenaci-vanocni-koncert/9490",
 "slots": []
+},
+"https://prague.eu/cs/akce/zeleninovy-trh-v-holesovicke-trznici/": {
+"booking": null,
+"description": "V hale 22 můžete po celý rok, kromě nedělí, nakupovat nepřeberné množství čerstvých produktů. Čeká vás ovoce a zelenina, pečivo, vejce, mléko, sýry, bylinky, ryby i maso, ale také med, houby, květiny či asijské speciality — vše od lokálních i zahraničních prodejců, často v bio kvalitě. V sezóně navíc najdete některé stánky i venku před halou.",
+"fetched": "2026-11-27",
+"link": "https://www.holesovickatrznice.cz/hala-22",
+"slots": [
+{
+"date": "2026-11-27",
+"time": "07:30"
+},
+{
+"date": "2026-11-28",
+"time": "07:30"
+},
+{
+"date": "2026-11-30",
+"time": "07:30"
+},
+{
+"date": "2026-12-01",
+"time": "07:30"
+},
+{
+"date": "2026-12-02",
+"time": "07:30"
+},
+{
+"date": "2026-12-03",
+"time": "07:30"
+},
+{
+"date": "2026-12-04",
+"time": "07:30"
+},
+{
+"date": "2026-12-05",
+"time": "07:30"
+}
+]
 },
 "https://prague.eu/cs/akce/zeny-drzte-huby/": {
 "booking": "https://www.mestskadivadlaprazska.cz/inscenace/1854/zeny-drzte-huby/",
