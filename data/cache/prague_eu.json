@@ -82,7 +82,7 @@
 "https://prague.eu/cs/akce/andelske-prochazky/": {
 "booking": null,
 "description": "O adventních nedělích a také 27. listopadu můžete v historickém centru Prahy potkat anděly na chůdách. Divadelní artisté z uskupení Long Vehicle Circus zpříjemní podvečerní atmosféru svým osobitým humorem, poetikou a působivým vizuálním vystoupením. S anděly se setkáte na Starém Městě, v okolí Mariánského a Staroměstského náměstí i v Karlově ulici, kde potěší každého, kdo jim přijde do cesty.",
-"fetched": "2026-11-20",
+"fetched": "2026-11-28",
 "link": "https://www.facebook.com/events/2636984416804688/2636984423471354",
 "slots": [
 {
@@ -448,6 +448,26 @@
 {
 "date": "2026-12-02",
 "time": "19:00"
+}
+]
+},
+"https://prague.eu/cs/akce/drama-v-kostce-pokus-2-mysterium-skutecnosti/": {
+"booking": "https://www.ypsilonka.cz/repertoar/hrajeme/drama-v-kostce-pokus-2-mysterium-skutecnosti",
+"description": "Divadlo je vždy něco mezi barem a estetickým tvarem.",
+"fetched": "2026-11-28",
+"link": "https://www.ypsilonka.cz/repertoar/hrajeme/drama-v-kostce-pokus-2-mysterium-skutecnosti",
+"slots": [
+{
+"date": "2026-10-16",
+"time": "19:30"
+},
+{
+"date": "2026-11-05",
+"time": "19:30"
+},
+{
+"date": "2026-12-03",
+"time": "19:30"
 }
 ]
 },
@@ -879,7 +899,7 @@
 "https://prague.eu/cs/akce/festival-svata-lucie/": {
 "booking": null,
 "description": "Festival Sv. Lucie, pořádaný ve spolupráci Galerie hlavního města Prahy a Signal Festivalu, zaplní areál Trojského zámku světlem, uměním a nevšedními zážitky. Prostřednictvím pěti originálních instalací rozvíjí téma Labyrintu, které letos zastřešuje celoroční výstavní program zámku, a zve návštěvníky k objevování vztahů mezi člověkem, prostorem, technologií a okolním světem. Trasa areálem vyvrcholí videomappingem na fasádě zámku, který historickou památku rozzáří a vytvoří z ní působivou světelnou podívanou.. Svátek svaté Lucie je tradičně spojován se světlem přicházejícím do nejtemnější části roku, a právě světlo se stává ústředním motivem celé akce.",
-"fetched": "2026-11-20",
+"fetched": "2026-11-28",
 "link": "https://www.signalfestival.com/aktuality/signal-x-ghmp-zveme-na-prosincovy-festival-svetla-sv-lucie-2026",
 "slots": []
 },
@@ -902,13 +922,6 @@
 "time": "19:30"
 }
 ]
-},
-"https://prague.eu/cs/akce/frida/": {
-"booking": "https://www.fidlovacka.cz/repertoar/frida",
-"description": "Strhující taneční vyprávění o jedné z nejslavnějších malířek 20. století Fridy Kahlo nabídne náhled na život a tvorbu mexické umělkyně. Tato výjimečná žena se odmítala stát pasivní obětí svého osudu a místo toho začala jedinečným vizuálním jazykem malovat svou vlastní realitu. Její mistrovská díla, díla okamžitě rozpoznatelná, jsou nádherná, často plná bolesti.",
-"fetched": "2026-11-22",
-"link": "http://www.saldovo-divadlo.cz",
-"slots": []
 },
 "https://prague.eu/cs/akce/historia-naturalis/": {
 "booking": null,
@@ -1166,7 +1179,7 @@
 "https://prague.eu/cs/akce/lemarket-vanoce/": {
 "booking": null,
 "description": "Galerie Mánes bude hostit Vánoční Lemarket 2026, tradiční přehlídku českého designu a lokálních značek. Třídenní akce představí tvorbu nezávislých designérů, řemeslníků, umělců i začínajících tvůrců a nabídne inspiraci pro předvánoční nákupy. Návštěvníci zde najdou originální dárky, módní doplňky, šperky, autorskou tvorbu i aktuální designové trendy. Lemarket zároveň poskytne prostor domácím značkám a vytvoří příjemnou adventní atmosféru v prostředí galerie na břehu Vltavy.",
-"fetched": "2026-11-20",
+"fetched": "2026-11-28",
 "link": "https://www.lemarket.cz/",
 "slots": []
 },
@@ -1183,70 +1196,6 @@
 "fetched": "2026-11-22",
 "link": "http://www.vanocnivystava.cz/",
 "slots": []
-},
-"https://prague.eu/cs/akce/louis-armstrong-forever/": {
-"booking": "https://www.redutajazzclub.cz/artists-cs/louis-armstrong-forever-celebrating-a-jazz-icon-with-old-timers-jazz-band-2",
-"description": "Oslava jazzové ikony Old Timers Jazz Bandem.",
-"fetched": "2026-11-24",
-"link": "https://www.redutajazzclub.cz/artists-cs/louis-armstrong-forever-celebrating-a-jazz-icon-with-old-timers-jazz-band-2",
-"slots": [
-{
-"date": "2026-04-27",
-"time": "19:00"
-},
-{
-"date": "2026-05-24",
-"time": "19:00"
-},
-{
-"date": "2026-06-28",
-"time": "20:00"
-},
-{
-"date": "2026-07-14",
-"time": "20:00"
-},
-{
-"date": "2026-07-26",
-"time": "20:00"
-},
-{
-"date": "2026-08-12",
-"time": "20:00"
-},
-{
-"date": "2026-08-30",
-"time": "20:00"
-},
-{
-"date": "2026-09-14",
-"time": "20:00"
-},
-{
-"date": "2026-09-29",
-"time": "20:00"
-},
-{
-"date": "2026-10-11",
-"time": "19:00"
-},
-{
-"date": "2026-10-26",
-"time": "19:00"
-},
-{
-"date": "2026-11-10",
-"time": "19:00"
-},
-{
-"date": "2026-11-29",
-"time": "19:00"
-},
-{
-"date": "2026-12-07",
-"time": "19:00"
-}
-]
 },
 "https://prague.eu/cs/akce/louskacek-pro-unicef/": {
 "booking": "https://fok.cz/louskacek",
@@ -1345,7 +1294,7 @@
 "https://prague.eu/cs/akce/martin-eder-saints-no-heaven-in-the-sky/": {
 "booking": null,
 "description": "Martin Eder: SAINTS – NO HEAVEN IN THE SKY představuje novou samostatnou výstavu německého umělce Martina Edera v DSC Gallery. Výstava otevírá téma víry, spirituality a současného vztahu člověka k představě nebe a posvátna. Prostřednictvím malby, symboliky a výrazné vizuální estetiky Eder vytváří napětí mezi sakrálním a profánním, krásou a znepokojením, duchovním ideálem a lidskou zkušeností.  Výstava zve návštěvníky k zamyšlení nad tím, zda jsme nepřestali věřit v nebe právě proto, že jsme si ho začali budovat sami.",
-"fetched": "2026-11-20",
+"fetched": "2026-11-28",
 "link": "https://www.dscgallery.com",
 "slots": []
 },
@@ -1577,26 +1526,6 @@
 "link": "https://www.nrpraha.cz",
 "slots": []
 },
-"https://prague.eu/cs/akce/ona-je-ziva/": {
-"booking": "https://www.divadlovdlouhe.cz/repertoar/nase-inscenace/ona-je-ziva/",
-"description": "Inscenace o ženě, která zažila ochromující vztah plný milování i nenávisti. O nekonečném návratu někam, kde už dávno nemáme být. A nebo právě naopak, o nutnosti vše si vědomě prožít, abychom mohli definitivně odejít.",
-"fetched": "2026-11-24",
-"link": "https://www.divadlovdlouhe.cz/repertoar/nase-inscenace/ona-je-ziva/",
-"slots": [
-{
-"date": "2026-10-31",
-"time": "19:00"
-},
-{
-"date": "2026-11-24",
-"time": "19:00"
-},
-{
-"date": "2026-12-02",
-"time": "19:00"
-}
-]
-},
 "https://prague.eu/cs/akce/onegin/": {
 "booking": "https://www.narodni-divadlo.cz/cs/predstaveni/onegin-balet-1520312?t=2026-11-14-14-00",
 "description": "Balet Johna Cranka na motivy románu Alexandra Puškina.",
@@ -1756,26 +1685,6 @@
 "fetched": "2026-11-24",
 "link": "https://divadlobravo.cz/predstaveni/pristizena/",
 "slots": []
-},
-"https://prague.eu/cs/akce/pustte-me-ven/": {
-"booking": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/pustte-me-ven/",
-"description": "Velké herecké sólo Ivy Janžurové v brilantní komedii.",
-"fetched": "2026-11-24",
-"link": "https://www.divadlokalich.cz/divadlo-kalich/repertoar/pustte-me-ven/",
-"slots": [
-{
-"date": "2026-09-24",
-"time": "19:00"
-},
-{
-"date": "2026-10-20",
-"time": "19:00"
-},
-{
-"date": "2026-11-26",
-"time": "19:00"
-}
-]
 },
 "https://prague.eu/cs/akce/radka-castkova-magdalena-simurdova-murmuring-matter/": {
 "booking": null,
@@ -2084,6 +1993,38 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/trinacta-laska/": {
+"booking": "https://www.hdk.cz/cs/repertoar/bedrich-smetana-trinacta-laska",
+"description": "Inspirováno životem a dílem Bedřicha Smetany Hudební zábavný pořad pro děti, mládež, školy, rodiče i prarodiče.",
+"fetched": "2026-11-28",
+"link": "https://www.hdk.cz/repertoar/bedrich-smetana",
+"slots": [
+{
+"date": "2026-11-11",
+"time": "09:00"
+},
+{
+"date": "2026-11-11",
+"time": "11:00"
+},
+{
+"date": "2026-11-12",
+"time": "09:00"
+},
+{
+"date": "2026-11-12",
+"time": "11:00"
+},
+{
+"date": "2026-12-03",
+"time": "09:00"
+},
+{
+"date": "2026-12-03",
+"time": "11:00"
+}
+]
+},
 "https://prague.eu/cs/akce/tyden-ukrajinskeho-filmu/": {
 "booking": null,
 "description": "Oceňované novinky, silné dokumenty i návrat filmové klasiky. Devátý ročník Týdne ukrajinského filmu v kině Atlas přinese od 24. do 30. listopadu do pražského kina Atlas výběr současné ukrajinské kinematografie. Festival nabídne snímky uvedené na festivalech v Cannes, Benátkách či Berlíně, filmy oceněné v Torontu a Amsterdamu i restaurovaný trezorový titul z roku 1934. Diváci se mohou těšit na příběhy odvahy, identity, odporu i na dokumentární svědectví o událostech, které formují současnou Ukrajinu.",
@@ -2248,6 +2189,18 @@
 {
 "date": "2026-12-01",
 "time": "19:00"
+}
+]
+},
+"https://prague.eu/cs/akce/za-to-pek/": {
+"booking": "https://www.minor.cz/repertoar/za-to-pek",
+"description": "Třicet tisíc diváků křičelo tohle jméno v Helsinkách v roce 1952, když vbíhal na stadion, coby první v maratonském běhu, aby získal třetí zlatou medaili v běhu na dlouhé tratě.",
+"fetched": "2026-11-28",
+"link": "https://www.minor.cz/repertoar/za-to-pek/",
+"slots": [
+{
+"date": "2026-12-03",
+"time": "18:00"
 }
 ]
 },
