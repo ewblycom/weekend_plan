@@ -44,6 +44,13 @@
 "link": "https://www.tichysvet.cz/pripravujeme/adventni-koncert-2026",
 "slots": []
 },
+"https://prague.eu/cs/akce/adventni-matine-pro-rodice-a-deti/": {
+"booking": "https://www.svandovodivadlo.cz/inscenace/868/adventni-matine-pro-rodice-a-deti/6361",
+"description": "Předvánoční čas přináší chvíle klidu, radosti a setkávání. Zpříjemněte si adventní dopoledne koncertem dětského smyčcového orchestru, na kterém vás mladí hudebníci provedou pestrým programem plným svěžesti, energie a sváteční atmosféry.",
+"fetched": "2026-11-28",
+"link": "https://www.svandovodivadlo.cz/inscenace/868/adventni-matine-pro-rodice-a-deti/6361",
+"slots": []
+},
 "https://prague.eu/cs/akce/adventni-trhy-na-chvalske-tvrzi/": {
 "booking": null,
 "description": "První adventní neděli ožije areál Chvalské tvrze tradičními adventními trhy plnými řemeslných výrobků, vánočních dobrot a sváteční atmosféry. Návštěvníky čeká kulturní program, tvořivé dílny pro děti, rozsvícení vánočního stromu i setkání s tajemnými Luciemi, které podle lidových tradic dohlížejí na pořádek v adventním čase.",
@@ -157,62 +164,6 @@
 },
 {
 "date": "2026-12-03",
-"time": "19:00"
-}
-]
-},
-"https://prague.eu/cs/akce/big-band-trumpets-kings-of-swing-tribute-to-duke-ellington-quincy-jones-dizzy-gillespie-glen-miller/": {
-"booking": "https://goout.net/sk/big-band-trumpets/pzewc/events/",
-"description": "Big Band Trumpets přináší do Reduta Jazz Clubu jedinečný swingový večer „Kings of Swing“ jako poctu velikánům typu Duke Ellington, Quincy Jones, Glen Miller či Dizzy Gillespie. Originální formát orchestru složeného výhradně z trumpetové sekce, doplněné rytmikou a ženským vokálem, dává známým jazzovým standardům nečekaný zvuk i energii. Připravte se na slavné hity v neobvyklém, strhujícím podání, které překvapuje i zkušené posluchače.",
-"fetched": "2026-11-26",
-"link": "https://www.redutajazzclub.cz/artists-cs/big-band-trumpets-kings-of-swing-tribute-to-duke",
-"slots": [
-{
-"date": "2026-05-27",
-"time": "19:00"
-},
-{
-"date": "2026-06-14",
-"time": "20:00"
-},
-{
-"date": "2026-07-12",
-"time": "20:00"
-},
-{
-"date": "2026-07-21",
-"time": "20:00"
-},
-{
-"date": "2026-08-09",
-"time": "20:00"
-},
-{
-"date": "2026-07-25",
-"time": "20:00"
-},
-{
-"date": "2026-09-06",
-"time": "20:00"
-},
-{
-"date": "2026-09-23",
-"time": "20:00"
-},
-{
-"date": "2026-10-25",
-"time": "19:00"
-},
-{
-"date": "2026-11-03",
-"time": "19:00"
-},
-{
-"date": "2026-11-18",
-"time": "19:00"
-},
-{
-"date": "2026-12-08",
 "time": "19:00"
 }
 ]
@@ -1455,6 +1406,22 @@
 }
 ]
 },
+"https://prague.eu/cs/akce/musica-bohemica/": {
+"booking": "https://eshop.muzeumprahy.cz/ticket/detail/15650",
+"description": "Dopřejte si adventní zastavení v kouzelném prostředí Zámeckého areálu Ctěnice. Soubor Musica Bohemica pod vedením svého zakladatele Jaroslava Krčka nabídne výběr adventních písní z barokních kancionálů, lidových vánočních písní a koled z Česka i ze zahraničí, doplněný o barokní duchovní skladby. Nechte se v předvánočním čase unést sváteční atmosférou a hudbou, která k adventu neodmyslitelně patří.",
+"fetched": "2026-11-28",
+"link": "https://eshop.muzeumprahy.cz/ticket/detail/15651",
+"slots": [
+{
+"date": "2026-12-12",
+"time": "15:00"
+},
+{
+"date": "2026-12-12",
+"time": "18:00"
+}
+]
+},
 "https://prague.eu/cs/akce/my-dear-ada/": {
 "booking": null,
 "description": "Výstava My Dear Ada (umělá a umělecká inteligence) ohledává a testuje možnosti tvorby a interpretace obrazů a textů v době vývoje umělé inteligence (AI). Představuje výběr z vědeckých a uměleckých děl předznamenávajících vznik a inovativní způsoby používání univerzálních počítačů (Ada Lovelace, Zdeněk Sýkora) a uvádí je do souvislostí s tvorbou vizuálního umění před AI a během učení AI expertních systémů (Milan Guštar, Magdalena Wutkowska, Jana Bernartová). Pro výstavu vznikly práce v interakci s AI proto-agenty (Virtuální futuroložka A°D°A), jsou tedy výsledkem sítě lidských a mimolidských aktérů (Paleofuture Lab, Zdeňka Němcová Zedníčková a Haruka Kajiura) a působí napříč vizuálním uměním, architekturou, technikou a technologií.",
@@ -1862,38 +1829,6 @@
 {
 "date": "2026-11-29",
 "time": "15:00"
-}
-]
-},
-"https://prague.eu/cs/akce/timeless-legends/": {
-"booking": "https://www.redutajazzclub.cz/artists-cs/timeless-legends-m-novak",
-"description": "Oslava odkazu Michaela Jacksona, AC Jobima, Herbie Hancocka a Dukea Ellingtona v pražské Redutě.",
-"fetched": "2026-11-24",
-"link": "https://www.redutajazzclub.cz/artists-cs/timeless-legends-m-novak",
-"slots": [
-{
-"date": "2026-05-19",
-"time": "19:00"
-},
-{
-"date": "2026-07-05",
-"time": "20:00"
-},
-{
-"date": "2026-08-11",
-"time": "20:00"
-},
-{
-"date": "2026-09-30",
-"time": "20:00"
-},
-{
-"date": "2026-11-11",
-"time": "19:00"
-},
-{
-"date": "2026-12-03",
-"time": "19:00"
 }
 ]
 },
